@@ -1,11 +1,11 @@
 {
- "updated": "2026-09-12T21:21:04.958204+00:00",
+ "updated": "2026-09-12T21:28:15.301326+00:00",
  "editions": [
   {
    "id": "2026-09-12-daily",
    "date": "2026-09-12",
    "kind": "daily",
-   "lede": "L'actualité est marquée par des avertissements d'exploitation imminente visant les VPN Check Point, tandis qu'Anthropic et plusieurs chercheurs révèlent une sér"
+   "lede": "L'actualité est marquée par une alerte sur l'exploitation imminente de failles critiques Check Point VPN, tandis qu'Anthropic multiplie les révélations sur les "
   }
  ]
 }
