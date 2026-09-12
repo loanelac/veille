@@ -1,7 +1,7 @@
-# Briefing IA · Cyber · Airbus
+# Briefing de veille
 
-Une page web qui affiche un digest quotidien en français sur l'intelligence artificielle, la
-cybersécurité et l'actualité d'Airbus, rédigé par Gemini à partir de 37 flux RSS.
+Une page web qui affiche un digest quotidien en français, rédigé par Gemini à partir de
+37 flux RSS.
 
 GitHub Actions fait le travail chaque matin ; GitHub Pages sert la page. Rien ne tourne sur ta
 machine, et le digest est lisible depuis le téléphone.
@@ -32,7 +32,7 @@ La clé API reste dans les secrets GitHub et n'est lue que par le workflow.
 ```bash
 cd veille-app
 git init && git add . && git commit -m "Briefing de veille"
-gh repo create veille-ia-cyber-airbus --public --source=. --push
+gh repo create veille --public --source=. --push
 ```
 
 Le dépôt doit être **public** : GitHub Pages ne sert les dépôts privés que sur les plans
@@ -43,7 +43,7 @@ payants. Aucun secret n'y figure — la clé vit dans les secrets chiffrés du d
 Récupère une clé gratuite sur **aistudio.google.com/apikey** — pas de carte bancaire à
 renseigner.
 
-Sur `github.com/<toi>/veille-ia-cyber-airbus` → **Settings → Secrets and variables → Actions →
+Sur `github.com/<toi>/veille` → **Settings → Secrets and variables → Actions →
 New repository secret** :
 
 - Nom : `GEMINI_API_KEY`
@@ -59,7 +59,7 @@ L'URL est affichée après une minute.
 Dans `index.html`, ajuste la constante en tête de script si ton dépôt porte un autre nom :
 
 ```js
-var REPO = "loanelac/veille-ia-cyber-airbus";
+var REPO = "loanelac/veille";
 ```
 
 Elle ne sert qu'au bouton « Mettre à jour » du pied de page.
@@ -99,7 +99,7 @@ GitHub Actions est gratuit pour les dépôts publics.
 committe : la prochaine exécution en tient compte. Vérifie qu'une URL répond avant de l'ajouter —
 certains sites bloquent les clients non navigateurs.
 
-Le fichier `veille-ia-cyber-airbus.opml` (à la racine du dossier parent) contient la même liste
+Le fichier `veille.opml` (à la racine du dossier parent) contient la même liste
 au format OPML, importable dans un lecteur RSS classique.
 
 ## Ajuster la rédaction
