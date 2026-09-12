@@ -1,7 +1,7 @@
 # Briefing IA · Cyber · Airbus
 
 Une page web qui affiche un digest quotidien en français sur l'intelligence artificielle, la
-cybersécurité et l'actualité d'Airbus, rédigé par un modèle Perplexity à partir de 37 flux RSS.
+cybersécurité et l'actualité d'Airbus, rédigé par Gemini à partir de 37 flux RSS.
 
 GitHub Actions fait le travail chaque matin ; GitHub Pages sert la page. Rien ne tourne sur ta
 machine, et le digest est lisible depuis le téléphone.
@@ -18,9 +18,9 @@ machine, et le digest est lisible depuis le téléphone.
 ```
 
 - `scripts/fetch_feeds.py` télécharge les flux en parallèle et ne garde que les items récents.
-- `scripts/summarize.py` envoie ces items à l'API Agent de Perplexity, qui trie, fusionne les
-  doublons et rédige en français, quelle que soit la langue des sources. Aucune dépendance
-  Python à installer : le script n'utilise que la bibliothèque standard.
+- `scripts/summarize.py` envoie ces items à l'API Gemini, qui trie, fusionne les doublons et
+  rédige en français, quelle que soit la langue des sources. Aucune dépendance Python à
+  installer : le script n'utilise que la bibliothèque standard.
 - `index.html` lit les JSON produits. Aucune clé ne circule côté navigateur.
 
 La clé API reste dans les secrets GitHub et n'est lue que par le workflow.
@@ -32,21 +32,21 @@ La clé API reste dans les secrets GitHub et n'est lue que par le workflow.
 ```bash
 cd veille-app
 git init && git add . && git commit -m "Briefing de veille"
-gh repo create veille-ia-cyber-airbus --private --source=. --push
+gh repo create veille-ia-cyber-airbus --public --source=. --push
 ```
 
-Un dépôt **privé** convient : GitHub Pages sert les pages privées sur les plans payants, sinon
-mets-le en public — la page ne contient aucune donnée sensible.
+Le dépôt doit être **public** : GitHub Pages ne sert les dépôts privés que sur les plans
+payants. Aucun secret n'y figure — la clé vit dans les secrets chiffrés du dépôt.
 
 ### 2. Ajouter la clé API
 
-Récupère une clé sur **perplexity.ai/account/api** (l'abonnement Pro inclut 5 $ de crédit API
-par mois, très au-dessus de ce que consomme ce digest).
+Récupère une clé gratuite sur **aistudio.google.com/apikey** — pas de carte bancaire à
+renseigner.
 
 Sur `github.com/<toi>/veille-ia-cyber-airbus` → **Settings → Secrets and variables → Actions →
 New repository secret** :
 
-- Nom : `PERPLEXITY_API_KEY`
+- Nom : `GEMINI_API_KEY`
 - Valeur : la clé
 
 ### 3. Activer Pages
@@ -80,19 +80,16 @@ pied de la page elle-même.
 
 ## Coût
 
-Le digest quotidien envoie environ 4 000 tokens et en produit 3 000 à 6 000.
+**Zéro.** Le niveau gratuit de l'API Gemini autorise plusieurs centaines de requêtes par jour ;
+ce digest en consomme **une**. Une édition pèse environ 10 000 tokens en entrée et 6 000 en
+sortie, raisonnement compris.
 
-| Modèle | Par exécution | Par mois (quotidien) |
-|---|---|---|
-| `perplexity/glm-5.3` (par défaut) | ~0,02 $ | **~0,60 $** |
-| `perplexity/kimi-k3` | ~0,06 $ | ~1,80 $ |
-| `perplexity/nemotron-3.5-lightning-30b-a3b` | ~0,0006 $ | ~0,02 $ |
+Deux réserves à connaître : Google a déjà réduit ces quotas sans préavis, et sur le niveau
+gratuit les données envoyées peuvent servir à améliorer leurs modèles — ici, des titres
+d'actualité publics.
 
-L'abonnement Perplexity Pro inclut **5 $ de crédit API par mois**, donc en pratique le digest
-ne coûte rien de plus tant qu'il reste la seule chose qui consomme ce crédit.
-
-Pour changer de modèle, définis la variable d'environnement `PERPLEXITY_MODEL` dans le workflow,
-ou édite la constante `MODEL` en tête de `scripts/summarize.py`.
+Le modèle se change via la variable d'environnement `GEMINI_MODEL` ou la constante `MODEL` en
+tête de `scripts/summarize.py`. Par défaut : `gemini-3.8-flash`.
 
 GitHub Actions est gratuit pour les dépôts publics.
 
@@ -116,8 +113,8 @@ si le digest est trop large, trop bavard ou passe à côté de ce qui t'intéres
 **La page affiche « Aucun digest publié »** — le workflow n'a pas encore tourné. Lance-le
 manuellement depuis Actions.
 
-**Le workflow échoue à l'étape « Rédiger le digest »** — clé API absente, invalide, ou crédit
-Perplexity épuisé. Le script affiche le corps de la réponse HTTP en erreur, qui précise lequel.
+**Le workflow échoue à l'étape « Rédiger le digest »** — clé absente, invalide, ou quota
+journalier atteint. Le script affiche le corps de la réponse HTTP en erreur, qui précise lequel.
 
 **Le workflow échoue à « Récupérer les flux »** — le script sort en erreur quand aucun item n'est
 récupéré, pour éviter de publier un digest vide. Les erreurs par flux sont listées dans le log et

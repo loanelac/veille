@@ -48,14 +48,14 @@ jobs:
 
       - name: Rédiger le digest
         env:
-          PERPLEXITY_API_KEY: ${{ secrets.PERPLEXITY_API_KEY }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
         run: python scripts/summarize.py items.json ${{ steps.kind.outputs.kind }}
 
       # Le dimanche, la synthèse hebdomadaire s'ajoute à l'édition du matin.
       - name: Synthèse hebdomadaire (dimanche)
         if: github.event_name == 'schedule'
         env:
-          PERPLEXITY_API_KEY: ${{ secrets.PERPLEXITY_API_KEY }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
         run: |
           if [ "$(date -u +%u)" = "7" ]; then
             python scripts/fetch_feeds.py 168 items-weekly.json

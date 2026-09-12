@@ -1,13 +1,14 @@
 #!/usr/bin/env python3
-"""Transforme les items bruts en digest rédigé en français, via l'API Perplexity.
+"""Transforme les items bruts en digest rédigé en français, via l'API Gemini.
 
 Usage: python scripts/summarize.py <items.json> <daily|weekly>
 
 Écrit data/latest.json (ou latest-weekly.json), data/archive/<date>-<kind>.json
 et met à jour data/index.json.
 
-Utilise l'API Agent (https://api.perplexity.ai/v1/agent). L'ancienne API Sonar
-(/chat/completions) est dépréciée depuis septembre 2026.
+Utilise l'API Interactions (POST /v1beta/interactions). L'ancienne forme
+:generateContent renvoie désormais 404 sur les modèles récents.
+Aucune dépendance : bibliothèque standard uniquement.
 """
 import json
 import os
@@ -20,18 +21,16 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 DATA = ROOT / "data"
 
-ENDPOINT = "https://api.perplexity.ai/v1/agent"
-# Modèle sans recherche web : on résume les items fournis, on n'en cherche pas d'autres.
-MODEL = os.environ.get("PERPLEXITY_MODEL", "perplexity/glm-5.3")
-MAX_OUTPUT_TOKENS = 8000
+ENDPOINT = "https://generativelanguage.googleapis.com/v1beta/interactions"
+MODEL = os.environ.get("GEMINI_MODEL", "gemini-3.8-flash")
 
 SECTION_LABELS = {"ia": "Intelligence artificielle",
                   "cyber": "Cybersécurité",
                   "aero": "Airbus & aéronautique"}
 
+# Sous-ensemble de JSON Schema accepté par Gemini : pas d'additionalProperties.
 SCHEMA = {
     "type": "object",
-    "additionalProperties": False,
     "required": ["lede", "sections", "alerts"],
     "properties": {
         "lede": {"type": "string"},
@@ -39,7 +38,6 @@ SCHEMA = {
             "type": "array",
             "items": {
                 "type": "object",
-                "additionalProperties": False,
                 "required": ["key", "items"],
                 "properties": {
                     "key": {"type": "string", "enum": ["ia", "cyber", "aero"]},
@@ -47,7 +45,6 @@ SCHEMA = {
                         "type": "array",
                         "items": {
                             "type": "object",
-                            "additionalProperties": False,
                             "required": ["title", "summary", "sources"],
                             "properties": {
                                 "title": {"type": "string"},
@@ -57,7 +54,6 @@ SCHEMA = {
                                     "type": "array",
                                     "items": {
                                         "type": "object",
-                                        "additionalProperties": False,
                                         "required": ["name"],
                                         "properties": {
                                             "name": {"type": "string"},
@@ -75,7 +71,6 @@ SCHEMA = {
             "type": "array",
             "items": {
                 "type": "object",
-                "additionalProperties": False,
                 "required": ["level", "title", "body", "refs"],
                 "properties": {
                     "level": {"type": "string"},
@@ -92,7 +87,7 @@ PROMPT = """Tu rédiges une édition du briefing de veille personnel de son lect
 l'intelligence artificielle, la cybersécurité et l'actualité d'Airbus.
 
 Voici les {count} items collectés sur les dernières {hours} heures, issus de {feeds} flux RSS. \
-Travaille uniquement à partir de cette liste, ne cherche rien d'autre et n'invente aucun fait :
+Travaille uniquement à partir de cette liste et n'invente aucun fait :
 
 {payload}
 
@@ -115,8 +110,7 @@ rien ne l'est.
 Tableau vide si rien ne le justifie ce jour-là.
 - lede : 1 à 2 phrases sur ce qui domine réellement l'édition, pas un sommaire des sections.
 - Ton factuel et direct. Aucun emoji.
-{weekly_note}
-Réponds uniquement par le JSON demandé."""
+{weekly_note}"""
 
 WEEKLY_NOTE = ("- Édition HEBDOMADAIRE : privilégie les tendances de fond et les fils qui "
                "courent sur plusieurs jours plutôt que la reprise d'actualités isolées.\n")
@@ -136,24 +130,22 @@ def build_payload(items_doc):
     return "\n".join(lines)
 
 
-def call_perplexity(prompt, api_key):
+def call_gemini(prompt, api_key):
     body = {
         "model": MODEL,
         "input": prompt,
-        "max_output_tokens": MAX_OUTPUT_TOKENS,
-        "max_steps": 1,  # pas de recherche web : on résume ce qu'on fournit
         "response_format": {
-            "type": "json_schema",
-            "json_schema": {"name": "digest", "schema": SCHEMA},
+            "type": "text",
+            "mime_type": "application/json",
+            "schema": SCHEMA,
         },
     }
     request = urllib.request.Request(
         ENDPOINT,
         data=json.dumps(body).encode("utf-8"),
         headers={
-            "Authorization": f"Bearer {api_key}",
+            "x-goog-api-key": api_key,
             "Content-Type": "application/json",
-            "Accept": "application/json",
         },
         method="POST",
     )
@@ -162,25 +154,24 @@ def call_perplexity(prompt, api_key):
             return json.loads(response.read().decode("utf-8"))
     except urllib.error.HTTPError as exc:
         detail = exc.read().decode("utf-8", "replace")[:800]
-        print(f"Erreur HTTP {exc.code} de l'API Perplexity :\n{detail}", file=sys.stderr)
+        print(f"Erreur HTTP {exc.code} de l'API Gemini :\n{detail}", file=sys.stderr)
         raise SystemExit(1)
 
 
 def extract_text(response):
-    """Récupère le texte de la réponse, quelle que soit la position du bloc message."""
+    """Le texte vit dans steps[] où type == 'model_output', sous content[].text."""
     chunks = []
-    for entry in response.get("output", []):
-        if entry.get("type") != "message":
+    for step in response.get("steps", []):
+        if step.get("type") != "model_output":
             continue
-        for block in entry.get("content", []):
-            text = block.get("text")
-            if text:
-                chunks.append(text)
+        for block in step.get("content", []):
+            if block.get("text"):
+                chunks.append(block["text"])
     if not chunks:
-        print("Réponse sans bloc message exploitable :", file=sys.stderr)
-        print(json.dumps(response, ensure_ascii=False)[:1500], file=sys.stderr)
+        print("Réponse sans bloc model_output exploitable :", file=sys.stderr)
+        print(json.dumps(response, ensure_ascii=False)[:1200], file=sys.stderr)
         raise SystemExit(1)
-    return "\n".join(chunks)
+    return "".join(chunks)
 
 
 def parse_digest(text):
@@ -202,9 +193,9 @@ def main():
     items_path = Path(sys.argv[1]) if len(sys.argv) > 1 else ROOT / "items.json"
     kind = sys.argv[2] if len(sys.argv) > 2 else "daily"
 
-    api_key = os.environ.get("PERPLEXITY_API_KEY")
+    api_key = os.environ.get("GEMINI_API_KEY")
     if not api_key:
-        print("PERPLEXITY_API_KEY absente de l'environnement.", file=sys.stderr)
+        print("GEMINI_API_KEY absente de l'environnement.", file=sys.stderr)
         raise SystemExit(1)
 
     items_doc = json.loads(items_path.read_text(encoding="utf-8"))
@@ -221,7 +212,7 @@ def main():
         weekly_note=WEEKLY_NOTE if kind == "weekly" else "",
     )
 
-    response = call_perplexity(prompt, api_key)
+    response = call_gemini(prompt, api_key)
     digest = parse_digest(extract_text(response))
 
     now = datetime.now(timezone.utc)
@@ -233,7 +224,7 @@ def main():
         "lede": digest.get("lede", ""),
         "stats": stats,
         "sections": [
-            {"key": s["key"], "label": SECTION_LABELS.get(s["key"], s["key"]), "items": s["items"]}
+            {"key": s["key"], "label": SECTION_LABELS[s["key"]], "items": s.get("items", [])}
             for s in digest.get("sections", []) if s.get("key") in SECTION_LABELS
         ],
         "alerts": digest.get("alerts", []),
@@ -262,8 +253,9 @@ def main():
     usage = response.get("usage", {})
     print(f"Publié {edition_id} — {retained} items retenus sur {stats['items']}, "
           f"{len(document['alerts'])} alerte(s)")
-    if usage:
-        print(f"Tokens : {usage}")
+    print(f"Tokens : {usage.get('total_input_tokens', '?')} entrée / "
+          f"{usage.get('total_output_tokens', '?')} sortie / "
+          f"{usage.get('total_thought_tokens', '?')} raisonnement")
 
 
 if __name__ == "__main__":
