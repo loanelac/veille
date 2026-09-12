@@ -25,10 +25,13 @@ DATA = ROOT / "data"
 ENDPOINT = "https://generativelanguage.googleapis.com/v1beta/interactions"
 MODEL = os.environ.get("GEMINI_MODEL", "gemini-3.8-flash")
 
-# Garde-fou : nombre maximal d'éditions générées dans une même journée UTC.
-# Le quota gratuit réel dépend du compte (aistudio.google.com/rate-limit) ; cette
-# limite-ci est volontairement prudente et sert à éviter de le brûler par accident.
-DAILY_RUN_LIMIT = int(os.environ.get("DAILY_RUN_LIMIT", "20"))
+# Garde-fou : nombre maximal d'éditions générées dans une même journée.
+# Le quota Google est de 20 requêtes/jour sur gemini-3.8-flash au niveau sans frais
+# (aistudio.google.com/rate-limit). On s'arrête volontairement à 12 : les tentatives
+# qui échouent comptent aussi dans leur décompte, et surtout l'édition automatique du
+# matin doit toujours trouver du quota disponible, même après une journée chargée en
+# rafraîchissements manuels.
+DAILY_RUN_LIMIT = int(os.environ.get("DAILY_RUN_LIMIT", "12"))
 
 SECTION_LABELS = {"ia": "Intelligence artificielle",
                   "cyber": "Cybersécurité",

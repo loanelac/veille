@@ -87,16 +87,17 @@ Limites constatées sur `gemini-3.8-flash`, niveau sans frais (elles dépendent 
 
 | Limite | Valeur | Ce que ça permet |
 |---|---|---|
-| Requêtes par minute | 5 | pas plus de 5 rafraîchissements dans la même minute |
-| Tokens par minute | 250 000 | une édition en pèse ~17 000, soit 14 par minute |
-| Requêtes par jour | à lire dans AI Studio | colonne RPD du tableau |
+| Requêtes par jour (RPD) | **20** | c'est la contrainte réelle |
+| Requêtes par minute (RPM) | 5 | pas plus de 5 dans la même minute |
+| Tokens par minute (TPM) | 250 000 | une édition en pèse ~17 000 |
 
-C'est le **débit par minute qui contraint en premier**, jamais le volume. En pratique :
-enchaîner plus de 5 mises à jour en une minute déclenche une erreur 429, que le script
-absorbe en réessayant (15s, 30s, 45s) plutôt qu'en échouant.
+**Le quota journalier est ce qui contraint**, pas le débit. Vingt requêtes par jour, dont une
+consommée par l'édition automatique du matin (deux le dimanche). Les requêtes en échec comptent
+aussi dans le décompte.
 
-**Garde-fou.** `scripts/summarize.py` refuse de dépasser **20 éditions par jour** et
-n'appelle même pas l'API au-delà. Le compteur vit dans `data/usage.json` et s'affiche en pied
+**Garde-fou.** `scripts/summarize.py` refuse de dépasser **12 éditions par jour** et
+n'appelle même pas l'API au-delà. Douze et non vingt : il faut garder de la marge pour que
+l'édition du lendemain matin trouve toujours du quota, et les échecs comptent aussi. Le compteur vit dans `data/usage.json` et s'affiche en pied
 de page. Pour changer la limite sans toucher au code : *Settings → Secrets and variables →
 Actions → Variables → New repository variable*, nom `DAILY_RUN_LIMIT`.
 
