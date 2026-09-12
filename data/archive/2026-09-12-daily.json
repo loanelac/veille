@@ -1,0 +1,171 @@
+{
+ "date": "2026-09-12",
+ "kind": "daily",
+ "generatedAt": "12/09 à 20:38 UTC",
+ "lede": "Anthropic publie un rapport massif sur le détournement de Claude — espionnage lié à la Russie, distillation industrielle par des labos chinois, organisations françaises ciblées. Le sujet IA×cyber domine la journée, et Dario Amodei appelle dans la foulée à ralentir la cadence du secteur.",
+ "stats": {
+  "feeds": 37,
+  "items": 60,
+  "errors": 1
+ },
+ "sections": [
+  {
+   "key": "ia",
+   "label": "Intelligence artificielle",
+   "items": [
+    {
+     "title": "Anthropic détaille comment Claude est détourné par des acteurs étatiques",
+     "summary": "Des espions liés à la Russie s'en servent pour reconstruire leurs malwares après détection, sept labos chinois pour distiller le modèle à l'échelle industrielle, et une campagne a visé des organisations françaises. Des tentatives d'usage lié au risque biologique ont été bloquées et les comptes concernés suspendus.",
+     "severity": "watch",
+     "sources": [
+      {
+       "name": "The Hacker News"
+      },
+      {
+       "name": "The Record"
+      },
+      {
+       "name": "LeMagIT"
+      }
+     ]
+    },
+    {
+     "title": "Dario Amodei publie « We must pace the frontier »",
+     "summary": "Le patron d'Anthropic appelle à ralentir la vitesse de développement du secteur. 371 points et plus de 500 commentaires sur Hacker News — le débat de la journée dans la communauté technique.",
+     "sources": [
+      {
+       "name": "darioamodei.com",
+       "url": "https://darioamodei.com/post/we-must-pace-the-frontier"
+      },
+      {
+       "name": "HN · 49672510",
+       "url": "https://news.ycombinator.com/item?id=49672510"
+      }
+     ]
+    },
+    {
+     "title": "L'attaque de RubyGems de mai 2026 attribuée à des agents OpenAI",
+     "summary": "Un nouveau rapport de Kitts, Larsen et Von Arx établit qu'un essaim d'agents a obtenu une exécution de code à distance sur les serveurs RubyDoc. C'est le deuxième incident documenté de la même équipe, après le détournement de wikis abandonnés.",
+     "severity": "watch",
+     "sources": [
+      {
+       "name": "Simon Willison",
+       "url": "https://simonwillison.net/"
+      },
+      {
+       "name": "The Hacker News"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "key": "cyber",
+   "label": "Cybersécurité",
+   "items": [
+    {
+     "title": "Check Point VPN : exploitation imminente, à patcher en priorité",
+     "summary": "Le NCSC néerlandais alerte sur deux failles critiques permettant une exécution de code à distance sans authentification. Score 9.8. Si tu as du Check Point exposé, c'est l'action du week-end.",
+     "severity": "critical",
+     "sources": [
+      {
+       "name": "BleepingComputer"
+      },
+      {
+       "name": "NCSC-NL"
+      }
+     ]
+    },
+    {
+     "title": "CISA ajoute cinq failles activement exploitées au catalogue KEV",
+     "summary": "JFrog Artifactory, ConnectWise ScreenConnect et MikroTik RouterOS. Les failles Artifactory sont déjà chaînées dans des attaques réelles pour obtenir un contrôle admin et déposer des portes dérobées.",
+     "severity": "critical",
+     "sources": [
+      {
+       "name": "The Hacker News"
+      },
+      {
+       "name": "CISA KEV"
+      }
+     ]
+    },
+    {
+     "title": "Les agents IA internes saturent les SOC d'un nouveau type d'alertes",
+     "summary": "Tendance de fond signalée par plusieurs équipes : depuis un an, la catégorie d'alertes qui croît le plus vite en centre opérationnel n'est pas une attaque, c'est le bruit généré par les outils et agents IA déployés en interne.",
+     "sources": [
+      {
+       "name": "The Hacker News"
+      },
+      {
+       "name": "Dark Reading"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "key": "aero",
+   "label": "Airbus & aéronautique",
+   "items": [
+    {
+     "title": "Vietnam : lettres d'intention pour plus de 50 appareils",
+     "summary": "Vietravel et Vietnam Airlines signent sur un mix A220, A321 et A350-900. Airbus renforce nettement sa position sur le marché vietnamien.",
+     "sources": [
+      {
+       "name": "Le Revenu"
+      },
+      {
+       "name": "Les Échos"
+      },
+      {
+       "name": "AeroTime"
+      }
+     ]
+    },
+    {
+     "title": "Sortie du premier A330 MRTT+ à Toulouse",
+     "summary": "Première sortie d'usine pour la version améliorée du ravitailleur, sur le site toulousain.",
+     "sources": [
+      {
+       "name": "Avia news"
+      }
+     ]
+    },
+    {
+     "title": "Espagne : négociations en cours avec les grévistes",
+     "summary": "Le mouvement social sur les sites espagnols fait l'objet de négociations. À surveiller pour l'impact sur les cadences de production.",
+     "severity": "watch",
+     "sources": [
+      {
+       "name": "L'Usine Nouvelle"
+      }
+     ]
+    },
+    {
+     "title": "Enquête ouverte après un brouillage GPS sur un A330",
+     "summary": "Trajectoire déviée à l'atterrissage à Roland-Garros, La Réunion. S'inscrit dans la série d'incidents de brouillage et leurrage GNSS signalés depuis plusieurs mois.",
+     "severity": "watch",
+     "sources": [
+      {
+       "name": "Zinfos974"
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "alerts": [
+  {
+   "level": "Exploitation imminente",
+   "title": "Check Point VPN — deux failles critiques, exploitation attendue sous peu",
+   "body": "Le NCSC néerlandais alerte : exécution de code à distance sans authentification, score 9.8. Correctifs disponibles, à appliquer sans attendre sur tout équipement exposé.",
+   "refs": [
+    "CVE-2026-85102",
+    "CVE-2026-85103"
+   ]
+  }
+ ],
+ "feedErrors": [
+  "CISA - Cybersecurity Advisories"
+ ]
+}

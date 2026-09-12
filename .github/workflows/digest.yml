@@ -1,0 +1,81 @@
+name: Digest de veille
+
+on:
+  schedule:
+    # 06:00 UTC = 08:00 Paris en été, 07:00 en hiver
+    - cron: "0 6 * * *"
+  workflow_dispatch:
+    inputs:
+      kind:
+        description: "Type d'édition à générer"
+        type: choice
+        options: [daily, weekly]
+        default: daily
+
+permissions:
+  contents: write
+
+concurrency:
+  group: digest
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Installer les dépendances
+        run: pip install --quiet -r requirements.txt
+
+      - name: Déterminer le type d'édition
+        id: kind
+        run: |
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            echo "kind=${{ inputs.kind }}" >> "$GITHUB_OUTPUT"
+          else
+            echo "kind=daily" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Récupérer les flux
+        run: |
+          if [ "${{ steps.kind.outputs.kind }}" = "weekly" ]; then
+            python scripts/fetch_feeds.py 168 items.json
+          else
+            python scripts/fetch_feeds.py 24 items.json
+          fi
+
+      - name: Rédiger le digest
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: python scripts/summarize.py items.json ${{ steps.kind.outputs.kind }}
+
+      # Le dimanche, la synthèse hebdomadaire s'ajoute à l'édition du matin.
+      - name: Synthèse hebdomadaire (dimanche)
+        if: github.event_name == 'schedule'
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: |
+          if [ "$(date -u +%u)" = "7" ]; then
+            python scripts/fetch_feeds.py 168 items-weekly.json
+            python scripts/summarize.py items-weekly.json weekly
+          else
+            echo "Pas dimanche, on saute."
+          fi
+
+      - name: Publier
+        run: |
+          rm -f items.json items-weekly.json
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data
+          if git diff --staged --quiet; then
+            echo "Rien de neuf."
+          else
+            git commit -m "Digest du $(date -u +%Y-%m-%d)"
+            git push
+          fi

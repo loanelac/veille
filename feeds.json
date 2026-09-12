@@ -1,0 +1,191 @@
+{
+ "updated": "2026-09-12",
+ "count": 37,
+ "feeds": [
+  {
+   "group": "1. Cyber - ALERTES (prioritaire)",
+   "name": "CERT-FR - Alertes",
+   "url": "https://www.cert.ssi.gouv.fr/alerte/feed/"
+  },
+  {
+   "group": "1. Cyber - ALERTES (prioritaire)",
+   "name": "CERT-FR - Avis de securite",
+   "url": "https://www.cert.ssi.gouv.fr/avis/feed/"
+  },
+  {
+   "group": "1. Cyber - ALERTES (prioritaire)",
+   "name": "CERT-FR - Actualites",
+   "url": "https://www.cert.ssi.gouv.fr/actualite/feed/"
+  },
+  {
+   "group": "1. Cyber - ALERTES (prioritaire)",
+   "name": "CISA - Cybersecurity Advisories",
+   "url": "https://www.cisa.gov/cybersecurity-advisories/all.xml"
+  },
+  {
+   "group": "2. Cyber - Actualite",
+   "name": "Risky Business",
+   "url": "https://risky.biz/feeds/risky-business/"
+  },
+  {
+   "group": "2. Cyber - Actualite",
+   "name": "Risky Bulletin",
+   "url": "https://news.risky.biz/feed/"
+  },
+  {
+   "group": "2. Cyber - Actualite",
+   "name": "tl;dr sec",
+   "url": "https://tldrsec.com/feed.xml"
+  },
+  {
+   "group": "2. Cyber - Actualite",
+   "name": "BleepingComputer",
+   "url": "https://www.bleepingcomputer.com/feed/"
+  },
+  {
+   "group": "2. Cyber - Actualite",
+   "name": "The Record",
+   "url": "https://therecord.media/feed"
+  },
+  {
+   "group": "2. Cyber - Actualite",
+   "name": "Krebs on Security",
+   "url": "https://krebsonsecurity.com/feed/"
+  },
+  {
+   "group": "2. Cyber - Actualite",
+   "name": "Zero Day (Kim Zetter)",
+   "url": "https://www.zetter-zeroday.com/feed"
+  },
+  {
+   "group": "2. Cyber - Actualite",
+   "name": "Schneier on Security",
+   "url": "https://www.schneier.com/feed/atom/"
+  },
+  {
+   "group": "2. Cyber - Actualite",
+   "name": "The Hacker News",
+   "url": "https://feeds.feedburner.com/TheHackersNews"
+  },
+  {
+   "group": "2. Cyber - Actualite",
+   "name": "Dark Reading",
+   "url": "https://www.darkreading.com/rss.xml"
+  },
+  {
+   "group": "2. Cyber - Actualite",
+   "name": "ZATAZ (FR)",
+   "url": "https://www.zataz.com/feed/"
+  },
+  {
+   "group": "2. Cyber - Actualite",
+   "name": "LeMagIT (FR)",
+   "url": "https://www.lemagit.fr/rss/ContentSyndication.xml"
+  },
+  {
+   "group": "3. IA - Sources officielles (labos)",
+   "name": "OpenAI News",
+   "url": "https://openai.com/news/rss.xml"
+  },
+  {
+   "group": "3. IA - Sources officielles (labos)",
+   "name": "Google DeepMind Blog",
+   "url": "https://deepmind.google/blog/rss.xml"
+  },
+  {
+   "group": "3. IA - Sources officielles (labos)",
+   "name": "Google - The Keyword (AI)",
+   "url": "https://blog.google/technology/ai/rss/"
+  },
+  {
+   "group": "3. IA - Sources officielles (labos)",
+   "name": "Mistral AI Blog",
+   "url": "https://mistral.ai/rss.xml"
+  },
+  {
+   "group": "3. IA - Sources officielles (labos)",
+   "name": "Hugging Face Blog",
+   "url": "https://huggingface.co/blog/feed.xml"
+  },
+  {
+   "group": "3. IA - Sources officielles (labos)",
+   "name": "Anthropic / Claude (via Google News)",
+   "url": "https://news.google.com/rss/search?q=Anthropic+Claude&hl=fr&gl=FR&ceid=FR:fr"
+  },
+  {
+   "group": "4. IA - Analyse et fond",
+   "name": "Import AI (Jack Clark)",
+   "url": "https://jack-clark.net/feed/"
+  },
+  {
+   "group": "4. IA - Analyse et fond",
+   "name": "Simon Willison",
+   "url": "https://simonwillison.net/atom/everything/"
+  },
+  {
+   "group": "4. IA - Analyse et fond",
+   "name": "Ars Technica - Tech",
+   "url": "https://feeds.arstechnica.com/arstechnica/technology-lab"
+  },
+  {
+   "group": "4. IA - Analyse et fond",
+   "name": "Hacker News (200+ points)",
+   "url": "https://hnrss.org/frontpage?points=200"
+  },
+  {
+   "group": "5. IA - Recherche (gros volume, optionnel)",
+   "name": "arXiv cs.AI",
+   "url": "http://export.arxiv.org/rss/cs.AI"
+  },
+  {
+   "group": "5. IA - Recherche (gros volume, optionnel)",
+   "name": "arXiv cs.LG",
+   "url": "http://export.arxiv.org/rss/cs.LG"
+  },
+  {
+   "group": "6. Airbus - Surveillance ciblee",
+   "name": "Airbus - toute l actu (FR)",
+   "url": "https://news.google.com/rss/search?q=Airbus&hl=fr&gl=FR&ceid=FR:fr"
+  },
+  {
+   "group": "6. Airbus - Surveillance ciblee",
+   "name": "Airbus - cybersecurite",
+   "url": "https://news.google.com/rss/search?q=Airbus+(cybers%C3%A9curit%C3%A9+OR+cyberattaque+OR+piratage)&hl=fr&gl=FR&ceid=FR:fr"
+  },
+  {
+   "group": "6. Airbus - Surveillance ciblee",
+   "name": "Airbus - intelligence artificielle",
+   "url": "https://news.google.com/rss/search?q=Airbus+(%22intelligence+artificielle%22+OR+%22machine+learning%22)&hl=fr&gl=FR&ceid=FR:fr"
+  },
+  {
+   "group": "6. Airbus - Surveillance ciblee",
+   "name": "Airbus Defence and Space",
+   "url": "https://news.google.com/rss/search?q=%22Airbus+Defence+and+Space%22&hl=fr&gl=FR&ceid=FR:fr"
+  },
+  {
+   "group": "6. Airbus - Surveillance ciblee",
+   "name": "Airbus - communiques officiels (EN)",
+   "url": "https://news.google.com/rss/search?q=Airbus+site:airbus.com&hl=en-GB&gl=GB&ceid=GB:en"
+  },
+  {
+   "group": "7. Aeronautique - Secteur",
+   "name": "Le Journal de l Aviation (FR)",
+   "url": "https://www.journal-aviation.com/rss"
+  },
+  {
+   "group": "7. Aeronautique - Secteur",
+   "name": "Aviation Week",
+   "url": "https://aviationweek.com/rss.xml"
+  },
+  {
+   "group": "7. Aeronautique - Secteur",
+   "name": "FlightGlobal",
+   "url": "https://www.flightglobal.com/rss"
+  },
+  {
+   "group": "7. Aeronautique - Secteur",
+   "name": "AeroTime",
+   "url": "https://www.aerotime.aero/feed"
+  }
+ ]
+}

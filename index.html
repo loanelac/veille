@@ -1,0 +1,400 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#F1F4F6">
+<title>Briefing IA · Cyber · Airbus</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans+Condensed:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<style>
+  :root {
+    --ground:#F1F4F6; --surface:#FFFFFF; --surface-2:#E7ECEF;
+    --ink:#131A21; --ink-2:#49555F; --ink-3:#78858F;
+    --rule:#D2DADF; --rule-strong:#B6C1C8;
+    --accent:#17548F; --accent-ink:#17548F;
+    --crit:#A02219; --crit-ink:#8C1E16; --crit-soft:#FBE7E4; --crit-edge:#E0A79F;
+    --warn:#8A5712; --warn-ink:#7A4D10; --warn-soft:#FAF0DA; --warn-edge:#DFC08A;
+    --ok:#26614A;
+    --shadow:0 1px 2px rgba(19,26,33,.06), 0 8px 24px -12px rgba(19,26,33,.18);
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --ground:#0E1318; --surface:#151D24; --surface-2:#1D272F;
+      --ink:#E7EEF4; --ink-2:#A5B3BF; --ink-3:#71808C;
+      --rule:#283440; --rule-strong:#3A4854;
+      --accent:#77ADE8; --accent-ink:#8FBEF2;
+      --crit:#EE8C82; --crit-ink:#F5A69D; --crit-soft:#361A17; --crit-edge:#6B332C;
+      --warn:#E0B267; --warn-ink:#EBC383; --warn-soft:#33270F; --warn-edge:#634D20;
+      --ok:#72C3A0;
+      --shadow:0 1px 2px rgba(0,0,0,.4), 0 8px 24px -12px rgba(0,0,0,.6);
+    }
+  }
+  :root[data-theme="dark"] {
+    --ground:#0E1318; --surface:#151D24; --surface-2:#1D272F;
+    --ink:#E7EEF4; --ink-2:#A5B3BF; --ink-3:#71808C;
+    --rule:#283440; --rule-strong:#3A4854;
+    --accent:#77ADE8; --accent-ink:#8FBEF2;
+    --crit:#EE8C82; --crit-ink:#F5A69D; --crit-soft:#361A17; --crit-edge:#6B332C;
+    --warn:#E0B267; --warn-ink:#EBC383; --warn-soft:#33270F; --warn-edge:#634D20;
+    --ok:#72C3A0;
+    --shadow:0 1px 2px rgba(0,0,0,.4), 0 8px 24px -12px rgba(0,0,0,.6);
+  }
+
+  * { box-sizing: border-box; }
+  html { color-scheme: light dark; }
+  body {
+    margin: 0; background: var(--ground); color: var(--ink);
+    font-family: "IBM Plex Sans", ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+    font-size: 16px; line-height: 1.55; -webkit-font-smoothing: antialiased;
+  }
+  img { max-width: 100%; }
+  [hidden] { display: none !important; }
+  .wrap { max-width: 44rem; margin: 0 auto; padding-inline: 20px; padding-block: 0 56px; }
+  a { color: var(--accent-ink); text-underline-offset: 2px; }
+  a:focus-visible, select:focus-visible, button:focus-visible {
+    outline: 2px solid var(--accent); outline-offset: 2px; border-radius: 2px;
+  }
+
+  .masthead { padding-block: 28px 18px; border-bottom: 2px solid var(--ink); }
+  .kicker {
+    font-family: "IBM Plex Mono", ui-monospace, monospace; font-size: .6875rem; font-weight: 500;
+    letter-spacing: .16em; text-transform: uppercase; color: var(--ink-3);
+    display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap;
+  }
+  h1 {
+    font-family: "IBM Plex Sans Condensed", "IBM Plex Sans", sans-serif;
+    font-size: clamp(2rem, 8vw, 2.75rem); font-weight: 700; line-height: 1.02;
+    letter-spacing: -.015em; margin: 10px 0 0; text-wrap: balance;
+  }
+  h1 .sep { color: var(--rule-strong); font-weight: 500; }
+  .dateline {
+    font-family: "IBM Plex Mono", monospace; font-size: .8125rem; color: var(--ink-2);
+    margin-top: 8px; font-variant-numeric: tabular-nums;
+  }
+
+  .controls { display: flex; gap: 8px; flex-wrap: wrap; align-items: center; padding-block: 14px; }
+  .seg { display: inline-flex; background: var(--surface-2); border-radius: 7px; padding: 3px; gap: 2px; }
+  .seg button {
+    font: 600 .8125rem/1 "IBM Plex Sans", sans-serif; color: var(--ink-2);
+    background: none; border: 0; padding: 7px 13px; border-radius: 5px; cursor: pointer;
+  }
+  .seg button[aria-pressed="true"] { background: var(--surface); color: var(--ink); box-shadow: var(--shadow); }
+  select {
+    font: 500 .8125rem/1 "IBM Plex Mono", monospace; color: var(--ink-2);
+    background: var(--surface-2); border: 1px solid var(--rule); border-radius: 7px;
+    padding: 8px 10px; cursor: pointer; max-width: 100%;
+  }
+
+  .alerts { display: flex; flex-direction: column; gap: 10px; margin-bottom: 22px; }
+  .alert {
+    background: var(--crit-soft); border: 1px solid var(--crit-edge);
+    border-left: 4px solid var(--crit); border-radius: 0 6px 6px 0; padding: 13px 15px;
+  }
+  .alert-head {
+    font-family: "IBM Plex Mono", monospace; font-size: .625rem; font-weight: 600;
+    letter-spacing: .14em; text-transform: uppercase; color: var(--crit-ink);
+  }
+  .alert-title { font-weight: 600; margin-top: 5px; line-height: 1.35; }
+  .alert-body { color: var(--ink-2); font-size: .9375rem; margin-top: 3px; }
+  .alert code {
+    font-family: "IBM Plex Mono", monospace; font-size: .8125em;
+    background: color-mix(in srgb, var(--crit) 12%, transparent); padding: 1px 5px; border-radius: 3px;
+  }
+
+  .lede {
+    background: var(--surface); border: 1px solid var(--rule); border-radius: 8px;
+    padding: 18px 20px; margin-block: 22px; box-shadow: var(--shadow);
+  }
+  .lede .label {
+    font-family: "IBM Plex Mono", monospace; font-size: .625rem; font-weight: 600;
+    letter-spacing: .16em; text-transform: uppercase; color: var(--accent-ink);
+  }
+  .lede p { margin: 7px 0 0; font-size: 1.0625rem; line-height: 1.5; text-wrap: pretty; }
+
+  section { margin-top: 34px; }
+  .sec-head { display: flex; align-items: center; gap: 11px; padding-bottom: 9px; border-bottom: 1px solid var(--rule); }
+  .sec-mark { width: 3px; height: 17px; border-radius: 2px; background: var(--accent); flex: none; }
+  section[data-key="cyber"] .sec-mark { background: var(--crit); }
+  section[data-key="aero"] .sec-mark { background: var(--warn); }
+  h2 {
+    font-family: "IBM Plex Sans Condensed", sans-serif; font-size: 1.125rem; font-weight: 600;
+    margin: 0; flex: 1;
+  }
+  .sec-count { font-family: "IBM Plex Mono", monospace; font-size: .75rem; color: var(--ink-3); font-variant-numeric: tabular-nums; }
+
+  .item { padding-block: 16px; border-bottom: 1px solid var(--rule); }
+  .item:last-child { border-bottom: 0; }
+  .item-title { font-weight: 600; font-size: 1.0625rem; line-height: 1.35; margin: 0; text-wrap: pretty; }
+  .item p { margin: 6px 0 0; color: var(--ink-2); font-size: .9375rem; line-height: 1.5; text-wrap: pretty; }
+  .sources {
+    margin-top: 8px; font-family: "IBM Plex Mono", monospace; font-size: .6875rem;
+    color: var(--ink-3); display: flex; flex-wrap: wrap; gap: 4px 10px;
+  }
+  .chip {
+    display: inline-block; font-family: "IBM Plex Mono", monospace; font-size: .625rem;
+    font-weight: 600; letter-spacing: .1em; text-transform: uppercase;
+    padding: 2px 6px; border-radius: 3px; white-space: nowrap;
+    vertical-align: 2px; margin-right: 7px;
+  }
+  .chip.crit { background: var(--crit-soft); color: var(--crit-ink); border: 1px solid var(--crit-edge); }
+  .chip.warn { background: var(--warn-soft); color: var(--warn-ink); border: 1px solid var(--warn-edge); }
+
+  footer {
+    margin-top: 44px; padding-top: 16px; border-top: 1px solid var(--rule);
+    font-family: "IBM Plex Mono", monospace; font-size: .6875rem; color: var(--ink-3);
+    display: flex; flex-wrap: wrap; gap: 8px 18px; font-variant-numeric: tabular-nums;
+    align-items: center;
+  }
+  .refresh {
+    margin-left: auto; font-family: "IBM Plex Sans", sans-serif; font-size: .8125rem;
+    font-weight: 600; text-decoration: none; color: var(--accent-ink);
+    border: 1px solid var(--rule); border-radius: 7px; padding: 8px 14px;
+    background: var(--surface);
+  }
+
+  .state { padding: 44px 4px; color: var(--ink-3); font-size: .9375rem; }
+  .state strong { display: block; color: var(--ink-2); font-weight: 600; margin-bottom: 5px; }
+  .skeleton { display: flex; flex-direction: column; gap: 13px; padding-block: 26px; }
+  .skeleton i {
+    display: block; height: 13px; border-radius: 3px; background: var(--surface-2);
+    animation: shimmer 1.6s ease-in-out infinite;
+  }
+  .skeleton i:nth-child(2) { width: 82%; } .skeleton i:nth-child(3) { width: 64%; }
+  .skeleton i:nth-child(5) { width: 74%; } .skeleton i:nth-child(6) { width: 48%; }
+  @keyframes shimmer { 0%,100% { opacity: 1; } 50% { opacity: .45; } }
+  @media (prefers-reduced-motion: reduce) { .skeleton i { animation: none; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="masthead">
+    <div class="kicker">
+      <span>Veille personnelle</span>
+      <span id="freshness"></span>
+    </div>
+    <h1>Briefing <span class="sep">/</span> IA <span class="sep">·</span> Cyber <span class="sep">·</span> Airbus</h1>
+    <div class="dateline" id="dateline">Chargement de la dernière édition…</div>
+  </header>
+
+  <div class="controls">
+    <div class="seg" role="group" aria-label="Type d'édition">
+      <button id="tab-daily" type="button" aria-pressed="true">Quotidien</button>
+      <button id="tab-weekly" type="button" aria-pressed="false">Hebdo</button>
+    </div>
+    <select id="archive" aria-label="Choisir une édition"><option>Archives…</option></select>
+  </div>
+
+  <div id="alerts" class="alerts" hidden></div>
+
+  <main id="content">
+    <div class="skeleton" aria-label="Chargement"><i></i><i></i><i></i><i></i><i></i><i></i></div>
+  </main>
+
+  <footer id="footer"></footer>
+</div>
+
+<script>
+(function () {
+  "use strict";
+
+  // Dépôt GitHub hébergeant ce briefing — sert au bouton « Mettre à jour ».
+  var REPO = "loanelac/veille-ia-cyber-airbus";
+  var WORKFLOW = "digest.yml";
+
+  var SECTIONS = [
+    { key: "ia",    label: "Intelligence artificielle" },
+    { key: "cyber", label: "Cybersécurité" },
+    { key: "aero",  label: "Airbus & aéronautique" }
+  ];
+  var MONTHS = ["janvier","février","mars","avril","mai","juin","juillet","août","septembre","octobre","novembre","décembre"];
+  var DAYS = ["dimanche","lundi","mardi","mercredi","jeudi","vendredi","samedi"];
+
+  var state = { kind: "daily", editions: [], selected: null, cache: {} };
+  var el = {};
+  ["dateline","content","alerts","archive","footer","freshness"].forEach(function (id) { el[id] = document.getElementById(id); });
+  el.daily = document.getElementById("tab-daily");
+  el.weekly = document.getElementById("tab-weekly");
+
+  function esc(s) {
+    return String(s == null ? "" : s).replace(/[&<>"']/g, function (c) {
+      return { "&":"&amp;", "<":"&lt;", ">":"&gt;", '"':"&quot;", "'":"&#39;" }[c];
+    });
+  }
+
+  function longDate(iso) {
+    var p = String(iso || "").slice(0, 10).split("-");
+    if (p.length !== 3) return String(iso || "");
+    var d = new Date(Date.UTC(+p[0], +p[1] - 1, +p[2]));
+    if (isNaN(d.getTime())) return String(iso);
+    return DAYS[d.getUTCDay()] + " " + d.getUTCDate() + " " + MONTHS[d.getUTCMonth()] + " " + d.getUTCFullYear();
+  }
+
+  function shortDate(iso) {
+    var p = String(iso || "").slice(0, 10).split("-");
+    return p.length === 3 ? p[2] + "/" + p[1] : String(iso || "");
+  }
+
+  function daysAgo(iso) {
+    var p = String(iso || "").slice(0, 10).split("-");
+    if (p.length !== 3) return null;
+    var then = Date.UTC(+p[0], +p[1] - 1, +p[2]);
+    var now = new Date();
+    var today = Date.UTC(now.getFullYear(), now.getMonth(), now.getDate());
+    return Math.round((today - then) / 86400000);
+  }
+
+  function getJSON(path) {
+    return fetch(path, { cache: "no-cache" }).then(function (r) {
+      if (!r.ok) throw new Error(path + " → " + r.status);
+      return r.json();
+    });
+  }
+
+  function renderAlerts(list) {
+    if (!list || !list.length) { el.alerts.hidden = true; el.alerts.innerHTML = ""; return; }
+    el.alerts.hidden = false;
+    el.alerts.innerHTML = list.map(function (a) {
+      var refs = Array.isArray(a.refs) ? a.refs : [];
+      return '<div class="alert" role="status">' +
+        '<div class="alert-head">' + esc(a.level || "Alerte") + "</div>" +
+        '<div class="alert-title">' + esc(a.title) + "</div>" +
+        (a.body ? '<div class="alert-body">' + esc(a.body) + "</div>" : "") +
+        (refs.length ? '<div class="alert-body">' + refs.map(function (r) {
+          return "<code>" + esc(r) + "</code>"; }).join(" ") + "</div>" : "") +
+        "</div>";
+    }).join("");
+  }
+
+  function renderItem(it) {
+    var chip = "";
+    if (it.severity === "critical") chip = '<span class="chip crit">Critique</span>';
+    else if (it.severity === "watch") chip = '<span class="chip warn">À suivre</span>';
+    var srcs = Array.isArray(it.sources) ? it.sources : [];
+    return '<article class="item">' +
+      '<h3 class="item-title">' + chip + esc(it.title) + "</h3>" +
+      (it.summary ? "<p>" + esc(it.summary) + "</p>" : "") +
+      (srcs.length ? '<div class="sources">' + srcs.map(function (s) {
+        return s && s.url
+          ? '<a href="' + esc(s.url) + '" target="_blank" rel="noopener noreferrer">' + esc(s.name || s.url) + "</a>"
+          : "<span>" + esc(s && s.name ? s.name : s) + "</span>";
+      }).join("") + "</div>" : "") +
+      "</article>";
+  }
+
+  function renderFooter(d) {
+    var st = (d && d.stats) || {};
+    var bits = [];
+    if (st.feeds) bits.push(st.feeds + " flux");
+    if (st.items) bits.push(st.items + " items analysés");
+    if (d && d.feedErrors && d.feedErrors.length) bits.push(d.feedErrors.length + " source(s) en erreur");
+    if (d && d.generatedAt) bits.push("généré " + d.generatedAt);
+    el.footer.innerHTML = bits.map(function (b) { return "<span>" + esc(b) + "</span>"; }).join("") +
+      '<a class="refresh" href="https://github.com/' + REPO + '/actions/workflows/' + WORKFLOW +
+      '" target="_blank" rel="noopener noreferrer">Mettre à jour ↗</a>';
+  }
+
+  function renderDigest(d) {
+    if (!d) {
+      el.content.innerHTML = '<div class="state"><strong>Aucune édition ' +
+        (state.kind === "weekly" ? "hebdomadaire" : "quotidienne") + " disponible.</strong>" +
+        "La prochaine sera générée au prochain passage du workflow.</div>";
+      el.dateline.textContent = "—";
+      el.freshness.textContent = "";
+      renderAlerts(null);
+      renderFooter(null);
+      return;
+    }
+
+    el.dateline.textContent = (d.kind === "weekly" ? "Synthèse hebdomadaire · " : "Édition du ") + longDate(d.date);
+
+    var age = daysAgo(d.date);
+    if (age === 0) { el.freshness.textContent = "à jour"; el.freshness.style.color = "var(--ok)"; }
+    else if (age === 1) { el.freshness.textContent = "hier"; el.freshness.style.color = ""; }
+    else if (age != null) { el.freshness.textContent = "il y a " + age + " jours"; el.freshness.style.color = "var(--warn-ink)"; }
+
+    renderAlerts(d.alerts);
+
+    var html = "";
+    if (d.lede) html += '<div class="lede"><div class="label">L\'essentiel</div><p>' + esc(d.lede) + "</p></div>";
+
+    SECTIONS.forEach(function (def) {
+      var s = (d.sections || []).filter(function (x) { return x.key === def.key; })[0];
+      var items = s && Array.isArray(s.items) ? s.items : [];
+      if (!items.length) return;
+      html += '<section data-key="' + def.key + '">' +
+        '<div class="sec-head"><span class="sec-mark"></span><h2>' + esc(def.label) + "</h2>" +
+        '<span class="sec-count">' + items.length + "</span></div>" +
+        "<div>" + items.map(renderItem).join("") + "</div></section>";
+    });
+
+    el.content.innerHTML = html || '<div class="state">Édition vide.</div>';
+    renderFooter(d);
+  }
+
+  function currentList() {
+    return state.editions.filter(function (e) { return e.kind === state.kind; });
+  }
+
+  function renderArchive() {
+    var list = currentList();
+    el.archive.innerHTML = list.length
+      ? list.map(function (e) {
+          return '<option value="' + esc(e.id) + '">' + esc(shortDate(e.date)) + " · " + esc(longDate(e.date)) + "</option>";
+        }).join("")
+      : "<option>Aucune archive</option>";
+    el.archive.disabled = !list.length;
+    if (state.selected) el.archive.value = state.selected;
+  }
+
+  function load(id) {
+    var list = currentList();
+    var edition = list.filter(function (e) { return e.id === id; })[0] || list[0];
+    if (!edition) { state.selected = null; renderArchive(); renderDigest(null); return; }
+
+    state.selected = edition.id;
+    renderArchive();
+
+    if (state.cache[edition.id]) { renderDigest(state.cache[edition.id]); return; }
+
+    getJSON("data/archive/" + edition.id + ".json")
+      .then(function (doc) { state.cache[edition.id] = doc; renderDigest(doc); })
+      .catch(function () {
+        el.content.innerHTML = '<div class="state"><strong>Édition introuvable.</strong>' +
+          "Le fichier de cette date n'a pas pu être chargé.</div>";
+      });
+  }
+
+  function setKind(kind) {
+    state.kind = kind;
+    el.daily.setAttribute("aria-pressed", String(kind === "daily"));
+    el.weekly.setAttribute("aria-pressed", String(kind === "weekly"));
+    state.selected = null;
+    load(null);
+  }
+
+  el.daily.addEventListener("click", function () { setKind("daily"); });
+  el.weekly.addEventListener("click", function () { setKind("weekly"); });
+  el.archive.addEventListener("change", function () { load(el.archive.value); });
+
+  getJSON("data/index.json")
+    .then(function (index) {
+      state.editions = (index.editions || []);
+      load(null);
+    })
+    .catch(function () {
+      // Pas encore d'index : on tente au moins la dernière édition connue.
+      getJSON("data/latest.json")
+        .then(function (doc) { renderDigest(doc); })
+        .catch(function () {
+          el.content.innerHTML = '<div class="state"><strong>Aucun digest publié pour le moment.</strong>' +
+            "Lance le workflow « Digest de veille » depuis l'onglet Actions du dépôt pour générer la première édition.</div>";
+          el.dateline.textContent = "—";
+          renderFooter(null);
+        });
+    });
+})();
+</script>
+</body>
+</html>
