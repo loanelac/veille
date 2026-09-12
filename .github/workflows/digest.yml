@@ -29,9 +29,6 @@ jobs:
         with:
           python-version: "3.12"
 
-      - name: Installer les dépendances
-        run: pip install --quiet -r requirements.txt
-
       - name: Déterminer le type d'édition
         id: kind
         run: |
@@ -51,14 +48,14 @@ jobs:
 
       - name: Rédiger le digest
         env:
-          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          PERPLEXITY_API_KEY: ${{ secrets.PERPLEXITY_API_KEY }}
         run: python scripts/summarize.py items.json ${{ steps.kind.outputs.kind }}
 
       # Le dimanche, la synthèse hebdomadaire s'ajoute à l'édition du matin.
       - name: Synthèse hebdomadaire (dimanche)
         if: github.event_name == 'schedule'
         env:
-          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          PERPLEXITY_API_KEY: ${{ secrets.PERPLEXITY_API_KEY }}
         run: |
           if [ "$(date -u +%u)" = "7" ]; then
             python scripts/fetch_feeds.py 168 items-weekly.json
