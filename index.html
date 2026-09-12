@@ -211,7 +211,7 @@
   var MONTHS = ["janvier","février","mars","avril","mai","juin","juillet","août","septembre","octobre","novembre","décembre"];
   var DAYS = ["dimanche","lundi","mardi","mercredi","jeudi","vendredi","samedi"];
 
-  var state = { kind: "daily", editions: [], selected: null, cache: {} };
+  var state = { kind: "daily", editions: [], selected: null, cache: {}, usage: null };
   var el = {};
   ["dateline","content","alerts","archive","footer","freshness"].forEach(function (id) { el[id] = document.getElementById(id); });
   el.daily = document.getElementById("tab-daily");
@@ -286,11 +286,26 @@
   function renderFooter(d) {
     var st = (d && d.stats) || {};
     var bits = [];
-    if (st.feeds) bits.push(st.feeds + " flux");
-    if (st.items) bits.push(st.items + " items analysés");
-    if (d && d.feedErrors && d.feedErrors.length) bits.push(d.feedErrors.length + " source(s) en erreur");
-    if (d && d.generatedAt) bits.push("généré " + d.generatedAt);
-    el.footer.innerHTML = bits.map(function (b) { return "<span>" + esc(b) + "</span>"; }).join("") +
+    if (st.feeds) bits.push({ text: st.feeds + " flux" });
+    if (st.items) bits.push({ text: st.items + " items analysés" });
+    if (d && d.feedErrors && d.feedErrors.length) bits.push({ text: d.feedErrors.length + " source(s) en erreur" });
+    if (d && d.generatedAt) bits.push({ text: "généré " + d.generatedAt });
+
+    var u = state.usage;
+    if (u && typeof u.runs === "number") {
+      var limit = u.limit || 20;
+      var left = Math.max(0, limit - u.runs);
+      var tone = left === 0 ? "var(--crit-ink)" : (left <= 3 ? "var(--warn-ink)" : "");
+      bits.push({
+        text: u.runs + "/" + limit + " éditions aujourd'hui" +
+              (left === 0 ? " · quota atteint" : " · " + left + " restantes"),
+        tone: tone
+      });
+    }
+
+    el.footer.innerHTML = bits.map(function (b) {
+      return '<span' + (b.tone ? ' style="color:' + b.tone + '"' : "") + ">" + esc(b.text) + "</span>";
+    }).join("") +
       '<a class="refresh" href="https://github.com/' + REPO + '/actions/workflows/' + WORKFLOW +
       '" target="_blank" rel="noopener noreferrer">Mettre à jour ↗</a>';
   }
@@ -377,6 +392,15 @@
   el.daily.addEventListener("click", function () { setKind("daily"); });
   el.weekly.addEventListener("click", function () { setKind("weekly"); });
   el.archive.addEventListener("change", function () { load(el.archive.value); });
+
+  // Compteur de consommation : absent tant qu'aucune édition n'a tourné, donc facultatif.
+  getJSON("data/usage.json")
+    .then(function (u) {
+      var today = new Date().toISOString().slice(0, 10);
+      state.usage = (u && u.date === today) ? u : { runs: 0, limit: (u && u.limit) || 20 };
+      if (state.selected || state.usage) renderFooter(state.cache[state.selected]);
+    })
+    .catch(function () { /* pas encore de compteur : le pied de page s'en passe */ });
 
   getJSON("data/index.json")
     .then(function (index) {

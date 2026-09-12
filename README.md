@@ -78,18 +78,33 @@ Le dimanche, la synthèse hebdomadaire (fenêtre de 7 jours) s'ajoute à l'édit
 fonctionne depuis Safari mobile : c'est le bouton de mise à jour, accessible aussi depuis le
 pied de la page elle-même.
 
-## Coût
+## Coût et quota
 
-**Zéro.** Le niveau gratuit de l'API Gemini autorise plusieurs centaines de requêtes par jour ;
-ce digest en consomme **une**. Une édition pèse environ 10 000 tokens en entrée et 6 000 en
-sortie, raisonnement compris.
+**Zéro euro.** Le niveau sans frais de l'API Gemini suffit largement.
 
-Deux réserves à connaître : Google a déjà réduit ces quotas sans préavis, et sur le niveau
-gratuit les données envoyées peuvent servir à améliorer leurs modèles — ici, des titres
-d'actualité publics.
+Limites constatées sur `gemini-3.8-flash`, niveau sans frais (elles dépendent du compte,
+à vérifier sur [aistudio.google.com/rate-limit](https://aistudio.google.com/rate-limit)) :
 
-Le modèle se change via la variable d'environnement `GEMINI_MODEL` ou la constante `MODEL` en
-tête de `scripts/summarize.py`. Par défaut : `gemini-3.8-flash`.
+| Limite | Valeur | Ce que ça permet |
+|---|---|---|
+| Requêtes par minute | 5 | pas plus de 5 rafraîchissements dans la même minute |
+| Tokens par minute | 250 000 | une édition en pèse ~17 000, soit 14 par minute |
+| Requêtes par jour | à lire dans AI Studio | colonne RPD du tableau |
+
+C'est le **débit par minute qui contraint en premier**, jamais le volume. En pratique :
+enchaîner plus de 5 mises à jour en une minute déclenche une erreur 429, que le script
+absorbe en réessayant (15s, 30s, 45s) plutôt qu'en échouant.
+
+**Garde-fou.** `scripts/summarize.py` refuse de dépasser **20 éditions par jour** et
+n'appelle même pas l'API au-delà. Le compteur vit dans `data/usage.json` et s'affiche en pied
+de page. Pour changer la limite sans toucher au code : *Settings → Secrets and variables →
+Actions → Variables → New repository variable*, nom `DAILY_RUN_LIMIT`.
+
+Réserve : Google a déjà réduit ces quotas sans préavis, et sur le niveau sans frais les données
+envoyées peuvent servir à améliorer leurs modèles — ici, des titres d'actualité publics.
+
+Le modèle se change via la variable `GEMINI_MODEL` ou la constante `MODEL` en tête de
+`scripts/summarize.py`. Par défaut : `gemini-3.8-flash`.
 
 GitHub Actions est gratuit pour les dépôts publics.
 

@@ -49,6 +49,7 @@ jobs:
       - name: Rédiger le digest
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          DAILY_RUN_LIMIT: ${{ vars.DAILY_RUN_LIMIT || '20' }}
         run: python scripts/summarize.py items.json ${{ steps.kind.outputs.kind }}
 
       # Le dimanche, la synthèse hebdomadaire s'ajoute à l'édition du matin.
@@ -56,6 +57,7 @@ jobs:
         if: github.event_name == 'schedule'
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          DAILY_RUN_LIMIT: ${{ vars.DAILY_RUN_LIMIT || '20' }}
         run: |
           if [ "$(date -u +%u)" = "7" ]; then
             python scripts/fetch_feeds.py 168 items-weekly.json

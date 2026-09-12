@@ -13,6 +13,7 @@ Aucune dépendance : bibliothèque standard uniquement.
 import json
 import os
 import sys
+import time
 import urllib.error
 import urllib.request
 from datetime import datetime, timezone
@@ -23,6 +24,11 @@ DATA = ROOT / "data"
 
 ENDPOINT = "https://generativelanguage.googleapis.com/v1beta/interactions"
 MODEL = os.environ.get("GEMINI_MODEL", "gemini-3.8-flash")
+
+# Garde-fou : nombre maximal d'éditions générées dans une même journée UTC.
+# Le quota gratuit réel dépend du compte (aistudio.google.com/rate-limit) ; cette
+# limite-ci est volontairement prudente et sert à éviter de le brûler par accident.
+DAILY_RUN_LIMIT = int(os.environ.get("DAILY_RUN_LIMIT", "20"))
 
 SECTION_LABELS = {"ia": "Intelligence artificielle",
                   "cyber": "Cybersécurité",
@@ -130,7 +136,13 @@ def build_payload(items_doc):
     return "\n".join(lines)
 
 
-def call_gemini(prompt, api_key):
+def call_gemini(prompt, api_key, attempts=4):
+    """Appelle l'API, en réessayant les erreurs transitoires.
+
+    429 (débit dépassé) et 5xx (« high demand ») sont fréquents et passagers :
+    un job planifié ne doit pas échouer pour ça. Les erreurs 4xx restantes
+    (clé invalide, requête malformée) sont définitives, on abandonne aussitôt.
+    """
     body = {
         "model": MODEL,
         "input": prompt,
@@ -140,22 +152,33 @@ def call_gemini(prompt, api_key):
             "schema": SCHEMA,
         },
     }
-    request = urllib.request.Request(
-        ENDPOINT,
-        data=json.dumps(body).encode("utf-8"),
-        headers={
-            "x-goog-api-key": api_key,
-            "Content-Type": "application/json",
-        },
-        method="POST",
-    )
-    try:
-        with urllib.request.urlopen(request, timeout=300) as response:
-            return json.loads(response.read().decode("utf-8"))
-    except urllib.error.HTTPError as exc:
-        detail = exc.read().decode("utf-8", "replace")[:800]
-        print(f"Erreur HTTP {exc.code} de l'API Gemini :\n{detail}", file=sys.stderr)
-        raise SystemExit(1)
+    payload = json.dumps(body).encode("utf-8")
+    headers = {"x-goog-api-key": api_key, "Content-Type": "application/json"}
+
+    for attempt in range(1, attempts + 1):
+        request = urllib.request.Request(ENDPOINT, data=payload, headers=headers, method="POST")
+        try:
+            with urllib.request.urlopen(request, timeout=300) as response:
+                return json.loads(response.read().decode("utf-8"))
+        except urllib.error.HTTPError as exc:
+            detail = exc.read().decode("utf-8", "replace")[:500]
+            transient = exc.code == 429 or exc.code >= 500
+            if transient and attempt < attempts:
+                delay = 15 * attempt  # 15s, 30s, 45s
+                print(f"HTTP {exc.code} (tentative {attempt}/{attempts}), "
+                      f"nouvelle tentative dans {delay}s : {detail[:160]}", file=sys.stderr)
+                time.sleep(delay)
+                continue
+            print(f"Erreur HTTP {exc.code} de l'API Gemini :\n{detail}", file=sys.stderr)
+            raise SystemExit(1)
+        except urllib.error.URLError as exc:
+            if attempt < attempts:
+                print(f"Réseau indisponible (tentative {attempt}/{attempts}) : {exc}",
+                      file=sys.stderr)
+                time.sleep(15 * attempt)
+                continue
+            print(f"Réseau indisponible : {exc}", file=sys.stderr)
+            raise SystemExit(1)
 
 
 def extract_text(response):
@@ -189,6 +212,27 @@ def parse_digest(text):
         return json.loads(text[start:end + 1])
 
 
+def load_usage(today):
+    """Compteur journalier, remis à zéro au changement de date UTC."""
+    path = DATA / "usage.json"
+    usage = json.loads(path.read_text(encoding="utf-8")) if path.exists() else {}
+    if usage.get("date") != today:
+        if usage.get("date"):
+            history = usage.get("history", [])
+            history.append({"date": usage["date"], "runs": usage.get("runs", 0),
+                            "tokens": usage.get("tokens", 0)})
+            usage["history"] = history[-30:]
+        usage.update({"date": today, "runs": 0, "tokens": 0})
+    usage.setdefault("history", [])
+    return usage
+
+
+def save_usage(usage):
+    usage["limit"] = DAILY_RUN_LIMIT
+    (DATA / "usage.json").write_text(
+        json.dumps(usage, ensure_ascii=False, indent=1), encoding="utf-8")
+
+
 def main():
     items_path = Path(sys.argv[1]) if len(sys.argv) > 1 else ROOT / "items.json"
     kind = sys.argv[2] if len(sys.argv) > 2 else "daily"
@@ -202,6 +246,15 @@ def main():
     stats = items_doc["stats"]
     if stats["items"] == 0:
         print("Aucun item à résumer, abandon.", file=sys.stderr)
+        raise SystemExit(1)
+
+    DATA.mkdir(exist_ok=True)
+    today = datetime.now(timezone.utc).strftime("%Y-%m-%d")
+    usage_doc = load_usage(today)
+    if usage_doc["runs"] >= DAILY_RUN_LIMIT:
+        print(f"Limite de {DAILY_RUN_LIMIT} éditions par jour déjà atteinte "
+              f"({usage_doc['runs']} aujourd'hui). Rien n'est envoyé à l'API.",
+              file=sys.stderr)
         raise SystemExit(1)
 
     prompt = PROMPT.format(
@@ -249,13 +302,19 @@ def main():
     index["updated"] = now.isoformat()
     index_path.write_text(json.dumps(index, ensure_ascii=False, indent=1), encoding="utf-8")
 
-    retained = sum(len(s["items"]) for s in document["sections"])
     usage = response.get("usage", {})
+    usage_doc["runs"] += 1
+    usage_doc["tokens"] += usage.get("total_tokens", 0)
+    usage_doc["lastRun"] = now.strftime("%d/%m à %H:%M UTC")
+    save_usage(usage_doc)
+
+    retained = sum(len(s["items"]) for s in document["sections"])
     print(f"Publié {edition_id} — {retained} items retenus sur {stats['items']}, "
           f"{len(document['alerts'])} alerte(s)")
     print(f"Tokens : {usage.get('total_input_tokens', '?')} entrée / "
           f"{usage.get('total_output_tokens', '?')} sortie / "
           f"{usage.get('total_thought_tokens', '?')} raisonnement")
+    print(f"Éditions aujourd'hui : {usage_doc['runs']}/{DAILY_RUN_LIMIT}")
 
 
 if __name__ == "__main__":

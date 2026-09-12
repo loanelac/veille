@@ -1,11 +1,11 @@
 {
  "date": "2026-09-12",
  "kind": "daily",
- "generatedAt": "12/09 à 21:28 UTC",
- "lede": "L'actualité est marquée par une alerte sur l'exploitation imminente de failles critiques Check Point VPN, tandis qu'Anthropic multiplie les révélations sur les détournements cyber et militaires de Claude et que son dirigeant appelle à temporiser le développement des modèles frontières.",
+ "generatedAt": "12/09 à 21:35 UTC",
+ "lede": "L'actualité est dominée par la menace d'exploitation imminente de deux failles critiques dans les VPN Check Point et la révélation d'une cyberattaque menée par des agents IA autonomes contre RubyGems. Dans l'aéronautique, Airbus avance sur le volet militaire avec la sortie du premier A330 MRTT+, tout en faisant face à une enquête sur un incident de brouillage GPS survenu à La Réunion.",
  "stats": {
   "feeds": 37,
-  "items": 56,
+  "items": 58,
   "errors": 2
  },
  "sections": [
@@ -14,8 +14,30 @@
    "label": "Intelligence artificielle",
    "items": [
     {
-     "title": "Dario Amodei appelle publiquement à réguler le rythme de développement des modèles frontières",
-     "summary": "Dans un essai intitulé « We must pace the frontier », le patron d'Anthropic plaide pour un ralentissement concerté de la course aux modèles avancés afin d'anticiper les risques systémiques associés à l'IA générale.",
+     "title": "Anthropic neutralise des tentatives de conception d'armes biologiques et de drones armés",
+     "summary": "Anthropic a révélé avoir bloqué plusieurs tentatives de détournement de son modèle Claude visant le développement d'armes biologiques, ainsi que des expérimentations militaires portant sur l'armement de drones téléguidés au Yémen. Ces divulgations illustrent le durcissement des garde-fous de l'éditeur face aux risques de prolifération.",
+     "sources": [
+      {
+       "name": "presse-citron.net",
+       "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPQWFBcXptWlhWZERIWmhmaWttRGFYSkhHd09nbjNHam40dml1aVFFQTQtbGNSZ3BWMjh4TEw0ZEpiQW5LaDBfS0FBbEU1bkpfWkdDZVA2T19ZaXM4cTFCbHBQdmNGN29YRTh3WkcteTBPektwU0JHb2NmV285ekVEbFY4bEZ6Ui1WaUg5QS1ULUhER0tRYWljbFlsQWJVWlZlOW5qM0VpNFMzazY3MVRkSQ?oc=5"
+      },
+      {
+       "name": "Servicesmobiles.fr",
+       "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPWm9kaHZhdmFuOUVfSkRRLVBBRlIza2sxMUctQndGWkhid3gxc3hiLS1LX0xmanNSeE9oTk5KME5YeXlGZFJFeTNZVWt5eENoUFJMSU9FRExWNEI0OTBZWHRmUEJIZ0kzeDVPVTZQWVBUTTBUU0J6NDJoczlCNmx1UFIzV0Z1SnJwLUdEejA5Wi1OWkZGWVBwdlY5QlhHbGNuaURCZHlQY3kwcU0?oc=5"
+      },
+      {
+       "name": "Africtelegraph",
+       "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQOHpfMjhLc09VR0dkWjJvV1dqazVtNVhFU1dNVzBaRGVCYjJEckFjazBEMGd0Q1p1VDlzNm5kOXVFVU5TWDQ5dEN3U1pON1ZTZ0d2eXI5WjJaLWR5Uk5aY3FENVhZUklnS2hvQXVnYVczcVNqajNzUFlqRTVyVW1TZ1RZRFpPc2JCcWtvX0MwUDRnNkdKVllN?oc=5"
+      },
+      {
+       "name": "Tunisie Numerique",
+       "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPdGxvYkJ4Z1dpZEVDVndqc255OGhKVHcxZ0xBUDhZVHkzODVaTXphRC1UNVR5RGVkRy1hVGFsSzl3cnZIbTRBaW0xTFFXTzFmYnJpcXd6b05fOEZDd3hZZjJSSjRBUG9obHlHbkdxaGN6WWJ0VmptVjM2R0I0VzNfTEtTNjcwdk54ZXN2aTk1em9DZEw5ejFWdjByaFRxQUNvRF92NVhYRUx2QkY0?oc=5"
+      }
+     ]
+    },
+    {
+     "title": "Dario Amodei appelle à réguler le rythme de développement des modèles frontières",
+     "summary": "Le directeur général d'Anthropic a publié un plaidoyer alertant sur la trajectoire des capacités des modèles d'IA de pointe, appelant l'écosystème à modérer la cadence de déploiement pour sécuriser la transition technologique avant d'atteindre des seuils de risque ingérables.",
      "sources": [
       {
        "name": "darioamodei.com",
@@ -28,30 +50,8 @@
      ]
     },
     {
-     "title": "Anthropic documente des tentatives de conception d'armes biologiques et de guidage de drones via Claude",
-     "summary": "L'entreprise a révélé et bloqué plusieurs usages hostiles de son modèle en 2026, incluant des recherches d'armement biologique par certains utilisateurs et des expérimentations au Yémen pour concevoir et armer des drones téléguidés.",
-     "sources": [
-      {
-       "name": "Presse-citron",
-       "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPQWFBcXptWlhWZERIWmhmaWttRGFYSkhHd09nbjNHam40dml1aVFFQTQtbGNSZ3BWMjh4TEw0ZEpiQW5LaDBfS0FBbEU1bkpfWkdDZVA2T19ZaXM4cTFCbHBQdmNGN29YRTh3WkcteTBPektwU0JHb2NmV285ekVEbFY4bEZ6Ui1WaUg5QS1ULUhER0tRYWljbFlsQWJVWlZlOW5qM0VpNFMzazY3MVRkSQ?oc=5"
-      },
-      {
-       "name": "Servicesmobiles.fr",
-       "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPWm9kaHZhdmFuOUVfSkRRLVBBRlIza2sxMUctQndGWkhid3gxc3hiLS1LX0xmanNSeE9oTk5KME5YeXlGZFJFeTNZVWt5eENoUFJMSU9FRExWNEI0OTBZWHRmUEJIZ0kzeDVPVTZQWVBUTTBUU0J6NDJoczlCNmx1UFIzV0Z1SnJwLUdEejA5Wi1OWkZGWVBwdlY5QlhHbGNuaURCZHlQY3kwcU0?oc=5"
-      },
-      {
-       "name": "Africtelegraph",
-       "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPOHpfMjhLc09VR0dkWjJvV1dqazVtNVhFU1dNVzBaRGVCYjJEckFjazBEMGd0Q1p1VDlzNm5kOXVFVU5TWDQ5dEN3U1pON1ZTZ0d2eXI5WjJaLWR5Uk5aY3FENVhZUklnS2hvQXVnYVczcVNqajNzUFlqRTVyVW1TZ1RZRFpPc2JCcWtvX0MwUDRnNkdKVllN?oc=5"
-      },
-      {
-       "name": "Tunisie Numerique",
-       "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPdGxvYkJ4Z1dpZEVDVndqc255OGhKVHcxZ0xBUDhZVHkzODVaTXphRC1UNVR5RGVkRy1hVGFsSzl3cnZIbTRBaW0xTFFXTzFmYnJpcXd6b05fOEZDd3hZZjJSSjRBUG9obHlHbkdxaGN6WWJ0VmptVjM2R0I0VzNfTEtTNjcwdk54ZXN2aTk1em9DZEw5ejFWdjByaFRxQUNvRF92NVhYRUx2QkY0?oc=5"
-      }
-     ]
-    },
-    {
-     "title": "Perplexity automatise la maintenance de son infrastructure de production avec GPT-6 Astra",
-     "summary": "Perplexity s'appuie désormais sur le modèle Astra d'OpenAI pour modifier du code en continu, gérer les communications et surveiller ses environnements de production avec une supervision humaine fortement réduite.",
+     "title": "Perplexity confie la maintenance et la surveillance de ses systèmes de production à GPT-6 Astra",
+     "summary": "OpenAI indique que Perplexity utilise son modèle GPT-6 Astra de bout en bout pour rédiger des communications techniques, modifier du code logiciel et superviser son infrastructure en production avec un niveau d'intervention humaine réduit.",
      "sources": [
       {
        "name": "OpenAI News",
@@ -60,12 +60,12 @@
      ]
     },
     {
-     "title": "Anthropic accuse des concurrents chinois de distillation non autorisée de Claude",
-     "summary": "D'après un rapport de la société américaine, plusieurs entreprises chinoises spécialisées en IA exploitent les réponses de Claude pour entraîner et aligner leurs propres modèles de fondation.",
+     "title": "Anthropic dévoile le protocole ouvert MHS pour relier l'IA aux machines",
+     "summary": "Anthropic a présenté MHS, une interface standardisée et ouverte conçue pour faciliter l'interopérabilité directe entre les modèles d'intelligence artificielle et les équipements matériels.",
      "sources": [
       {
-       "name": "Vietnam.vn",
-       "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQUUxxQ1Y3NnRrTEwtd3pVQ2M3aVBZWEtMb1VuXzJleUlXX1gyZHAzMnVNdXVKMXZRZXo0amhVcVRLdkNobEkzR3dMRGE0emtkSFVVNS1hdmhLTGtlMFp2TFNDdVVKUWctS3B0akNkY0pEVlFDU1ZpVTNOSVFCSnV0N193cTRKUHhBVGZaN2lpUVVWaHpza0ZvTGpsaXU4OUlRbkpR?oc=5"
+       "name": "Brief IA",
+       "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQUHVIbWdSdTkwV2xOTVJqU1c2Q3BRak9JVnM3b1pLUlFXS1g0NHFHc1JCY0w3OHlsWU5neDdPbG1USTM0Z1BvWWIwSUgwUkttUGpDZ1lwMC01Tmt2ZjlxeU1IRG5Bekx5TXVhbzJCaUVKSk1aQm1pQW9rRDBWeHNBSjRvcDU2amNXcUxINjdGUUw0dw?oc=5"
       }
      ]
     }
@@ -76,8 +76,8 @@
    "label": "Cybersécurité",
    "items": [
     {
-     "title": "Le NCSC néerlandais signale l'exploitation imminente de deux failles critiques dans Check Point VPN",
-     "summary": "Les vulnérabilités CVE-2026-85102 et CVE-2026-85103 font l'objet d'une alerte urgente d'exploitation imminente ciblant les passerelles VPN Check Point.",
+     "title": "Check Point VPN : exploitation imminente de deux vulnérabilités critiques",
+     "summary": "Le centre national pour la cybersécurité néerlandais (NCSC) avertit qu'une exploitation massive de deux failles critiques affectant Check Point VPN, référencées CVE-2026-85102 et CVE-2026-85103, est sur le point de débuter.",
      "sources": [
       {
        "name": "BleepingComputer",
@@ -87,19 +87,8 @@
      "severity": "critical"
     },
     {
-     "title": "La CISA intègre cinq vulnérabilités exploitées dans Artifactory, ScreenConnect et RouterOS à son catalogue KEV",
-     "summary": "L'agence américaine ordonne l'application prioritaire de correctifs face à des attaques avérées ciblant JFrog Artifactory, ConnectWise ScreenConnect et MikroTik RouterOS.",
-     "sources": [
-      {
-       "name": "The Hacker News",
-       "url": "https://thehackernews.com/2026/09/cisa-adds-5-actively-exploited.html"
-      }
-     ],
-     "severity": "critical"
-    },
-    {
-     "title": "L'attaque RCE contre RubyGems et RubyDoc formellement attribuée à un essaim d'agents OpenAI",
-     "summary": "Un rapport de chercheurs confirme que la compromission de serveurs RubyDoc en mai 2026 a été exécutée de manière autonome par un essaim d'agents fondés sur les modèles d'OpenAI, illustrant une escalade dans les capacités offensives autonomes.",
+     "title": "Un essaim d'agents OpenAI identifié derrière l'attaque RCE sur l'infrastructure RubyGems",
+     "summary": "Des chercheurs en sécurité ont démontré que l'attaque majeure menée contre le référentiel RubyGems et les serveurs RubyDoc en mai 2026 a été orchestrée par un essaim d'agents IA OpenAI autonomes. Cette compromission avait permis d'obtenir une exécution de code à distance.",
      "sources": [
       {
        "name": "The Hacker News",
@@ -113,20 +102,27 @@
      "severity": "watch"
     },
     {
-     "title": "Anthropic expose une vague d'intrusions ciblant des entités françaises via son IA",
-     "summary": "Dans son rapport de menaces, Anthropic indique que son modèle Claude a été détourné par des acteurs malveillants pour orchestrer des cyberattaques contre des organisations françaises et piloter de l'espionnage massif de télécommunications, notamment au Mali.",
+     "title": "La CISA ajoute cinq failles activement exploitées à son catalogue KEV",
+     "summary": "L'agence fédérale américaine CISA a intégré cinq vulnérabilités exploitées dans la nature à son catalogue d'urgence. Ces failles affectent les solutions JFrog Artifactory, ConnectWise ScreenConnect et le système d'exploitation MikroTik RouterOS.",
+     "sources": [
+      {
+       "name": "The Hacker News",
+       "url": "https://thehackernews.com/2026/09/cisa-adds-5-actively-exploited.html"
+      }
+     ],
+     "severity": "critical"
+    },
+    {
+     "title": "Anthropic documente une vague d'intrusions ciblant des organisations françaises via son IA",
+     "summary": "Anthropic a publié des éléments détaillant une campagne d'ampleur dans laquelle son modèle a été instrumenté par des cybercriminels et des acteurs étatiques pour automatiser le ciblage et la compromission d'organisations françaises.",
      "sources": [
       {
        "name": "menow.fr",
        "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQSnhWQk1WdGRUd3BjZ21mWDhNQ1VWSEd4YVRwTmt0MllfbzlWNXMyVDZiUi1hOEpDVHlDWmt1X3ZvUUxCdXJHcTJ2Ym5PeXhud2JQdTRYSFJvQmdmN0ppVFY0RVNGaVF2Y1JDQmtDYUxuZFBkRE42VkttMzVhdkNuOXZva1VWLTBoNzRWb0hOcUU2bk1hcE95czc0OWtQajB5bEpfZFRqTTRjcU55aTYweFFwczd3NDA?oc=5"
       },
       {
-       "name": "Mon Carnet – de l'actualité numérique",
+       "name": "Mon Carnet",
        "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQaVRDVDk2SHNpX2VwZFNGa0dkWVFIam1MT1Vjbl9HSXZid1BBTDh0b3lzVkJPZ1ctMHRHb2V5a3NBSzI3RjQ1cTNLUVJlb1d3X1VORi1tblN1dzdZdkc5a0NZMHVfcTZGRXJwbnhRajF3N3k5Q3BsOEdacFduUWJIR3F6UjlFdzA0cWRLZFFfSS03anVQQUN2eDQtMHJwNmdJLV82ZEluYVh4NUxFekRCTzkxa3kyRG1JRVFTaVFyX015QXZuSWRlX18zREs?oc=5"
-      },
-      {
-       "name": "LSi Africa",
-       "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNeVRUTUJTcFYzd04zXzhSTEt0a1MtV2V3T2NERmZxUFRZRmVGbko0WHBEOHJVMDZnVnBHTWExYUFycnFPdjlJejFwYTRESW9pVWxMOEZpZzc2d0NpYW9Dd0RZWTdVWUlaZTc5RDg3RFdIMURCZThxRnNZM0JxSTNuVDFqeHVDNGxBZVNGQTAxcXFSb1l2Z2NTd2F3RTNjU3RCM0ttX3hxWHdWM2gwaGNsczRB?oc=5"
       }
      ],
      "severity": "watch"
@@ -138,8 +134,8 @@
    "label": "Airbus & aéronautique",
    "items": [
     {
-     "title": "Airbus dévoile le premier A330 MRTT+ sorti de chaîne à Toulouse",
-     "summary": "L'avionneur européen franchit une étape industrielle majeure pour sa division défense avec la présentation du premier ravitailleur nouvelle génération A330 MRTT+ assemblé sur son site toulousain.",
+     "title": "Sortie d'usine à Toulouse du premier ravitailleur Airbus A330 MRTT+",
+     "summary": "Le tout premier exemplaire de l'A330 MRTT+ est sorti des chaînes d'assemblage d'Airbus à Toulouse. Cette version modernisée apporte des gains d'autonomie et de capacités de ravitaillement en vol pour répondre aux nouveaux besoins militaires.",
      "sources": [
       {
        "name": "Avia news",
@@ -148,18 +144,8 @@
      ]
     },
     {
-     "title": "Airbus signe des engagements pour 55 appareils commerciaux au Vietnam",
-     "summary": "Le constructeur a formalisé des lettres d'intention portant sur plus de 50 monocouloirs et long-courriers, incluant des A220, A321 et cinq A350-900 destinés notamment à Vietnam Airlines.",
-     "sources": [
-      {
-       "name": "Le Revenu",
-       "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOdVhjLTYyVkZmVVZWTjdlT0FMWWFqV2QwVm9PR0RGVWxNbkJzMEdlaWFKdjE1ZzVkU0xnajVMWk8wUTEyeFpHQ0M1bWM1eDYzTGlJSXhuUlRZbjFLWllLQ0ZOZzZ3ZVUyTmNTXzlHS2tDNEVTdVA4clpZVHItMFExWEpxN043NnUtRmZONzU0b255Nnkzd3RsOGZMN0d2bFRub05nY29vSEM?oc=5"
-      }
-     ]
-    },
-    {
-     "title": "Une déviation d'atterrissage d'un A330 liée à des perturbations GPS entraîne l'ouverture d'une enquête",
-     "summary": "À l'aéroport Roland-Garros de La Réunion, un Airbus A330 a vu sa trajectoire finale déviée à la suite d'interférences sur le signal GPS, conduisant les autorités à engager des investigations techniques.",
+     "title": "Enquête ouverte après la déviation d'un A330 causée par des interférences GPS à La Réunion",
+     "summary": "Une enquête de sécurité a été diligentée suite à l'approche anormale d'un Airbus A330 à l'aéroport Roland-Garros de La Réunion, l'appareil ayant subi de sévères perturbations de son signal GPS entraînant une déviation de sa trajectoire d'atterrissage.",
      "sources": [
       {
        "name": "Zinfos974",
@@ -169,12 +155,32 @@
      "severity": "watch"
     },
     {
-     "title": "Airbus présente son concept HTeaming de coopération entre hélicoptères et essaims de drones",
-     "summary": "Airbus Helicopters détaille son architecture HTeaming, visant à faire interagir directement les équipages avec des drones de soutien tactique au cours de missions complexes.",
+     "title": "Airbus sécurise des intentions d'achat pour 55 avions au Vietnam",
+     "summary": "Airbus accélère en Asie du Sud-Est en signant des lettres d'intention portant sur la vente de plus de 50 appareils à des transporteurs vietnamiens, panachant des modèles monocouloirs A220 et A321 avec des gros-porteurs A350-900.",
      "sources": [
       {
-       "name": "aerocontact.com",
+       "name": "Le Revenu",
+       "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOdVhjLTYyVkZmVVZWTjdlT0FMWWFqV2QwVm9PR0RGVWxNbkJzMEdlaWFKdjE1ZzVkU0xnajVMWk8wUTEyeFpHQ0M1bWM1eDYzTGlJSXhuUlRZbjFLWllLQ0ZOZzZ3ZVUyTmNTXzlHS2tDNEVTdVA4clpZVHItMFExWEpxN043NnUtRmZONzU0b255Nnkzd3RsOGZMN0d2bFRub05nY29vSEM?oc=5"
+      }
+     ]
+    },
+    {
+     "title": "Airbus progresse sur le couplage opérationnel hélicoptères-drones avec HTeaming",
+     "summary": "Airbus Helicopters a franchi une étape dans son programme HTeaming, visant à faire interagir directement en vol des hélicoptères pilotés avec des drones d'accompagnement pour des missions de renseignement et d'appui.",
+     "sources": [
+      {
+       "name": "Aerocontact.com",
        "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOSkh3cEJWUkRRY2hHQXBGbWFQdG0zWkExWDRPVld0YnN5ZTdvWURrbVZiZ1VfZjNUamxESFJrUFlHa2l5Ykp6WHE0WHY0TURPRkpVWUJFUmt6NTFkUFVPTVh1NXBhRV90Nkxybk50blhQVU50c2xlNVZmVmlFc05OYkpYaVpQcmdWeUFEeFZFNGpjSjdCM1c5N0FR?oc=5"
+      }
+     ]
+    },
+    {
+     "title": "Iberia certifiée pour la grande maintenance des Airbus A350",
+     "summary": "La division technique de la compagnie espagnole Iberia a obtenu l'homologation réglementaire l'autorisant à réaliser elle-même la maintenance lourde sur l'ensemble de sa flotte long-courrier Airbus A350.",
+     "sources": [
+      {
+       "name": "Air Journal",
+       "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxQTkpkVkIxXzZLRFpyVnBxLXhISjNrNVRzZmJDR3BRZHp6ckZ2akxkbjkwMjV0NXdrNEVOWVJZOUdqbmVsUGYzUDFxb0cycGgxbkRoVXBmX0N0WEdodnVVV19KU2trb0JTYTJ4WjA5dTREZXppWWFhZkYzSHpvODJYaTVfSWFRR20tMENaVEZmS0o4eTVhUWw5czM0MzNkNTJSdWRJU3lBaUNNcEJJdlgxTzNRc25FOGVlb3J1WFZSSXE4eDI3V25WLTlCVW1zLWl5TVE?oc=5"
       }
      ]
     }
@@ -183,25 +189,17 @@
  ],
  "alerts": [
   {
-   "level": "CRITIQUE",
-   "title": "Check Point VPN : exploitation imminente signalée par le NCSC néerlandais",
-   "body": "Deux failles critiques (CVE-2026-85102 et CVE-2026-85103) affectant Check Point VPN présentent un risque d'exploitation imminent selon les autorités néerlandaises. L'application immédiate des mesures de remédiation fournies par l'éditeur est requise.",
+   "level": "critical",
+   "title": "Check Point VPN : exploitation imminente des failles CVE-2026-85102 et CVE-2026-85103",
+   "body": "Le NCSC néerlandais signale une exploitation imminente ciblant deux vulnérabilités critiques non authentifiées sur les passerelles VPN Check Point. L'application des correctifs d'urgence fournis par le constructeur et la vérification des journaux d'accès aux équipements sont requises sans délai.",
    "refs": [
     "CVE-2026-85102",
     "CVE-2026-85103"
-   ]
-  },
-  {
-   "level": "CRITIQUE",
-   "title": "CISA KEV : cinq failles sous exploitation active sur Artifactory, ScreenConnect et RouterOS",
-   "body": "La CISA a intégré cinq vulnérabilités exploitées dans la nature ciblant JFrog Artifactory, ConnectWise ScreenConnect et MikroTik RouterOS à son catalogue officiel, imposant un calendrier de déploiement strict de correctifs.",
-   "refs": [
-    "CISA-KEV-2026"
    ]
   }
  ],
  "feedErrors": [
   "CISA - Cybersecurity Advisories",
-  "FlightGlobal"
+  "Risky Business"
  ]
 }
