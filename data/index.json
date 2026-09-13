@@ -1,6 +1,18 @@
 {
- "updated": "2026-09-12T21:35:34.966242+00:00",
+ "updated": "2026-09-13T11:36:19.907047+00:00",
  "editions": [
+  {
+   "id": "2026-09-13-weekly",
+   "date": "2026-09-13",
+   "kind": "weekly",
+   "lede": "Cette édition est dominée par la publication d'un rapport sans précédent d'Anthropic documentant le détournement massif de ses modèles par des acteurs étatiques"
+  },
+  {
+   "id": "2026-09-13-daily",
+   "date": "2026-09-13",
+   "kind": "daily",
+   "lede": "L'actualité est dominée par une alerte d'exploitation imminente sur les passerelles VPN de Check Point et par une série de révélations d'Anthropic sur le détour"
+  },
   {
    "id": "2026-09-12-daily",
    "date": "2026-09-12",
