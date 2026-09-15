@@ -1,6 +1,12 @@
 {
- "updated": "2026-09-13T11:36:19.907047+00:00",
+ "updated": "2026-09-15T07:11:16.497715+00:00",
  "editions": [
+  {
+   "id": "2026-09-15-daily",
+   "date": "2026-09-15",
+   "kind": "daily",
+   "lede": "L'exploitation active d'une vulnérabilité critique affectant Cisco Secure Email Gateway et un correctif d'urgence à score maximal pour GitLab dominent le front "
+  },
   {
    "id": "2026-09-13-weekly",
    "date": "2026-09-13",
