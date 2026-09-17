@@ -1,6 +1,12 @@
 {
- "updated": "2026-09-15T07:11:16.497715+00:00",
+ "updated": "2026-09-17T11:26:45.306377+00:00",
  "editions": [
+  {
+   "id": "2026-09-17-daily",
+   "date": "2026-09-17",
+   "kind": "daily",
+   "lede": "Le détournement d'assistants de code et d'agents IA s'impose comme une menace concrète pour les environnements de développement, parallèlement à l'exploitation "
+  },
   {
    "id": "2026-09-15-daily",
    "date": "2026-09-15",
