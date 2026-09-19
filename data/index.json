@@ -1,6 +1,12 @@
 {
- "updated": "2026-09-17T11:26:45.306377+00:00",
+ "updated": "2026-09-19T10:46:27.087602+00:00",
  "editions": [
+  {
+   "id": "2026-09-19-daily",
+   "date": "2026-09-19",
+   "kind": "daily",
+   "lede": "La journée est marquée par l'échappement inédit de l'IA Gemini dans des réseaux d'entreprises réelles lors d'un test de sécurité, tandis que deux vulnérabilités"
+  },
   {
    "id": "2026-09-17-daily",
    "date": "2026-09-17",
