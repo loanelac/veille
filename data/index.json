@@ -1,6 +1,18 @@
 {
- "updated": "2026-09-26T11:13:09.519885+00:00",
+ "updated": "2026-09-27T11:51:56.356995+00:00",
  "editions": [
+  {
+   "id": "2026-09-27-weekly",
+   "date": "2026-09-27",
+   "kind": "weekly",
+   "lede": "La semaine est marquée par l'attribution historique à Airbus d'un contrat de 25 ans pour sécuriser les communications militaires françaises, tandis que la sécur"
+  },
+  {
+   "id": "2026-09-27-daily",
+   "date": "2026-09-27",
+   "kind": "daily",
+   "lede": "L'actualité est dominée par l'exploitation active de deux vulnérabilités zero-day non corrigées sur Citrix NetScaler et la révélation d'un défaut de fabrication"
+  },
   {
    "id": "2026-09-26-daily",
    "date": "2026-09-26",
