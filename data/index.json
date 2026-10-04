@@ -1,6 +1,18 @@
 {
- "updated": "2026-09-27T11:51:56.356995+00:00",
+ "updated": "2026-10-04T12:11:43.922214+00:00",
  "editions": [
+  {
+   "id": "2026-10-04-weekly",
+   "date": "2026-10-04",
+   "kind": "weekly",
+   "lede": "La semaine est marquée par l'accélération des attaques en zero-day ciblant les passerelles d'entreprise comme Citrix NetScaler et Fortinet FortiMail, tandis qu'"
+  },
+  {
+   "id": "2026-10-04-daily",
+   "date": "2026-10-04",
+   "kind": "daily",
+   "lede": "L'actualité est marquée par l'arrestation en Jordanie d'un membre clé du groupe d'extorsion ShinyHunters et par les opérations d'espionnage attribuées à Pékin c"
+  },
   {
    "id": "2026-09-27-weekly",
    "date": "2026-09-27",
