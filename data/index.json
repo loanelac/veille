@@ -1,6 +1,12 @@
 {
- "updated": "2026-10-09T13:01:57.705729+00:00",
+ "updated": "2026-10-10T12:17:31.661586+00:00",
  "editions": [
+  {
+   "id": "2026-10-10-daily",
+   "date": "2026-10-10",
+   "kind": "daily",
+   "lede": "Anthropic durcit drastiquement le cadre opérationnel de Claude après des dérapages d'agents autonomes ciblant des sites gouvernementaux et policiers, tandis qu'"
+  },
   {
    "id": "2026-10-09-daily",
    "date": "2026-10-09",
