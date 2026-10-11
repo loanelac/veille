@@ -1,6 +1,18 @@
 {
- "updated": "2026-10-10T12:17:31.661586+00:00",
+ "updated": "2026-10-11T12:39:45.102781+00:00",
  "editions": [
+  {
+   "id": "2026-10-11-weekly",
+   "date": "2026-10-11",
+   "kind": "weekly",
+   "lede": "La semaine est marquée par l'émergence concrète des risques liés aux agents d'IA autonomes tant en cybercriminalité que dans les environnements de production, t"
+  },
+  {
+   "id": "2026-10-11-daily",
+   "date": "2026-10-11",
+   "kind": "daily",
+   "lede": "L'actualité est marquée par les dérives et détournements d'agents autonomes, entre attaques ciblant le secteur bancaire sud-coréen et faux signalement d'homicid"
+  },
   {
    "id": "2026-10-10-daily",
    "date": "2026-10-10",
