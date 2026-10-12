@@ -1,6 +1,12 @@
 {
- "updated": "2026-10-11T12:39:45.102781+00:00",
+ "updated": "2026-10-12T15:08:11.018953+00:00",
  "editions": [
+  {
+   "id": "2026-10-12-daily",
+   "date": "2026-10-12",
+   "kind": "daily",
+   "lede": "Airbus et Kratos franchissent un cap stratégique majeur avec le premier vol européen de leur drone de combat collaboratif Valkyrie. En cybersécurité, plusieurs "
+  },
   {
    "id": "2026-10-11-weekly",
    "date": "2026-10-11",
