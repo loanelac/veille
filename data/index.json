@@ -1,6 +1,12 @@
 {
- "updated": "2026-10-12T15:08:11.018953+00:00",
+ "updated": "2026-10-14T11:42:26.504129+00:00",
  "editions": [
+  {
+   "id": "2026-10-14-daily",
+   "date": "2026-10-14",
+   "kind": "daily",
+   "lede": "La journée est dominée par un volume record de correctifs de sécurité chez Microsoft assorti de zero-days critiques chez Ivanti, tandis qu'OpenAI est secoué par"
+  },
   {
    "id": "2026-10-12-daily",
    "date": "2026-10-12",

@@ -1,0 +1,242 @@
+{
+ "date": "2026-10-14",
+ "kind": "daily",
+ "generatedAt": "14/10 à 11:42 UTC",
+ "lede": "La journée est dominée par un volume record de correctifs de sécurité chez Microsoft assorti de zero-days critiques chez Ivanti, tandis qu'OpenAI est secoué par l'arrestation d'un collaborateur pour espionnage interne.",
+ "stats": {
+  "feeds": 37,
+  "items": 97,
+  "errors": 3
+ },
+ "sections": [
+  {
+   "key": "ia",
+   "label": "Intelligence artificielle",
+   "items": [
+    {
+     "title": "Un ingénieur d'OpenAI arrêté pour avoir espionné une salle de réunion exécutive",
+     "summary": "Abdulrahman Alfozan, employé saoudien d'OpenAI, a été inculpé pour avoir dissimulé un enregistreur espion dans une salle de conférence de direction au siège de San Francisco afin d'intercepter des échanges confidentiels.",
+     "sources": [
+      {
+       "name": "The Record",
+       "url": "https://therecord.media/saudi-national-charged-with-spy-device-openai"
+      },
+      {
+       "name": "BleepingComputer",
+       "url": "https://www.bleepingcomputer.com/news/artificial-intelligence/openai-engineer-arrested-for-allegedly-planting-spy-device-in-office/"
+      },
+      {
+       "name": "The Hacker News",
+       "url": "https://thehackernews.com/2026/10/openai-employee-arrested-for-allegedly.html"
+      }
+     ]
+    },
+    {
+     "title": "Anthropic alerte sur la menace de vers IA autonomes infectant l'IoT",
+     "summary": "Le laboratoire prévient que de petits modèles d'IA pourraient bientôt s'auto-répliquer directement sur des appareils grand public connectés. Ce scénario permettrait la création de botnets distribués exécutant des charges de travail IA hors de tout centre de données.",
+     "sources": [
+      {
+       "name": "The Hacker News",
+       "url": "https://thehackernews.com/2026/10/anthropic-warns-small-ai-models-could.html"
+      },
+      {
+       "name": "BleepingComputer",
+       "url": "https://www.bleepingcomputer.com/news/security/anthropic-warns-self-replicating-ai-could-spread-to-your-smart-devices/"
+      },
+      {
+       "name": "Dark Reading",
+       "url": "https://www.darkreading.com/perimeter/anthropic-ingredients-future-ai-worms"
+      }
+     ],
+     "severity": "watch"
+    },
+    {
+     "title": "Google présente Gemini 4 Argon axé sur le raisonnement complexe et la robotique",
+     "summary": "Google a lancé son nouveau modèle Gemini 4 Argon, conçu pour franchir un palier sur la résolution de problèmes avancés. Il est d'ores et déjà accessible via les API dédiées et intégré aux abonnements haut de gamme.",
+     "sources": [
+      {
+       "name": "Google - The Keyword",
+       "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-argon/"
+      },
+      {
+       "name": "Hacker News",
+       "url": "https://news.ycombinator.com/item?id=50073879"
+      },
+      {
+       "name": "Simon Willison",
+       "url": "https://simonwillison.net/2026/Oct/13/llm-gemini/"
+      }
+     ]
+    },
+    {
+     "title": "Anthropic déploie son propre gestionnaire de code Scion pour remplacer Git",
+     "summary": "En raison de l'accélération drastique du volume de modifications de code poussées par ses équipes et ses agents internes, Anthropic a développé un système de contrôle de code propriétaire sur mesure capable d'absorber ce débit.",
+     "sources": [
+      {
+       "name": "Simon Willison",
+       "url": "https://simonwillison.net/2026/Oct/13/redesigning-source-control-at-anthropic/"
+      },
+      {
+       "name": "Hacker News",
+       "url": "https://news.ycombinator.com/item?id=50073633"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "key": "cyber",
+   "label": "Cybersécurité",
+   "items": [
+    {
+     "title": "Ivanti Connect Secure : attaque active combinant trois failles zero-day",
+     "summary": "Des attaquants exploitent une chaîne de trois zero-days pour obtenir une exécution de code root à distance sans authentification sur les passerelles VPN. Deux failles seulement sont corrigées à ce jour par l'éditeur.",
+     "sources": [
+      {
+       "name": "The Hacker News",
+       "url": "https://thehackernews.com/2026/10/attacker-chains-three-ivanti-connect.html"
+      },
+      {
+       "name": "BleepingComputer",
+       "url": "https://www.bleepingcomputer.com/news/security/ivanti-warns-of-connect-secure-zero-day-exploited-in-attacks/"
+      }
+     ],
+     "severity": "critical"
+    },
+    {
+     "title": "Patch Tuesday d'octobre : Microsoft bat son record avec plus de 1 400 vulnérabilités",
+     "summary": "La publication mensuelle de Microsoft corrige plus de 1 410 failles, incluant une vulnérabilité du shell Windows activement exploitée ainsi que deux failles zero-day divulguées publiquement.",
+     "sources": [
+      {
+       "name": "Krebs on Security",
+       "url": "https://krebsonsecurity.com/2026/10/microsoft-patches-more-than-1400-security-flaws/"
+      },
+      {
+       "name": "The Hacker News",
+       "url": "https://thehackernews.com/2026/10/microsoft-patches-record-1413-flaws.html"
+      },
+      {
+       "name": "BleepingComputer",
+       "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-october-2026-patch-tuesday-fixes-1-411-flaws-3-zero-days/"
+      }
+     ],
+     "severity": "critical"
+    },
+    {
+     "title": "Des puces espionnes matérielles détectées dans des portefeuilles Ledger et Trezor",
+     "summary": "Des implants matériels frauduleux ont été découverts chez des revendeurs tiers en Europe et en Asie sur les équipements Ledger et Trezor, permettant le vol d'environ 100 millions de dollars d'actifs crypto.",
+     "sources": [
+      {
+       "name": "Zero Day (Kim Zetter)",
+       "url": "https://www.zetter-zeroday.com/who-is-planting-backdoors-in-ledger-crypto-wallets/"
+      },
+      {
+       "name": "Zero Day (Kim Zetter)",
+       "url": "https://www.zetter-zeroday.com/trezor-wallets-also-compromised-with-implants/"
+      },
+      {
+       "name": "Risky Bulletin",
+       "url": "https://news.risky.biz/risky-bulletin-spyware-chip-found-in-ledger-crypto-wallets/"
+      }
+     ],
+     "severity": "watch"
+    },
+    {
+     "title": "Docker Hub colmate une faille critique de substitution d'images",
+     "summary": "Identifiée sous la référence CVE-2026-105445, une faiblesse de gestion des jetons d'accès personnel permettait à un attaquant de modifier, pousser ou effacer les images de conteneurs hébergées sur le compte d'un tiers.",
+     "sources": [
+      {
+       "name": "BleepingComputer",
+       "url": "https://www.bleepingcomputer.com/news/security/docker-hub-flaw-let-attackers-impersonate-users-tamper-with-images/"
+      },
+      {
+       "name": "The Hacker News",
+       "url": "https://thehackernews.com/2026/10/docker-fixes-critical-two-year-old-hub.html"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "key": "aero",
+   "label": "Airbus & aéronautique",
+   "items": [
+    {
+     "title": "Le drone de combat CCA U740 Valkyrie d'Airbus réalise son premier vol européen",
+     "summary": "Airbus a fait voler pour la première fois en Europe son démonstrateur de drone d'accompagnement Valkyrie U740. Son système de mission et processeur souverain final n'a toutefois pas encore été intégré pour cette phase d'essais.",
+     "sources": [
+      {
+       "name": "Aerobuzz",
+       "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQTjZGS2gtZFJkMDg0VUxybWRTS0QxYWRyeUhyQXFJQmE0eE1TeS1IWHdhRlR2c0t2eVR0U2RKazh6bVdCQWtPZWllOWNaWWd6X2ttYXV1ZVMwTG9fN1h5NnJ6UmpqbG56Nk5yZHM3a0otU003VE9XclFTVGltRjhYRUlOWG40dmhjM19ITnZYckpwWFN1UThWcV9n?oc=5"
+      },
+      {
+       "name": "Numerama",
+       "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxNdmN6SXVOa1dvRUdQQ3VYbnFzMnNHM1BIcVRCVDRYbzU5Z0NYQnIxMGxYcF9XVHhJYl9jWE1QaXhWai1fbmxhQ0l5Vng5VlF1ZGl0WW05eUdpMVk4TVEwYzdsbFlNdHpvVS1LSjQ2NHJOeTNQWDYxLUk2Rk9pa3BhSk55U0pjNFR4QTFET2ZDbDZ4ZGJzYlhwdy03eFp4M0I2RFJBLU1iM2VkV0llWnppem42U2gxajhKVVNqTjByaXZNVDNoR25JdDRiVW9jTG5BMDgzZVZ5QnVtbWFuWHl1eDFwVUtIVkU?oc=5"
+      }
+     ]
+    },
+    {
+     "title": "Boeing enregistre 57 livraisons en septembre et signe son meilleur mois de 2026",
+     "summary": "Le concurrent d'Airbus porte son total à 475 avions commerciaux livrés sur les neuf premiers mois (+8 % sur un an), soutenu par une remontée des cadences de remise des 737.",
+     "sources": [
+      {
+       "name": "Les Echos",
+       "url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxPNlE5ZDQzQ1FlX0dlNUxFZV9oZkl5YmZkZ2dTbWJTUEhMR09BYU1HMkNfZHRMandLWUhicjVHRnR2NHdlS3JMTFNvX3BZX3FWQUlSWFZzbEVOcVdJcHJoT3d1T0dkSlJvZDJBOGptRXZWSE85REgyTnlveDFDWkdaRjNPbGZyWFBGWnZIdFNxdHFLSm80aktVNFdrREdJOGF6R3dtU1hNOWR2UGdkOHN1T2lTTnhFcGk4VFQtaVcyNzcyOFdoV2lwYmUyamdEVjZRSEdKNTZxdmU3Ums3bDNGdW5zQkZyank1QXc?oc=5"
+      },
+      {
+       "name": "AeroTime",
+       "url": "https://www.aerotime.aero/articles/boeing-2026-deliveries-orders-airbus-september"
+      }
+     ]
+    },
+    {
+     "title": "La pénurie d'avions commerciaux neufs devrait perdurer jusqu'en 2030",
+     "summary": "Les retards de livraison affectant les flottes mondiales vont s'étendre sur plusieurs années, freinés par les goulets d'étranglement persistants chez les équipementiers et la faible disponibilité des motorisations.",
+     "sources": [
+      {
+       "name": "AeroTime",
+       "url": "https://www.aerotime.aero/articles/airlines-new-airplane-shortage-2030"
+      }
+     ]
+    },
+    {
+     "title": "Airbus UpNext signe un accord spatial avec le suédois APR Technologies",
+     "summary": "La filiale d'évaluation technologique avancée d'Airbus s'associe à APR Technologies dans le domaine des systèmes spatiaux, tandis qu'Airbus prépare par ailleurs une troisième implantation industrielle au Maroc.",
+     "sources": [
+      {
+       "name": "Zonebourse",
+       "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQQlZZX3FqOHZLX2ZBN3RRZ2JoSlNqVTRQek03QkswMUgzOHRpc1Ffd0JxTDJVUkVtYXdvc2VtdWFOS3pDNmV1U2hfeVVwVUplS2pqYWlGTWs1TmFHNUo3bFlnekJzQzFNNVdrVnBVbFJkTm1heDlfbk9FWjl6YVlERjdmNEpHbFo1cnZhajhKOWNUaHRnN1FUZXRQXzZvMWhkanVRTUUtRG9qQm0tbkdOblhkakFWVE1manpZUmNGeGFMQQ?oc=5"
+      },
+      {
+       "name": "Atlasinfo",
+       "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxQcE9pQTJmQW5sVl9kX25mYWRPTXVNRm5rUjBKMkhvUFNWRG94UFZJU3NUSlhVT3pLbDljUHpzZnVZYkh1bW9lenVveGtfaHdFbHRKd21ITmVnbHlkaUdCanlNbVFTaEl2dTRfaXEyekNJdWw2NTVZd0s2ZzdldDkxRWhVMFdmT29KanNITE1HeWYxOWJ5elVneUcxTmFaX0lqQlJXTFR2YUJneWxIUTVEWnVBeWgwa1R5SGJxM0NGaW0ySFp5eWNPcWo2UnphNXh0dkxLRXlZTGR3TFYxTXJv?oc=5"
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "alerts": [
+  {
+   "level": "CRITIQUE",
+   "title": "Ivanti Connect Secure : chaîne de zero-days exploitée en accès root",
+   "body": "Trois vulnérabilités sont enchaînées en conditions réelles pour obtenir une exécution de code arbitraire non authentifiée avec privilèges complets. Deux correctifs sont disponibles, mais la remédiation reste partielle : appliquez immédiatement les mises à jour et auditez les journaux de connexion.",
+   "refs": [
+    "Ivanti Connect Secure 0-day chain"
+   ]
+  },
+  {
+   "level": "CRITIQUE",
+   "title": "Ghostscript : exécution de code à distance via injection de PDF",
+   "body": "Un dépassement de tampon de tas critique permet une exécution de code à distance lors du traitement de fichiers PDF spécialement forgés. Mettez à jour le moteur Ghostscript sur l'ensemble des serveurs assurant du rendu documentaire.",
+   "refs": [
+    "CVE-2026-39919"
+   ]
+  }
+ ],
+ "feedErrors": [
+  "CISA - Cybersecurity Advisories",
+  "Google DeepMind Blog",
+  "FlightGlobal"
+ ]
+}
