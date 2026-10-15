@@ -1,6 +1,12 @@
 {
- "updated": "2026-10-14T11:42:26.504129+00:00",
+ "updated": "2026-10-15T11:19:03.250564+00:00",
  "editions": [
+  {
+   "id": "2026-10-15-daily",
+   "date": "2026-10-15",
+   "kind": "daily",
+   "lede": "Une vague d'exploitations actives cible des équipements réseau critiques chez Palo Alto Networks, Cisco et Ivanti, tandis qu'Airbus prépare l'expansion industri"
+  },
   {
    "id": "2026-10-14-daily",
    "date": "2026-10-14",

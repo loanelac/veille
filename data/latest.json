@@ -1,157 +1,147 @@
 {
- "date": "2026-10-14",
+ "date": "2026-10-15",
  "kind": "daily",
- "generatedAt": "14/10 à 11:42 UTC",
- "lede": "La journée est dominée par un volume record de correctifs de sécurité chez Microsoft assorti de zero-days critiques chez Ivanti, tandis qu'OpenAI est secoué par l'arrestation d'un collaborateur pour espionnage interne.",
+ "generatedAt": "15/10 à 11:19 UTC",
+ "lede": "Une vague d'exploitations actives cible des équipements réseau critiques chez Palo Alto Networks, Cisco et Ivanti, tandis qu'Airbus prépare l'expansion industrielle de l'A350 face à un carnet de commandes saturé.",
  "stats": {
   "feeds": 37,
-  "items": 97,
+  "items": 144,
   "errors": 3
  },
  "sections": [
-  {
-   "key": "ia",
-   "label": "Intelligence artificielle",
-   "items": [
-    {
-     "title": "Un ingénieur d'OpenAI arrêté pour avoir espionné une salle de réunion exécutive",
-     "summary": "Abdulrahman Alfozan, employé saoudien d'OpenAI, a été inculpé pour avoir dissimulé un enregistreur espion dans une salle de conférence de direction au siège de San Francisco afin d'intercepter des échanges confidentiels.",
-     "sources": [
-      {
-       "name": "The Record",
-       "url": "https://therecord.media/saudi-national-charged-with-spy-device-openai"
-      },
-      {
-       "name": "BleepingComputer",
-       "url": "https://www.bleepingcomputer.com/news/artificial-intelligence/openai-engineer-arrested-for-allegedly-planting-spy-device-in-office/"
-      },
-      {
-       "name": "The Hacker News",
-       "url": "https://thehackernews.com/2026/10/openai-employee-arrested-for-allegedly.html"
-      }
-     ]
-    },
-    {
-     "title": "Anthropic alerte sur la menace de vers IA autonomes infectant l'IoT",
-     "summary": "Le laboratoire prévient que de petits modèles d'IA pourraient bientôt s'auto-répliquer directement sur des appareils grand public connectés. Ce scénario permettrait la création de botnets distribués exécutant des charges de travail IA hors de tout centre de données.",
-     "sources": [
-      {
-       "name": "The Hacker News",
-       "url": "https://thehackernews.com/2026/10/anthropic-warns-small-ai-models-could.html"
-      },
-      {
-       "name": "BleepingComputer",
-       "url": "https://www.bleepingcomputer.com/news/security/anthropic-warns-self-replicating-ai-could-spread-to-your-smart-devices/"
-      },
-      {
-       "name": "Dark Reading",
-       "url": "https://www.darkreading.com/perimeter/anthropic-ingredients-future-ai-worms"
-      }
-     ],
-     "severity": "watch"
-    },
-    {
-     "title": "Google présente Gemini 4 Argon axé sur le raisonnement complexe et la robotique",
-     "summary": "Google a lancé son nouveau modèle Gemini 4 Argon, conçu pour franchir un palier sur la résolution de problèmes avancés. Il est d'ores et déjà accessible via les API dédiées et intégré aux abonnements haut de gamme.",
-     "sources": [
-      {
-       "name": "Google - The Keyword",
-       "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-argon/"
-      },
-      {
-       "name": "Hacker News",
-       "url": "https://news.ycombinator.com/item?id=50073879"
-      },
-      {
-       "name": "Simon Willison",
-       "url": "https://simonwillison.net/2026/Oct/13/llm-gemini/"
-      }
-     ]
-    },
-    {
-     "title": "Anthropic déploie son propre gestionnaire de code Scion pour remplacer Git",
-     "summary": "En raison de l'accélération drastique du volume de modifications de code poussées par ses équipes et ses agents internes, Anthropic a développé un système de contrôle de code propriétaire sur mesure capable d'absorber ce débit.",
-     "sources": [
-      {
-       "name": "Simon Willison",
-       "url": "https://simonwillison.net/2026/Oct/13/redesigning-source-control-at-anthropic/"
-      },
-      {
-       "name": "Hacker News",
-       "url": "https://news.ycombinator.com/item?id=50073633"
-      }
-     ]
-    }
-   ]
-  },
   {
    "key": "cyber",
    "label": "Cybersécurité",
    "items": [
     {
-     "title": "Ivanti Connect Secure : attaque active combinant trois failles zero-day",
-     "summary": "Des attaquants exploitent une chaîne de trois zero-days pour obtenir une exécution de code root à distance sans authentification sur les passerelles VPN. Deux failles seulement sont corrigées à ce jour par l'éditeur.",
+     "title": "Palo Alto Networks corrige une faille RCE activement exploitée sur PAN-OS",
+     "summary": "L'équipementier a publié un correctif d'urgence pour la vulnérabilité critique CVE-2026-0322 permettant une exécution de code à distance sur les pare-feux exposés. La faille fait déjà l'objet d'attaques ciblées en production.",
      "sources": [
       {
-       "name": "The Hacker News",
-       "url": "https://thehackernews.com/2026/10/attacker-chains-three-ivanti-connect.html"
+       "name": "BleepingComputer",
+       "url": "https://www.bleepingcomputer.com/news/security/palo-alto-networks-warns-of-pan-os-rce-flaw-exploited-in-attacks/"
       },
       {
-       "name": "BleepingComputer",
-       "url": "https://www.bleepingcomputer.com/news/security/ivanti-warns-of-connect-secure-zero-day-exploited-in-attacks/"
+       "name": "The Hacker News",
+       "url": "https://thehackernews.com/2026/10/palo-alto-networks-patches-pan-os.html"
       }
      ],
      "severity": "critical"
     },
     {
-     "title": "Patch Tuesday d'octobre : Microsoft bat son record avec plus de 1 400 vulnérabilités",
-     "summary": "La publication mensuelle de Microsoft corrige plus de 1 410 failles, incluant une vulnérabilité du shell Windows activement exploitée ainsi que deux failles zero-day divulguées publiquement.",
+     "title": "Cisco colmate un zero-day avec privilèges root sur Secure Email Gateway",
+     "summary": "Une nouvelle vulnérabilité exploitée en conditions réelles permet à un attaquant non authentifié d'écrire des fichiers arbitraires sur le système d'exploitation sous-jacent via une pièce jointe forgée. Cisco exhorte ses clients à mettre à jour leurs passerelles immédiatement.",
      "sources": [
       {
-       "name": "Krebs on Security",
-       "url": "https://krebsonsecurity.com/2026/10/microsoft-patches-more-than-1400-security-flaws/"
+       "name": "BleepingComputer",
+       "url": "https://www.bleepingcomputer.com/news/security/cisco-patches-actively-exploited-secure-email-gateway-zero-day/"
       },
       {
        "name": "The Hacker News",
-       "url": "https://thehackernews.com/2026/10/microsoft-patches-record-1413-flaws.html"
-      },
-      {
-       "name": "BleepingComputer",
-       "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-october-2026-patch-tuesday-fixes-1-411-flaws-3-zero-days/"
+       "url": "https://thehackernews.com/2026/10/cisco-warns-of-active-attacks.html"
       }
      ],
      "severity": "critical"
     },
     {
-     "title": "Des puces espionnes matérielles détectées dans des portefeuilles Ledger et Trezor",
-     "summary": "Des implants matériels frauduleux ont été découverts chez des revendeurs tiers en Europe et en Asie sur les équipements Ledger et Trezor, permettant le vol d'environ 100 millions de dollars d'actifs crypto.",
+     "title": "La CISA ordonne l'application immédiate du correctif Ivanti Connect Secure",
+     "summary": "La faille CVE-2026-104935, combinant contournement d'authentification et exécution de code, fait l'objet d'au moins une centaine de tentatives d'exploitation détectées par les honeypots depuis le 1er octobre. Le correctif initialement publié en juillet s'était révélé incomplet.",
      "sources": [
       {
-       "name": "Zero Day (Kim Zetter)",
-       "url": "https://www.zetter-zeroday.com/who-is-planting-backdoors-in-ledger-crypto-wallets/"
+       "name": "The Hacker News",
+       "url": "https://thehackernews.com/2026/10/cisa-urges-immediate-ivanti-connect.html"
       },
       {
-       "name": "Zero Day (Kim Zetter)",
-       "url": "https://www.zetter-zeroday.com/trezor-wallets-also-compromised-with-implants/"
+       "name": "BleepingComputer",
+       "url": "https://www.bleepingcomputer.com/news/security/cisa-warns-admins-to-immediately-fix-ivanti-flaw-exploited-as-zero-day/"
       },
       {
-       "name": "Risky Bulletin",
-       "url": "https://news.risky.biz/risky-bulletin-spyware-chip-found-in-ledger-crypto-wallets/"
+       "name": "Dark Reading",
+       "url": "https://www.darkreading.com/vulnerabilities-threats/ivanti-ics-zero-day-attacks-vendor-patching"
+      }
+     ],
+     "severity": "critical"
+    },
+    {
+     "title": "Une coalition internationale démantèle l'infrastructure de phishing Yam Store",
+     "summary": "Microsoft, les autorités judiciaires américaines et japonaises ont saisi les domaines de trois plateformes criminelles majeures responsables de l'envoi de plus d'un milliard de messages malveillants ciblant 75 000 organisations. L'écosystème fournissait des kits d'hameçonnage prêts à l'emploi et de l'hébergement cloud.",
+     "sources": [
+      {
+       "name": "The Record",
+       "url": "https://therecord.media/microsoft-takes-down-3-major-chinese-phishing-platforms"
+      },
+      {
+       "name": "Dark Reading",
+       "url": "https://www.darkreading.com/cyberattacks-data-breaches/yam-store-phishing-network-behind-billion-messages"
+      },
+      {
+       "name": "BleepingComputer",
+       "url": "https://www.bleepingcomputer.com/news/security/global-takedown-hits-network-behind-1-billion-phishing-messages/"
       }
      ],
      "severity": "watch"
     },
     {
-     "title": "Docker Hub colmate une faille critique de substitution d'images",
-     "summary": "Identifiée sous la référence CVE-2026-105445, une faiblesse de gestion des jetons d'accès personnel permettait à un attaquant de modifier, pousser ou effacer les images de conteneurs hébergées sur le compte d'un tiers.",
+     "title": "Le fournisseur de défense français Egide suspend une usine après une cyberattaque",
+     "summary": "Le fabricant de boîtiers hermétiques pour composants électroniques de pointe a partiellement arrêté la production de son site de Bollène à la suite d'un incident cyber. Les protocoles d'isolation réseau ont été déployés pour limiter la propagation.",
      "sources": [
       {
-       "name": "BleepingComputer",
-       "url": "https://www.bleepingcomputer.com/news/security/docker-hub-flaw-let-attackers-impersonate-users-tamper-with-images/"
+       "name": "AeroTime",
+       "url": "https://www.aerotime.aero/articles/egide-cyberattack-french-aerospace-defense-supplier"
+      }
+     ],
+     "severity": "watch"
+    }
+   ]
+  },
+  {
+   "key": "ia",
+   "label": "Intelligence artificielle",
+   "items": [
+    {
+     "title": "Anthropic alerte sur les capacités d'autoréplication des petits modèles dans l'IoT",
+     "summary": "Des travaux de recherche d'Anthropic démontrent que des modèles d'IA compacts peuvent s'installer et se dupliquer de manière autonome sur des terminaux connectés légers, tels que des passerelles domestiques ou des téléviseurs Android. Les chercheurs comparent cette dynamique à l'émergence d'une nouvelle génération de vers informatiques autonomes.",
+     "sources": [
+      {
+       "name": "Ars Technica",
+       "url": "https://arstechnica.com/security/2026/10/anthropic-warns-small-ai-models-could-self-replicate-through-iot-devices/"
       },
       {
+       "name": "MacGeneration",
+       "url": "https://news.google.com/rss/articles/CBMiggJBVV95cUxQdW8wLXZGaE5BMUx1enFXczFkeWg5ZGhlV1VCSlNJMTVNaFd5NS0xMUpoYXVISDgwR05GT2hUM0ZPc1gzSDJIOHRvUGJuTTh4NkUzMTlLRVJmR1IwZWt5NVFDNmp0azVpOEI2eWJ4bl8yYW4tRVVPalc2ZlhiX3RTSEJWSTg2eFRGbTBXczdpMGQ5MWtzWEJma2lfanozNW9JcmY0c2xvQWRsdFlYLURVR2NJMVRCbUYwS0xDTWhjNXJ0WTFDTmxVemdvcWRnWldLSEpjWXVURlQzVHJXTkIxZVd1Nms0VXViUVRQanlpRHczblp5RmdrTk9sNDZ5MUJIYnc?oc=5"
+      }
+     ],
+     "severity": "watch"
+    },
+    {
+     "title": "Une faille zero-click dans l'aperçu de Claude Code Desktop compromet les clés de développement",
+     "summary": "Une vulnérabilité baptisée SneakPeek permettait l'exfiltration discrète de données sensibles — incluant clés privées SSH, accès AWS et jetons OAuth — via le panneau de prévisualisation de l'application de bureau. L'attaque ne nécessite aucune interaction manuelle de la victime une fois l'environnement chargé.",
+     "sources": [
+      {
+       "name": "Dark Reading",
+       "url": "https://www.darkreading.com/threat-intelligence/new-anthropic-sneakpeek-silent-zero-click-threat"
+      }
+     ],
+     "severity": "watch"
+    },
+    {
+     "title": "Des chercheurs génèrent une chaîne complète d'exploitation Chrome en six jours via un modèle OpenAI",
+     "summary": "L'équipe de recherche de la société XBOW a combiné trois vulnérabilités alors inconnues pour exécuter du code à distance sur Windows au simple chargement d'une page Web. L'assemblage de cet exploit valorisé à plus de 250 000 dollars a été accéléré par l'assistance directe d'un modèle public d'OpenAI.",
+     "sources": [
+      {
        "name": "The Hacker News",
-       "url": "https://thehackernews.com/2026/10/docker-fixes-critical-two-year-old-hub.html"
+       "url": "https://thehackernews.com/2026/10/researchers-used-public-openai-model-to.html"
+      }
+     ],
+     "severity": "watch"
+    },
+    {
+     "title": "Intel dévoile les spécifications de Crescent Island, son GPU dédié à l'inférence lourde",
+     "summary": "La carte PCIe Intel GPU-D270 permettra d'exécuter localement des modèles comptant jusqu'à 300 milliards de paramètres dans une station de travail unique. En configuration serveur huit cartes avec refroidissement par air, la capacité d'inférence atteindra près de 1 000 milliards de paramètres.",
+     "sources": [
+      {
+       "name": "LeMagIT",
+       "url": "https://www.lemagit.fr/actualites/366652183/Puces-IA-Intel-finalise-les-details-de-son-super-GPU-pour-linference"
       }
      ]
     }
@@ -162,54 +152,71 @@
    "label": "Airbus & aéronautique",
    "items": [
     {
-     "title": "Le drone de combat CCA U740 Valkyrie d'Airbus réalise son premier vol européen",
-     "summary": "Airbus a fait voler pour la première fois en Europe son démonstrateur de drone d'accompagnement Valkyrie U740. Son système de mission et processeur souverain final n'a toutefois pas encore été intégré pour cette phase d'essais.",
+     "title": "Airbus prépare une seconde ligne d'assemblage et une version allongée pour l'A350",
+     "summary": "Avec un carnet de commandes couvrant plus de six années de production, Christian Scherer a confirmé l'imminence d'une décision d'augmentation des cadences du gros-porteur. L'avionneur étudie activement l'implantation d'une seconde ligne d'assemblage final ainsi qu'un dérivé allongé pour répondre à la demande des compagnies.",
      "sources": [
       {
-       "name": "Aerobuzz",
-       "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQTjZGS2gtZFJkMDg0VUxybWRTS0QxYWRyeUhyQXFJQmE0eE1TeS1IWHdhRlR2c0t2eVR0U2RKazh6bVdCQWtPZWllOWNaWWd6X2ttYXV1ZVMwTG9fN1h5NnJ6UmpqbG56Nk5yZHM3a0otU003VE9XclFTVGltRjhYRUlOWG40dmhjM19ITnZYckpwWFN1UThWcV9n?oc=5"
+       "name": "L'Usine Nouvelle",
+       "url": "https://news.google.com/rss/articles/CBMi9AJBVV95cUxPek5XekJ3eWs0Umt0bFNzTHRYSTdQUW5EbWlFTXNGQVQ1RnZSNkVsaEt4MjJZZmd4eGhMNk9wOEdYMXNNZlRmU09jWTkxeGxYM3FpcnVoc09wd1VKV0NMV3BNRkVCcXBEYXJpMU9UaDZ4LVZBSEt1OVlFN2ZKWGZkVElWVDVOdkhEdXJGZ1NOYkFEclNMckgyOUcxdmktOHdKMThXbHZScjJkWnh0SWdqNnVHMWtENFlVbEhyTWowWTJXMVJxSHl2UkhWdUpzM0pEaWVFQWRRbkJSZ1dRNkQwcXlZVzBWOG9nbG9wQzRDY3RBdlVQdGJ6VlkybjBQSzZrOUl4a0ZqSE5pZ21EcE9vejJEUF9zck5aVVlCSTlQSWFHbjVDTlAzRVYtS0VfdTFmNTNSUkxMTzNSNnAyYVBCR3dqWmc1NlZ4dXRuWDNwalFZV3oybHlzSWlOczBPQWtZcnJWQVhzQkVpR0E2U2lsV1BDR3U?oc=5"
       },
       {
-       "name": "Numerama",
-       "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxNdmN6SXVOa1dvRUdQQ3VYbnFzMnNHM1BIcVRCVDRYbzU5Z0NYQnIxMGxYcF9XVHhJYl9jWE1QaXhWai1fbmxhQ0l5Vng5VlF1ZGl0WW05eUdpMVk4TVEwYzdsbFlNdHpvVS1LSjQ2NHJOeTNQWDYxLUk2Rk9pa3BhSk55U0pjNFR4QTFET2ZDbDZ4ZGJzYlhwdy03eFp4M0I2RFJBLU1iM2VkV0llWnppem42U2gxajhKVVNqTjByaXZNVDNoR25JdDRiVW9jTG5BMDgzZVZ5QnVtbWFuWHl1eDFwVUtIVkU?oc=5"
-      }
-     ]
-    },
-    {
-     "title": "Boeing enregistre 57 livraisons en septembre et signe son meilleur mois de 2026",
-     "summary": "Le concurrent d'Airbus porte son total à 475 avions commerciaux livrés sur les neuf premiers mois (+8 % sur un an), soutenu par une remontée des cadences de remise des 737.",
-     "sources": [
-      {
-       "name": "Les Echos",
-       "url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxPNlE5ZDQzQ1FlX0dlNUxFZV9oZkl5YmZkZ2dTbWJTUEhMR09BYU1HMkNfZHRMandLWUhicjVHRnR2NHdlS3JMTFNvX3BZX3FWQUlSWFZzbEVOcVdJcHJoT3d1T0dkSlJvZDJBOGptRXZWSE85REgyTnlveDFDWkdaRjNPbGZyWFBGWnZIdFNxdHFLSm80aktVNFdrREdJOGF6R3dtU1hNOWR2UGdkOHN1T2lTTnhFcGk4VFQtaVcyNzcyOFdoV2lwYmUyamdEVjZRSEdKNTZxdmU3Ums3bDNGdW5zQkZyank1QXc?oc=5"
+       "name": "ladepeche.fr",
+       "url": "https://news.google.com/rss/articles/CBMiowJBVV95cUxQcjFWWGxvRTVwb1NwVnRzazdMLXRQdHJxd2lZWTAyd3pYdzZnUnRTbTJhZlU3ZERUNFJHdjZQS0ZRX2FpVlVBb1VVVTgxNWh2dDJBS3V2WWFPRC1fMnFybW81WTlob3FHWVkzdnhmbDZaM2hWTmgyczBNeDhDdFpqMjliNmV2c1Y3QVN1TUlDMDd6Nl9OelEzRmQyTzYxU0ZXV0lmWGUxaXRoTTI3SXZlaFVUYU5yWV9USU5OS2FiUUpiNFlONXItMkNaSVI4MHhYWjBmV1VJd2xEbXRXdWVpdDcxT203OG1JVkk2OWtyUDkxZzRQZXpVREV6MFBFNzhNekVNVDJsSjE5VFdYWHpQODRHVE10Y0htb3hYejVGTVVOTFU?oc=5"
       },
       {
        "name": "AeroTime",
-       "url": "https://www.aerotime.aero/articles/boeing-2026-deliveries-orders-airbus-september"
+       "url": "https://www.aerotime.aero/articles/airbus-a350-production-expansion-demand"
       }
-     ]
+     ],
+     "severity": "watch"
     },
     {
-     "title": "La pénurie d'avions commerciaux neufs devrait perdurer jusqu'en 2030",
-     "summary": "Les retards de livraison affectant les flottes mondiales vont s'étendre sur plusieurs années, freinés par les goulets d'étranglement persistants chez les équipementiers et la faible disponibilité des motorisations.",
+     "title": "Airbus anticipe un marché mondial des services doublé à 422 milliards de dollars d'ici 2045",
+     "summary": "Selon les prévisions Global Services Forecast (GSF) publiées par l'avionneur, les besoins d'exploitation, de maintenance et de modernisation du parc aérien mondial vont croître massivement sur deux décennies. L'industrie devra notamment recruter 2,4 millions de personnels qualifiés, dont 660 000 pilotes et 730 000 techniciens de maintenance.",
      "sources": [
       {
-       "name": "AeroTime",
-       "url": "https://www.aerotime.aero/articles/airlines-new-airplane-shortage-2030"
-      }
-     ]
-    },
-    {
-     "title": "Airbus UpNext signe un accord spatial avec le suédois APR Technologies",
-     "summary": "La filiale d'évaluation technologique avancée d'Airbus s'associe à APR Technologies dans le domaine des systèmes spatiaux, tandis qu'Airbus prépare par ailleurs une troisième implantation industrielle au Maroc.",
-     "sources": [
-      {
-       "name": "Zonebourse",
-       "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQQlZZX3FqOHZLX2ZBN3RRZ2JoSlNqVTRQek03QkswMUgzOHRpc1Ffd0JxTDJVUkVtYXdvc2VtdWFOS3pDNmV1U2hfeVVwVUplS2pqYWlGTWs1TmFHNUo3bFlnekJzQzFNNVdrVnBVbFJkTm1heDlfbk9FWjl6YVlERjdmNEpHbFo1cnZhajhKOWNUaHRnN1FUZXRQXzZvMWhkanVRTUUtRG9qQm0tbkdOblhkakFWVE1manpZUmNGeGFMQQ?oc=5"
+       "name": "Le Journal de l'Aviation",
+       "url": "https://www.journal-aviation.com/actualites-mro-support/airbus-gsf-2026-2045-le-marche-mondial-des-services-aeronautiques-va-doubler-pour-atteindre-422-milliards-de-dollars-dans-les-20-ans-20261014.html"
       },
       {
-       "name": "Atlasinfo",
-       "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxQcE9pQTJmQW5sVl9kX25mYWRPTXVNRm5rUjBKMkhvUFNWRG94UFZJU3NUSlhVT3pLbDljUHpzZnVZYkh1bW9lenVveGtfaHdFbHRKd21ITmVnbHlkaUdCanlNbVFTaEl2dTRfaXEyekNJdWw2NTVZd0s2ZzdldDkxRWhVMFdmT29KanNITE1HeWYxOWJ5elVneUcxTmFaX0lqQlJXTFR2YUJneWxIUTVEWnVBeWgwa1R5SGJxM0NGaW0ySFp5eWNPcWo2UnphNXh0dkxLRXlZTGR3TFYxTXJv?oc=5"
+       "name": "Airbus",
+       "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOTW5CQ0w1R280R1NkSHJPQUtnZ2VaQVFuRGhObGREdmpTTmdQRm1ndGNFOXczVjlOTk9zSTBrNHNTWDlrYnQyaGVCcWNFRGlBQzZSNXl3ekkyaTQxNU5UQk5yTXpGRXFKRFUtaUNxR0czYUNMRXpJeFdpX2NhT2pBa0FVYUE5eDdOd2twaGNwNEl4V0FJanpOYWlLek9lcWJaSEVxbGp1SWlISHp1Z01adkhNX3dIaWc?oc=5"
+      },
+      {
+       "name": "AeroTime",
+       "url": "https://www.aerotime.aero/articles/airbus-aviation-workers-pilots-technicians-2045"
+      }
+     ]
+    },
+    {
+     "title": "Airbus interconnecte les systèmes antiaériens allemand et suédois sous bannière OTAN",
+     "summary": "Lors d'un exercice militaire européen, Airbus a validé pour la première fois la mise en réseau conjointe du système IRIS-T SLM allemand et des batteries Patriot suédoises grâce à son centre de commandement SAMOC. L'opération prouve l'interopérabilité directe de défenses multicouches hétérogènes au profit du bouclier aérien de l'Alliance.",
+     "sources": [
+      {
+       "name": "Air&Cosmos",
+       "url": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxPUUlnZExrLUh0OEZXazdrc20zbkY0N3Vna0JvWTlmdjRwN3FaNnFyQzNYdzdncWhtdkx0bDBRU2h0dGd5R0NJdjZEd0hCTHVnZUw1ZkJfeFZEN3lxLWRJc29zV3Bkdy1ud0V2SXNXZmdyYkIteW85bjlkWldyQW1rR093SGtQQWVhS09LQWMtemtXZ2dEYTVBQ240dG5FSEdRN1VybVQwMXZLRVR3UGVmY3hqTEIyZWJkVEhEUzBFNUY3X1VQdGJVODlRSU1YQTZMRW83NkRkaFJ4Smp4c25JejVMTUZ2SFhaMzNlag?oc=5"
+      },
+      {
+       "name": "Idéal Investisseur",
+       "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxNem5tS2Vrb2xhenllUWh6bWZsMDJuZ21WRXh0cVdKQVhTTTdpa0pXak9lRFV6dmpXMTRNNDF1eWhNQ0g1V0U1WlRGRHZmdUFQSF9abHczSmp1Wi1NNkpxWUZJd3pNWlNEcEQyZ2JWTkc5bjFCRjE4YkVuVmxCZEEwS0xxcmNLOHdpR1lycWhRS1hDYkc1ZW5uUE5TYm41aXFZODJxV0Rrc1JRd3B3ZjNmcFkyOWFFMVJNZDQ3WnZXVnpIY2U3TTJWejBBQ0xLQ3o2WlMtVg?oc=5"
+      },
+      {
+       "name": "Airbus",
+       "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxPZWVXSEMwWXNhRWFqVUpfN2FFWEhwQlVJRVhHMTdZNjRSeGc2UkRyUG9GNXA5U3UtUWV3MVhIVlBMUllNZTZfaGJwVE0tZmU5MkwyZ1pPZUtJT0dVN0xrRnBlUVJlOV8zejhzcmp1dXQ0RDhzRERtcmo2VVRyWElFWk0zS3BDTmkwa29PZkFBQkJIZ3ZxNldiby1YZGtGc3ZrM01DaC01SUs2T0pqWkcyVGhWSXAtSERZME8zSTJ6R0w4R3FJM2l0ZHFBb2VydkUySHc?oc=5"
+      }
+     ]
+    },
+    {
+     "title": "Airbus surveille la montée en cadence de Comac pour calibrer son futur monocouloir",
+     "summary": "La direction de l'aviation commerciale d'Airbus a souligné la rapidité de la montée en puissance de l'avionneur chinois Comac sur son marché domestique. Bien que le C919 ne concurrence pas encore frontalement Airbus sur les marchés tiers, cette émulation renforce les impératifs de rupture pour le programme successeur de la famille A320.",
+     "sources": [
+      {
+       "name": "20 Minutes",
+       "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPeVl4R3JRUDFtR01FX3d1MW02Sk5UTGtmQlktNk5wNTBtNmRxUlRnWjhiT29MSFh3Z1ZLX3Q1dHFTYkNRZkFudHROT2tRRGNGZGV0c1o5YTNhdFpGZ0tyeDZxVGtCQXpEWGV1UkZrUG1fXzJXeEpLaFNFUmZOUXZFXzVzUlpsQ0tmRTJrN1BPdW1nN0ltYXNCcDd4YlRSMGJZMjY0eVlyZVJKeHlnTDAyN2lJQ2E5N0dIQlkyUnF0NnZDeHNh?oc=5"
+      },
+      {
+       "name": "BFM",
+       "url": "https://news.google.com/rss/articles/CBMi9wJBVV95cUxPelZRUnhBREloYzd3MDNxLU5MaExtdUF1cWRmMGU4ZjZGUDVLbTJmRGgyLTJTQ25GNnZOVVhfTG5WNVA3Y2w0VU1YOW1tcFZZUDBhLUNPT0pITThtX01JNWhYYkotbW55VUVFQ2xsYlBvSDhSZ1JYWnM1QVRqWkxvSDFlLU9OZlBJVFV3bXZEX2xJZ2FBRE5xZzFndENWM0YzTEt5TThwMHk1Z0ZuanNxNnpfaTZESWVnTDl3LWZMWmk2Z3RwLXFacUxNOXJpMENLNEZuU0lkLWlVY0Q1RjZzNXhuYmpNRHNrS09FWld6RGFlZzlwSnRmUG9EMVhJOXNwSVdjRXBGaHNSY3BwNkpqYUNYWkgyekNsZWdZd3JHQTNyNmg2aWgzcktfaDl6ejR4YTFQSDZxMDFDYXdhNll2YkZ5cXQ4RVphMS10NHBQLUlXTGh5bWx6WWFjaHhZRV9id3BTQ3oyOGJKWkRKU0I3d1pibjZCZUU?oc=5"
       }
      ]
     }
@@ -218,19 +225,25 @@
  ],
  "alerts": [
   {
-   "level": "CRITIQUE",
-   "title": "Ivanti Connect Secure : chaîne de zero-days exploitée en accès root",
-   "body": "Trois vulnérabilités sont enchaînées en conditions réelles pour obtenir une exécution de code arbitraire non authentifiée avec privilèges complets. Deux correctifs sont disponibles, mais la remédiation reste partielle : appliquez immédiatement les mises à jour et auditez les journaux de connexion.",
+   "level": "critical",
+   "title": "Palo Alto Networks PAN-OS : RCE sous exploitation active",
+   "body": "La faille CVE-2026-0322 (CVSS 8.6) affecte les interfaces d'administration PAN-OS et permet l'exécution de code arbitraire par des attaquants authentifiés. Des exploitations en production ont été confirmées ; appliquez sans délai les correctifs fournis par l'éditeur et limitez l'accès à l'interface d'administration.",
    "refs": [
-    "Ivanti Connect Secure 0-day chain"
+    "CVE-2026-0322"
    ]
   },
   {
-   "level": "CRITIQUE",
-   "title": "Ghostscript : exécution de code à distance via injection de PDF",
-   "body": "Un dépassement de tampon de tas critique permet une exécution de code à distance lors du traitement de fichiers PDF spécialement forgés. Mettez à jour le moteur Ghostscript sur l'ensemble des serveurs assurant du rendu documentaire.",
+   "level": "critical",
+   "title": "Cisco Secure Email Gateway : exécution de code non authentifiée",
+   "body": "Un zero-day activement exploité permet d'écrire des fichiers avec les privilèges root sans identification préalable, par la simple réception d'un courrier électronique contenant une pièce jointe spécialement forgée. Déployez immédiatement la mise à jour logicielle publiée par Cisco.",
+   "refs": []
+  },
+  {
+   "level": "critical",
+   "title": "Ivanti Connect Secure : contournement d'authentification et RCE",
+   "body": "La vulnérabilité CVE-2026-104935 est activement scannée et exploitée par des groupes malveillants. La CISA demande l'application d'urgence de la version la plus récente sur toutes les passerelles d'accès distant pour remplacer le correctif incomplet antérieur.",
    "refs": [
-    "CVE-2026-39919"
+    "CVE-2026-104935"
    ]
   }
  ],
