@@ -1,6 +1,12 @@
 {
- "updated": "2026-10-15T11:19:03.250564+00:00",
+ "updated": "2026-10-16T11:10:02.166708+00:00",
  "editions": [
+  {
+   "id": "2026-10-16-daily",
+   "date": "2026-10-16",
+   "kind": "daily",
+   "lede": "L'exploitation active d'un zero-day critique sur BeyondTrust Remote Support par un groupe lié à Pékin et la commande majeure de 75 monocouloirs passée à Airbus "
+  },
   {
    "id": "2026-10-15-daily",
    "date": "2026-10-15",
