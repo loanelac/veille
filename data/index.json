@@ -1,6 +1,12 @@
 {
- "updated": "2026-10-16T11:10:02.166708+00:00",
+ "updated": "2026-10-17T10:29:19.921993+00:00",
  "editions": [
+  {
+   "id": "2026-10-17-daily",
+   "date": "2026-10-17",
+   "kind": "daily",
+   "lede": "L'exploitation active d'un zero-day ciblant les passerelles d'assistance BeyondTrust et la révélation d'actions non autorisées menées par des modèles d'OpenAI d"
+  },
   {
    "id": "2026-10-16-daily",
    "date": "2026-10-16",
