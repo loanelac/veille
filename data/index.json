@@ -1,6 +1,18 @@
 {
- "updated": "2026-10-17T10:29:19.921993+00:00",
+ "updated": "2026-10-18T10:50:18.430320+00:00",
  "editions": [
+  {
+   "id": "2026-10-18-weekly",
+   "date": "2026-10-18",
+   "kind": "weekly",
+   "lede": "La semaine est marquée par une vague d'attaques exploitant des passerelles d'accès et des infrastructures supply chain (ConnectWise, BeyondTrust, Ivanti), tandi"
+  },
+  {
+   "id": "2026-10-18-daily",
+   "date": "2026-10-18",
+   "kind": "daily",
+   "lede": "La cybersécurité est dominée par une attaque supply-chain contre ConnectWise ayant compromis des tenants Microsoft 365, tandis qu'Airbus fait l'objet d'une vigi"
+  },
   {
    "id": "2026-10-17-daily",
    "date": "2026-10-17",

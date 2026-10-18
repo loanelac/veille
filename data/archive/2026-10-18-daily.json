@@ -1,0 +1,197 @@
+{
+ "date": "2026-10-18",
+ "kind": "daily",
+ "generatedAt": "18/10 à 10:49 UTC",
+ "lede": "La cybersécurité est dominée par une attaque supply-chain contre ConnectWise ayant compromis des tenants Microsoft 365, tandis qu'Airbus fait l'objet d'une vigilance de la FAA sur l'A380 tout en concrétisant une commande stratégique au Bangladesh.",
+ "stats": {
+  "feeds": 37,
+  "items": 36,
+  "errors": 2
+ },
+ "sections": [
+  {
+   "key": "ia",
+   "label": "Intelligence artificielle",
+   "items": [
+    {
+     "title": "La Chine prépare un contrôle strict à l'exportation sur 23 technologies d'IA",
+     "summary": "Pékin prévoit d'encadrer les exportations de 23 briques technologiques liées à l'intelligence artificielle. Cette initiative s'inscrit dans un contexte d'intensification des rivalités technologiques et stratégiques avec Washington.",
+     "sources": [
+      {
+       "name": "ZATAZ",
+       "url": "https://www.zataz.com/la-chine-veut-controler-ses-exportations-dia/"
+      }
+     ]
+    },
+    {
+     "title": "Replit délaisse Anthropic et fait de ChatGPT son modèle principal",
+     "summary": "La plateforme de développement Replit a annoncé adopter les modèles de ChatGPT comme moteur principal pour ses outils de programmation. Ce choix officialise une prise de distance avec Anthropic, partenaire historique du service.",
+     "sources": [
+      {
+       "name": "Brief IA",
+       "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNRExuOG8xSXFjQ0loVWNJd3llMkl4QXJTTFJaYlltVVBMSnlWcTlRY05tS25oMzZaY1RCSmhtTjJjRW80UUNDeDItQW1obUMwMURrWkc5cHA4WkMtZXBqLVhEc1ZHRExXNFVwdlBSeUMxaGktV1VWMDYybWdwR2JMS0ZFbkhUcTh1SWlWYUhvRHNDR0hja1lR?oc=5"
+      },
+      {
+       "name": "Pasquale Pillitteri",
+       "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOQUlrUzQ1SndjYnNWWi1pdC00TFFiSWNDZzF5WkpjMmlTdVZrcWk5MXlhV2FYNTZuWnl0OEJTenNwOG1VdDVYVUNNOHk0aWlOdUkzM2tBaHl6aTRVam5RUF9iSnM1bzRCRzkxa0ZXOUV5bjZEX2ExWHhGalhHQ3BDb1RsOWh3dGhkazd0QlFlTFpVVnBGbnZ6XzNqajlRMFRQb2NGdEpYaw?oc=5"
+      }
+     ]
+    },
+    {
+     "title": "DeepSeek ouvre une API de recherche et d'extraction web à bas coût",
+     "summary": "L'entreprise DeepSeek a lancé une API de recherche et d'extraction de données web facturée 0,75 dollar pour 1 000 requêtes réussies. Ce service vise à faciliter l'alimentation documentaire des agents et modèles de langage à grande échelle.",
+     "sources": [
+      {
+       "name": "Hacker News",
+       "url": "https://api-docs.deepseek.com/guides/search/"
+      }
+     ]
+    },
+    {
+     "title": "Anthropic réduit ses postes juniors face aux gains de productivité de l'IA interne",
+     "summary": "Les gains d'efficacité apportés par ses propres modèles conduisent Anthropic à faire évoluer ses effectifs en réduisant le recrutement de profils débutants. L'organisation du travail s'oriente vers des postes expérimentés concentrés sur la supervision des systèmes automatisés.",
+     "sources": [
+      {
+       "name": "Brief IA",
+       "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNRll4SlAxLTl4bWFrV1YyQkJLVFN3V3FlS1pTT2l2ZHlRdGF0TEV1bjNvMWV1RHVXNHQ1YnBlV2wyRGZBMzdKMU9oQjN3S1lpeXYwZ3dkQ2g1T09nREU5T0NjNjFZVnNucXQtWEhpUHEtMWxfbDN5WmJtUnZXNlFpS3NlT2RfdXJQc2tiazhn?oc=5"
+      },
+      {
+       "name": "Mon Carnet – de l'actualité numérique",
+       "url": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxPdVN3cHNUVkdyMVZ2UzM5SUFXSjY4TE15cjF4QUFyU09PNzJOWG9mSHlKZm9kekt5ZHlrSXFqcUlmN1Q1UWx1a3FrdmwtUE54UHV0V3ZmWk5JaVlIaU44eWN3azBDeDFUaTNSUE83RUFDRzJGNXJyVTJPa25GV3ZNbXdRU1Q2LU9QdUxsc3FVSHlLSUNGUlZSVHVmYVh1VXlaVm10Z3U3cXlDdk5CVnNReDN5OWxLaFBCbTh6clBCWmxQTzJBd3FqbEV5OXNyYnV2c2FsZ2N3QmlsbHBmZ2dtOFR3ZlZNazhCaWZpaGlEOA?oc=5"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "key": "cyber",
+   "label": "Cybersécurité",
+   "items": [
+    {
+     "title": "Une attaque supply chain contre ConnectWise compromet des environnements Microsoft 365",
+     "summary": "ConnectWise a coupé l'accès à sa solution Cloud Backup après que des attaquants ont dérobé des identités applicatives pour pénétrer les tenants Microsoft 365 de clients. L'éditeur a désactivé sept identités applicatives pour endiguer l'intrusion.",
+     "sources": [
+      {
+       "name": "BleepingComputer",
+       "url": "https://www.bleepingcomputer.com/news/security/hackers-breach-microsoft-365-tenants-via-connectwise-supply-chain-attack/"
+      },
+      {
+       "name": "The Hacker News",
+       "url": "https://thehackernews.com/2026/10/connectwise-suspends-cloud-backup-after.html"
+      }
+     ],
+     "severity": "critical"
+    },
+    {
+     "title": "Drupal colmate deux vulnérabilités critiques d'exécution de code à distance",
+     "summary": "Le projet Drupal a publié des correctifs urgents ciblant deux failles critiques qui permettent l'exécution arbitraire de code sur toutes les versions prises en charge. L'équipe de sécurité alerte sur le risque d'apparition rapide d'exploits publics.",
+     "sources": [
+      {
+       "name": "BleepingComputer",
+       "url": "https://www.bleepingcomputer.com/news/security/drupal-patches-critical-rce-flaws-warns-exploits-may-emerge-soon/"
+      }
+     ],
+     "severity": "critical"
+    },
+    {
+     "title": "Un paquet npm malveillant de la campagne MALFEX embarque un chargeur de shellcode",
+     "summary": "Des chercheurs ont identifié un paquet nommé imgdecode sur le registre npm, dissimulant un composant natif Windows capable de charger du shellcode. Ce composant est rattaché à une campagne de compromission logicielle plus large baptisée MALFEX.",
+     "sources": [
+      {
+       "name": "The Hacker News",
+       "url": "https://thehackernews.com/2026/10/malfex-npm-package-imgdecode-hides.html"
+      }
+     ],
+     "severity": "watch"
+    },
+    {
+     "title": "Des industriels et services étatiques français ciblés par des attaques DDoS et d'exfiltration",
+     "summary": "Plusieurs entités françaises font l'objet d'attaques combinant dénis de service et tentatives de vol de données. Un groupe d'attaquants commercialise ouvertement ces prestations d'exfiltration et de saturation de service.",
+     "sources": [
+      {
+       "name": "ZATAZ",
+       "url": "https://www.zataz.com/cyberattaques-des-sites-francais-cibles-par-des-pirates/"
+      }
+     ],
+     "severity": "watch"
+    },
+    {
+     "title": "La Fédération Française de Tir touchée par une vente de données personnelles et médicales",
+     "summary": "Un pirate a mis en vente une archive de 40 Go de données attribuée à la FFTir. Le contenu divulgué comprend des photos ainsi que des certificats médicaux appartenant à des licenciés de la fédération.",
+     "sources": [
+      {
+       "name": "ZATAZ",
+       "url": "https://www.zataz.com/fuite-de-donnees-la-fftir-de-nouveau-ciblee/"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "key": "aero",
+   "label": "Airbus & aéronautique",
+   "items": [
+    {
+     "title": "La FAA place les Airbus A380 sous surveillance après un grave incident de motorisation",
+     "summary": "L'autorité fédérale américaine de l'aviation alerte les exploitants d'A380 après un incident sérieux au niveau des moteurs. Le régulateur souligne qu'une défaillance non maîtrisée pourrait entraîner un incendie ou des dommages structurels majeurs.",
+     "sources": [
+      {
+       "name": "France 3 Régions",
+       "url": "https://news.google.com/rss/articles/CBMi1gJBVV95cUxNanVuZTFfTWY4SXhtM3cwdG5GeGM3R05OclJkai14Z1pycUNvOVRrdlZRdTFCbzF1ekd5MmlQYWJaVUxjUVVndmx2SUNSdjlYWS1BNUNHSHhYNG9ERVZCVmFPT01LbmNCbWFiQUU5OHctbmxJZ2NEeTQ5bzRCOEhxeDg2VWVKUzF3aFlzblpjVjNQT1J1QnB0NzBSOG8zSXIzTHJNcFJ1azZLU1N3NXNpYW1KU3FFZUo2aUp0dWxGcjdZYUZRVUFNY1d3ZElTQnFBMV9fb2FUenhqaXNvUGt5c1ZuRVFueEkwd25xNENqdkVNVFdmY2RoU3h5RXlWMUZyWkFPcDVlUFlGcnlhU00wR3Z0YTBnRkJoOUd3RmRGaERNOThvMEtNdDVzcUtPZzBqWkwwaEk1VTFiV2sxeXVIRFEwTFNBM0NLczAzWFFFQmNUb0JDZGc?oc=5"
+      }
+     ],
+     "severity": "watch"
+    },
+    {
+     "title": "Biman Bangladesh Airlines passe une commande ferme de 10 appareils à Airbus",
+     "summary": "La compagnie nationale bangladaise a signé un contrat ferme portant sur l'acquisition de quatre A350-900 et de six monocouloirs A321neo. Cette commande renforce la présence du constructeur européen sur la modernisation de la flotte long et moyen-courrier locale.",
+     "sources": [
+      {
+       "name": "AeroWeb-fr.net",
+       "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxQX0I2LU1RZG5QLVRuR3k2T0FRSmk3R3E3UzQ3bUl4OGlpREQ1aGI2bXZaellBYl9FdXpITTYwMlFrdTBUOGZBaVVPMDkzWVp5QjJRTVo3UVBQUEJ3ZHNYUWVtQnhhOGNYNjdzemVUSlFweEt0aGZCVFRWcTZidW5jY2pKWGpUODF1bDV5dVVpNHRBclBLTHJ3SjJBd29qNjJkSHdNbGMzS0lmR19FbHVhMXVIOEdydndrVUlmb2tJNmE3QklVamhvTGhNNzc3TUZaX2R2czB3?oc=5"
+      }
+     ]
+    },
+    {
+     "title": "Jean-Brice Dumont quitte Airbus pour prendre la tête du missilier MBDA",
+     "summary": "Précédemment en charge des avions militaires au sein d'Airbus Defence and Space, Jean-Brice Dumont est nommé directeur général de MBDA. Il succède à Éric Béranger à la tête du groupe d'armement européen codétenu par Airbus, BAE Systems et Leonardo.",
+     "sources": [
+      {
+       "name": "L'Usine Nouvelle",
+       "url": "https://news.google.com/rss/articles/CBMiuwJBVV95cUxPYzNpLWFrRndmTnp4RFd1TC1mQTZYSDU0XzZMb0o1N092NFB0WWZpR3NJcW8zbVl3QXhGSjF1b2RPakRWal93NU5Sdkc4aF9GdGpDVThIQUR1Z2hIUFN2ZzVXWmZvWUQ2MTM2dEVmUXhzbG5XcVVoSjRsUkxkUUQ4enlmcXlwVzg1Z2tJVXVjOUpuWDM4cnM1UnVjNk1fUG5YLXl0eGtCYjl6aWFMbFdWUEdPcUlrV2dqWFRvMlBaSTBXYTRPR3owZldhekFScFFXRnVSRTdEbWZNbzVrQVlvQ3pfbFFFeHZtSzNxbXdWWWh4UHd6cWZsVjZzYjRXbmRxYWRzbWZvdzlubGc1YTVVdF9iOTk0Rks1Mm1MYTJHRTFpVjJKaXo0a2Z3T1JISk1pTVBEOXlnN2k0VzA?oc=5"
+      }
+     ]
+    },
+    {
+     "title": "Air Algérie intègre son sixième Airbus A330-900neo",
+     "summary": "Le transporteur algérien a officiellement réceptionné un nouvel exemplaire d'A330neo baptisé « Ras el Afia ». L'appareil s'ajoute aux livraisons en cours destinées à soutenir le plan de croissance et le renouvellement de la flotte long-courrier de la compagnie.",
+     "sources": [
+      {
+       "name": "TSA - Tout Sur l'Algérie",
+       "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPMXdCNXF6VUFfd054WTFCazVNeUQ1UUdnd0tleHp3akVEd3pKUzhKa0trdEFodnNudjdXempkWkRaNEpxMzlHR1RDT0J1RG11V2syME5JMWdiMGVnZFBBQ0g3ZHVkU1Y3SG8xQXFkOE4yXzh3czJwcXo1TVBUVWh5aDk5cEVCc2JjT1dwWlNNYkptQlRQYnViTXh0T3BwaEQ4T2VhdjlsdEtUcGxCQUtiZHZmdlowS1B5b18zdXJRaVBMUQ?oc=5"
+      },
+      {
+       "name": "Radio Algérienne",
+       "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTFB2bm1IekZNcDBkcFFzd0FoSnE1RnhDODQtSVFmd0h5YWFBZXJVeGtxSWVsYjhhMjhpdzJKdEZKeHE4MkowbjB1YnU4UnhVdC1TUVpKMA?oc=5"
+      }
+     ]
+    },
+    {
+     "title": "Lufthansa retire définitivement de sa flotte l'Airbus A340-600",
+     "summary": "Lufthansa a programmé son ultime vol commercial de passagers en Airbus A340-600 le 18 octobre. Ce vol marque la sortie définitive du quadriréacteur après 17 années d'exploitation régulière au sein de la compagnie allemande.",
+     "sources": [
+      {
+       "name": "AeroTime",
+       "url": "https://www.aerotime.aero/articles/lufthansa-prepares-for-final-a340-600-flight-as-17-year-old-aircraft-exits-fleet"
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "alerts": [],
+ "feedErrors": [
+  "CISA - Cybersecurity Advisories",
+  "FlightGlobal"
+ ]
+}
