@@ -1,12 +1,12 @@
 {
- "date": "2026-10-18",
+ "date": "2026-10-19",
  "kind": "daily",
- "generatedAt": "18/10 à 10:49 UTC",
- "lede": "La cybersécurité est dominée par une attaque supply-chain contre ConnectWise ayant compromis des tenants Microsoft 365, tandis qu'Airbus fait l'objet d'une vigilance de la FAA sur l'A380 tout en concrétisant une commande stratégique au Bangladesh.",
+ "generatedAt": "19/10 à 12:49 UTC",
+ "lede": "L'actualité est marquée par des failles critiques touchant les couches d'infrastructure matérielle et de sécurité réseau, tandis qu'Airbus accélère ses essais d'aéronefs de combat sans pilote et ses montées en cadence industrielle.",
  "stats": {
   "feeds": 37,
-  "items": 36,
-  "errors": 2
+  "items": 92,
+  "errors": 3
  },
  "sections": [
   {
@@ -14,50 +14,58 @@
    "label": "Intelligence artificielle",
    "items": [
     {
-     "title": "La Chine prépare un contrôle strict à l'exportation sur 23 technologies d'IA",
-     "summary": "Pékin prévoit d'encadrer les exportations de 23 briques technologiques liées à l'intelligence artificielle. Cette initiative s'inscrit dans un contexte d'intensification des rivalités technologiques et stratégiques avec Washington.",
+     "title": "Anthropic alloue 5 % de ses actions à un fonds d'intérêt public",
+     "summary": "L'entreprise met en place une réserve de capital dédiée à atténuer les impacts économiques et sociaux négatifs engendrés par l'essor de l'intelligence artificielle. Ce dispositif s'inscrit dans un débat plus large sur la redistribution des richesses créées par l'automatisation avancée.",
      "sources": [
       {
-       "name": "ZATAZ",
-       "url": "https://www.zataz.com/la-chine-veut-controler-ses-exportations-dia/"
-      }
-     ]
-    },
-    {
-     "title": "Replit délaisse Anthropic et fait de ChatGPT son modèle principal",
-     "summary": "La plateforme de développement Replit a annoncé adopter les modèles de ChatGPT comme moteur principal pour ses outils de programmation. Ce choix officialise une prise de distance avec Anthropic, partenaire historique du service.",
-     "sources": [
+       "name": "Numerama",
+       "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxPTDBNMWtWODNoU0JCRGo1OGtrS0ZnckRibGV3WWJKUXYyTzFDYjRXZzBmcXcxQjJQVW50VzQ4dEZYYTFtUGhaRlBHN1lzb2dPVlhwUnU2eFhXUDg4V2FnZFREN3BOY2lOMTJaaXNodXZuS1VCNkp4MjlFYkkyMDJCXzYxSXNva0FDcV9ubVVOZ0ppVXE0MXp1bURPMmNZUXZjT0U1UjY1ZGsyd0J6RzRzLUw1ZjVFUkVhRVR0dlU3YldDOWRYaHlQWUdXWQ?oc=5"
+      },
       {
-       "name": "Brief IA",
-       "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNRExuOG8xSXFjQ0loVWNJd3llMkl4QXJTTFJaYlltVVBMSnlWcTlRY05tS25oMzZaY1RCSmhtTjJjRW80UUNDeDItQW1obUMwMURrWkc5cHA4WkMtZXBqLVhEc1ZHRExXNFVwdlBSeUMxaGktV1VWMDYybWdwR2JMS0ZFbkhUcTh1SWlWYUhvRHNDR0hja1lR?oc=5"
+       "name": "Informat.ro",
+       "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNQTMxLXUybG1JOFN0UjVzS0pUR0NhX0R3Tk9tMzNWQ09vc1BIaTE1Qm1BUnhZN3dVR1VJcUUxR2trVnk1c1JRUkJGWHZRQzNtMFduZlNQdlF0cnhzeFJQcTRPUjM5UmRlbTFsMFFNeEpmX0M2UXp1dWFaQjM1SUUzR3Fsc2wza25IWWtQWTdFdC1wSGxPYW9jbUo1d0ktWXBPcTAtbDNVTEgycmgxX1lv?oc=5"
       },
       {
        "name": "Pasquale Pillitteri",
-       "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOQUlrUzQ1SndjYnNWWi1pdC00TFFiSWNDZzF5WkpjMmlTdVZrcWk5MXlhV2FYNTZuWnl0OEJTenNwOG1VdDVYVUNNOHk0aWlOdUkzM2tBaHl6aTRVam5RUF9iSnM1bzRCRzkxa0ZXOUV5bjZEX2ExWHhGalhHQ3BDb1RsOWh3dGhkazd0QlFlTFpVVnBGbnZ6XzNqajlRMFRQb2NGdEpYaw?oc=5"
+       "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNaGVhRkJsZkJjcDBtQ3YtQUJ4Vng4LUt6NGN1MGloNkRNQ2dqYmlfQ2U3MW1jX1RrX0pKTlJyX3FRcVpPTUxPVkU3Z0FUMl9GTzBtVFdYaEZ2MUkwVmxnaW5XQ0tUUFRGLTNlbWdUNDc3ZDY3MG9DQ0s0UEJobmhtelBtR0tKY2RKaUxDUw?oc=5"
       }
      ]
     },
     {
-     "title": "DeepSeek ouvre une API de recherche et d'extraction web à bas coût",
-     "summary": "L'entreprise DeepSeek a lancé une API de recherche et d'extraction de données web facturée 0,75 dollar pour 1 000 requêtes réussies. Ce service vise à faciliter l'alimentation documentaire des agents et modèles de langage à grande échelle.",
+     "title": "Anthropic encadre les audits de Claude et pousse ses propositions de gouvernance",
+     "summary": "L'éditeur a accordé un accès interne restreint à six experts externes pour évaluer Claude, tout en dévoilant un cadre de sécurité controversé qui suggère de limiter l'intervention étatique préalable aux incidents avérés. L'entreprise poursuit sa posture d'alternative éthique tout en protégeant son autonomie opérationnelle.",
      "sources": [
       {
-       "name": "Hacker News",
-       "url": "https://api-docs.deepseek.com/guides/search/"
+       "name": "Tom’s Hardware",
+       "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQS0dXalE5S2xBcjF3Um1KbnlMaXoxbWU0Y1IxcENzSkIwNHBIZkktY0k3Z2d6WXRfM3gtYTRjNGJHQmxFNkkyam12N1hveHhWTTNKaWw1RW9rc1JUUE1QdVBkdks5QmpNdDdPZnpYckpmM3J3Qk13WFp5QmgxRVhwMTFTOGJKYXZaT2RySlkwVDUxVlQwQ1JTc2RrU2FSeVRpUWJsRVkySWNoV3RkbkE4Zg?oc=5"
+      },
+      {
+       "name": "Génération NT",
+       "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQaVZvTlJ0ZHB5SEFzNnJWRk5KRldsMmZlWHU0NkdfZTZXb2Y5UnBESXY5M2t6eEYzTWhVcGdjcGR2R2h4T2tBSmpSNFlubEFLUkRJODRueDk2a2U0d043c1FYVmlqTG1scVpHNkRfSGxCZ0hOU3ZsSHd1TURETlBYZTBXaG9EbDZLY2pTbEhjNTlwWnAzQ2NBVS0wbUlmY1nSAaQBQVVfeXFMUHpRT3VhMHlzTlhBY3hlU3FtUUdCU3RzcW1mQWNDQjhlYjYwb2twZ1lWYjVxaTB2SVdrY2JKUW1od0h5djF2Z3d5VmlUU2ZjRGpLY2ItQ1M2RG1HVU9QcjJrWWlIVm1vMGdzYW5UZHFrSW1zcWx3MzA3V3c3dUV0QWFOMHJXbEZmRUN0LWl3UzNEOUkxQ3BpTHdxOFB1TFpMTmdQSkQ?oc=5"
+      },
+      {
+       "name": "BuzzArena",
+       "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxPODI5T3ljYzgtRGVQSk5nYUxDTm05bGd5NzE0cHF1dzNkN0lsNFp6cTgwT2JLaGlVNHhaZXFlWHNxczhGcDE4SlhUd2FHQUZtQXFiMXdITEJYVXBKTGhnR0QyS0t2R1kzd2w2cC01eW12bjlrbXJzTWMxOGdkMWhQMUpqNk9UTndJOHF0YVJLNXNMSjBkWmJSY1h0Wl9HUHhZbzhkZTVfMGtWWHRHRmtPUTRlaXoweE1Hb2dZU21MLURWb2JPaTcwejlmS0RMcllLZTk0?oc=5"
       }
      ]
     },
     {
-     "title": "Anthropic réduit ses postes juniors face aux gains de productivité de l'IA interne",
-     "summary": "Les gains d'efficacité apportés par ses propres modèles conduisent Anthropic à faire évoluer ses effectifs en réduisant le recrutement de profils débutants. L'organisation du travail s'oriente vers des postes expérimentés concentrés sur la supervision des systèmes automatisés.",
+     "title": "Google prend la tête du classement Chatbot Arena avec Gemini 4 Argon",
+     "summary": "Le dernier modèle de Google se hisse à la première place du banc d'essai comparatif communautaire. Il confirme la compétition féroce entre les modèles de pointe pour les performances de raisonnement et de génération.",
      "sources": [
       {
        "name": "Brief IA",
-       "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNRll4SlAxLTl4bWFrV1YyQkJLVFN3V3FlS1pTT2l2ZHlRdGF0TEV1bjNvMWV1RHVXNHQ1YnBlV2wyRGZBMzdKMU9oQjN3S1lpeXYwZ3dkQ2g1T09nREU5T0NjNjFZVnNucXQtWEhpUHEtMWxfbDN5WmJtUnZXNlFpS3NlT2RfdXJQc2tiazhn?oc=5"
-      },
+       "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxOY3RBd2VJV19ya0NCX2oyeHFlRGZZeDdXNEJsM3BUdE43YTBpQXV1dHhkNkxVd2x1NmxLaHQ2aXFscmlTNExvUlZpVVpUUzFJcGtwTWF0cDFrMmtOdkY4bHNyTG92WmdNUVRWTXNhUWtHTlVHTlJkdGJ0YU5odFdfa29MSWdsQQ?oc=5"
+      }
+     ]
+    },
+    {
+     "title": "Hybridation du raisonnement agentique entre espace latent et texte",
+     "summary": "Des travaux de recherche présentent les architectures d'agents à raisonnement hybride, capables d'exécuter leur réflexion interne dans l'espace latent avant de communiquer et d'agir via du texte. Cette approche vise à réduire les coûts d'inférence tout en améliorant la robustesse de planification des modèles autonomes.",
+     "sources": [
       {
-       "name": "Mon Carnet – de l'actualité numérique",
-       "url": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxPdVN3cHNUVkdyMVZ2UzM5SUFXSjY4TE15cjF4QUFyU09PNzJOWG9mSHlKZm9kekt5ZHlrSXFqcUlmN1Q1UWx1a3FrdmwtUE54UHV0V3ZmWk5JaVlIaU44eWN3azBDeDFUaTNSUE83RUFDRzJGNXJyVTJPa25GV3ZNbXdRU1Q2LU9QdUxsc3FVSHlLSUNGUlZSVHVmYVh1VXlaVm10Z3U3cXlDdk5CVnNReDN5OWxLaFBCbTh6clBCWmxQTzJBd3FqbEV5OXNyYnV2c2FsZ2N3QmlsbHBmZ2dtOFR3ZlZNazhCaWZpaGlEOA?oc=5"
+       "name": "arXiv cs.AI / Hacker News",
+       "url": "https://arxiv.org/abs/2610.18861"
       }
      ]
     }
@@ -68,62 +76,48 @@
    "label": "Cybersécurité",
    "items": [
     {
-     "title": "Une attaque supply chain contre ConnectWise compromet des environnements Microsoft 365",
-     "summary": "ConnectWise a coupé l'accès à sa solution Cloud Backup après que des attaquants ont dérobé des identités applicatives pour pénétrer les tenants Microsoft 365 de clients. L'éditeur a désactivé sept identités applicatives pour endiguer l'intrusion.",
+     "title": "SiteGuard WAF sous exploitation active par injection de commandes",
+     "summary": "Des attaquants exploitent actuellement une faille d'injection de commandes OS au sein de SiteGuard Server Edition. La vulnérabilité permet l'exécution arbitraire d'instructions avec les privilèges root ou SYSTEM sur les serveurs hébergeant le pare-feu applicatif.",
      "sources": [
       {
        "name": "BleepingComputer",
-       "url": "https://www.bleepingcomputer.com/news/security/hackers-breach-microsoft-365-tenants-via-connectwise-supply-chain-attack/"
-      },
-      {
-       "name": "The Hacker News",
-       "url": "https://thehackernews.com/2026/10/connectwise-suspends-cloud-backup-after.html"
+       "url": "https://www.bleepingcomputer.com/news/security/hackers-exploit-siteguard-waf-flaw-to-run-commands-as-system-root/"
       }
      ],
      "severity": "critical"
     },
     {
-     "title": "Drupal colmate deux vulnérabilités critiques d'exécution de code à distance",
-     "summary": "Le projet Drupal a publié des correctifs urgents ciblant deux failles critiques qui permettent l'exécution arbitraire de code sur toutes les versions prises en charge. L'équipe de sécurité alerte sur le risque d'apparition rapide d'exploits publics.",
+     "title": "Broadcom vulnérable à une exécution de code root à portée radio",
+     "summary": "Une faille non corrigée dans le logiciel d'appairage Wi-Fi de Broadcom permet à un attaquant à portée d'ondes d'exécuter du code avec les privilèges root sur les routeurs ciblés. L'attaque fonctionne sans nécessiter le mot de passe réseau ni phase d'association préalable.",
      "sources": [
       {
-       "name": "BleepingComputer",
-       "url": "https://www.bleepingcomputer.com/news/security/drupal-patches-critical-rce-flaws-warns-exploits-may-emerge-soon/"
+       "name": "The Hacker News",
+       "url": "https://thehackernews.com/2026/10/unpatched-broadcom-wi-fi-flaw-lets.html"
       }
      ],
      "severity": "critical"
     },
     {
-     "title": "Un paquet npm malveillant de la campagne MALFEX embarque un chargeur de shellcode",
-     "summary": "Des chercheurs ont identifié un paquet nommé imgdecode sur le registre npm, dissimulant un composant natif Windows capable de charger du shellcode. Ce composant est rattaché à une campagne de compromission logicielle plus large baptisée MALFEX.",
+     "title": "Compromission chez OpenCode Console et fuite potentielle de clés d'API IA",
+     "summary": "Une intrusion survenue sur un système hérité d'OpenCode Console a potentiellement exposé les clés d'accès aux API OpenAI, Anthropic et Google enregistrées par les utilisateurs. Le service hébergé permettait l'utilisation centralisée de ces fournisseurs tiers.",
      "sources": [
       {
        "name": "The Hacker News",
-       "url": "https://thehackernews.com/2026/10/malfex-npm-package-imgdecode-hides.html"
+       "url": "https://thehackernews.com/2026/10/opencode-console-breach-may-have.html"
       }
      ],
      "severity": "watch"
     },
     {
-     "title": "Des industriels et services étatiques français ciblés par des attaques DDoS et d'exfiltration",
-     "summary": "Plusieurs entités françaises font l'objet d'attaques combinant dénis de service et tentatives de vol de données. Un groupe d'attaquants commercialise ouvertement ces prestations d'exfiltration et de saturation de service.",
+     "title": "Campagne npm ciblant les agents IA sous couvert de crédits gratuits",
+     "summary": "Un faux accélérateur Web3 distribue des packages npm malveillants promettant des crédits gratuits pour OpenAI et Anthropic Claude. Le code déployé installe des portes dérobées, dérobe des identifiants et détourne les flux de travail d'agents IA.",
      "sources": [
       {
-       "name": "ZATAZ",
-       "url": "https://www.zataz.com/cyberattaques-des-sites-francais-cibles-par-des-pirates/"
+       "name": "The Hacker News",
+       "url": "https://thehackernews.com/2026/10/fake-web3-accelerator-uses-npm-packages.html"
       }
      ],
      "severity": "watch"
-    },
-    {
-     "title": "La Fédération Française de Tir touchée par une vente de données personnelles et médicales",
-     "summary": "Un pirate a mis en vente une archive de 40 Go de données attribuée à la FFTir. Le contenu divulgué comprend des photos ainsi que des certificats médicaux appartenant à des licenciés de la fédération.",
-     "sources": [
-      {
-       "name": "ZATAZ",
-       "url": "https://www.zataz.com/fuite-de-donnees-la-fftir-de-nouveau-ciblee/"
-      }
-     ]
     }
    ]
   },
@@ -132,57 +126,46 @@
    "label": "Airbus & aéronautique",
    "items": [
     {
-     "title": "La FAA place les Airbus A380 sous surveillance après un grave incident de motorisation",
-     "summary": "L'autorité fédérale américaine de l'aviation alerte les exploitants d'A380 après un incident sérieux au niveau des moteurs. Le régulateur souligne qu'une défaillance non maîtrisée pourrait entraîner un incendie ou des dommages structurels majeurs.",
+     "title": "Premier vol d'essai en Europe pour le drone de combat Airbus U740 Valkyrie",
+     "summary": "Le démonstrateur de drone militaire U740 Valkyrie développé par Airbus a complété avec succès son vol inaugural sur le continent européen. Ce jalon marque une étape clé dans le développement des capacités d'aéronefs de combat sans pilote du constructeur.",
      "sources": [
       {
-       "name": "France 3 Régions",
-       "url": "https://news.google.com/rss/articles/CBMi1gJBVV95cUxNanVuZTFfTWY4SXhtM3cwdG5GeGM3R05OclJkai14Z1pycUNvOVRrdlZRdTFCbzF1ekd5MmlQYWJaVUxjUVVndmx2SUNSdjlYWS1BNUNHSHhYNG9ERVZCVmFPT01LbmNCbWFiQUU5OHctbmxJZ2NEeTQ5bzRCOEhxeDg2VWVKUzF3aFlzblpjVjNQT1J1QnB0NzBSOG8zSXIzTHJNcFJ1azZLU1N3NXNpYW1KU3FFZUo2aUp0dWxGcjdZYUZRVUFNY1d3ZElTQnFBMV9fb2FUenhqaXNvUGt5c1ZuRVFueEkwd25xNENqdkVNVFdmY2RoU3h5RXlWMUZyWkFPcDVlUFlGcnlhU00wR3Z0YTBnRkJoOUd3RmRGaERNOThvMEtNdDVzcUtPZzBqWkwwaEk1VTFiV2sxeXVIRFEwTFNBM0NLczAzWFFFQmNUb0JDZGc?oc=5"
-      }
-     ],
-     "severity": "watch"
-    },
-    {
-     "title": "Biman Bangladesh Airlines passe une commande ferme de 10 appareils à Airbus",
-     "summary": "La compagnie nationale bangladaise a signé un contrat ferme portant sur l'acquisition de quatre A350-900 et de six monocouloirs A321neo. Cette commande renforce la présence du constructeur européen sur la modernisation de la flotte long et moyen-courrier locale.",
-     "sources": [
-      {
-       "name": "AeroWeb-fr.net",
-       "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxQX0I2LU1RZG5QLVRuR3k2T0FRSmk3R3E3UzQ3bUl4OGlpREQ1aGI2bXZaellBYl9FdXpITTYwMlFrdTBUOGZBaVVPMDkzWVp5QjJRTVo3UVBQUEJ3ZHNYUWVtQnhhOGNYNjdzemVUSlFweEt0aGZCVFRWcTZidW5jY2pKWGpUODF1bDV5dVVpNHRBclBLTHJ3SjJBd29qNjJkSHdNbGMzS0lmR19FbHVhMXVIOEdydndrVUlmb2tJNmE3QklVamhvTGhNNzc3TUZaX2R2czB3?oc=5"
+       "name": "Electroniques",
+       "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPY3JzejRDOUhma0pZRnZLNS0yemRBWm1UMW9URW4xWVFwOUZ5bkR1bHZTckJaVEhNN1NRdWk0N0hYN3hqaEYtTWlLclI3bmw0Qk0ycTAwd0U3Y0RzeWN0WlgxTlJPWlE3Y2VENGlVTlY1WVlSN0VPOFd0Qk1kSy1waWQxYXlvOWZ1U1dSZ1dDWGxDLU9wYTZHcUtXMnQyNlo2RWhOMXd6emQ4RDNSOWJMbUdZeC1YWGpiNTkyMw?oc=5"
       }
      ]
     },
     {
-     "title": "Jean-Brice Dumont quitte Airbus pour prendre la tête du missilier MBDA",
-     "summary": "Précédemment en charge des avions militaires au sein d'Airbus Defence and Space, Jean-Brice Dumont est nommé directeur général de MBDA. Il succède à Éric Béranger à la tête du groupe d'armement européen codétenu par Airbus, BAE Systems et Leonardo.",
+     "title": "Qantas reçoit son premier Airbus A321 converti en cargo",
+     "summary": "Qantas Freight a réceptionné le premier de trois Airbus A321P2F (Passenger-to-Freighter) commandés pour renforcer ses opérations logistiques en partenariat avec Australia Post. Ces appareils convertis viennent soutenir les pics d'activité de fret de fin d'année.",
      "sources": [
       {
-       "name": "L'Usine Nouvelle",
-       "url": "https://news.google.com/rss/articles/CBMiuwJBVV95cUxPYzNpLWFrRndmTnp4RFd1TC1mQTZYSDU0XzZMb0o1N092NFB0WWZpR3NJcW8zbVl3QXhGSjF1b2RPakRWal93NU5Sdkc4aF9GdGpDVThIQUR1Z2hIUFN2ZzVXWmZvWUQ2MTM2dEVmUXhzbG5XcVVoSjRsUkxkUUQ4enlmcXlwVzg1Z2tJVXVjOUpuWDM4cnM1UnVjNk1fUG5YLXl0eGtCYjl6aWFMbFdWUEdPcUlrV2dqWFRvMlBaSTBXYTRPR3owZldhekFScFFXRnVSRTdEbWZNbzVrQVlvQ3pfbFFFeHZtSzNxbXdWWWh4UHd6cWZsVjZzYjRXbmRxYWRzbWZvdzlubGc1YTVVdF9iOTk0Rks1Mm1MYTJHRTFpVjJKaXo0a2Z3T1JISk1pTVBEOXlnN2k0VzA?oc=5"
-      }
-     ]
-    },
-    {
-     "title": "Air Algérie intègre son sixième Airbus A330-900neo",
-     "summary": "Le transporteur algérien a officiellement réceptionné un nouvel exemplaire d'A330neo baptisé « Ras el Afia ». L'appareil s'ajoute aux livraisons en cours destinées à soutenir le plan de croissance et le renouvellement de la flotte long-courrier de la compagnie.",
-     "sources": [
-      {
-       "name": "TSA - Tout Sur l'Algérie",
-       "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPMXdCNXF6VUFfd054WTFCazVNeUQ1UUdnd0tleHp3akVEd3pKUzhKa0trdEFodnNudjdXempkWkRaNEpxMzlHR1RDT0J1RG11V2syME5JMWdiMGVnZFBBQ0g3ZHVkU1Y3SG8xQXFkOE4yXzh3czJwcXo1TVBUVWh5aDk5cEVCc2JjT1dwWlNNYkptQlRQYnViTXh0T3BwaEQ4T2VhdjlsdEtUcGxCQUtiZHZmdlowS1B5b18zdXJRaVBMUQ?oc=5"
+       "name": "Zonebourse",
+       "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxPUTAzS1Z4WFRwUzYzS3pIY3plaWZyR0tudFNyYWlYYTR2N3pMMmpvQTRxOXRGc1E0NVFVVTNMbXR2MGpxaUpYbk80UGJfeXNDSVFWNlVGWVlzVXJwckQyZTJFUGhnQkhzczdHY3cyV1BScXdSdnl3U1Z3LVcwQVpieTJMSGJ4d2FCbFlWckVvaXQwcWE1OVF2Mi12MEEwQ3Q5SzBmZDcwaHp4aWJ5U3BfZ2pxR2piM1FQalBYMXQ0RExyVGt2eFRwRXRpR3ZfLVRlaUpYZjluQ0JDdw?oc=5"
       },
       {
-       "name": "Radio Algérienne",
-       "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTFB2bm1IekZNcDBkcFFzd0FoSnE1RnhDODQtSVFmd0h5YWFBZXJVeGtxSWVsYjhhMjhpdzJKdEZKeHE4MkowbjB1YnU4UnhVdC1TUVpKMA?oc=5"
+       "name": "AeroTime",
+       "url": "https://www.aerotime.aero/articles/qantas-freight-and-australia-post-welcome-a321-freighter-ahead-of-christmas-peak"
       }
      ]
     },
     {
-     "title": "Lufthansa retire définitivement de sa flotte l'Airbus A340-600",
-     "summary": "Lufthansa a programmé son ultime vol commercial de passagers en Airbus A340-600 le 18 octobre. Ce vol marque la sortie définitive du quadriréacteur après 17 années d'exploitation régulière au sein de la compagnie allemande.",
+     "title": "Airbus étudie une seconde ligne d'assemblage final pour l'A350",
+     "summary": "Face à la saturation des carnets de commandes sur le segment long-courrier, Airbus évalue l'ouverture d'une nouvelle ligne d'assemblage dédiée à l'A350. L'objectif est de sécuriser les cadences de production et de réduire les délais de livraison pour les compagnies clientes.",
      "sources": [
       {
-       "name": "AeroTime",
-       "url": "https://www.aerotime.aero/articles/lufthansa-prepares-for-final-a340-600-flight-as-17-year-old-aircraft-exits-fleet"
+       "name": "Air Journal",
+       "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNUE9zbVYxblBZSFRETlFxcHRON3BCMW5rSzdrNi1BZ21rVm1WMnRUMFlsWDlPUXNKVkZRNXNJVEFhNnZuV2Y4dGR5LTJqdG1wdTBJSVNxWlp4eVUwdVdMN0JFcE9HNGRldnVnc2psdUVOTmJGNmc5MDZNeUJoTE1fT2VmTkJVcUhSOU9meDR3Mk5TUm1SNHpuZW5FbE93QXRqcDBac3JB?oc=5"
+      }
+     ]
+    },
+    {
+     "title": "Airbus prépare l'intégration de technologies quantiques à bord",
+     "summary": "L'avionneur mène des travaux pour intégrer des composants et algorithmes quantiques dans les architectures avioniques des prochaines générations d'aéronefs. Cette recherche vise à accroître la puissance de calcul embarquée et l'efficacité de traitement des flux opérationnels complexes.",
+     "sources": [
+      {
+       "name": "Air&Cosmos",
+       "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxQZUEteFVRUVJhVFVxVGwxYm42U2VYS1cyaE5JaDByUlAwYnRKbWVLbmkyN0pRR19RYmRpZHRuWF91N0t1aW5yY3BoSDVqY0J2aFVwR294Zk45MnRCbkNuS3lTMk0zWHFPTGQwYlpFOHBUcVo5QmNzX3RoX3ZWamZDYlBjei14N3pIS2dwWmVaM0I4WDNHRmgzRWR4V2ZGVG9tdW1BMDI2LTVjeTRSMUJjVmxCV09wU0hYSi15Y1BYZ1B4d3diY2FiMzZCVEZuN0Y1?oc=5"
       }
      ]
     }
@@ -192,6 +175,7 @@
  "alerts": [],
  "feedErrors": [
   "CISA - Cybersecurity Advisories",
+  "Google DeepMind Blog",
   "FlightGlobal"
  ]
 }

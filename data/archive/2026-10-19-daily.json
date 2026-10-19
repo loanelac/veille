@@ -1,0 +1,181 @@
+{
+ "date": "2026-10-19",
+ "kind": "daily",
+ "generatedAt": "19/10 à 12:49 UTC",
+ "lede": "L'actualité est marquée par des failles critiques touchant les couches d'infrastructure matérielle et de sécurité réseau, tandis qu'Airbus accélère ses essais d'aéronefs de combat sans pilote et ses montées en cadence industrielle.",
+ "stats": {
+  "feeds": 37,
+  "items": 92,
+  "errors": 3
+ },
+ "sections": [
+  {
+   "key": "ia",
+   "label": "Intelligence artificielle",
+   "items": [
+    {
+     "title": "Anthropic alloue 5 % de ses actions à un fonds d'intérêt public",
+     "summary": "L'entreprise met en place une réserve de capital dédiée à atténuer les impacts économiques et sociaux négatifs engendrés par l'essor de l'intelligence artificielle. Ce dispositif s'inscrit dans un débat plus large sur la redistribution des richesses créées par l'automatisation avancée.",
+     "sources": [
+      {
+       "name": "Numerama",
+       "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxPTDBNMWtWODNoU0JCRGo1OGtrS0ZnckRibGV3WWJKUXYyTzFDYjRXZzBmcXcxQjJQVW50VzQ4dEZYYTFtUGhaRlBHN1lzb2dPVlhwUnU2eFhXUDg4V2FnZFREN3BOY2lOMTJaaXNodXZuS1VCNkp4MjlFYkkyMDJCXzYxSXNva0FDcV9ubVVOZ0ppVXE0MXp1bURPMmNZUXZjT0U1UjY1ZGsyd0J6RzRzLUw1ZjVFUkVhRVR0dlU3YldDOWRYaHlQWUdXWQ?oc=5"
+      },
+      {
+       "name": "Informat.ro",
+       "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNQTMxLXUybG1JOFN0UjVzS0pUR0NhX0R3Tk9tMzNWQ09vc1BIaTE1Qm1BUnhZN3dVR1VJcUUxR2trVnk1c1JRUkJGWHZRQzNtMFduZlNQdlF0cnhzeFJQcTRPUjM5UmRlbTFsMFFNeEpmX0M2UXp1dWFaQjM1SUUzR3Fsc2wza25IWWtQWTdFdC1wSGxPYW9jbUo1d0ktWXBPcTAtbDNVTEgycmgxX1lv?oc=5"
+      },
+      {
+       "name": "Pasquale Pillitteri",
+       "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNaGVhRkJsZkJjcDBtQ3YtQUJ4Vng4LUt6NGN1MGloNkRNQ2dqYmlfQ2U3MW1jX1RrX0pKTlJyX3FRcVpPTUxPVkU3Z0FUMl9GTzBtVFdYaEZ2MUkwVmxnaW5XQ0tUUFRGLTNlbWdUNDc3ZDY3MG9DQ0s0UEJobmhtelBtR0tKY2RKaUxDUw?oc=5"
+      }
+     ]
+    },
+    {
+     "title": "Anthropic encadre les audits de Claude et pousse ses propositions de gouvernance",
+     "summary": "L'éditeur a accordé un accès interne restreint à six experts externes pour évaluer Claude, tout en dévoilant un cadre de sécurité controversé qui suggère de limiter l'intervention étatique préalable aux incidents avérés. L'entreprise poursuit sa posture d'alternative éthique tout en protégeant son autonomie opérationnelle.",
+     "sources": [
+      {
+       "name": "Tom’s Hardware",
+       "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQS0dXalE5S2xBcjF3Um1KbnlMaXoxbWU0Y1IxcENzSkIwNHBIZkktY0k3Z2d6WXRfM3gtYTRjNGJHQmxFNkkyam12N1hveHhWTTNKaWw1RW9rc1JUUE1QdVBkdks5QmpNdDdPZnpYckpmM3J3Qk13WFp5QmgxRVhwMTFTOGJKYXZaT2RySlkwVDUxVlQwQ1JTc2RrU2FSeVRpUWJsRVkySWNoV3RkbkE4Zg?oc=5"
+      },
+      {
+       "name": "Génération NT",
+       "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQaVZvTlJ0ZHB5SEFzNnJWRk5KRldsMmZlWHU0NkdfZTZXb2Y5UnBESXY5M2t6eEYzTWhVcGdjcGR2R2h4T2tBSmpSNFlubEFLUkRJODRueDk2a2U0d043c1FYVmlqTG1scVpHNkRfSGxCZ0hOU3ZsSHd1TURETlBYZTBXaG9EbDZLY2pTbEhjNTlwWnAzQ2NBVS0wbUlmY1nSAaQBQVVfeXFMUHpRT3VhMHlzTlhBY3hlU3FtUUdCU3RzcW1mQWNDQjhlYjYwb2twZ1lWYjVxaTB2SVdrY2JKUW1od0h5djF2Z3d5VmlUU2ZjRGpLY2ItQ1M2RG1HVU9QcjJrWWlIVm1vMGdzYW5UZHFrSW1zcWx3MzA3V3c3dUV0QWFOMHJXbEZmRUN0LWl3UzNEOUkxQ3BpTHdxOFB1TFpMTmdQSkQ?oc=5"
+      },
+      {
+       "name": "BuzzArena",
+       "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxPODI5T3ljYzgtRGVQSk5nYUxDTm05bGd5NzE0cHF1dzNkN0lsNFp6cTgwT2JLaGlVNHhaZXFlWHNxczhGcDE4SlhUd2FHQUZtQXFiMXdITEJYVXBKTGhnR0QyS0t2R1kzd2w2cC01eW12bjlrbXJzTWMxOGdkMWhQMUpqNk9UTndJOHF0YVJLNXNMSjBkWmJSY1h0Wl9HUHhZbzhkZTVfMGtWWHRHRmtPUTRlaXoweE1Hb2dZU21MLURWb2JPaTcwejlmS0RMcllLZTk0?oc=5"
+      }
+     ]
+    },
+    {
+     "title": "Google prend la tête du classement Chatbot Arena avec Gemini 4 Argon",
+     "summary": "Le dernier modèle de Google se hisse à la première place du banc d'essai comparatif communautaire. Il confirme la compétition féroce entre les modèles de pointe pour les performances de raisonnement et de génération.",
+     "sources": [
+      {
+       "name": "Brief IA",
+       "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxOY3RBd2VJV19ya0NCX2oyeHFlRGZZeDdXNEJsM3BUdE43YTBpQXV1dHhkNkxVd2x1NmxLaHQ2aXFscmlTNExvUlZpVVpUUzFJcGtwTWF0cDFrMmtOdkY4bHNyTG92WmdNUVRWTXNhUWtHTlVHTlJkdGJ0YU5odFdfa29MSWdsQQ?oc=5"
+      }
+     ]
+    },
+    {
+     "title": "Hybridation du raisonnement agentique entre espace latent et texte",
+     "summary": "Des travaux de recherche présentent les architectures d'agents à raisonnement hybride, capables d'exécuter leur réflexion interne dans l'espace latent avant de communiquer et d'agir via du texte. Cette approche vise à réduire les coûts d'inférence tout en améliorant la robustesse de planification des modèles autonomes.",
+     "sources": [
+      {
+       "name": "arXiv cs.AI / Hacker News",
+       "url": "https://arxiv.org/abs/2610.18861"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "key": "cyber",
+   "label": "Cybersécurité",
+   "items": [
+    {
+     "title": "SiteGuard WAF sous exploitation active par injection de commandes",
+     "summary": "Des attaquants exploitent actuellement une faille d'injection de commandes OS au sein de SiteGuard Server Edition. La vulnérabilité permet l'exécution arbitraire d'instructions avec les privilèges root ou SYSTEM sur les serveurs hébergeant le pare-feu applicatif.",
+     "sources": [
+      {
+       "name": "BleepingComputer",
+       "url": "https://www.bleepingcomputer.com/news/security/hackers-exploit-siteguard-waf-flaw-to-run-commands-as-system-root/"
+      }
+     ],
+     "severity": "critical"
+    },
+    {
+     "title": "Broadcom vulnérable à une exécution de code root à portée radio",
+     "summary": "Une faille non corrigée dans le logiciel d'appairage Wi-Fi de Broadcom permet à un attaquant à portée d'ondes d'exécuter du code avec les privilèges root sur les routeurs ciblés. L'attaque fonctionne sans nécessiter le mot de passe réseau ni phase d'association préalable.",
+     "sources": [
+      {
+       "name": "The Hacker News",
+       "url": "https://thehackernews.com/2026/10/unpatched-broadcom-wi-fi-flaw-lets.html"
+      }
+     ],
+     "severity": "critical"
+    },
+    {
+     "title": "Compromission chez OpenCode Console et fuite potentielle de clés d'API IA",
+     "summary": "Une intrusion survenue sur un système hérité d'OpenCode Console a potentiellement exposé les clés d'accès aux API OpenAI, Anthropic et Google enregistrées par les utilisateurs. Le service hébergé permettait l'utilisation centralisée de ces fournisseurs tiers.",
+     "sources": [
+      {
+       "name": "The Hacker News",
+       "url": "https://thehackernews.com/2026/10/opencode-console-breach-may-have.html"
+      }
+     ],
+     "severity": "watch"
+    },
+    {
+     "title": "Campagne npm ciblant les agents IA sous couvert de crédits gratuits",
+     "summary": "Un faux accélérateur Web3 distribue des packages npm malveillants promettant des crédits gratuits pour OpenAI et Anthropic Claude. Le code déployé installe des portes dérobées, dérobe des identifiants et détourne les flux de travail d'agents IA.",
+     "sources": [
+      {
+       "name": "The Hacker News",
+       "url": "https://thehackernews.com/2026/10/fake-web3-accelerator-uses-npm-packages.html"
+      }
+     ],
+     "severity": "watch"
+    }
+   ]
+  },
+  {
+   "key": "aero",
+   "label": "Airbus & aéronautique",
+   "items": [
+    {
+     "title": "Premier vol d'essai en Europe pour le drone de combat Airbus U740 Valkyrie",
+     "summary": "Le démonstrateur de drone militaire U740 Valkyrie développé par Airbus a complété avec succès son vol inaugural sur le continent européen. Ce jalon marque une étape clé dans le développement des capacités d'aéronefs de combat sans pilote du constructeur.",
+     "sources": [
+      {
+       "name": "Electroniques",
+       "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPY3JzejRDOUhma0pZRnZLNS0yemRBWm1UMW9URW4xWVFwOUZ5bkR1bHZTckJaVEhNN1NRdWk0N0hYN3hqaEYtTWlLclI3bmw0Qk0ycTAwd0U3Y0RzeWN0WlgxTlJPWlE3Y2VENGlVTlY1WVlSN0VPOFd0Qk1kSy1waWQxYXlvOWZ1U1dSZ1dDWGxDLU9wYTZHcUtXMnQyNlo2RWhOMXd6emQ4RDNSOWJMbUdZeC1YWGpiNTkyMw?oc=5"
+      }
+     ]
+    },
+    {
+     "title": "Qantas reçoit son premier Airbus A321 converti en cargo",
+     "summary": "Qantas Freight a réceptionné le premier de trois Airbus A321P2F (Passenger-to-Freighter) commandés pour renforcer ses opérations logistiques en partenariat avec Australia Post. Ces appareils convertis viennent soutenir les pics d'activité de fret de fin d'année.",
+     "sources": [
+      {
+       "name": "Zonebourse",
+       "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxPUTAzS1Z4WFRwUzYzS3pIY3plaWZyR0tudFNyYWlYYTR2N3pMMmpvQTRxOXRGc1E0NVFVVTNMbXR2MGpxaUpYbk80UGJfeXNDSVFWNlVGWVlzVXJwckQyZTJFUGhnQkhzczdHY3cyV1BScXdSdnl3U1Z3LVcwQVpieTJMSGJ4d2FCbFlWckVvaXQwcWE1OVF2Mi12MEEwQ3Q5SzBmZDcwaHp4aWJ5U3BfZ2pxR2piM1FQalBYMXQ0RExyVGt2eFRwRXRpR3ZfLVRlaUpYZjluQ0JDdw?oc=5"
+      },
+      {
+       "name": "AeroTime",
+       "url": "https://www.aerotime.aero/articles/qantas-freight-and-australia-post-welcome-a321-freighter-ahead-of-christmas-peak"
+      }
+     ]
+    },
+    {
+     "title": "Airbus étudie une seconde ligne d'assemblage final pour l'A350",
+     "summary": "Face à la saturation des carnets de commandes sur le segment long-courrier, Airbus évalue l'ouverture d'une nouvelle ligne d'assemblage dédiée à l'A350. L'objectif est de sécuriser les cadences de production et de réduire les délais de livraison pour les compagnies clientes.",
+     "sources": [
+      {
+       "name": "Air Journal",
+       "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNUE9zbVYxblBZSFRETlFxcHRON3BCMW5rSzdrNi1BZ21rVm1WMnRUMFlsWDlPUXNKVkZRNXNJVEFhNnZuV2Y4dGR5LTJqdG1wdTBJSVNxWlp4eVUwdVdMN0JFcE9HNGRldnVnc2psdUVOTmJGNmc5MDZNeUJoTE1fT2VmTkJVcUhSOU9meDR3Mk5TUm1SNHpuZW5FbE93QXRqcDBac3JB?oc=5"
+      }
+     ]
+    },
+    {
+     "title": "Airbus prépare l'intégration de technologies quantiques à bord",
+     "summary": "L'avionneur mène des travaux pour intégrer des composants et algorithmes quantiques dans les architectures avioniques des prochaines générations d'aéronefs. Cette recherche vise à accroître la puissance de calcul embarquée et l'efficacité de traitement des flux opérationnels complexes.",
+     "sources": [
+      {
+       "name": "Air&Cosmos",
+       "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxQZUEteFVRUVJhVFVxVGwxYm42U2VYS1cyaE5JaDByUlAwYnRKbWVLbmkyN0pRR19RYmRpZHRuWF91N0t1aW5yY3BoSDVqY0J2aFVwR294Zk45MnRCbkNuS3lTMk0zWHFPTGQwYlpFOHBUcVo5QmNzX3RoX3ZWamZDYlBjei14N3pIS2dwWmVaM0I4WDNHRmgzRWR4V2ZGVG9tdW1BMDI2LTVjeTRSMUJjVmxCV09wU0hYSi15Y1BYZ1B4d3diY2FiMzZCVEZuN0Y1?oc=5"
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "alerts": [],
+ "feedErrors": [
+  "CISA - Cybersecurity Advisories",
+  "Google DeepMind Blog",
+  "FlightGlobal"
+ ]
+}

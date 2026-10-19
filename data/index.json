@@ -1,6 +1,12 @@
 {
- "updated": "2026-10-18T10:50:18.430320+00:00",
+ "updated": "2026-10-19T12:49:30.143562+00:00",
  "editions": [
+  {
+   "id": "2026-10-19-daily",
+   "date": "2026-10-19",
+   "kind": "daily",
+   "lede": "L'actualité est marquée par des failles critiques touchant les couches d'infrastructure matérielle et de sécurité réseau, tandis qu'Airbus accélère ses essais d"
+  },
   {
    "id": "2026-10-18-weekly",
    "date": "2026-10-18",
