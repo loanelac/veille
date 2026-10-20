@@ -1,6 +1,12 @@
 {
- "updated": "2026-10-19T12:49:30.143562+00:00",
+ "updated": "2026-10-20T11:20:57.779417+00:00",
  "editions": [
+  {
+   "id": "2026-10-20-daily",
+   "date": "2026-10-20",
+   "kind": "daily",
+   "lede": "L'actualité est marquée par une recrudescence d'attaques ciblant la chaîne logistique logicielle et les infrastructures d'accès, tandis qu'Airbus enchaîne les a"
+  },
   {
    "id": "2026-10-19-daily",
    "date": "2026-10-19",

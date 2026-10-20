@@ -1,0 +1,222 @@
+{
+ "date": "2026-10-20",
+ "kind": "daily",
+ "generatedAt": "20/10 à 11:20 UTC",
+ "lede": "L'actualité est marquée par une recrudescence d'attaques ciblant la chaîne logistique logicielle et les infrastructures d'accès, tandis qu'Airbus enchaîne les accords industriels sur l'A220 et le segment hélicoptères.",
+ "stats": {
+  "feeds": 37,
+  "items": 104,
+  "errors": 2
+ },
+ "sections": [
+  {
+   "key": "ia",
+   "label": "Intelligence artificielle",
+   "items": [
+    {
+     "title": "Anthropic propose un cadre légal fixant des seuils de criticité pour bloquer les modèles d'IA",
+     "summary": "Anthropic plaide auprès des autorités américaines pour une réglementation encadrant l'interdiction de modèles d'IA uniquement au-delà de seuils stricts, tels que des risques avérés de pertes humaines majeures ou des préjudices financiers colossaux. L'éditeur souhaite confier à un juge le contrôle final d'une telle mesure.",
+     "sources": [
+      {
+       "name": "Siècle Digital",
+       "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOdVR0WUpmNGladGtTcHVuWkZLV3ZfOWhDbjNRNkR4Q2UzTlFpUGhkTUdJRjFIb1NLLXVLdnBwcmRxVXp4UG0xWHE5SDVYNnQ5OEFjcFItWGpnZHBMWjhBeTZsOTZKTzEwYjNtWFlzeW1WeUtMcktad1FzNHZ5TFFLaTE1VF9kdFVzVkUtQjkwMFVhajg0M3dac0FYU21RSEE?oc=5"
+      },
+      {
+       "name": "Les Numériques",
+       "url": "https://news.google.com/rss/articles/CBMiiAJBVV95cUxOTWJkcHd4UjU0X3pyaHQwWFpMSUpvME1HZGRMWUQwYjRGSExrNTRvRkM3Q2pBQnBqNUtUb2Q5NHI2c0ZMWUM4T3FmenZJa2pMMFpDRHJhRkRweHlXQVFnQTRudThtdzg5d1A0MzZZYjVGVjVzTl9yRVFHOVFaaEVaaW1kUWhjZm9GTHBTS25McVpDX2s1WENPQldKVEd0TEEtc1BzclBBUlVtLUJCN29NX1h2S3NUaHhrazgxLThOcE8teXlNMmxUX1djQ0hiZFVlVDYxSG5VTi1BaXc3TGlwUVJiWlMyVnAxTlNhUDFXeV9od2FRZzBzUGhOUUJvYWN2ZnEyX2ktLU4?oc=5"
+      },
+      {
+       "name": "Pèse sur start",
+       "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxQOXZqaFJNTjR1Z2ZJYVZfUGltZXVPOWo1bTZXY0FoWjZPSThoamdVLVhMdFVGUm9kMDBnWm9oNVF0dHRlV2tBZU1VcGZWUUd3Nk5EQUhYU3hCdVA4OUtVUlNnUER5VGt5bzdPdzZxVUxfSTJBejlncVc1MWFYRUtZOU5xcjllSEo1VnNEaTdwUjVUbThfTVhGN3o0VGN4amJaZTdIbTVRYnpLcFdkdjhVMm1PN2VBdVNuRGtTVmxUZUY0dExjbmMxNGp3?oc=5"
+      }
+     ],
+     "severity": "watch"
+    },
+    {
+     "title": "DeepSeek publie son moteur d'inférence en open source face au durcissement américain",
+     "summary": "DeepSeek a mis à disposition du public son moteur DeepInfer sur GitHub. En parallèle, les agences fédérales civiles américaines ont reçu l'ordre d'exclure les outils de l'entreprise chinoise de leurs systèmes d'information.",
+     "sources": [
+      {
+       "name": "Hacker News",
+       "url": "https://github.com/deepseek-ai/DeepInfer"
+      },
+      {
+       "name": "Reuters / Federal Register",
+       "url": "https://www.reuters.com/technology/us-banning-chinese-ai-deepseek-government-agency-it-systems-2026-10-19/"
+      }
+     ]
+    },
+    {
+     "title": "Un ex-ingénieur d'OpenAI incarcéré pour espionnage industriel",
+     "summary": "La justice américaine a ordonné le maintien en détention d'un ancien employé accusé d'avoir dissimulé un dispositif d'écoute dans une salle de réunion de la direction d'OpenAI pour capturer des secrets industriels, sur fond de contacts avec l'étranger.",
+     "sources": [
+      {
+       "name": "The Hacker News",
+       "url": "https://thehackernews.com/2026/10/ex-openai-engineer-detained-in-spy.html"
+      }
+     ]
+    },
+    {
+     "title": "Le projet open-source OpenCode alerte sur la fuite de clés d'API",
+     "summary": "Le projet d'assistance au code OpenCode a notifié ses utilisateurs d'une compromission ayant exposé des clés d'API tierces, dans un contexte d'attaques visant la distillation non autorisée de modèles IA.",
+     "sources": [
+      {
+       "name": "BleepingComputer",
+       "url": "https://www.bleepingcomputer.com/news/security/opencode-hack-exposes-api-keys-amid-ai-distillation-attacks/"
+      }
+     ],
+     "severity": "watch"
+    }
+   ]
+  },
+  {
+   "key": "cyber",
+   "label": "Cybersécurité",
+   "items": [
+    {
+     "title": "Siemens corrige une faille critique exploitée via la technique ClickFix",
+     "summary": "Siemens a colmaté la vulnérabilité CVE-2026-110936 (CVSS 8.4) liée au chargement de DLL dans Siemens Software Center, activement exploitée pour injecter des chevaux de Troie d'accès à distance.",
+     "sources": [
+      {
+       "name": "The Hacker News",
+       "url": "https://thehackernews.com/2026/10/clickfix-attackers-exploit-siemens.html"
+      }
+     ],
+     "severity": "critical"
+    },
+    {
+     "title": "ConnectWise suspend son service de sauvegarde après une compromission supply chain",
+     "summary": "ConnectWise a coupé l'accès à sa plateforme Cloud Backup après la détection d'intrusions non autorisées. Des acteurs malveillants auraient détourné des autorisations OAuth pour accéder à des tenants Microsoft 365 de clients et MSP en aval.",
+     "sources": [
+      {
+       "name": "The Record",
+       "url": "https://therecord.media/connectwise-suspends-cloud-backup-service-supply-chain-attack"
+      },
+      {
+       "name": "Dark Reading",
+       "url": "https://www.darkreading.com/identity-access-management-security/connectwise-disables-cloud-backups-downstream-msps"
+      },
+      {
+       "name": "LeMagIT",
+       "url": "https://www.lemagit.fr/actualites/366652535/Des-pirates-compromettent-des-environnements-Microsoft-365-via-ConnectWise"
+      }
+     ],
+     "severity": "critical"
+    },
+    {
+     "title": "APT28 s'infiltre chez deux sous-traitants de défense de l'OTAN",
+     "summary": "Le groupe cyberespion lié au renseignement militaire russe a exploité une porte dérobée récemment documentée pour maintenir des accès persistants dans les réseaux de deux industriels de défense européens et d'un service de police.",
+     "sources": [
+      {
+       "name": "The Record",
+       "url": "https://therecord.media/european-defense-contractors-fancy-bear-espionage"
+      }
+     ],
+     "severity": "watch"
+    },
+    {
+     "title": "L'extension WordPress Rank Math PRO compromise pour déployer une porte dérobée",
+     "summary": "Les paquets et mises à jour distribués depuis le site officiel entre le 15 et le 16 octobre ont été modifiés par des assaillants pour embarquer une backdoor persistante dans les sites WordPress clients.",
+     "sources": [
+      {
+       "name": "BleepingComputer",
+       "url": "https://www.bleepingcomputer.com/news/security/wordpress-seo-plugin-rank-math-compromised-to-backdoor-websites/"
+      },
+      {
+       "name": "The Hacker News",
+       "url": "https://thehackernews.com/2026/10/popular-wordpress-seo-plugin-rank-math.html"
+      }
+     ],
+     "severity": "critical"
+    },
+    {
+     "title": "F5 publie des correctifs d'urgence pour plusieurs failles critiques sur NGINX",
+     "summary": "F5 a émis des correctifs hors cycle traitant plusieurs vulnérabilités critiques dans son serveur web NGINX permettant l'exécution de code à distance sans authentification préalable.",
+     "sources": [
+      {
+       "name": "BleepingComputer",
+       "url": "https://www.bleepingcomputer.com/news/security/f5-releases-out-of-band-patches-for-critical-nginx-vulnerabilities/"
+      }
+     ],
+     "severity": "critical"
+    }
+   ]
+  },
+  {
+   "key": "aero",
+   "label": "Airbus & aéronautique",
+   "items": [
+    {
+     "title": "Safran fournira ses centrales SkyNaute pour la flotte d'Airbus A220",
+     "summary": "Airbus a retenu la centrale de navigation inertielle SkyNaute de Safran Electronics & Defense pour équiper l'A220, consolidant le partenariat équipementier sur ce programme moyen-courrier.",
+     "sources": [
+      {
+       "name": "Bourse Direct",
+       "url": "https://news.google.com/rss/articles/CBMitgJBVV95cUxOZlBFbW9SeXdhYXZUbnBOckV3dHVIa2trV3U5RzJiT21SVFlQTDFHOUJKeXR1eVdxaWdRZy1Ca0Q2akpyejZCaG9pQnc3TlFQQnVLcURlbG9yQmg1RG5IREptUGczd3Rub29hX0RUZFpncU96ZmsyXzYwYU43ZHZtX3E1RjNkOUo2ZGZQWUZWNEM3WjNXaDR6TGk3VXZjX05pNnA0cm5jX0Vzbjg4WUhiZ2s1RlFfYTYzNmt5ZnFEUjItdExXdEVOZWw5YjgtaWxnT3pCMGdGMFJIQ28tTnFfdnFBU3Y0ZFhsNGZpcko3ZzRoTHlIbDZMYUxRalpWa3BmSGhCVDRLSmlRbmhXMnRmRkxwdk9qQ3o3ZHhmeVN6NkhCeFdYeVBJYkhHQjlPaUREMUozR0VR?oc=5"
+      },
+      {
+       "name": "Safran",
+       "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQMGdaOEliYVk5SklHZy10d2taMlBOUHRRZXVfNno3SnZZYXBPNFhObU1QY0lMY2NFOWRRTnBfUGJLTFEwZUdwX2gwMlh2bmhyNkpKTkV5UjZVMjB6ZnVPVEhETFpNejFqaGNaSFZDZDBhZ29rRjVwUlV4NjRabjljalNPWEtpc3FXWWU3UUtJTWFwYjBhbUVNMHFpZHhkMVRWZzQxWkJFb21Ub2h4SExFeDZxTS1hT0dJMVBERGtFWmVSdw?oc=5"
+      },
+      {
+       "name": "Zonebourse",
+       "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxQVVVXQkQxQXBBUkZzazlMMF9sTUpma2JUQlBoaXVwWTR2aFBKdk45M0VLX1lmM1QwQl9HX3QwN0RvMDVqR0YzWFAtSXRpdlBPUHk1WWt6YVNnUGJIRVVoeFBvYXJrdTVKVVRQTzFucFZ0V2JWaHdCckYwVFl0VWVySlBaZmJIOGZqc2JKRXZjRmNMd3p1WnhtN1BUNnUtSkhsMTJjR19USG9vVTRVY2M3R0w5QXlvcUpWbUw0OWNSdGNTcHl4R1ZqYy0wT1lEMGViamt0b1FqQ3BmZU0?oc=5"
+      }
+     ]
+    },
+    {
+     "title": "Airbus Helicopters engage la campagne d'essais du H140 et sélectionne Latecoere sur le H175",
+     "summary": "Le constructeur mène actuellement des essais en conditions chaudes et en altitude aux États-Unis pour son nouveau modèle H140. Parallèlement, Latecoere a été désigné fournisseur d'équipements pour l'hélicoptère lourd H175.",
+     "sources": [
+      {
+       "name": "Airbus",
+       "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQZ3VMSzE2RDVMVG9hdWdBTTFkcU01SmFkNm9kTE1YRnFXeWQ3RUV2MF9xTW1yaUhTU0s3Uk9welRMS0R6TWZ5S0JpU1AtUXNhM2hROXBnWnRkNkM0NGtteWRfT1ZNbTVNcE1HbDlQR1RqQVFUYWZfQUM4QkhCNmM5Qmt1T2IteExwb2dZYzRMRWI0NXRJUGVkQUFrOWlzWHlFRGxpX1pvMnJ5ZUxxbFdkZDBfTQ?oc=5"
+      },
+      {
+       "name": "Vie Économique",
+       "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNWWFqRTc0ZFBialBidW43bVJTWFkyRUdpYlFiOV9wRWlZMXZGdk9BT2VIZTZ2UjEwOEg4cGZyODVrTzNWQXdVai1KVS1WSUhXeEx0ZEFkSk80MXJVZDlNcnlVU1l3d1BnNGNMVWp5aEtPN3lGNVNmSlhrVzc5QzNuUHB5dTdadWZzNk4xc0ZXUFZ0Yk1EQ2x0ME9yQnY?oc=5"
+      }
+     ]
+    },
+    {
+     "title": "Cathay Pacific prépare une consultation pour 50 gros-porteurs",
+     "summary": "La compagnie aérienne de Hong Kong finalise un projet de renouvellement de flotte qui mettra en concurrence l'Airbus A350 et les offres long-courriers de Boeing, avec des décisions attendues à court terme.",
+     "sources": [
+      {
+       "name": "Air Journal",
+       "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxNbGNVbHZCWGVSbXJMaGJpZGhNbndhN3hETE13WVhhOUhmU3lqV0NSOTlnQmxxTzVPVzJQMzAtSk84eVRLQzJfdFBOTW40MkFPOHJBdDFLa2pwZjVlSDB5Ni14SkVWVDNfZVpUOE9MMVN0R0g5MG1ibUhDellEbmdhSXhkTzhaNDRNOXpkVG91SHpxejdjNEd4RzFEWmNoQ2FRVFJGcUtFU3JVV0p0OXgwU0U5TEZmZTJVeDlmdW5TMVpRcm9jQTlubXZzbFhRa29OYUhrY0kxQQ?oc=5"
+      },
+      {
+       "name": "Le Journal de l'Aviation",
+       "url": "https://www.journal-aviation.com/actualites-transport-aerien/compagnies-aeriennes/cathay-pacific-pourrait-prochainement-annoncer-de-nouvelles-commandes-davions-commerciaux-20261019.html"
+      }
+     ]
+    },
+    {
+     "title": "Lufthansa retire définitivement ses derniers Airbus A340-600 du service actif",
+     "summary": "Le dernier vol commercial du quadriréacteur sous les couleurs de la compagnie allemande a rejoint Francfort le 19 octobre, scellant la fin d'exploitation de ce modèle dans sa flotte long-courrier.",
+     "sources": [
+      {
+       "name": "Le Journal de l'Aviation",
+       "url": "https://www.journal-aviation.com/actualites-transport-aerien/compagnies-aeriennes/lufthansa-fait-ses-adieux-a-lairbus-a340-600-20261019.html"
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "alerts": [
+  {
+   "level": "critical",
+   "title": "Exploitation active d'une vulnérabilité sur Siemens Software Center",
+   "body": "Siemens a confirmé l'exploitation de la vulnérabilité CVE-2026-110936 (CVSS 8.4), liée à un détournement de DLL via des campagnes ClickFix pour installer des RAT sur les postes cibles. L'application immédiate du correctif fourni par Siemens est requise sur l'ensemble des parcs industriels et postes d'ingénierie.",
+   "refs": [
+    "CVE-2026-110936"
+   ]
+  }
+ ],
+ "feedErrors": [
+  "CISA - Cybersecurity Advisories",
+  "FlightGlobal"
+ ]
+}
