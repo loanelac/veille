@@ -1,6 +1,12 @@
 {
- "updated": "2026-10-20T11:20:57.779417+00:00",
+ "updated": "2026-10-21T11:34:50.636019+00:00",
  "editions": [
+  {
+   "id": "2026-10-21-daily",
+   "date": "2026-10-21",
+   "kind": "daily",
+   "lede": "L'écosystème web est en état d'alerte maximale face à deux failles critiques dans PHP prévues pour correction d'urgence, tandis que l'autorité eMudhra subit la "
+  },
   {
    "id": "2026-10-20-daily",
    "date": "2026-10-20",

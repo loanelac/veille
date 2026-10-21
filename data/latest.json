@@ -1,12 +1,12 @@
 {
- "date": "2026-10-20",
+ "date": "2026-10-21",
  "kind": "daily",
- "generatedAt": "20/10 à 11:20 UTC",
- "lede": "L'actualité est marquée par une recrudescence d'attaques ciblant la chaîne logistique logicielle et les infrastructures d'accès, tandis qu'Airbus enchaîne les accords industriels sur l'A220 et le segment hélicoptères.",
+ "generatedAt": "21/10 à 11:34 UTC",
+ "lede": "L'écosystème web est en état d'alerte maximale face à deux failles critiques dans PHP prévues pour correction d'urgence, tandis que l'autorité eMudhra subit la révocation massive de ses certificats intermédiaires. Côté aéronautique, Airbus accélère sa cadence industrielle au quatrième trimestre et intègre les centrales SkyNaute de Safran sur l'A220.",
  "stats": {
   "feeds": 37,
-  "items": 104,
-  "errors": 2
+  "items": 150,
+  "errors": 3
  },
  "sections": [
   {
@@ -14,58 +14,61 @@
    "label": "Intelligence artificielle",
    "items": [
     {
-     "title": "Anthropic propose un cadre légal fixant des seuils de criticité pour bloquer les modèles d'IA",
-     "summary": "Anthropic plaide auprès des autorités américaines pour une réglementation encadrant l'interdiction de modèles d'IA uniquement au-delà de seuils stricts, tels que des risques avérés de pertes humaines majeures ou des préjudices financiers colossaux. L'éditeur souhaite confier à un juge le contrôle final d'une telle mesure.",
-     "sources": [
-      {
-       "name": "Siècle Digital",
-       "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOdVR0WUpmNGladGtTcHVuWkZLV3ZfOWhDbjNRNkR4Q2UzTlFpUGhkTUdJRjFIb1NLLXVLdnBwcmRxVXp4UG0xWHE5SDVYNnQ5OEFjcFItWGpnZHBMWjhBeTZsOTZKTzEwYjNtWFlzeW1WeUtMcktad1FzNHZ5TFFLaTE1VF9kdFVzVkUtQjkwMFVhajg0M3dac0FYU21RSEE?oc=5"
-      },
-      {
-       "name": "Les Numériques",
-       "url": "https://news.google.com/rss/articles/CBMiiAJBVV95cUxOTWJkcHd4UjU0X3pyaHQwWFpMSUpvME1HZGRMWUQwYjRGSExrNTRvRkM3Q2pBQnBqNUtUb2Q5NHI2c0ZMWUM4T3FmenZJa2pMMFpDRHJhRkRweHlXQVFnQTRudThtdzg5d1A0MzZZYjVGVjVzTl9yRVFHOVFaaEVaaW1kUWhjZm9GTHBTS25McVpDX2s1WENPQldKVEd0TEEtc1BzclBBUlVtLUJCN29NX1h2S3NUaHhrazgxLThOcE8teXlNMmxUX1djQ0hiZFVlVDYxSG5VTi1BaXc3TGlwUVJiWlMyVnAxTlNhUDFXeV9od2FRZzBzUGhOUUJvYWN2ZnEyX2ktLU4?oc=5"
-      },
-      {
-       "name": "Pèse sur start",
-       "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxQOXZqaFJNTjR1Z2ZJYVZfUGltZXVPOWo1bTZXY0FoWjZPSThoamdVLVhMdFVGUm9kMDBnWm9oNVF0dHRlV2tBZU1VcGZWUUd3Nk5EQUhYU3hCdVA4OUtVUlNnUER5VGt5bzdPdzZxVUxfSTJBejlncVc1MWFYRUtZOU5xcjllSEo1VnNEaTdwUjVUbThfTVhGN3o0VGN4amJaZTdIbTVRYnpLcFdkdjhVMm1PN2VBdVNuRGtTVmxUZUY0dExjbmMxNGp3?oc=5"
-      }
-     ],
-     "severity": "watch"
-    },
-    {
-     "title": "DeepSeek publie son moteur d'inférence en open source face au durcissement américain",
-     "summary": "DeepSeek a mis à disposition du public son moteur DeepInfer sur GitHub. En parallèle, les agences fédérales civiles américaines ont reçu l'ordre d'exclure les outils de l'entreprise chinoise de leurs systèmes d'information.",
-     "sources": [
-      {
-       "name": "Hacker News",
-       "url": "https://github.com/deepseek-ai/DeepInfer"
-      },
-      {
-       "name": "Reuters / Federal Register",
-       "url": "https://www.reuters.com/technology/us-banning-chinese-ai-deepseek-government-agency-it-systems-2026-10-19/"
-      }
-     ]
-    },
-    {
-     "title": "Un ex-ingénieur d'OpenAI incarcéré pour espionnage industriel",
-     "summary": "La justice américaine a ordonné le maintien en détention d'un ancien employé accusé d'avoir dissimulé un dispositif d'écoute dans une salle de réunion de la direction d'OpenAI pour capturer des secrets industriels, sur fond de contacts avec l'étranger.",
-     "sources": [
-      {
-       "name": "The Hacker News",
-       "url": "https://thehackernews.com/2026/10/ex-openai-engineer-detained-in-spy.html"
-      }
-     ]
-    },
-    {
-     "title": "Le projet open-source OpenCode alerte sur la fuite de clés d'API",
-     "summary": "Le projet d'assistance au code OpenCode a notifié ses utilisateurs d'une compromission ayant exposé des clés d'API tierces, dans un contexte d'attaques visant la distillation non autorisée de modèles IA.",
+     "title": "Le DHS bannit les technologies DeepSeek des agences fédérales civiles",
+     "summary": "Le département de la Sécurité intérieure des États-Unis ordonne aux agences fédérales civiles de désinstaller l'ensemble des solutions DeepSeek de leurs systèmes d'information. La directive interdit également l'acquisition de tout produit ou service tiers développé à partir de ces modèles.",
      "sources": [
       {
        "name": "BleepingComputer",
-       "url": "https://www.bleepingcomputer.com/news/security/opencode-hack-exposes-api-keys-amid-ai-distillation-attacks/"
+       "url": "https://www.bleepingcomputer.com/news/security/dhs-bans-deepseek-products-across-us-federal-civilian-agencies/"
+      },
+      {
+       "name": "The Hacker News",
+       "url": "https://thehackernews.com/2026/10/us-orders-deepseek-removed-from-federal.html"
+      }
+     ]
+    },
+    {
+     "title": "Mistral AI s'associe à NVIDIA pour l'ingénierie et lance Voxtral 3",
+     "summary": "Mistral a annoncé un partenariat avec NVIDIA pour optimiser les workflows d'ingénierie industrielle via le calcul accéléré. La start-up française a également lancé Voxtral 3, son SDK d'agents vocaux temps réel prenant en charge plus de 50 langues avec options de déploiement souverain.",
+     "sources": [
+      {
+       "name": "Mistral AI Blog",
+       "url": "https://mistral.ai/news/mistral-nvidia-ai-for-industrial-engineering/"
+      },
+      {
+       "name": "Hacker News",
+       "url": "https://mistral.ai/news/voxtral-3/"
+      }
+     ]
+    },
+    {
+     "title": "Un pirate exploite des agents IA autonomes pour attaquer plus de 1 200 sites",
+     "summary": "Des acteurs malveillants ont détourné l'outil d'audit automatisé Cairn pour lancer des campagnes d'intrusion autonomes à grande échelle contre des centaines d'entreprises. Les consoles de commande laissées exposées sur Internet ont permis aux chercheurs d'observer des attaques exécutées sans intervention humaine.",
+     "sources": [
+      {
+       "name": "The Hacker News",
+       "url": "https://thehackernews.com/2026/10/hackers-use-autonomous-ai-agents-to.html"
+      },
+      {
+       "name": "Dark Reading",
+       "url": "https://www.darkreading.com/cyberattacks-data-breaches/hackers-abuse-ai-pen-test-tool-cairn"
       }
      ],
      "severity": "watch"
+    },
+    {
+     "title": "Meta suspend le partage de conversations de son agent Muse après des fuites de données",
+     "summary": "Meta a désactivé en urgence la fonction de partage public de son outil conversationnel Meta Muse. La fonctionnalité exposait par inadvertance des secrets industriels et des données personnelles saisis par les utilisateurs lors de leurs échanges.",
+     "sources": [
+      {
+       "name": "Ars Technica",
+       "url": "https://arstechnica.com/security/2026/10/meta-muse-exposes-users-personal-and-business-secrets-when-they-share-conversations/"
+      },
+      {
+       "name": "Hacker News",
+       "url": "https://arstechnica.com/security/2026/10/meta-muse-exposes-users-personal-and-business-secrets-when-they-share-conversations/"
+      }
+     ]
     }
    ]
   },
@@ -74,71 +77,98 @@
    "label": "Cybersécurité",
    "items": [
     {
-     "title": "Siemens corrige une faille critique exploitée via la technique ClickFix",
-     "summary": "Siemens a colmaté la vulnérabilité CVE-2026-110936 (CVSS 8.4) liée au chargement de DLL dans Siemens Software Center, activement exploitée pour injecter des chevaux de Troie d'accès à distance.",
+     "title": "PHP prépare des correctifs d'urgence pour deux failles RCE critiques (PHP2Shell)",
+     "summary": "Deux vulnérabilités critiques d'exécution de code à distance (CVSS 9.2) affectent PHP, dont les détails techniques ont fuité avant la publication des patchs. Le CERT-FR et les éditeurs préviennent qu'aucun contournement technique n'est pleinement efficace avant l'application des correctifs d'urgence attendus ce 21 octobre.",
      "sources": [
       {
+       "name": "CERT-FR",
+       "url": "https://www.cert.ssi.gouv.fr/alerte/CERTFR-2026-ALE-014/Platform/"
+      },
+      {
        "name": "The Hacker News",
-       "url": "https://thehackernews.com/2026/10/clickfix-attackers-exploit-siemens.html"
+       "url": "https://thehackernews.com/2026/10/php2shell-two-unpatched-critical-php.html"
+      },
+      {
+       "name": "BleepingComputer",
+       "url": "https://www.bleepingcomputer.com/news/security/php-warns-admins-of-two-critical-flaws-emergency-patches-coming-tomorrow/"
+      },
+      {
+       "name": "Ars Technica",
+       "url": "https://arstechnica.com/security/2026/10/php-maintainers-tell-web-devs-to-prepare-themselves-for-critical-security-patches/"
+      },
+      {
+       "name": "Hacker News",
+       "url": "https://news-web.php.net/php.announce/509"
       }
      ],
      "severity": "critical"
     },
     {
-     "title": "ConnectWise suspend son service de sauvegarde après une compromission supply chain",
-     "summary": "ConnectWise a coupé l'accès à sa plateforme Cloud Backup après la détection d'intrusions non autorisées. Des acteurs malveillants auraient détourné des autorisations OAuth pour accéder à des tenants Microsoft 365 de clients et MSP en aval.",
+     "title": "Huit clés d'autorités intermédiaires d'eMudhra révoquées en urgence par Google, Apple et Mozilla",
+     "summary": "Les géants de la tech et les navigateurs ont bloqué huit certificats intermédiaires de l'autorité eMudhra suite à la compromission avérée de leurs clés privées, rendues vulnérables par une faiblesse cryptographique majeure. L'incident permettait la falsification de certificats TLS pour n'importe quel domaine web.",
      "sources": [
       {
-       "name": "The Record",
-       "url": "https://therecord.media/connectwise-suspends-cloud-backup-service-supply-chain-attack"
+       "name": "BleepingComputer",
+       "url": "https://www.bleepingcomputer.com/news/security/mozilla-google-apple-block-compromised-emudhra-ca-certificates/"
       },
       {
        "name": "Dark Reading",
-       "url": "https://www.darkreading.com/identity-access-management-security/connectwise-disables-cloud-backups-downstream-msps"
+       "url": "https://www.darkreading.com/cyber-risk/tech-giants-emudhra-certificates-compromised-keys"
       },
       {
-       "name": "LeMagIT",
-       "url": "https://www.lemagit.fr/actualites/366652535/Des-pirates-compromettent-des-environnements-Microsoft-365-via-ConnectWise"
+       "name": "Ars Technica",
+       "url": "https://arstechnica.com/security/2026/10/the-internet-goes-on-high-alert-after-discovery-of-8-compromised-tls-certs/"
+      },
+      {
+       "name": "Simon Willison",
+       "url": "https://simonwillison.net/2026/Oct/20/emudhra-certificates/"
       }
      ],
      "severity": "critical"
     },
     {
-     "title": "APT28 s'infiltre chez deux sous-traitants de défense de l'OTAN",
-     "summary": "Le groupe cyberespion lié au renseignement militaire russe a exploité une porte dérobée récemment documentée pour maintenir des accès persistants dans les réseaux de deux industriels de défense européens et d'un service de police.",
+     "title": "Le rançongiciel SafePay a compromis plus de 600 infrastructures critiques",
+     "summary": "Une alerte conjointe du FBI et de la CISA révèle que le groupe criminel SafePay figure parmi les plus actifs au niveau mondial depuis 2024. Le collectif s'appuie sur le bourrage d'identifiants, le hameçonnage et l'exploitation de failles non corrigées pour pénétrer des réseaux stratégiques.",
      "sources": [
       {
+       "name": "BleepingComputer",
+       "url": "https://www.bleepingcomputer.com/news/security/cisa-and-fbi-safepay-ransomware-has-hit-over-600-critical-infrastructure-organizations/"
+      },
+      {
        "name": "The Record",
-       "url": "https://therecord.media/european-defense-contractors-fancy-bear-espionage"
+       "url": "https://therecord.media/fbi-says-safepay-ransomware-gang-among-most-active-600-victims"
       }
      ],
      "severity": "watch"
     },
     {
-     "title": "L'extension WordPress Rank Math PRO compromise pour déployer une porte dérobée",
-     "summary": "Les paquets et mises à jour distribués depuis le site officiel entre le 15 et le 16 octobre ont été modifiés par des assaillants pour embarquer une backdoor persistante dans les sites WordPress clients.",
+     "title": "Le vol de clés UpdraftCentral permet d'injecter des portes dérobées sur WordPress",
+     "summary": "L'infrastructure de TeamUpdraft a été compromise, exposant les clés de connexion utilisées par les extensions UpdraftCentral, UpdraftVault et UpdraftClone. Les attaquants se servent de ces accès privilégiés pour exécuter des commandes et installer des backdoors sur les sites web clients reliés.",
      "sources": [
-      {
-       "name": "BleepingComputer",
-       "url": "https://www.bleepingcomputer.com/news/security/wordpress-seo-plugin-rank-math-compromised-to-backdoor-websites/"
-      },
       {
        "name": "The Hacker News",
-       "url": "https://thehackernews.com/2026/10/popular-wordpress-seo-plugin-rank-math.html"
-      }
-     ],
-     "severity": "critical"
-    },
-    {
-     "title": "F5 publie des correctifs d'urgence pour plusieurs failles critiques sur NGINX",
-     "summary": "F5 a émis des correctifs hors cycle traitant plusieurs vulnérabilités critiques dans son serveur web NGINX permettant l'exécution de code à distance sans authentification préalable.",
-     "sources": [
+       "url": "https://thehackernews.com/2026/10/attackers-abuse-updraftcentral-keys-to.html"
+      },
       {
        "name": "BleepingComputer",
-       "url": "https://www.bleepingcomputer.com/news/security/f5-releases-out-of-band-patches-for-critical-nginx-vulnerabilities/"
+       "url": "https://www.bleepingcomputer.com/news/security/stolen-updraftcentral-keys-used-to-backdoor-wordpress-sites/"
       }
      ],
-     "severity": "critical"
+     "severity": "watch"
+    },
+    {
+     "title": "Plus de 300 relais de sortie Tor piratés pour intercepter des sessions SSH",
+     "summary": "Une opération malveillante a pris le contrôle d'environ 10 % des nœuds de sortie du réseau d'anonymisation Tor début octobre. Les attaquants redirigeaient le trafic SSH vers des serveurs malveillants conçus pour récolter les identifiants en clair.",
+     "sources": [
+      {
+       "name": "The Hacker News",
+       "url": "https://thehackernews.com/2026/10/attackers-hijacked-over-300-tor-exit.html"
+      },
+      {
+       "name": "Risky Bulletin",
+       "url": "https://news.risky.biz/risky-bulletin-hacker-hijacks-10-of-tor-exit-nodes/"
+      }
+     ]
     }
    ]
   },
@@ -147,58 +177,64 @@
    "label": "Airbus & aéronautique",
    "items": [
     {
-     "title": "Safran fournira ses centrales SkyNaute pour la flotte d'Airbus A220",
-     "summary": "Airbus a retenu la centrale de navigation inertielle SkyNaute de Safran Electronics & Defense pour équiper l'A220, consolidant le partenariat équipementier sur ce programme moyen-courrier.",
-     "sources": [
-      {
-       "name": "Bourse Direct",
-       "url": "https://news.google.com/rss/articles/CBMitgJBVV95cUxOZlBFbW9SeXdhYXZUbnBOckV3dHVIa2trV3U5RzJiT21SVFlQTDFHOUJKeXR1eVdxaWdRZy1Ca0Q2akpyejZCaG9pQnc3TlFQQnVLcURlbG9yQmg1RG5IREptUGczd3Rub29hX0RUZFpncU96ZmsyXzYwYU43ZHZtX3E1RjNkOUo2ZGZQWUZWNEM3WjNXaDR6TGk3VXZjX05pNnA0cm5jX0Vzbjg4WUhiZ2s1RlFfYTYzNmt5ZnFEUjItdExXdEVOZWw5YjgtaWxnT3pCMGdGMFJIQ28tTnFfdnFBU3Y0ZFhsNGZpcko3ZzRoTHlIbDZMYUxRalpWa3BmSGhCVDRLSmlRbmhXMnRmRkxwdk9qQ3o3ZHhmeVN6NkhCeFdYeVBJYkhHQjlPaUREMUozR0VR?oc=5"
-      },
-      {
-       "name": "Safran",
-       "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQMGdaOEliYVk5SklHZy10d2taMlBOUHRRZXVfNno3SnZZYXBPNFhObU1QY0lMY2NFOWRRTnBfUGJLTFEwZUdwX2gwMlh2bmhyNkpKTkV5UjZVMjB6ZnVPVEhETFpNejFqaGNaSFZDZDBhZ29rRjVwUlV4NjRabjljalNPWEtpc3FXWWU3UUtJTWFwYjBhbUVNMHFpZHhkMVRWZzQxWkJFb21Ub2h4SExFeDZxTS1hT0dJMVBERGtFWmVSdw?oc=5"
-      },
-      {
-       "name": "Zonebourse",
-       "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxQVVVXQkQxQXBBUkZzazlMMF9sTUpma2JUQlBoaXVwWTR2aFBKdk45M0VLX1lmM1QwQl9HX3QwN0RvMDVqR0YzWFAtSXRpdlBPUHk1WWt6YVNnUGJIRVVoeFBvYXJrdTVKVVRQTzFucFZ0V2JWaHdCckYwVFl0VWVySlBaZmJIOGZqc2JKRXZjRmNMd3p1WnhtN1BUNnUtSkhsMTJjR19USG9vVTRVY2M3R0w5QXlvcUpWbUw0OWNSdGNTcHl4R1ZqYy0wT1lEMGViamt0b1FqQ3BmZU0?oc=5"
-      }
-     ]
-    },
-    {
-     "title": "Airbus Helicopters engage la campagne d'essais du H140 et sélectionne Latecoere sur le H175",
-     "summary": "Le constructeur mène actuellement des essais en conditions chaudes et en altitude aux États-Unis pour son nouveau modèle H140. Parallèlement, Latecoere a été désigné fournisseur d'équipements pour l'hélicoptère lourd H175.",
-     "sources": [
-      {
-       "name": "Airbus",
-       "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQZ3VMSzE2RDVMVG9hdWdBTTFkcU01SmFkNm9kTE1YRnFXeWQ3RUV2MF9xTW1yaUhTU0s3Uk9welRMS0R6TWZ5S0JpU1AtUXNhM2hROXBnWnRkNkM0NGtteWRfT1ZNbTVNcE1HbDlQR1RqQVFUYWZfQUM4QkhCNmM5Qmt1T2IteExwb2dZYzRMRWI0NXRJUGVkQUFrOWlzWHlFRGxpX1pvMnJ5ZUxxbFdkZDBfTQ?oc=5"
-      },
-      {
-       "name": "Vie Économique",
-       "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNWWFqRTc0ZFBialBidW43bVJTWFkyRUdpYlFiOV9wRWlZMXZGdk9BT2VIZTZ2UjEwOEg4cGZyODVrTzNWQXdVai1KVS1WSUhXeEx0ZEFkSk80MXJVZDlNcnlVU1l3d1BnNGNMVWp5aEtPN3lGNVNmSlhrVzc5QzNuUHB5dTdadWZzNk4xc0ZXUFZ0Yk1EQ2x0ME9yQnY?oc=5"
-      }
-     ]
-    },
-    {
-     "title": "Cathay Pacific prépare une consultation pour 50 gros-porteurs",
-     "summary": "La compagnie aérienne de Hong Kong finalise un projet de renouvellement de flotte qui mettra en concurrence l'Airbus A350 et les offres long-courriers de Boeing, avec des décisions attendues à court terme.",
-     "sources": [
-      {
-       "name": "Air Journal",
-       "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxNbGNVbHZCWGVSbXJMaGJpZGhNbndhN3hETE13WVhhOUhmU3lqV0NSOTlnQmxxTzVPVzJQMzAtSk84eVRLQzJfdFBOTW40MkFPOHJBdDFLa2pwZjVlSDB5Ni14SkVWVDNfZVpUOE9MMVN0R0g5MG1ibUhDellEbmdhSXhkTzhaNDRNOXpkVG91SHpxejdjNEd4RzFEWmNoQ2FRVFJGcUtFU3JVV0p0OXgwU0U5TEZmZTJVeDlmdW5TMVpRcm9jQTlubXZzbFhRa29OYUhrY0kxQQ?oc=5"
-      },
-      {
-       "name": "Le Journal de l'Aviation",
-       "url": "https://www.journal-aviation.com/actualites-transport-aerien/compagnies-aeriennes/cathay-pacific-pourrait-prochainement-annoncer-de-nouvelles-commandes-davions-commerciaux-20261019.html"
-      }
-     ]
-    },
-    {
-     "title": "Lufthansa retire définitivement ses derniers Airbus A340-600 du service actif",
-     "summary": "Le dernier vol commercial du quadriréacteur sous les couleurs de la compagnie allemande a rejoint Francfort le 19 octobre, scellant la fin d'exploitation de ce modèle dans sa flotte long-courrier.",
+     "title": "Airbus prépare une forte accélération de ses livraisons au quatrième trimestre",
+     "summary": "L'avionneur européen doit intensifier considérablement son rythme industriel sur la fin de l'année pour atteindre son objectif annuel de livraison fixé à environ 870 appareils commerciaux. Ce défi opérationnel intervient dans un contexte de chaîne d'approvisionnement aéronautique toujours sous forte tension.",
      "sources": [
       {
        "name": "Le Journal de l'Aviation",
-       "url": "https://www.journal-aviation.com/actualites-transport-aerien/compagnies-aeriennes/lufthansa-fait-ses-adieux-a-lairbus-a340-600-20261019.html"
+       "url": "https://www.journal-aviation.com/actualites-industrie-aeronautique/avions-commerciaux/les-livraisons-dairbus-promises-a-une-tres-forte-acceleration-au-quatrieme-trimestre-20261020.html"
+      }
+     ]
+    },
+    {
+     "title": "L'Airbus A220 va intégrer la centrale inertielle SkyNaute de Safran",
+     "summary": "Safran Electronics & Defense fait entrer sa centrale de navigation inertielle SkyNaute sur le marché du transport civil en équipant la famille A220. Cette technologie optique moderne et résiliente renforce la précision de guidage face aux risques croissants de brouillage et de spoofing GPS.",
+     "sources": [
+      {
+       "name": "Le Journal de l'Aviation",
+       "url": "https://www.journal-aviation.com/actualites-industrie-aeronautique/avionique/la-centrale-inertielle-skynaute-de-safran-monte-a-bord-de-la-famille-airbus-a220-20261020.html"
+      },
+      {
+       "name": "AeroMorning.com",
+       "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE9ReFBqR2g5OW4tZTNZdTdfa2JFTTcwTmZXZWhERHp2YkhlWF9uZEd5YUM3eUtvelhaNV93MXg3cklpVktDUTRiNE9rUHJ5Q3lFNUo2RkJsTWw1RTlHZ1VRR0ZPSldVZFlJSWtTYUszdkZjczJLX2RN?oc=5"
+      }
+     ]
+    },
+    {
+     "title": "Airbus et Kpler s'associent pour la surveillance maritime satellitaire sans balise AIS",
+     "summary": "Airbus s'associe à la société d'analyse de flux Kpler pour fournir un service régulier de suivi maritime par imagerie spatiale. Le système permet d'identifier et de localiser les navires qui désactivent volontairement leur transpondeur AIS pour dissimuler leurs activités.",
+     "sources": [
+      {
+       "name": "Le marin",
+       "url": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxNaDZna1FsN0l2dkM1RTFkTnFPcWsxZUZZUDRTdi12RmF3U3hOaXZHMXpWMVFna0ZHblhPa01XcGtRWjdaLWJGN3RYc0JGYWRPYlVwRGlQTGt1aW10Y1MzQ0ZiTEltUTdCREltamZQUkJiaGM3Rk03ZEN1NnQ0NV9nZWxtZzE1X1dHYkhPSExfN3FfWXRfZjBTbGNQaDRNVDdUd0tjN19JRTZhUWxoclB4OTNFYk5acXYtaTRXNlhQRThVSVJfR0FYSzFZejBrZk9ld192eEtzbEJjX0ZtYk5SUGhCcFA4R21rM3Vz?oc=5"
+      },
+      {
+       "name": "IndexBox",
+       "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQWHhpSXVmN09VdWN1ODNCQmVnTktPWC1DZU5CMWV5VVBRczRTYjNJeTJJbXBkYm9wQjhQRFpRUlc4VUNydFJuek5Wa01KOWRFSUt2MUhhRXpGTVpzX2FMb3NRS3A0eWc5XzRKX2JnMHR2djhSdEJhUlJ3V0NWb01RRHBoMzFWUXA5am1Bdm42VmdCcU5XUUR4NC1sSDM0aWdiN1pR?oc=5"
+      }
+     ]
+    },
+    {
+     "title": "Airbus, Dassault, Safran et Thales prennent le contrôle du constructeur de drones Delair",
+     "summary": "Les quatre grands industriels français de la défense structurent l'actionnariat du fabricant de drones toulousain Delair en prenant son contrôle. Cette alliance consolide la filière souveraine de drones d'observation et de télédétection tactique.",
+     "sources": [
+      {
+       "name": "Les Echos",
+       "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxOZzBDcjFWX1Mzc09KYUstZUZQZ3hTT0Vja2xiYXRpRXhUTEZRbGdQOGIxWTZMLVVxRm9tSW5iUmVmTUdsSVpsWm5sMVh0Y3NLOWhoUzg3dVBmM1pyd1ZoTWpEWDZ6VlQ3MXY1R1NmWkwwalptUXlDQTl5cnRfSUp3SUpCWGtNVWwtT25GSXJxMEo0eHN5UElkd3NjVXZDcUQ4bHlfU1JMWEE2UVBSZE56REVJN2Qxd0Z1NDVyX3YzMHBXWlAybXhFZXlHUmZ6eDJYRXdocl9JWXJ3VkdpeWRQX3daMA?oc=5"
+      }
+     ]
+    },
+    {
+     "title": "La FAA homologue le Boeing 737 MAX 10, relançant la confrontation face à l'A321neo",
+     "summary": "L'agence fédérale de l'aviation américaine a délivré la certification de type pour le Boeing 737 MAX 10 après plusieurs années de retards techniques et réglementaires. Cette étape permet à l'avionneur américain d'engager ses premières livraisons face au leader de son segment, l'A321neo d'Airbus.",
+     "sources": [
+      {
+       "name": "AeroTime",
+       "url": "https://www.aerotime.aero/articles/boeing-737-max-10-faa-certification"
+      },
+      {
+       "name": "Les Echos",
+       "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQTG1JU05lSDlRMmZWSXd0TncyRGZyTHVJN0Vjd2k0bjU2VFdMQ0FlM3pSdzdZd3paMk1VS1prMExGcHNmdTBOaEt5aDZtaVNsdzJXVXAxTjh5cExHZWxKaXBBRU5XREp1SFJaY0s5Qm8tMlYtbVZaY1h4WmVHcjlTM1JjZDlsdVJfYmc1aXl2bFZuVlpTYW9vSXlxOURZd0NCdjNWc3dtX1gtRFZ4VUJvOWR2bGp3b1NVakE?oc=5"
       }
      ]
     }
@@ -208,15 +244,17 @@
  "alerts": [
   {
    "level": "critical",
-   "title": "Exploitation active d'une vulnérabilité sur Siemens Software Center",
-   "body": "Siemens a confirmé l'exploitation de la vulnérabilité CVE-2026-110936 (CVSS 8.4), liée à un détournement de DLL via des campagnes ClickFix pour installer des RAT sur les postes cibles. L'application immédiate du correctif fourni par Siemens est requise sur l'ensemble des parcs industriels et postes d'ingénierie.",
+   "title": "Vulnérabilités critiques d'exécution de code à distance non corrigées dans PHP (PHP2Shell)",
+   "body": "Deux failles zero-day critiques (CVSS 9.2) permettent l'exécution arbitraire de code à distance sur les serveurs web exécutant PHP. L'information ayant fuité publiquement avant le déploiement planifié, les administrateurs doivent planifier l'application immédiate des correctifs d'urgence fournis le 21 octobre à 16h00 (heure de Paris). Aucun contournement applicatif actuel ne protège complètement les instances exposées.",
    "refs": [
-    "CVE-2026-110936"
+    "CVE-2026-109618",
+    "CVE-2026-109619"
    ]
   }
  ],
  "feedErrors": [
   "CISA - Cybersecurity Advisories",
+  "Google DeepMind Blog",
   "FlightGlobal"
  ]
 }
