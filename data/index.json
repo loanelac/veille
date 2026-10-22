@@ -1,6 +1,12 @@
 {
- "updated": "2026-10-21T11:34:50.636019+00:00",
+ "updated": "2026-10-22T11:39:40.933261+00:00",
  "editions": [
+  {
+   "id": "2026-10-22-daily",
+   "date": "2026-10-22",
+   "kind": "daily",
+   "lede": "L'urgence sécuritaire est dominée par les correctifs d'urgence 'PHP2Shell' activement ciblés dans la nature et une faille maximale sur GitLab, tandis qu'OpenAI "
+  },
   {
    "id": "2026-10-21-daily",
    "date": "2026-10-21",
