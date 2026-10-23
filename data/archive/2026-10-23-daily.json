@@ -1,0 +1,248 @@
+{
+ "date": "2026-10-23",
+ "kind": "daily",
+ "generatedAt": "23/10 à 11:26 UTC",
+ "lede": "L'exploitation offensive à grande échelle de PHP2Shell et d'un zero-day Arista domine l'actualité cyber, tandis qu'Anthropic accélère sur le terrain des agents autonomes avec Claude Duet et l'ouverture du standard Agent Skills.",
+ "stats": {
+  "feeds": 37,
+  "items": 146,
+  "errors": 3
+ },
+ "sections": [
+  {
+   "key": "cyber",
+   "label": "Cybersécurité",
+   "items": [
+    {
+     "title": "PHP2Shell : l'exploitation massive a débuté quatre jours avant les correctifs",
+     "summary": "Amazon Threat Intelligence rapporte que les attaques ciblaient les failles critiques d'exécution de code de PHP avant la sortie des correctifs officiels pour les branches 8.2 à 8.5. Des millions de tentatives de compromission sont désormais enregistrées, tentant notamment de déployer une variante du botnet Mirai nommée Potassium.",
+     "sources": [
+      {
+       "name": "BleepingComputer",
+       "url": "https://www.bleepingcomputer.com/news/security/amazon-says-php2shell-exploitation-began-4-days-before-patches/"
+      },
+      {
+       "name": "The Hacker News",
+       "url": "https://thehackernews.com/2026/10/php2shell-exploit-attempts-hit-millions.html"
+      },
+      {
+       "name": "Schneier on Security",
+       "url": "https://www.schneier.com/blog/archives/2026/10/new-serious-php-vulnerabilities-released-and-patched.html"
+      },
+      {
+       "name": "Risky Bulletin",
+       "url": "https://news.risky.biz/risky-bulletin-supply-chain-attack-lets-ransomware-group-inside-40-shipping-companies/"
+      }
+     ],
+     "severity": "critical"
+    },
+    {
+     "title": "Arista corrige un zero-day activement exploité dans VeloCloud Orchestrator",
+     "summary": "Une vulnérabilité critique d'injection SQL touche les installations sur site de VeloCloud Orchestrator, la solution centrale de gestion des réseaux SD-WAN. L'équipementier a diffusé des correctifs d'urgence face aux exploitations constatées ciblant les accès d'administration.",
+     "sources": [
+      {
+       "name": "BleepingComputer",
+       "url": "https://www.bleepingcomputer.com/news/security/arista-patches-new-velocloud-orchestrator-zero-day-exploited-in-attacks/"
+      },
+      {
+       "name": "The Hacker News",
+       "url": "https://thehackernews.com/2026/10/arista-warns-of-critical-velocloud-sql.html"
+      }
+     ],
+     "severity": "critical"
+    },
+    {
+     "title": "LiteLLM : la chaîne de livraison compromise pour diffuser un voleur d'identifiants",
+     "summary": "Des cyberattaquants ont piraté le paquet PyPI et les images Docker officielles du projet LiteLLM afin d'y incorporer un logiciel malveillant. Le composant exfiltrait silencieusement les clés d'API, les secrets d'infrastructure et les variables d'environnement des utilisateurs.",
+     "sources": [
+      {
+       "name": "BleepingComputer",
+       "url": "https://www.bleepingcomputer.com/news/security/litellm-release-pipeline-hacked-to-distribute-info-stealer-malware/"
+      },
+      {
+       "name": "The Hacker News",
+       "url": "https://thehackernews.com/2026/10/threatsday-ai-secrets-leak-pingcap.html"
+      }
+     ],
+     "severity": "watch"
+    },
+    {
+     "title": "L'autorité eMudhra abandonne le marché SSL/TLS après la révélation de clés privées triviales",
+     "summary": "L'autorité de certification indienne met fin à ses activités mondiales d'émission de certificats web après la découverte de défaillances critiques dans ses cérémonies de clés. Un chercheur a démontré que huit clés privées d'autorités intermédiaires étaient facilement calculables, l'une d'elles étant équivalente au chiffre quatre.",
+     "sources": [
+      {
+       "name": "Ars Technica",
+       "url": "https://arstechnica.com/security/2026/10/disgraced-emudhra-drops-out-of-tls-business-following-certificate-debacle/"
+      },
+      {
+       "name": "The Record",
+       "url": "https://therecord.media/indian-tech-company-announces-withdrawal-certificate-business-incident"
+      },
+      {
+       "name": "Schneier on Security",
+       "url": "https://www.schneier.com/blog/archives/2026/10/compromised-tls-certificates.html"
+      },
+      {
+       "name": "The Hacker News",
+       "url": "https://thehackernews.com/2026/10/emudhra-to-exit-global-ssltls-business.html"
+      }
+     ]
+    },
+    {
+     "title": "Microsoft relie la cyberattaque ConnectWise à des agents IA pilotés par Pékin",
+     "summary": "Le groupe de cyberespionnage chinois Storm-0940 a mobilisé des outils d'intrusion automatisés basés sur les agents ARTEX pour frapper plus de 2 200 environnements ConnectWise. Cette opération confirme l'industrialisation des agents autonomes pour accélérer la reconnaissance et la phase de propagation lors d'attaques sur la chaîne logistique.",
+     "sources": [
+      {
+       "name": "The Record",
+       "url": "https://therecord.media/china-cyber-connectwise-ai"
+      },
+      {
+       "name": "Dark Reading",
+       "url": "https://www.darkreading.com/cyberattacks-data-breaches/microsoft-storm-0940-connectwise-supply-chain-attack"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "key": "ia",
+   "label": "Intelligence artificielle",
+   "items": [
+    {
+     "title": "Anthropic dévoile Claude Duet et transmet le standard Agent Skills à l'Agentic AI Foundation",
+     "summary": "Anthropic positionne Claude Duet, un agent proactif travaillant en tâche de fond pour exécuter des processus d'entreprise complexes sans sollicitation continue. L'entreprise a simultanément cédé la gouvernance de son standard d'outillage Agent Skills à l'Agentic AI Foundation sous l'égide de la Linux Foundation pour en garantir la neutralité.",
+     "sources": [
+      {
+       "name": "BFM",
+       "url": "https://news.google.com/rss/articles/CBMivgJBVV95cUxQNlFTcEdocGpOOGhzUmRGZXhfTFVOdmo5SXZsVnRYcW42LUk4R1RPRGktdzN4aTJZQ0t5MzVmbmhxbHFjNlVWY2I4TjYwQ1lkMUE2bVRpMVhpcUhqekN5cW5zYUI0VDFsM0w4Y294c1JQckR3NlJpWDZDV0duUHRaU3FFNjVKUG4zZFU2NFAyZnhPeWlIdTh2QUt0d2tvaWFyaDdIbE9COHZPX0pVMzN1RjZmTTAxV1lmd1E1aFhmU2hDOWJpM1hUeXpsSmlsQl9CVklTSlVVcGd0TktoRlV1Y2h2a0xQekxxeng3Q3dFVVdtWDZURVBPV1V4Z05fVlZPUTdmYzNQMlZpNVRFY0I3ZWh4ZjJEd2dYM0dZamNoc18xVGkyZXJPT05EZzhTQ1U4QU9sUXhfalF1X1lkUHc?oc=5"
+      },
+      {
+       "name": "Simon Willison",
+       "url": "https://simonwillison.net/2026/Oct/22/donating-agent-skills/"
+      },
+      {
+       "name": "KultureGeek",
+       "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNb0ZpME15R2xsbmxyYmFNR3dnajdnZ1J0V1RyQWxmaEtic1dwUXVVYVNVbUtUNEozUGVmcHBwNmZoeE1qNDJMaFR5UzhIOHZaWmxXSmNXOTAyc1pLM2psd3Q5aVEybjJ4YVI0ZmlQNFZ0SVpkQkd4ei1wc09hU1ZQRTc0N1ExZHVhb2NIc1gzT3cxWjNCQldLUnFranhHT1E2WlBIc2V3?oc=5"
+      }
+     ]
+    },
+    {
+     "title": "Anthropic démontre la faisabilité de la vérification logicielle formelle par LLM",
+     "summary": "Des chercheurs ont documenté l'emploi de Claude pour générer des preuves formelles de sécurité logicielle à grande échelle sur du code critique. Les expérimentations ont couvert 123 bibliothèques ouvertes et contribué à réduire concrètement la surface d'attaque d'outils tels qu'OpenSSH.",
+     "sources": [
+      {
+       "name": "Hacker News",
+       "url": "https://www.anthropic.com/research/formal-verification"
+      },
+      {
+       "name": "Unite.AI",
+       "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOVDdXV01DWlRLMmVKcXl3MGlzVUpVclU2WGk0SERvN1hQSFZKZ0xQQ3U4ZEV3dXc3d2c1OWZXYnp5NWxpc0o0aG9YSU0wVG5QZGVZN09BTHVJaG5haFVOaUx1TnlOek92Mk1WeDBERXgyVnpaMWhkY2NmeVBNcGJFZlExQUllSkVfQklzX05wSmx6VWpwVDI2aGpB?oc=5"
+      },
+      {
+       "name": "Génération NT",
+       "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPVHVtR1gycHBJaXJjRHVOZXotWmhpMkg1RDMzTFZMM3V4SVpYRElERmV5c0IyRTNRY2RYcTRReVJna043UGtJVzFQdGotRDVuZGtPbUFaNDFLSjRuc0JfY1RpRlcwVFhRLU41Y0g5T3RhcWZ1a2ZEWUd5NzBYcmVuR2xkc1hpVDAxd2NfYzhRaWE3YVNBeEs1QlZBcWZGdzhKNGfSAacBQVVfeXFMUG11S2RZc0JrbXEzZnI2NldlU3RoRXlEdm9Obi1QYlNwNVJ4VlpNbmR6U0ZPbVJaem05bV9wV19VVWdzS3dBaE1DdWVBcmkyVDFaWVZGdWMxVEtRcHkzZjVfcmR4RUtCaWQwdktReVlNbkhIeHZBc294Z0dTbFpORUM5U3o1UVlNVE9RdUR3Y1gzU2dDMXBXNnd4QXFrNVowV3dMelo2SUE?oc=5"
+      }
+     ]
+    },
+    {
+     "title": "La Chine prépare un contrôle strict à l'exportation des modèles frontières ouverts",
+     "summary": "Pékin étudie l'encadrement ou la restriction d'accès à 23 technologies d'intelligence artificielle, visant spécifiquement les architectures ouvertes de plus de 2 000 milliards de paramètres. Le dispositif imposerait des procédures d'enregistrement préalables et pourrait limiter les divulgations publiques de modèles de pointe par les équipes chinoises.",
+     "sources": [
+      {
+       "name": "LeMagIT",
+       "url": "https://www.lemagit.fr/dessin/Controle-a-lexport-la-Chine-laisse-planer-le-doute-sur-le-sort-des-modeles-frontieres-ouverts"
+      }
+     ],
+     "severity": "watch"
+    },
+    {
+     "title": "Nvidia publie OpenShell pour sécuriser l'exécution des flottes d'agents autonomes",
+     "summary": "Nvidia a rendu public l'environnement d'exécution OpenShell, conçu pour assurer l'isolation, la confidentialité et le contrôle des agents autonomes accédant aux ressources système. Le projet répond aux risques grandissants liés aux accès non supervisés des agents exécutant des scripts et manipulant des identifiants sensibles.",
+     "sources": [
+      {
+       "name": "Hacker News",
+       "url": "https://github.com/NVIDIA/OpenShell"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "key": "aero",
+   "label": "Airbus & aéronautique",
+   "items": [
+    {
+     "title": "Airbus anticipe un besoin mondial de 2 670 avions cargo d'ici 2045",
+     "summary": "Dans ses dernières prévisions de marché, Airbus prévoit que la flotte mondiale de fret passera de 2 360 appareils aujourd'hui à 3 460 appareils en 2045, soit une progression de 46 %. Le constructeur estime la demande globale à 2 670 livraisons d'appareils neufs et convertis, dont 670 gros-porteurs de grande capacité, avec l'Amérique du Nord comme principal débouché.",
+     "sources": [
+      {
+       "name": "Le Journal de l'Aviation",
+       "url": "https://www.journal-aviation.com/actualites-industrie-aeronautique/avions-commerciaux/airbus-prevoit-un-besoin-mondial-de-2670-avions-cargo-dici-2045-dont-670-gros-porteurs-de-grande-capacite-20261022.html"
+      },
+      {
+       "name": "Actu.fr",
+       "url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxQWHhPbWw1QzJOamVWUHpNdThkWndUQmYyS09aQk5FS0M4cUdSYlFsTTBHUndRa3UtQ2VIREhzdXUwMnpTWGdoZTdWbEVBcDljSVJiMXVGeFUydDctYjlDNnBuN2pVQ2pZOVlYZ2E3R0ozRFJHQVhzbTJpQTFBSER1aF9lSDdZQ0ZjZ0lER1FMbVhXV2h2dUl2aFNBQmtnTVdnMWtZWF9vSTU1WlYzWjVFTzRMeXlvWGw4Vm9qRTdyT2FFSGJ4T25VWnNRVWxwY25YZm4xeTJ5Q3hJb3Q5T1lOaVNOd3hXaVR5?oc=5"
+      },
+      {
+       "name": "AeroTime",
+       "url": "https://www.aerotime.aero/articles/airbus-north-america-drive-freighter-cargo-demand"
+      }
+     ]
+    },
+    {
+     "title": "Airbus réclame un allègement des contraintes environnementales européennes",
+     "summary": "L'avionneur européen alerte sur le risque de décrochage économique face à Boeing et au chinois Comac si les contraintes réglementaires continuent de s'alourdir en Europe. Le groupe plaide pour une révision des calendriers et des exigences afin de préserver sa compétitivité industrielle mondiale.",
+     "sources": [
+      {
+       "name": "Le Figaro",
+       "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxQSWpJTWlNcjY5N1dac3psMkpGR3B5RHREbkRDcFlxX2NmOXpMcEEwNk11QXU2cWZ5NDdwMXpSaDBkclBrTjZQb2hGMWJWMXpna1pxUm92QnJlajBBbjNFZ2RyZzZBWVA3UENSZmZYNEpsbmtkSk9jQUtOQ1I5WXpQTDNUWFQ0YTlRMVROcU0td21qUDlDcWx4LXI4Yk1lZDFLVzVUeUNTOWFlaUhZZVB0T210RWxjbFppV2hBTzdfM0tpVlo4WDE3WDZMd29GUHdNRVpmUnlKR3U?oc=5"
+      },
+      {
+       "name": "Le Journal de Montréal",
+       "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxPMURVSWllX2tBQkd6b05ZbldEZXpOSk1tVFhWVExBOXQwUVR2N1dBREZ0MFRrNWQ1dGhTenNJNWNtb1VrQkxoWllxS09NWFpFS1VyUFl0Z01aWWdvMjU4YWtsQ1dnUHBIbHdmQUhZdFRwTVlMclY2T1F0OXF6X092d0ppaVdUMC1aRlN1dC1Ld0NkZy1wYjV0U3MtX1gxWVpoWjFsRl9OQXQzNFNmSUl5Z1ZkRU9WRUhtNXJoY01lVHh2RnF1X25JTk9qUmhSMEZLOVdaRWhrcUpPd00?oc=5"
+      }
+     ]
+    },
+    {
+     "title": "Le Pentagone engage un accord-cadre décennal pour 850 F-35 avec Lockheed Martin",
+     "summary": "Le ministère américain de la Défense a formalisé un protocole pluriannuel structurant la commande et le soutien de 850 chasseurs F-35 sur dix ans. Ce changement de politique contractuelle vise à sécuriser la visibilité industrielle et à stabiliser les coûts d'approvisionnement du programme militaire.",
+     "sources": [
+      {
+       "name": "Le Journal de l'Aviation",
+       "url": "https://www.journal-aviation.com/actualites-defense-espace/contrats-de-defense/le-pentagone-prepare-un-contrat-sur-dix-ans-avec-lockheed-martin-pour-le-f-35-20261022.html"
+      },
+      {
+       "name": "AeroTime",
+       "url": "https://www.aerotime.aero/articles/pentagon-lockheed-10-year-f35-framework-850-jets"
+      }
+     ]
+    },
+    {
+     "title": "Vallair intègre le soutien de l'Airbus A330neo sur son site de Châteauroux",
+     "summary": "L'entreprise spécialisée dans la maintenance et la conversion d'avions a accueilli son premier Airbus A330neo dans ses installations de l'Indre. Cette opération marque l'entrée en service opérationnelle de ses nouvelles capacités d'intervention dédiées à la famille gros-porteur remotorisée.",
+     "sources": [
+      {
+       "name": "Le Journal de l'Aviation",
+       "url": "https://www.journal-aviation.com/actualites-mro-support/maintenance-cellule/vallair-travaille-sur-son-premier-airbus-a330neo-20261022.html"
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "alerts": [
+  {
+   "level": "critical",
+   "title": "CVE-2026-112900 : Exécution de code à distance dans la bibliothèque Python Pillow",
+   "body": "Une vulnérabilité critique affecte le traitement des fichiers image au format EPS dans Pillow. L'ouverture d'un fichier spécifiquement forgé permet d'exécuter des commandes système arbitraires sur le serveur hôte sans authentification.",
+   "refs": [
+    "CVE-2026-112900"
+   ]
+  }
+ ],
+ "feedErrors": [
+  "CISA - Cybersecurity Advisories",
+  "Google DeepMind Blog",
+  "FlightGlobal"
+ ]
+}
