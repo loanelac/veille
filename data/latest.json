@@ -1,167 +1,158 @@
 {
- "date": "2026-10-23",
+ "date": "2026-10-24",
  "kind": "daily",
- "generatedAt": "23/10 à 11:26 UTC",
- "lede": "L'exploitation offensive à grande échelle de PHP2Shell et d'un zero-day Arista domine l'actualité cyber, tandis qu'Anthropic accélère sur le terrain des agents autonomes avec Claude Duet et l'ouverture du standard Agent Skills.",
+ "generatedAt": "24/10 à 10:44 UTC",
+ "lede": "La journée est marquée par l'industrialisation des agents IA tant en cyberattaque qu'en défense, tandis que l'écosystème logiciel fait face à de nouvelles failles critiques non colmatées. Côté aéronautique, Airbus intensifie ses offres de services et de surveillance alors que la chaîne de sous-traitance s'ajuste sous tension aux hausses de cadence.",
  "stats": {
   "feeds": 37,
-  "items": 146,
-  "errors": 3
+  "items": 73,
+  "errors": 2
  },
  "sections": [
   {
-   "key": "cyber",
-   "label": "Cybersécurité",
+   "key": "ia",
+   "label": "Intelligence artificielle",
    "items": [
     {
-     "title": "PHP2Shell : l'exploitation massive a débuté quatre jours avant les correctifs",
-     "summary": "Amazon Threat Intelligence rapporte que les attaques ciblaient les failles critiques d'exécution de code de PHP avant la sortie des correctifs officiels pour les branches 8.2 à 8.5. Des millions de tentatives de compromission sont désormais enregistrées, tentant notamment de déployer une variante du botnet Mirai nommée Potassium.",
+     "title": "Anthropic officialise Claude Duet, son premier agent proactif",
+     "summary": "Anthropic a levé le voile sur Claude Duet, un agent conçu pour exécuter des tâches de manière proactive en entreprise, s'inscrivant dans une vague d'annonces d'automne pour la gamme Claude.",
      "sources": [
       {
-       "name": "BleepingComputer",
-       "url": "https://www.bleepingcomputer.com/news/security/amazon-says-php2shell-exploitation-began-4-days-before-patches/"
+       "name": "Le Journal de Montréal",
+       "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQMzVoN0dBYTBDMWo2RnpobU5sTzdvV0tFUGZPMF8yTjRlWi1ZQWdkN0Zpemd4a1dwYTdyQ2UtZllBS3NOdklJT0M3YjFkSzZPSFpCYVhfazUwdVl5YXc5TFdCcGNSSGktLWdXSFBDZjlBQ2l1cTA1TS1oRU1Hck1IRVJVRnYxUVRNb0Z4UzZXVlkwdmtUU0tia3hn?oc=5"
       },
       {
-       "name": "The Hacker News",
-       "url": "https://thehackernews.com/2026/10/php2shell-exploit-attempts-hit-millions.html"
+       "name": "Linformation.ma",
+       "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOaEZrZnVMdU5sYmRhZE9Sek9IT01leFhOQUE4MVpYLXhtSVE1dmVsWWZPdFllSmM2ZW9aTk40MXV5ZVRoWFdYRUJvV3FIY2lWSHYtWVBDMTlQaEJlNU54dFlZQWl3LVpycGN5ZkVqeDZMOFBFZTRBWWN4OEs4WXN5VkZJU2ZqcHdYbGRXNm9kckZFM2JRaEI1Z1FoT2xERWZDTkpRQmItZw?oc=5"
       },
       {
-       "name": "Schneier on Security",
-       "url": "https://www.schneier.com/blog/archives/2026/10/new-serious-php-vulnerabilities-released-and-patched.html"
-      },
-      {
-       "name": "Risky Bulletin",
-       "url": "https://news.risky.biz/risky-bulletin-supply-chain-attack-lets-ransomware-group-inside-40-shipping-companies/"
+       "name": "OrcaRouter",
+       "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPQlR5ZTlzSkFqcldIbVpodjNBR0JHWl9PUkt6Vl9GejQycWpza0RmWl9qTXd1QTd0VGJOQ1RkYjktdXQyWmVfX1pjVF9Oazg5bDhJQlRfWVVwT3l6c3lkeVZ0QnNHamx4X29VVWpGZWs5aFJiSzZ2VGJRWl8xQmFpMUptSEhRUy10anZlSw?oc=5"
       }
-     ],
-     "severity": "critical"
+     ]
     },
     {
-     "title": "Arista corrige un zero-day activement exploité dans VeloCloud Orchestrator",
-     "summary": "Une vulnérabilité critique d'injection SQL touche les installations sur site de VeloCloud Orchestrator, la solution centrale de gestion des réseaux SD-WAN. L'équipementier a diffusé des correctifs d'urgence face aux exploitations constatées ciblant les accès d'administration.",
+     "title": "Nvidia déploie OpenShell pour confiner les agents IA en entreprise",
+     "summary": "Nvidia a présenté une architecture de référence pour intégrer OpenShell, son framework appliquant les principes du zero-trust et du cloisonnement applicatif aux agents d'intelligence artificielle.",
      "sources": [
       {
-       "name": "BleepingComputer",
-       "url": "https://www.bleepingcomputer.com/news/security/arista-patches-new-velocloud-orchestrator-zero-day-exploited-in-attacks/"
-      },
-      {
-       "name": "The Hacker News",
-       "url": "https://thehackernews.com/2026/10/arista-warns-of-critical-velocloud-sql.html"
+       "name": "LeMagIT",
+       "url": "https://www.lemagit.fr/actualites/366652636/Avec-OpenShell-Nvidia-applique-la-logique-zero-trust-aux-agents-IA"
       }
-     ],
-     "severity": "critical"
+     ]
     },
     {
-     "title": "LiteLLM : la chaîne de livraison compromise pour diffuser un voleur d'identifiants",
-     "summary": "Des cyberattaquants ont piraté le paquet PyPI et les images Docker officielles du projet LiteLLM afin d'y incorporer un logiciel malveillant. Le composant exfiltrait silencieusement les clés d'API, les secrets d'infrastructure et les variables d'environnement des utilisateurs.",
+     "title": "Des affiliés de rançongiciels industrialisent des attaques automatisées par agents IA",
+     "summary": "Des chercheurs ont documenté une infrastructure opérée par des groupes de ransomware exploitant un framework de cyberattaque autonome, réduisant drastiquement le coût et le temps nécessaires pour compromettre un réseau d'entreprise.",
      "sources": [
       {
-       "name": "BleepingComputer",
-       "url": "https://www.bleepingcomputer.com/news/security/litellm-release-pipeline-hacked-to-distribute-info-stealer-malware/"
+       "name": "The Hacker News",
+       "url": "https://thehackernews.com/2026/10/exposed-infrastructure-reveals-how.html"
       },
       {
-       "name": "The Hacker News",
-       "url": "https://thehackernews.com/2026/10/threatsday-ai-secrets-leak-pingcap.html"
+       "name": "Dark Reading",
+       "url": "https://www.darkreading.com/cybersecurity-operations/ai-tools-massive-attacks-little-cost"
       }
      ],
      "severity": "watch"
     },
     {
-     "title": "L'autorité eMudhra abandonne le marché SSL/TLS après la révélation de clés privées triviales",
-     "summary": "L'autorité de certification indienne met fin à ses activités mondiales d'émission de certificats web après la découverte de défaillances critiques dans ses cérémonies de clés. Un chercheur a démontré que huit clés privées d'autorités intermédiaires étaient facilement calculables, l'une d'elles étant équivalente au chiffre quatre.",
+     "title": "Moonshot AI publie Kimi K3.1 Pro et promet l'ouverture des poids",
+     "summary": "Le modèle Kimi K3.1 Pro et sa variante haute vélocité sont désormais accessibles via API, l'éditeur chinois s'engageant sur une libération intégrale des poids open-source début novembre 2026.",
      "sources": [
       {
-       "name": "Ars Technica",
-       "url": "https://arstechnica.com/security/2026/10/disgraced-emudhra-drops-out-of-tls-business-following-certificate-debacle/"
+       "name": "Simon Willison",
+       "url": "https://simonwillison.net/2026/Oct/23/kimi-k31-pro/"
       },
       {
-       "name": "The Record",
-       "url": "https://therecord.media/indian-tech-company-announces-withdrawal-certificate-business-incident"
-      },
-      {
-       "name": "Schneier on Security",
-       "url": "https://www.schneier.com/blog/archives/2026/10/compromised-tls-certificates.html"
-      },
-      {
-       "name": "The Hacker News",
-       "url": "https://thehackernews.com/2026/10/emudhra-to-exit-global-ssltls-business.html"
+       "name": "Hacker News",
+       "url": "https://www.kimi.ai/blog/kimi-k3-1-pro"
       }
      ]
     },
     {
-     "title": "Microsoft relie la cyberattaque ConnectWise à des agents IA pilotés par Pékin",
-     "summary": "Le groupe de cyberespionnage chinois Storm-0940 a mobilisé des outils d'intrusion automatisés basés sur les agents ARTEX pour frapper plus de 2 200 environnements ConnectWise. Cette opération confirme l'industrialisation des agents autonomes pour accélérer la reconnaissance et la phase de propagation lors d'attaques sur la chaîne logistique.",
+     "title": "Zoom ouvre son contexte collaboratif aux modèles IA concurrents",
+     "summary": "Zoom a lancé Unified Context Layer, une interface permettant à des assistants tiers comme Claude ou GPT d'interroger directement les données de réunions et d'échanges via API et serveurs MCP.",
      "sources": [
       {
-       "name": "The Record",
-       "url": "https://therecord.media/china-cyber-connectwise-ai"
-      },
-      {
-       "name": "Dark Reading",
-       "url": "https://www.darkreading.com/cyberattacks-data-breaches/microsoft-storm-0940-connectwise-supply-chain-attack"
+       "name": "LeMagIT",
+       "url": "https://www.lemagit.fr/actualites/366652676/Zoom-ouvre-sa-couche-de-contexte-aux-assistants-IA-tiers"
       }
      ]
     }
    ]
   },
   {
-   "key": "ia",
-   "label": "Intelligence artificielle",
+   "key": "cyber",
+   "label": "Cybersécurité",
    "items": [
     {
-     "title": "Anthropic dévoile Claude Duet et transmet le standard Agent Skills à l'Agentic AI Foundation",
-     "summary": "Anthropic positionne Claude Duet, un agent proactif travaillant en tâche de fond pour exécuter des processus d'entreprise complexes sans sollicitation continue. L'entreprise a simultanément cédé la gouvernance de son standard d'outillage Agent Skills à l'Agentic AI Foundation sous l'égide de la Linux Foundation pour en garantir la neutralité.",
+     "title": "Le CISA ajoute deux failles exploitées dans Collabora et Arista VeloCloud au catalogue KEV",
+     "summary": "Le CISA américain ordonne la correction de deux vulnérabilités critiques ciblant Collabora Online CODE et l'orchestrateur SD-WAN VeloCloud d'Arista, toutes deux activement exploitées en production.",
      "sources": [
       {
-       "name": "BFM",
-       "url": "https://news.google.com/rss/articles/CBMivgJBVV95cUxQNlFTcEdocGpOOGhzUmRGZXhfTFVOdmo5SXZsVnRYcW42LUk4R1RPRGktdzN4aTJZQ0t5MzVmbmhxbHFjNlVWY2I4TjYwQ1lkMUE2bVRpMVhpcUhqekN5cW5zYUI0VDFsM0w4Y294c1JQckR3NlJpWDZDV0duUHRaU3FFNjVKUG4zZFU2NFAyZnhPeWlIdTh2QUt0d2tvaWFyaDdIbE9COHZPX0pVMzN1RjZmTTAxV1lmd1E1aFhmU2hDOWJpM1hUeXpsSmlsQl9CVklTSlVVcGd0TktoRlV1Y2h2a0xQekxxeng3Q3dFVVdtWDZURVBPV1V4Z05fVlZPUTdmYzNQMlZpNVRFY0I3ZWh4ZjJEd2dYM0dZamNoc18xVGkyZXJPT05EZzhTQ1U4QU9sUXhfalF1X1lkUHc?oc=5"
+       "name": "The Hacker News",
+       "url": "https://thehackernews.com/2026/10/cisa-flags-two-actively-exploited.html"
       },
-      {
-       "name": "Simon Willison",
-       "url": "https://simonwillison.net/2026/Oct/22/donating-agent-skills/"
-      },
-      {
-       "name": "KultureGeek",
-       "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNb0ZpME15R2xsbmxyYmFNR3dnajdnZ1J0V1RyQWxmaEtic1dwUXVVYVNVbUtUNEozUGVmcHBwNmZoeE1qNDJMaFR5UzhIOHZaWmxXSmNXOTAyc1pLM2psd3Q5aVEybjJ4YVI0ZmlQNFZ0SVpkQkd4ei1wc09hU1ZQRTc0N1ExZHVhb2NIc1gzT3cxWjNCQldLUnFranhHT1E2WlBIc2V3?oc=5"
-      }
-     ]
-    },
-    {
-     "title": "Anthropic démontre la faisabilité de la vérification logicielle formelle par LLM",
-     "summary": "Des chercheurs ont documenté l'emploi de Claude pour générer des preuves formelles de sécurité logicielle à grande échelle sur du code critique. Les expérimentations ont couvert 123 bibliothèques ouvertes et contribué à réduire concrètement la surface d'attaque d'outils tels qu'OpenSSH.",
-     "sources": [
-      {
-       "name": "Hacker News",
-       "url": "https://www.anthropic.com/research/formal-verification"
-      },
-      {
-       "name": "Unite.AI",
-       "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOVDdXV01DWlRLMmVKcXl3MGlzVUpVclU2WGk0SERvN1hQSFZKZ0xQQ3U4ZEV3dXc3d2c1OWZXYnp5NWxpc0o0aG9YSU0wVG5QZGVZN09BTHVJaG5haFVOaUx1TnlOek92Mk1WeDBERXgyVnpaMWhkY2NmeVBNcGJFZlExQUllSkVfQklzX05wSmx6VWpwVDI2aGpB?oc=5"
-      },
-      {
-       "name": "Génération NT",
-       "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPVHVtR1gycHBJaXJjRHVOZXotWmhpMkg1RDMzTFZMM3V4SVpYRElERmV5c0IyRTNRY2RYcTRReVJna043UGtJVzFQdGotRDVuZGtPbUFaNDFLSjRuc0JfY1RpRlcwVFhRLU41Y0g5T3RhcWZ1a2ZEWUd5NzBYcmVuR2xkc1hpVDAxd2NfYzhRaWE3YVNBeEs1QlZBcWZGdzhKNGfSAacBQVVfeXFMUG11S2RZc0JrbXEzZnI2NldlU3RoRXlEdm9Obi1QYlNwNVJ4VlpNbmR6U0ZPbVJaem05bV9wV19VVWdzS3dBaE1DdWVBcmkyVDFaWVZGdWMxVEtRcHkzZjVfcmR4RUtCaWQwdktReVlNbkhIeHZBc294Z0dTbFpORUM5U3o1UVlNVE9RdUR3Y1gzU2dDMXBXNnd4QXFrNVowV3dMelo2SUE?oc=5"
-      }
-     ]
-    },
-    {
-     "title": "La Chine prépare un contrôle strict à l'exportation des modèles frontières ouverts",
-     "summary": "Pékin étudie l'encadrement ou la restriction d'accès à 23 technologies d'intelligence artificielle, visant spécifiquement les architectures ouvertes de plus de 2 000 milliards de paramètres. Le dispositif imposerait des procédures d'enregistrement préalables et pourrait limiter les divulgations publiques de modèles de pointe par les équipes chinoises.",
-     "sources": [
       {
        "name": "LeMagIT",
-       "url": "https://www.lemagit.fr/dessin/Controle-a-lexport-la-Chine-laisse-planer-le-doute-sur-le-sort-des-modeles-frontieres-ouverts"
+       "url": "https://www.lemagit.fr/actualites/366652615/VeloCloud-Arista-corrige-une-vulnerabilite-deja-exploitee"
+      }
+     ],
+     "severity": "critical"
+    },
+    {
+     "title": "PHP publie une mesure d'atténuation pour une nouvelle RCE sans correctif",
+     "summary": "Deux jours après les correctifs d'urgence PHP2Shell, une nouvelle vulnérabilité d'exécution de code à distance (CVE-2026-115560) affecte les installations web non standard sans qu'un patch ne soit encore disponible.",
+     "sources": [
+      {
+       "name": "BleepingComputer",
+       "url": "https://www.bleepingcomputer.com/news/security/php-shares-mitigation-for-new-and-unpatched-rce-vulnerability/"
+      },
+      {
+       "name": "The Hacker News",
+       "url": "https://thehackernews.com/2026/10/urgent-php-warns-of-another-unpatched.html"
+      },
+      {
+       "name": "Dark Reading",
+       "url": "https://www.darkreading.com/application-security/exposed-php2shell-cyber-experts-advice"
+      }
+     ],
+     "severity": "critical"
+    },
+    {
+     "title": "La faille mémoire de Brotli CVE-2026-1114 se propage à de nombreux runtimes",
+     "summary": "Le bogue de corruption de mémoire identifié dans le décodeur Brotli de Google ne se limite pas à Node.js mais touche également Bun, plusieurs modules Python et les serveurs mandataires Envoy.",
+     "sources": [
+      {
+       "name": "The Hacker News",
+       "url": "https://thehackernews.com/2026/10/brotli-decoder-flaw-behind-nodejs-rce.html"
       }
      ],
      "severity": "watch"
     },
     {
-     "title": "Nvidia publie OpenShell pour sécuriser l'exécution des flottes d'agents autonomes",
-     "summary": "Nvidia a rendu public l'environnement d'exécution OpenShell, conçu pour assurer l'isolation, la confidentialité et le contrôle des agents autonomes accédant aux ressources système. Le projet répond aux risques grandissants liés aux accès non supervisés des agents exécutant des scripts et manipulant des identifiants sensibles.",
+     "title": "HPE comble huit failles RCE et contournements d'authentification critiques dans ArubaOS",
+     "summary": "Un bulletin de sécurité traite 72 vulnérabilités dans ArubaOS, incluant huit failles de sévérité maximale permettant l'exécution arbitraire de code et l'élévation de privilèges.",
      "sources": [
       {
-       "name": "Hacker News",
-       "url": "https://github.com/NVIDIA/OpenShell"
+       "name": "BleepingComputer",
+       "url": "https://www.bleepingcomputer.com/news/security/hpe-patches-eight-max-severity-rce-and-auth-bypass-aos-flaws/"
+      }
+     ],
+     "severity": "watch"
+    },
+    {
+     "title": "Deux millions de clients Popcorn Time neutralisés à distance pour éviter un botnet",
+     "summary": "L'entreprise Eye Security a désactivé à distance le mécanisme de mise à jour vulnérable de l'application abandonnée Time4Popcorn, éliminant un accès RCE massif susceptible d'être militarisé.",
+     "sources": [
+      {
+       "name": "BleepingComputer",
+       "url": "https://www.bleepingcomputer.com/news/security/abandoned-popcorn-time-app-exposed-millions-of-device-to-rce-attacks/"
+      },
+      {
+       "name": "The Hacker News",
+       "url": "https://thehackernews.com/2026/10/researchers-push-over-2-million-updates.html"
       }
      ]
     }
@@ -172,58 +163,65 @@
    "label": "Airbus & aéronautique",
    "items": [
     {
-     "title": "Airbus anticipe un besoin mondial de 2 670 avions cargo d'ici 2045",
-     "summary": "Dans ses dernières prévisions de marché, Airbus prévoit que la flotte mondiale de fret passera de 2 360 appareils aujourd'hui à 3 460 appareils en 2045, soit une progression de 46 %. Le constructeur estime la demande globale à 2 670 livraisons d'appareils neufs et convertis, dont 670 gros-porteurs de grande capacité, avec l'Amérique du Nord comme principal débouché.",
+     "title": "Airbus structure une offre globale de lutte contre les feux de forêt",
+     "summary": "Le constructeur européen consolide son écosystème combinant avions de transport, hélicoptères, drones et imagerie satellitaire pour accélérer la détection et la réponse opérationnelle aux mégafeux.",
+     "sources": [
+      {
+       "name": "20 Minutes",
+       "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPX1RvYWFRclphVUdNNUYzeXZobU04dWhaSzhJSlJmNHdDaUY3NlZRaFFmdUlWclp0ZFltLUN4bkxWQmhvVnU4M05LZ0NvWlg3RlRmQmRyZVhIMGt6ZVNfSFdsc0I5WU5xMmhMMUpLT2VPS243Z2M0R1hwRkJSZHNTMW9iLVZQV3JSY25PNjFtSGdNakt4R01TaWl6TTl2bVotMHhyay1HQWk3N3VxeUxJVUQtbWVqbVpIeExGSHlzdjZPNW5iNnJreA?oc=5"
+      },
+      {
+       "name": "Yahoo Actualités",
+       "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQbE12eEFSQ2FPb3h6Rl9yamVuaW9qWV9RVXJMOU83WWVUUDh6eHphcWxyaTJpb0FOVGxFZGhROFM0QkV0RVFFYTZTVXNMR2RzbmFMQ2lEc3J3dEJRUEc1YVN6LXRwQVROdk1naEtQUDd2RnowaVRRcWNyNDJYZTNOZGYzR3lMSkhaMlR0WA?oc=5"
+      }
+     ]
+    },
+    {
+     "title": "Vietjet et Satair amplifient leur accord logistique pour la flotte Airbus",
+     "summary": "Satair, filiale d'Airbus, et la compagnie à bas coûts Vietjet ont paraphé un protocole d'accord afin de sécuriser et développer le support pièces et la maintenance de ses monocouloirs.",
      "sources": [
       {
        "name": "Le Journal de l'Aviation",
-       "url": "https://www.journal-aviation.com/actualites-industrie-aeronautique/avions-commerciaux/airbus-prevoit-un-besoin-mondial-de-2670-avions-cargo-dici-2045-dont-670-gros-porteurs-de-grande-capacite-20261022.html"
+       "url": "https://www.journal-aviation.com/actualites-mro-support/mro-vietjet-et-satair-renforcent-leur-cooperation-en-matiere-dapprovisionnement-pour-la-flotte-airbus-20261023.html"
+      }
+     ]
+    },
+    {
+     "title": "Safran confirme la hausse de ses livraisons LEAP malgré la pression industrielle",
+     "summary": "Safran enregistre 9 milliards d'euros de chiffre d'affaires au troisième trimestre porté par le moteur LEAP, mais voit ses investissements s'alourdir pour soutenir les cadences de production d'Airbus et de Boeing.",
+     "sources": [
+      {
+       "name": "Le Journal de l'Aviation",
+       "url": "https://www.journal-aviation.com/actualites-industrie-aeronautique/moteurs-propulsion/safran-annonce-un-nouveau-bond-de-son-chiffre-daffaires-au-3e-trimestre-les-livraisons-de-leap-et-lapres-vente-civile-progressent-20261023.html"
       },
       {
-       "name": "Actu.fr",
-       "url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxQWHhPbWw1QzJOamVWUHpNdThkWndUQmYyS09aQk5FS0M4cUdSYlFsTTBHUndRa3UtQ2VIREhzdXUwMnpTWGdoZTdWbEVBcDljSVJiMXVGeFUydDctYjlDNnBuN2pVQ2pZOVlYZ2E3R0ozRFJHQVhzbTJpQTFBSER1aF9lSDdZQ0ZjZ0lER1FMbVhXV2h2dUl2aFNBQmtnTVdnMWtZWF9vSTU1WlYzWjVFTzRMeXlvWGw4Vm9qRTdyT2FFSGJ4T25VWnNRVWxwY25YZm4xeTJ5Q3hJb3Q5T1lOaVNOd3hXaVR5?oc=5"
+       "name": "BFM Bourse",
+       "url": "https://news.google.com/rss/articles/CBMi0gJBVV95cUxNTEN6YzE4XzlYS0VyT1dHRmhoZ2s3OGFFdXZTdGlqeXFISFJ6b2pibjRpNlQyaEEwcmhpemY3N29ILXk3Z05mbGZDbDhuVWRRQVBBam9pNnFzbmpVUlAzQzVPTTUza3JWMzFWb2RjY1pQeHlvbThvMkRMdWRxRHl3N1R5dTVKYXdpSUhmdHhMMi1ZQUVhVmV0ck9NYmFkbUl0eXhSMlp1MFVCMjM4YkQ5VmRDbWUzcmd0SUlLd1VveE9HOXNyMThDcWxpNURHenJEd2ZaRzlzdFhyZnNvVmdLZnJaenRHX0NwZXVxZWxDMDZ3N2RTbEx5ZTJ0VFBnOGE1ZFFpaENXazFuQjQwVVhOdG9KMW90ckotcWZRd3FTUWE2eTZzc25TWTQwM3NRbVRQcWRTbG5lLTgwZVltUFhaZTJVUTJURDZ5ZWVFNnA0R0kyQQ?oc=5"
+      }
+     ]
+    },
+    {
+     "title": "La FAA impose le contrôle de près de 2 000 Boeing 737 NG pour des anomalies de tangage",
+     "summary": "Le régulateur américain impose des vérifications obligatoires sur les gouvernes de profondeur de la flotte 737 NG après des signalements d'oscillations incontrôlées en vol.",
+     "sources": [
+      {
+       "name": "AeroTime",
+       "url": "https://www.aerotime.aero/articles/faa-boeing-737ng-stabilizer-inspections"
+      }
+     ],
+     "severity": "watch"
+    },
+    {
+     "title": "Bombardier investit 270 millions de dollars sur le sol américain",
+     "summary": "L'avionneur canadien renforce ses capacités aux États-Unis avec un plan d'investissement industriel de 270 millions de dollars et la création annoncée de 800 emplois.",
+     "sources": [
+      {
+       "name": "Le Journal de l'Aviation",
+       "url": "https://www.journal-aviation.com/actualites-industrie-aeronautique/bombardier-va-investir-270-millions-de-dollars-aux-etats-unis-20261023.html"
       },
       {
        "name": "AeroTime",
-       "url": "https://www.aerotime.aero/articles/airbus-north-america-drive-freighter-cargo-demand"
-      }
-     ]
-    },
-    {
-     "title": "Airbus réclame un allègement des contraintes environnementales européennes",
-     "summary": "L'avionneur européen alerte sur le risque de décrochage économique face à Boeing et au chinois Comac si les contraintes réglementaires continuent de s'alourdir en Europe. Le groupe plaide pour une révision des calendriers et des exigences afin de préserver sa compétitivité industrielle mondiale.",
-     "sources": [
-      {
-       "name": "Le Figaro",
-       "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxQSWpJTWlNcjY5N1dac3psMkpGR3B5RHREbkRDcFlxX2NmOXpMcEEwNk11QXU2cWZ5NDdwMXpSaDBkclBrTjZQb2hGMWJWMXpna1pxUm92QnJlajBBbjNFZ2RyZzZBWVA3UENSZmZYNEpsbmtkSk9jQUtOQ1I5WXpQTDNUWFQ0YTlRMVROcU0td21qUDlDcWx4LXI4Yk1lZDFLVzVUeUNTOWFlaUhZZVB0T210RWxjbFppV2hBTzdfM0tpVlo4WDE3WDZMd29GUHdNRVpmUnlKR3U?oc=5"
-      },
-      {
-       "name": "Le Journal de Montréal",
-       "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxPMURVSWllX2tBQkd6b05ZbldEZXpOSk1tVFhWVExBOXQwUVR2N1dBREZ0MFRrNWQ1dGhTenNJNWNtb1VrQkxoWllxS09NWFpFS1VyUFl0Z01aWWdvMjU4YWtsQ1dnUHBIbHdmQUhZdFRwTVlMclY2T1F0OXF6X092d0ppaVdUMC1aRlN1dC1Ld0NkZy1wYjV0U3MtX1gxWVpoWjFsRl9OQXQzNFNmSUl5Z1ZkRU9WRUhtNXJoY01lVHh2RnF1X25JTk9qUmhSMEZLOVdaRWhrcUpPd00?oc=5"
-      }
-     ]
-    },
-    {
-     "title": "Le Pentagone engage un accord-cadre décennal pour 850 F-35 avec Lockheed Martin",
-     "summary": "Le ministère américain de la Défense a formalisé un protocole pluriannuel structurant la commande et le soutien de 850 chasseurs F-35 sur dix ans. Ce changement de politique contractuelle vise à sécuriser la visibilité industrielle et à stabiliser les coûts d'approvisionnement du programme militaire.",
-     "sources": [
-      {
-       "name": "Le Journal de l'Aviation",
-       "url": "https://www.journal-aviation.com/actualites-defense-espace/contrats-de-defense/le-pentagone-prepare-un-contrat-sur-dix-ans-avec-lockheed-martin-pour-le-f-35-20261022.html"
-      },
-      {
-       "name": "AeroTime",
-       "url": "https://www.aerotime.aero/articles/pentagon-lockheed-10-year-f35-framework-850-jets"
-      }
-     ]
-    },
-    {
-     "title": "Vallair intègre le soutien de l'Airbus A330neo sur son site de Châteauroux",
-     "summary": "L'entreprise spécialisée dans la maintenance et la conversion d'avions a accueilli son premier Airbus A330neo dans ses installations de l'Indre. Cette opération marque l'entrée en service opérationnelle de ses nouvelles capacités d'intervention dédiées à la famille gros-porteur remotorisée.",
-     "sources": [
-      {
-       "name": "Le Journal de l'Aviation",
-       "url": "https://www.journal-aviation.com/actualites-mro-support/maintenance-cellule/vallair-travaille-sur-son-premier-airbus-a330neo-20261022.html"
+       "url": "https://www.aerotime.aero/articles/president-trump-announces-that-bombardier-plans-270-million-us-investment"
       }
      ]
     }
@@ -232,17 +230,24 @@
  ],
  "alerts": [
   {
-   "level": "critical",
-   "title": "CVE-2026-112900 : Exécution de code à distance dans la bibliothèque Python Pillow",
-   "body": "Une vulnérabilité critique affecte le traitement des fichiers image au format EPS dans Pillow. L'ouverture d'un fichier spécifiquement forgé permet d'exécuter des commandes système arbitraires sur le serveur hôte sans authentification.",
+   "level": "CRITIQUE",
+   "title": "Exécution de code à distance non corrigée dans PHP",
+   "body": "Une faille RCE sans correctif officiel (CVE-2026-115560) affecte les serveurs exécutant PHP dans des configurations web spécifiques. Des mesures d'atténuation doivent être appliquées immédiatement sur les instances exposées.",
    "refs": [
-    "CVE-2026-112900"
+    "CVE-2026-115560"
+   ]
+  },
+  {
+   "level": "CRITIQUE",
+   "title": "Corruption de mémoire exploitable dans le décodeur Brotli",
+   "body": "La vulnérabilité CVE-2026-1114 présente dans le décodeur de compression Brotli permet l'exécution de code arbitraire lors de la décompression de flux malveillants, impactant Node.js, Bun, Python et Envoy.",
+   "refs": [
+    "CVE-2026-1114"
    ]
   }
  ],
  "feedErrors": [
   "CISA - Cybersecurity Advisories",
-  "Google DeepMind Blog",
   "FlightGlobal"
  ]
 }
