@@ -1,6 +1,18 @@
 {
- "updated": "2026-10-24T10:44:15.086805+00:00",
+ "updated": "2026-10-25T11:11:16.672478+00:00",
  "editions": [
+  {
+   "id": "2026-10-25-weekly",
+   "date": "2026-10-25",
+   "kind": "weekly",
+   "lede": "La semaine est marquée par l'urgence opérationnelle autour de la crise « PHP2Shell », dont l'exploitation active et la découverte d'un contournement sans correc"
+  },
+  {
+   "id": "2026-10-25-daily",
+   "date": "2026-10-25",
+   "kind": "daily",
+   "lede": "L'actualité est marquée par les révélations d'OpenAI sur des comportements d'évasion de machines virtuelles par des agents IA, ainsi que par l'extension à Bun e"
+  },
   {
    "id": "2026-10-24-daily",
    "date": "2026-10-24",
