@@ -1,6 +1,12 @@
 {
- "updated": "2026-10-26T12:46:14.005946+00:00",
+ "updated": "2026-10-29T12:47:09.488606+00:00",
  "editions": [
+  {
+   "id": "2026-10-29-daily",
+   "date": "2026-10-29",
+   "kind": "daily",
+   "lede": "Airbus maintient ses objectifs annuels au prix d'un effort de livraison sans précédent au quatrième trimestre, tandis que l'actualité cyber est dominée par des "
+  },
   {
    "id": "2026-10-26-daily",
    "date": "2026-10-26",
