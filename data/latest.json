@@ -1,12 +1,12 @@
 {
- "date": "2026-10-29",
+ "date": "2026-10-30",
  "kind": "daily",
- "generatedAt": "29/10 à 12:47 UTC",
- "lede": "Airbus maintient ses objectifs annuels au prix d'un effort de livraison sans précédent au quatrième trimestre, tandis que l'actualité cyber est dominée par des vagues d'exploitation active ciblant Cisco, les interfaces d'administration et les applications d'entreprise critiques.",
+ "generatedAt": "30/10 à 12:41 UTC",
+ "lede": "L'actualité est dominée par le piratage historique de Binance, délesté de 6,3 milliards de dollars après la compromission d'un poste DevOps, tandis qu'Airbus maintient ses objectifs de livraison 2026 malgré les tensions persistantes sur sa chaîne de production.",
  "stats": {
   "feeds": 37,
   "items": 107,
-  "errors": 2
+  "errors": 3
  },
  "sections": [
   {
@@ -14,66 +14,50 @@
    "label": "Intelligence artificielle",
    "items": [
     {
-     "title": "Google DeepMind annonce Gemini 4 Carbon, son nouveau modèle de frontière",
-     "summary": "Google DeepMind a dévoilé Gemini 4 Carbon, la dernière évolution majeure de sa famille de modèles de frontière, positionnée pour rivaliser au plus haut niveau de performance multimodale et de raisonnement.",
+     "title": "Mistral AI rend publics les poids de Mistral Large 4",
+     "summary": "Mistral AI a mis en ligne les poids de son modèle phare Mistral Large 4 en accès ouvert. Cette publication renforce l'offre de modèles ouverts très performants face aux solutions propriétaires de pointe.",
      "sources": [
-      {
-       "name": "Google DeepMind Blog",
-       "url": "https://deepmind.google/blog/gemini-4-carbon-our-next-frontier-model/"
-      },
       {
        "name": "Hacker News",
-       "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/"
+       "url": "https://mistral.ai/news/mistral-large-4-oss/"
       }
      ]
     },
     {
-     "title": "Anthropic industrialise l'évaluation d'impact et la gouvernance de Claude en entreprise",
-     "summary": "Anthropic déploie sur Claude Enterprise de nouveaux outils analytiques permettant aux directions d'évaluer concrètement les gains de productivité apportés aux équipes et d'auditer l'activité sur la plateforme. En parallèle, l'entreprise ajuste son modèle interne en réduisant la part de profils juniors assistés par ses propres agents.",
+     "title": "Google présente Gemini 4 Carbon, spécialisé dans l'analyse et la correction de code",
+     "summary": "Google a levé le voile sur Gemini 4 Carbon, son dernier modèle frontière orienté vers la cybersécurité offensive et défensive. Le modèle affiche des gains nets sur les tâches de détection, d'exploitation et de correction automatisée de failles de sécurité.",
      "sources": [
       {
-       "name": "Blog du Modérateur",
-       "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNekFHRTVPT09iMXZWeTZBZTNUNGlSOWdiWU5NM3dQcHBWem9SRzFCREp2bV9JU2xYZFBNelJEdHZ4Wjh0T2I0MjBsbXB4ZE96SzB0UGN6ZUlvMzhDVWhUM3owbHE4c1RvbTA4TWtES2lYaUV3U2VKUkdXMklwTjBCZ0ZYN192eUd0RVlyU1NkYjZ5dnc?oc=5"
-      },
-      {
-       "name": "Begeek",
-       "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOdTFrbmpOODZyQTlXQTRBbGhfTF9QNW54a0RNdDhQTEE5S09MMV9EVnNwcFUwMEJ4WEdDVEoyZXBTNU9HSUtvRUtlbDVCZ3VKX19yLVBpdVlRcXB2a1hFVU1Ka0pTUmdISGg1aXp2MTg3eVZjbXlzVGJKTW5Bb2dmMEJHR2MyYVlRNGdJQmV3Q2M2QWVGRFVIcDQ0cWFiMWM?oc=5"
-      },
-      {
-       "name": "The Media Leader",
-       "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQQktIUVJIQmxJTWNpSDhuQ2JseTBlbWdfbmVhSm80Q0VJdk0tV3ZYY1kwOEdrbTlCRGhpd0NJYmxiMDQ0YTh0OHNSWmxaZS1sc005WXh6NDNvcVBhR0tPV1p4a25vbTJDbmVtQVRqd2pGTWpwQUVGZHlaMExhQjZKVHFBQlJGNXNzMG1SR1lYdk4?oc=5"
-      },
-      {
-       "name": "Mon Carnet",
-       "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNWVVnb2RHUS1lejJDOG9WZjNJN3pKa2YyWmpwbXhKRGh4eUJxbWVxbkdQalh4N25RcVhBYV9LWEZMM2VCMnpEVk1QcGhmc3dmVjJfd0FseE9DclA2NTN0T1ZPTGxTUHNINFhTOG80Ti1SR2VZdG1QczRmWExOdUh1d0ZNN0xBQUJYQnF2YXg2RXNmd0hSOE1seHduS1ZhVEYyYlB6MjZBdURnNXZMZEtsZTNULXBnVlRtaVRtR1h4VEdfNHlFQkE?oc=5"
+       "name": "The Hacker News",
+       "url": "https://thehackernews.com/2026/10/googles-gemini-4-carbon-leads.html"
       }
      ]
     },
     {
-     "title": "Anthropic rachète Mithril, biotech solo orchestrée via Claude",
-     "summary": "L'éditeur a acquis Mithril, une structure biotechnologique menée par un unique chercheur qui pilotait onze laboratoires externes et concevait des candidats médicaments entièrement à l'aide de l'IA Claude.",
+     "title": "OpenAI double les limites de requêtes de ChatGPT Pro après les protestations d'utilisateurs",
+     "summary": "Face au mécontentement suscité par son projet de réduction de moitié des quotas, OpenAI a renoncé à ses coupes et a doublé les volumes d'utilisation sur les forfaits professionnels à 100, 200 et 500 dollars ainsi que sur l'offre Business Premium.",
      "sources": [
       {
-       "name": "Korben",
-       "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxPaVFXUU5lVXczY2ZqWl9VZzJ0T010Qk5xWFlUcnVNeXYzTDIzSEYxT1pDSGdXZ29aRHlqbTM1LUZ6cDYwcHlHU1ZlblhNQkdtWjRSa3ZzYlpMY1hQR21vazFZREZoRUZBajBtNklCalRSc0piaWlfVEp0YU5fMUhpeV8wWG9zclV1Q0stZ0s4cERneEpqa21qOERQbWpRQQ?oc=5"
-      },
-      {
-       "name": "Numerama",
-       "url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxOMmhGSDZEMjFfNWViNlBKOXdMSmhzdzAtaG1SVGFCR1FFVW1aM3FmMDI0akJzbTMyMVpDR1JOd3F5Y09DdUFteGJsdGk0REw3OHZWMEJMSHVMZ3Z3ejVMcWhBTlFaUUJwNGdrb3V0NVB6QUIwQ0pMbXVGMFZhTTFYbTZReXQtY19RZWdTZ2ZodG1PRjYwcXczUkI5MzNHZHl4M0xrZWw0OTBzNGNiYndVX2xqOXVOcjRFNGdMNkhvRmh5eVBycF95SEV1ejBSSDU0TzlvLVJpTm8zdVFDcjdWUm1SV1VXQ3h0?oc=5"
+       "name": "BleepingComputer",
+       "url": "https://www.bleepingcomputer.com/news/artificial-intelligence/openai-doubles-chatgpt-pro-usage-limits-after-backlash-over-planned-50-percent-cut/"
       }
      ]
     },
     {
-     "title": "Les agents et relais de code IA soulèvent de nouvelles alertes de sécurité et d'isolation",
-     "summary": "Des chercheurs et utilisateurs signalent que Claude Code renvoie régulièrement l'historique complet des agents d'arrière-plan vers les modèles distants, tandis que des passerelles non officielles contournent les sandboxes de Codex et Claude pour distribuer les outils en Chine sans garde-fous.",
+     "title": "Anthropic déploie des outils de reporting pour tracer l'usage et le ROI de Claude en entreprise",
+     "summary": "Anthropic a introduit de nouvelles fonctions d'administration analytique dans Claude Enterprise pour aider les gestionnaires à évaluer le retour sur investissement. Ces tableaux de bord mesurent l'activité réelle et signalent notamment les interactions jugées hors sujet par rapport au cadre de travail.",
      "sources": [
       {
-       "name": "Dark Reading",
-       "url": "https://www.darkreading.com/threat-intelligence/ai-relay-service-openai-codex-claude-code-sandboxes"
+       "name": "ZDNet",
+       "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxNQlNjcm1oQXZILThDT2Jqb3hPNG1LajVvMlJ2SXJBYUlkNmhDVHM3NWpjU09NQ3ZyMzFkb3BBSGk4TEk4b242YS1iTlFmMEZSMkd3azlDd0M3QWVnVEJ3cGhjMW0wTEV6MjFnTDYtUjZNVXp0eEtXMGFpZGpfOEpPbUotN1lKSzdmTDFMeG1iTlhjeW9zTUd1SmFxZEh3QjNQd3JnMUNRRG1WYmpVV2xkZkU5TVloQ3JMSmYwT3NPdDV2eUEzYnZxcllCYlFadHJpS0hkR0wzaUxPUnhPbVE?oc=5"
       },
       {
-       "name": "Hacker News",
-       "url": "https://gist.github.com/flamerix-ai/c3905705cc4205e5de3011fa2e74efce"
+       "name": "Developpez.com",
+       "url": "https://news.google.com/rss/articles/CBMi6gJBVV95cUxNc3duMUd4NHZzbDd5MnJEOF9vQ0RHS1lDZzZIT1BxcVpEUllMcnUxU0tKX3RpRU1qSmtFN25hRkFhVWZ6YWxkd3kzdEY3dFZwdmg1NzY0S2F2cVNfMG9Oa28xVldvU2o5SjYwSFJpN0piVVRhMEh6eVlmWTFEVGxxdmtTR1pEQlVmVmMxV2xYZ1hzeEoybmFiNjFNUVd6eDZJdjhaQ01aSDBwdHpnWEdQaEhXM0RSNDI3STAtd1REY0FabHdHQ2dXRTRXUXFMQTgxLWdFdzB4aXVTMzlWZGRPNEZPOVE1Y2NNdmhwOG9xc1dXZkl1RHFKUGVxZnZULUFmbm1pS0p3X2p2Q0dzWTduN3BSYlQxU0tvb2pqSmQ0U0hmN2tGUGxqNjhiVzU0V3JGNlhBcDRIb1ZzT1MtZTJaNzI5OFBkS0tZc25kNWFWV0xXdEkzOEtjeVNLc3FTQTJnOWFQRFF2LTdhQdIB7wJBVV95cUxQeFl5Qy14VUNncy03ZmhuXzlOMENTekk0TkZDcWxhVC1Eb3RwbW5WM0pSSU54ZkhVRC1GY3VGVDdmVFBiTlJodVIyRS1UTFpEZkR6eDJfNGZxaUtjSWlZbENiTXlWdWJZZklSNEg3M2d2cmtZTWM4Nl94TVBYQ2VLLUtmVDBoU0JJMlZWamFoSjhwaHNRV1NPTXdiS1ZDaUVpbHY0RVhnRXNNWHd3M3JNVzFlTi1kS0FmM1pJem85SnJZcFJmNkxjYVktZ180cFVJQXRKU0M4aEVCbURHcm5UUjBQWWFrU2NJcG0zb1hVNzVxRXFFWTVRSHVKemk1akJqQkJYY090NFRHTnpOSVlJRXlveEZiQi0zMXNERUZ2Ti10WHJXYW5idGtoUlZqT2NwLUk4NmJvSUlsNlQyaVAzRVRUWEtwTE8zUldKZG0zbGhyc1pyOC01cXRFSGFuMmhQcmhqUEM2eXNhYXZfNVBr?oc=5"
+      },
+      {
+       "name": "Fredzone",
+       "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQQlNGMzZRb3JyMk9kNkY3TFpOTEsyTlVHX0JIalBidVA4V2NLZjBDTUF2YkJGc2lSWGQ4VWM4WFgzWjc0MGZEdDYwOHFqQXI0X0RXOXd5SHc2UEdpQUR0TEdsWGZGNHJrQ1M4ZGdGZ1hyakMtTnoxTGI4TG5PNzNVbHpmMmhycG1FTW5MX2NWLTRKNlJhWTdyX1gydzJGRDJFTUlvTm4zeEJzcW1Ba1hFSHZhb1JZdmthNlE5SXpXTTFNU0U?oc=5"
       }
      ]
     }
@@ -84,72 +68,68 @@
    "label": "Cybersécurité",
    "items": [
     {
-     "title": "Cisco corrige un zero-day activement exploité provoquant le crash de passerelles VPN ASA et FTD",
-     "summary": "Cisco a publié des correctifs en urgence pour contrer une faille zero-day de déni de service exploitée à distance pour faire tomber les équipements Secure Firewall ASA et FTD configurés en VPN SSL.",
+     "title": "Binance subit un vol de 6,3 milliards de dollars via un ordinateur portable d'ingénieur DevOps",
+     "summary": "La plateforme d'échange de cryptomonnaies Binance a confirmé une faille de sécurité majeure entraînant le détournement d'environ 6,3 milliards de dollars d'actifs, imputé à des acteurs nord-coréens par des analystes blockchain. L'origine de l'intrusion remonte à la compromission du poste de travail d'un employé DevOps ; près de 3 milliards de dollars ont pu être gelés.",
      "sources": [
       {
        "name": "BleepingComputer",
-       "url": "https://www.bleepingcomputer.com/news/security/cisco-warns-of-firewall-zero-day-exploited-to-crash-ssl-vpn-devices/"
+       "url": "https://www.bleepingcomputer.com/news/security/binance-links-63-billion-crypto-theft-to-compromised-devops-laptop/"
+      },
+      {
+       "name": "The Record",
+       "url": "https://therecord.media/binance-hit-by-record-6-billion-crypto-hack"
       },
       {
        "name": "The Hacker News",
-       "url": "https://thehackernews.com/2026/10/cisco-patches-actively-exploited-asa.html"
-      }
-     ],
-     "severity": "critical"
-    },
-    {
-     "title": "L'infrastructure clandestine Silent Train de Volt Typhoon mise au jour",
-     "summary": "Plusieurs rapports révèlent le fonctionnement de Silent Train, un réseau opérationnel déployé par le groupe chinois Volt Typhoon reposant sur des chaînes de périphériques infectés à la demande pour couvrir des campagnes zero-day contre des infrastructures critiques.",
-     "sources": [
-      {
-       "name": "BleepingComputer",
-       "url": "https://www.bleepingcomputer.com/news/security/volt-typhoon-hides-zero-day-attacks-using-silent-train-framework/"
+       "url": "https://thehackernews.com/2026/10/binance-suffers-security-breach.html"
       },
       {
-       "name": "The Hacker News",
-       "url": "https://thehackernews.com/2026/10/volt-typhoon-used-covert-silent-train.html"
-      },
-      {
-       "name": "Zero Day (Kim Zetter)",
-       "url": "https://www.zetter-zeroday.com/silent-train-volt-typhoons-sophisticated-infection-chain-into-us-targets-exposed/"
+       "name": "Risky Bulletin",
+       "url": "https://news.risky.biz/risky-bulletin-belarusian-state-hackers-get-on-the-data-wiping-train/"
       }
      ],
      "severity": "watch"
     },
     {
-     "title": "Les failles PHP2Shell ciblent massivement les interfaces de gestion exposées",
-     "summary": "Des attaquants exploitent les vulnérabilités surnommées PHP2Shell contre des équipements de périmètre réseau exposés sur Internet, compromettant notamment des consoles Palo Alto Networks et pénétrant un réseau affilié au gouvernement américain.",
+     "title": "Une faille critique dans Drupal Commerce Core fait l'objet d'attaques actives",
+     "summary": "L'équipe de sécurité de Drupal appelle à appliquer sans délai un correctif pour la vulnérabilité CVE-2026-118539 affectant le module Commerce Core. Cette faille d'autorisation manquante permet de contourner les contrôles d'accès et est activement exploitée sur le Web.",
      "sources": [
       {
        "name": "The Hacker News",
-       "url": "https://thehackernews.com/2026/10/attackers-exploit-php2shell-flaws-in.html"
-      },
-      {
-       "name": "The Hacker News",
-       "url": "https://thehackernews.com/2026/10/php2shell-attack-roots-25-servers.html"
+       "url": "https://thehackernews.com/2026/10/hackers-actively-exploit-highly.html"
       },
       {
        "name": "BleepingComputer",
-       "url": "https://www.bleepingcomputer.com/news/security/infratrust-report-warns-of-exploited-flaws-in-critical-network-infrastructure/"
+       "url": "https://www.bleepingcomputer.com/news/security/drupal-warns-of-critical-commerce-core-flaw-exploited-in-attacks/"
       }
      ],
      "severity": "critical"
     },
     {
-     "title": "Attaques immédiates sur GitLab et Oracle E-Business Suite après publication des patchs",
-     "summary": "L'infrastructure GitLab du projet Alpine Linux a subi une tentative d'exploitation de la faille critique CVE-2026-97229 une semaine après son correctif, tandis que des scans actifs ciblent la RCE CVE-2026-101767 sur Oracle EBS quelques jours à peine après la sortie du correctif.",
+     "title": "Le groupe UAT-11473 exploite une faille Cisco SD-WAN pour déployer le malware KeyDrift",
+     "summary": "Des pirates ciblent la vulnérabilité de contournement d'authentification CVE-2026-20127 sur les contrôleurs Cisco Catalyst SD-WAN pour infiltrer les réseaux d'entreprise. L'intrusion permet d'exécuter un framework malveillant sur mesure baptisé KeyDrift.",
      "sources": [
       {
-       "name": "The Hacker News",
-       "url": "https://thehackernews.com/2026/10/attacker-tried-to-exploit-alpine-linuxs.html"
-      },
-      {
-       "name": "The Hacker News",
-       "url": "https://thehackernews.com/2026/10/hackers-target-critical-oracle-e.html"
+       "name": "BleepingComputer",
+       "url": "https://www.bleepingcomputer.com/news/security/hackers-exploit-cisco-sd-wan-flaw-to-deploy-custom-keydrift-malware/"
       }
      ],
      "severity": "critical"
+    },
+    {
+     "title": "Une version piégée de l'extension Claude Code sur Cursor ouvre un accès SSH persistant",
+     "summary": "Une contrefaçon de l'extension officielle Claude Code distribuée sur la place de marché de l'éditeur Cursor installait une porte dérobée SSH permanente chez les développeurs ciblés. Cette attaque de la chaîne logistique logicielle vise directement les environnements de développement intégrant l'IA.",
+     "sources": [
+      {
+       "name": "The Hacker News",
+       "url": "https://thehackernews.com/2026/10/official-claude-code-vs-code-extension.html"
+      },
+      {
+       "name": "Hacker News",
+       "url": "https://cyberplace.social/@GossiTheDog/117528831681803563"
+      }
+     ],
+     "severity": "watch"
     }
    ]
   },
@@ -158,70 +138,58 @@
    "label": "Airbus & aéronautique",
    "items": [
     {
-     "title": "Airbus confirme ses objectifs 2026 malgré un T3 ralenti et 323 avions à livrer en trois mois",
-     "summary": "Airbus a fait état d'un recul de ses bénéfices et d'une consommation de trésorerie au troisième trimestre due au rythme de production, mais maintient l'ensemble de ses objectifs annuels grâce à une hausse de 7% de ses revenus sur neuf mois. Le constructeur aborde un rush record de fin d'année pour finaliser ses livraisons.",
+     "title": "Airbus et Air France-KLM concrétisent leur coentreprise de maintenance pour l'A350",
+     "summary": "Airbus et Air France-KLM ont officialisé la création d'une coentreprise dédiée au support et à la gestion de la chaîne d'approvisionnement des composants de l'Airbus A350. Cette structure 50-50 vise à optimiser la disponibilité des pièces de rechange face à la montée en charge globale de la flotte.",
      "sources": [
       {
-       "name": "Airbus",
-       "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQeVRQa21GbG9NeHhsY0Y0RE8wT0ZfS1JaX1VjQnNsZGlNaFNFUmdYRXlzdUtSLWZxV29jcE5Md2ktU1NwdHZYYnZIaXRrZXJYTm9YQ0Y0NU13cElRUnNwMWFqVTJmNnJrdjg0UE4td2xUaEtqclZhcjJSWDBmR1JndDRoVmE0S2s4M0Y1MjE4SEt4N2I2QmtsaXRkbFVwQUM3?oc=5"
+       "name": "Air&Cosmos",
+       "url": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxOWUdjU1dLUlNqM2pmclNsSXBRQnhnd1JkM0prWUNSYnVkX0lXZldXREJmaldzd3N5cmtidFRlbjNpWG1zcEtkcWFPT2ZSXzJCT0xnalJnUHdaNEtqQVJNQWxWcHNwYVBkMDVmUDNpWlhPY0stZEdsR2xOb2EtUlFWU1IweGFoMXR0WXZ2MldzcnplX1l6b0FPaGpmNmZjQTNXSHZENnBZY2NGUzNFdjN3TUxac2pUTGRCaDNYS1ZSbmNFUHpfckNTcGNsb2lGUXVLTHI1YnJIQWJzRXhHZzhnbTM0amxoZF9IUnNLQg?oc=5"
       },
       {
-       "name": "Les Echos",
-       "url": "https://news.google.com/rss/articles/CBMi-gFBVV95cUxOWXVhMkkwUEFpQWtRa3lwUU4ycnBjRXNJcDBNdG40NGZyWDF3cl9CV3RFZU40dnNPZndPRnRpNjY2cS1kZHEycGJOZ2hWVmx6Z3BOVlFtQ0ZCbVVYLXEweEpXOFZ2VktKbHRNTWlZZThJYXpWMGdmZjFXZUljdW5NWGE5djNTZVl3ZWFuOF9meG94XzJrNjJsQm9kd3Z6V3ZzR3lnNGl0RmpxQ0VFS2JISEc1VnVQQnlfZjB6V2R0c1JLRjlJRDlwcnM5MUdGQ1ljeTBaZ29yVmY4VW95Y0ZyMmhpLTMzcDlJWHV3eDJ0SzVMaXJJNHQwcTBR?oc=5"
-      },
+       "name": "L'Opinion Indépendante",
+       "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQQloycU9taTY4cklDRlhManlwYkV6c09obmdJS2t1bFBfLUN1Uzd1ejRyZXN2UXREN3gwd19CUDJ2cmNpZld0eFJ3WkFVT3V5NUZrWk03MjhST0t1Um9iZ2p4MFlWMjU3bDcyZFFyZHdCYzRzcjNNVFFueXd2YmZWX9IBhgFBVV95cUxONmxwZ1FaclJ5T05iUU9UX0JjNUV5Z3VLTHhKSkZCd200MXJqY0FkQUZDTjFRYkpyemJRYjB1M1JfUFliUWJzU2NUNV9ranJOSVB2LVdNSG4tVUYzeUppQWNpV0FBcWkxVDJxeWozOE9qZzRIYUs0WGo1andXSkdGODBpTVhhdw?oc=5"
+      }
+     ]
+    },
+    {
+     "title": "Airbus confirme ses objectifs annuels malgré un ralentissement des livraisons au T3",
+     "summary": "L'avionneur européen affiche une progression de 7 % de ses revenus sur neuf mois avec 547 avions commerciaux livrés, malgré un trimestre ralenti par les goulots d'étranglement de la chaîne des fournisseurs. La direction confirme l'ensemble de ses objectifs de fin d'année, conditionnés à une forte accélération de cadence au quatrième trimestre.",
+     "sources": [
       {
-       "name": "Air Journal",
-       "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPR0NrWVoyWnF6UklpWndmeHJTZThDQzdYeWFMb2tuNko4eFJGTEpBbUFON0JYQnNOTEQzVGJKUVItM1V0NnpjUHUzM2pMMkJjRzIwVkMzX0ZQOHlNek50RjJYQmRBcFFaMzMtamlUczhHcDBlNF9ScS15Zld0QzNHY0Y4aFQ0VU9BTjdQRTNoSjBWekpScVNITXlfVDlXWTRTNFN2VFk1NHVRNTlPaGYwUENCQ1Zod1pfTklB?oc=5"
+       "name": "Le Journal de l'Aviation",
+       "url": "https://www.journal-aviation.com/actualites-industrie-aeronautique/avions-commerciaux/airbus-maintient-ses-objectifs-malgre-un-ralentissement-au-troisieme-trimestre-20261030.html"
       },
       {
        "name": "BFM Bourse",
-       "url": "https://news.google.com/rss/articles/CBMiwwJBVV95cUxPbWl0c3RnVE5zZVdqYkkwNTVhc3BnSjIyamhxSzY1YzEzVjJRNWhLOWFWZ0lVTTFMVllNeVZlQXJBU1kzRXl0QjlQN3c2c1hjQm1CREZ0enhLNHhOc3owdlh5SGlEVG1hcFRRMHBMN2dDX3ZZaGV6RlN0QVZyemI2dWx4RHRKVFczb2Rfb2tlTmZQOFJ5VzhUdFhtRnFrY0lPdFNhMzRwU3VRdHpOU19DUU1RbE5TZWVKM0tnSTlWbEtwNGhXcXBTQlVuOTdzRTVRMFlZMFNfOXk0VHR6OEZodUZQUmstYW1hakZydzVwWXduc1A2SGd0cm1IelpJTzFPcW04U0pkT25MX1hob3BVc2Rvb1NBRDZkaE41TkhROTRCM015Mi1HY2R5ODRseHZfNUpwSVZyNUM0UEN5VlpQX21Sdw?oc=5"
+       "url": "https://news.google.com/rss/articles/CBMi4AJBVV95cUxORlRJYnRaNE1TUkVaSm9kTG91a0U3SmlGZ3RPNk9KeHpoMU5QcnA5NlB2NWZpTTl3ejVONHhWSHhDTEFFbWROalRJZjNrS2lFcWhWbzdzQ1dWWnc5QnQ3T1BNcWtqTkR1Vkc4SVZTTXhmS3VIM1ljY1RhNF93MDM5UEI2OFg0bl9wOWFvWV9OYUpIOGpQbzFYWmJLSU44VmJHOUhIWFVPYVBZdzZQRmpEZGNEaHFHUE1JaTR1V2J0MnVjc1dINnYweklONFh0bkNQSjR0S1NwcEVVa2szRWVOdVJ6Ni1iWXNHQ3BFeGdNbTdwNnlXZlNtUlc3M3N6MkpNVWhYRkFyOFJrODFrdEdzaFVYRklfNTBISWVHTHRyYjliREpHREdzemt0OUR4RlBrZFM4Qll5UHNfc0k5bERpcG9BUXBtRVVBSndyMWtvQ0V4MDlaUW9uc1cxdFQwQ0lq?oc=5"
+      },
+      {
+       "name": "Le Monde",
+       "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPSjBaOXhpT2ZFSTNKc2FyS1VqdkFJWkRtQkZyRnNzblBQZkNUSEF2dzZuZ1ljMl9zck03OUFST1hibXZ3SUxmTHcyUTE4a3lrX0FBLVlPWkhnNDA3MEdmSFR2X3Y3akY2TnBrb1BkYnFyNHNXV0h3ZFh1OE1rWEdsOGY4eGJLcGRlTEtKUnlhdWw2Sl8wMFM4RUFTT3dDVG9jMHlqVGJpVHFHU1lsMWNOU2pvbGktMU5GUG1NTzU2cEwtZWNRTzRjNG5R?oc=5"
+      }
+     ]
+    },
+    {
+     "title": "IndiGo programme l'Airbus A321XLR sur des vols sans escale de 10 heures vers Amsterdam",
+     "summary": "La compagnie indienne IndiGo va exploiter le rayon d'action étendu du nouvel A321XLR pour relier Mumbai à Amsterdam. Ce vol de près de dix heures illustre la redéfinition des lignes long-courriers permise par ce monocouloir de dernière génération.",
+     "sources": [
+      {
+       "name": "Air Journal",
+       "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxOWnlNcFdDSFBhWlItUzZCQUowbEhBMTE3X1RPYm1oTGJuUGdZTnpYczBRaFQ2SFBmNUl6aWdzQVMtNk0yWERfLWFkZWQtM2RUM1F2N2JrU0FxazdaNG9OUjN2cWREU0w4VW1fbHNramU3TU5BM1pQTG9vRlNtUHZXTkNhSENWR3Y3dnpsems0X2VWNWt0LThTWnV4LS12Vi10VlhBNUJaakYxSVR2bkZnLVFHMTQ5NVlJenNxVGpJYjMzTDBKZmN3bE03VnpjejlGZDhOVGo3Zw?oc=5"
+      }
+     ]
+    },
+    {
+     "title": "Londres soutient le programme moteur UltraFan 30 de Rolls-Royce avec 2,5 milliards de livres",
+     "summary": "Le gouvernement britannique et Rolls-Royce ont convenu d'un plan décennal de recherche et technologie doté de 2,5 milliards de livres pour développer le démonstrateur UltraFan 30. Ce moteur vise directement les motorisations des futurs avions monocouloirs moyen-courriers de la prochaine décennie.",
+     "sources": [
+      {
+       "name": "Le Journal de l'Aviation",
+       "url": "https://www.journal-aviation.com/actualites-industrie-aeronautique/rolls-royce-aura-le-soutien-du-gouvernement-britannique-pour-son-moteur-ultrafan-30-20261030.html"
       },
       {
        "name": "AeroTime",
-       "url": "https://www.aerotime.aero/articles/airbus-nine-month-results-deliveries-proffits"
-      }
-     ]
-    },
-    {
-     "title": "Avion de combat : Airbus manœuvre entre le programme SCAF et le projet rival GCAP",
-     "summary": "Alors que les discussions sur l'avion de combat avec l'Allemagne et l'Espagne se poursuivent pour redéfinir le calendrier européen, Airbus explore des synergies et un accord potentiel avec le programme GCAP (Royaume-Uni, Japon, Italie).",
-     "sources": [
-      {
-       "name": "Le Revenu",
-       "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNbzgzeWNaUGNHN0NSTlh3ZkZsSGdYTHd5OFZmWnY3bFZFUWJfcnduYzFKdmZsYlVYMWtrVlBTekpmYkt1LWdwSWJuN19IeUNzZERYSnpmY3ZhNUFPQnllWUlUdmViZTFGTDVuUGVfejM3cTJwYzBvYjBIMmhFRkhDY0ItM3hNMU11NnNfa1BsbVJzbVM1UEcyVXh6RUlSTFhWQmpaV0RocEY?oc=5"
-      },
-      {
-       "name": "Yahoo Finance France",
-       "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPZUdMYkhjRXpPRkxRVmxfUnlqUEE1ejRfSnllanR5Y2FSMFFaVXdFSm55aGRobTJ3alpBeGVhRmd3dzFuM2dZMEJ0cFNETV9LeHZydlVreFJ4bGo4WnJDdGdETW5PQ29LUVpWSTUxNU45SWNnTnl5VE9zSkdBanAzTXV6TFRPMklFYjVoRnh3?oc=5"
-      },
-      {
-       "name": "Boursorama",
-       "url": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxQcTdSSFVBZVZNTngyTTh1UlRYa0FXbWlnSzFaS2szTlYzSmM1c3VjcHh2ZHdNUENibUJLNGVBOHkzRk12RUR2ZHVVckc3YlgzWjREWlZmaExXU21HMGlwTlBmWjF1SU5nNkFWRWF2SVFVSFdRcHRmS2I2SG5ncVYwVUdtbVpVSGxvQldEc3RSTTZnaURBQVhEMHZMbmNxUTlDT2h0NkhHeVBQeUZpc25PWTY1TnlTY0N3MGthejRnWU5wVFRmRDZQMGFzZmhHaUtQTHFwN2RkMnJCUXJqTlA2LU96MUxZZU0tc2NTdtIB8gFBVV95cUxQeXNJbW51WDVCR2xENVUwRVhBQ0lrTy1vcDBRVVJKT1NBbDRsWWMwQkZtSVdOVnN6SHNoS0J0enRDWWhOU01KX3RWb1Yta2JpeDNUVGpnbGJoa25zeTdvTGsyb1dSUXJzWXVaYm9wVDBaUDNoaHhvWmVodDhXY1R2cER3cTc4U3VzX25vNWl6ZUVHMnBhQ0lQNlBYT0FzbGJ1TEloX291eEM5enZnZmNDT2E0R3h6STB4Vkw3V0ZNRXh5djRWSWw1Y1ZFa0Z2UEFTVDFlbXZUWUZsMVRYcUw3MjVnb2xkRm5YRWY3SXRhakRvZw?oc=5"
-      }
-     ]
-    },
-    {
-     "title": "Airbus et Air France créent une coentreprise pour la maintenance de l'A350",
-     "summary": "Les deux groupes aéronautiques ont formalisé la création d'une coentreprise dédiée au support et à la maintenance des composants de l'Airbus A350, consolidant la filière MRO autour du gros-porteur.",
-     "sources": [
-      {
-       "name": "Bourse Direct",
-       "url": "https://news.google.com/rss/articles/CBMiwwJBVV95cUxQdndCWDM0MXM3VkZOSUxDb25SYjZhQkVlM1B3TWZBVGdraFJIbnBMWFVnM1ZOV2NYWW96ZzV0aFFzTWRuWTFXZTZtZmhoQkZxWTBMR200cmQ3SzJOblYtVmd1NmhrcTBoMHR0TVdtYWd3RUlfRFJtZTRkdmFjanAxWDJNWFBoMTNRd2xtYTVyaldpZTFWakJBeGVTTlp1Q2t3UFpYSnczcFJpT3ZnQ3FqZU9GajlvX0g2bkt0cXU2R2J0WGNIQzZVcHhJQ1V5amlCYWM2dVZ6dmgyTEx0eEp1WGd0YTBDUWpKTHRRMGFNQVlLZ1YxT3FqRnB2eHFrQzQ0dDByOGpCWHhZUllEend3NlUtS21hS2dwb3VEbVRJdGNQTlhiTm5rMVJlLVhvUkxpSUNqYlBmWVprb0pYTjJmN21YRQ?oc=5"
-      }
-     ]
-    },
-    {
-     "title": "Airbus étend ses certifications au Japon et passe son drone Aliaca au décollage vertical",
-     "summary": "Airbus a obtenu l'agrément d'organisme de conception auprès du bureau de l'aviation civile japonaise (JCAB) et poursuit ses innovations de défense avec une nouvelle déclinaison à décollage vertical (VTOL) pour son drone tactique U010 Aliaca.",
-     "sources": [
-      {
-       "name": "Airbus",
-       "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOWkc5R3V5WTVmbEpjb1JwYVJkemJQWGpzaVhVZDNoNXRlYUsxU19vTThYM0NoX0J2ODlXSEZFdVVoT2ZVdjRvMXhLUjVlOFp1UXhkVy1XQy1lWHRVc1Vsdk9NZ1Q4bjN1MC1uSEZjaDBtUGNqNUwtSHlVVHpfMHU2eUVFdjJmQ05aeGlQS3ZUcjZOaU9laEU1NEJFcGJDZnAzMGZ2eHhNN0R2RkxtS1E?oc=5"
-      },
-      {
-       "name": "Airbus",
-       "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOLTkwN0gxckR3T0E1SGg0Zk1TaFZSV3ktQjhlcUVKenZBNk1jM3hPdFRjR0w1WGk1Y0E5SXpvNVhLQ1pGM0RBei0wMlVXZWZ3WjFFMEpteEMxbTlrMWw5WGFNY2lvUVZUelR2MTRqV24tUkUwWHBuejJEVVoyMlJXSjltaFRJdmVlM3lYb1lqMA?oc=5"
+       "url": "https://www.aerotime.aero/articles/uk-rolls-royce-engine-future-narrowbody-fleet"
       }
      ]
     }
@@ -230,24 +198,25 @@
  ],
  "alerts": [
   {
-   "level": "CRITICAL",
-   "title": "CVE-2026-97229 : exploitation active ciblée sur les serveurs GitLab",
-   "body": "Une vulnérabilité critique (CVSS 10.0) affectant GitLab a fait l'objet de tentatives d'exploitation avérées en production, notamment contre les serveurs du projet Alpine Linux. Appliquez immédiatement la mise à jour publiée par GitLab pour neutraliser le risque d'exécution de code à distance.",
+   "level": "critical",
+   "title": "Exploitation active d'un contournement d'accès dans Drupal Commerce Core",
+   "body": "Une vulnérabilité critique d'absence de contrôle d'autorisation affecte le composant Commerce Core de Drupal. Des attaques actives ont été observées sur le Web. L'application des mises à jour fournies par Drupal est requise d'urgence.",
    "refs": [
-    "CVE-2026-97229"
+    "CVE-2026-118539"
    ]
   },
   {
-   "level": "CRITICAL",
-   "title": "CVE-2026-101767 : sondages actifs visant une faille RCE sur Oracle E-Business Suite",
-   "body": "La faille critique CVE-2026-101767 (CVSS 9.8) permettant l'exécution de code à distance fait l'objet de sondages et de tentatives d'exploitation quelques jours après la parution du correctif de sécurité. Le déploiement sans délai du patch Oracle EBS est impératif sur toutes les instances accessibles.",
+   "level": "critical",
+   "title": "Contournement d'authentification exploité sur les contrôleurs Cisco Catalyst SD-WAN",
+   "body": "Le groupe de cyberespionnage UAT-11473 exploite une faille dans les contrôleurs SD-WAN de Cisco pour implanter la charge KeyDrift en contournant l'authentification. Les contrôleurs exposés doivent être corrigés immédiatement.",
    "refs": [
-    "CVE-2026-101767"
+    "CVE-2026-20127"
    ]
   }
  ],
  "feedErrors": [
   "CISA - Cybersecurity Advisories",
+  "Google DeepMind Blog",
   "FlightGlobal"
  ]
 }

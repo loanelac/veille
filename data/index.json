@@ -1,6 +1,12 @@
 {
- "updated": "2026-10-29T12:47:09.488606+00:00",
+ "updated": "2026-10-30T12:41:32.109949+00:00",
  "editions": [
+  {
+   "id": "2026-10-30-daily",
+   "date": "2026-10-30",
+   "kind": "daily",
+   "lede": "L'actualité est dominée par le piratage historique de Binance, délesté de 6,3 milliards de dollars après la compromission d'un poste DevOps, tandis qu'Airbus ma"
+  },
   {
    "id": "2026-10-29-daily",
    "date": "2026-10-29",
