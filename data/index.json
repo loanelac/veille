@@ -1,6 +1,18 @@
 {
- "updated": "2026-10-30T12:41:32.109949+00:00",
+ "updated": "2026-11-01T13:09:30.323932+00:00",
  "editions": [
+  {
+   "id": "2026-11-01-weekly",
+   "date": "2026-11-01",
+   "kind": "weekly",
+   "lede": "La compromission directe d'outils d'assistance au développement par IA et le casse record de plus de 6 milliards de dollars chez Binance ont dominé la semaine, "
+  },
+  {
+   "id": "2026-11-01-daily",
+   "date": "2026-11-01",
+   "kind": "daily",
+   "lede": "L'actualité est marquée par la divulgation de vulnérabilités sévères touchant l'infrastructure Linux et les API d'hébergement, tandis qu'Airbus aborde une fin d"
+  },
   {
    "id": "2026-10-30-daily",
    "date": "2026-10-30",
