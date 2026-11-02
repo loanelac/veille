@@ -1,6 +1,12 @@
 {
- "updated": "2026-11-01T13:09:30.323932+00:00",
+ "updated": "2026-11-02T15:31:04.223074+00:00",
  "editions": [
+  {
+   "id": "2026-11-02-daily",
+   "date": "2026-11-02",
+   "kind": "daily",
+   "lede": "L'actualité est dominée par l'attribution officielle à la Corée du Nord du braquage historique de 6,3 milliards de dollars contre Binance et par la décision d'A"
+  },
   {
    "id": "2026-11-01-weekly",
    "date": "2026-11-01",

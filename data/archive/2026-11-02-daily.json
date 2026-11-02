@@ -1,0 +1,191 @@
+{
+ "date": "2026-11-02",
+ "kind": "daily",
+ "generatedAt": "02/11 à 15:31 UTC",
+ "lede": "L'actualité est dominée par l'attribution officielle à la Corée du Nord du braquage historique de 6,3 milliards de dollars contre Binance et par la décision d'Anthropic de brider Claude Code face au pillage de propriété intellectuelle.",
+ "stats": {
+  "feeds": 37,
+  "items": 104,
+  "errors": 2
+ },
+ "sections": [
+  {
+   "key": "ia",
+   "label": "Intelligence artificielle",
+   "items": [
+    {
+     "title": "Anthropic restreint Claude Code pour interdire le clonage de jeux vidéo",
+     "summary": "Face à la saturation des plateformes de distribution par des copies automatisées et aux risques légaux de décompilation, Anthropic a déployé une mise à jour bloquant la reproduction de jeux existants avec son modèle.",
+     "sources": [
+      {
+       "name": "Gamekult",
+       "url": "https://news.google.com/rss/articles/CBMilwJBVV95cUxQclZ0Y1BBU0R5SmZLVENBenVMeFJ1cnEwZTZVM0V3cklveWFqck84dUhKamdSWDVndkZkOE9PSGU3RllkaWYybkJXamQ0OEdBb3hPaU01VG8ya043UWJMUWhDYkVmOTBBeEJoRlhZOTh6UTVJUUwzZnBMN1hMbVFVZHJFbnhPcHZQRnRMcUFVeEJ0ejQxU3JhNHQ4RGcxUm1JX2JhNUpNeDRSTHNxTlpGYVVlRWRXVEd4UVZ2S1haRFZVZGloMGpCd3JlcFhGdGs0a2FZRlF1S0huY01HOEZsUjRTZVgzSUlvZDFic212TG96VGxqTHR6VTBwelg2LUVmbU5SWXl6TzZMWFlycUxndVNQMHU5Mk0?oc=5"
+      },
+      {
+       "name": "Korben",
+       "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNdUk1NDF1TDJPWWcwWVJhS0ZQT09kbXpzUGluMzJjOGJWdzEzX2cwUGRvQW9GaVVqV3FSeE5iRG43ZUZQeVdNRlhvb0kyTDZ4NEg0eTZWVl9OU3ZyMFdMN2dPWEJFMDVPVWU4NUtvcm9rT0oxZTNZdlRHeWxZY2dzcURrazcxVmp0MkhvUG1YNDlNVzhaS1FLbHVDZzRhakk?oc=5"
+      },
+      {
+       "name": "Numerama",
+       "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQY3Z5WnptT1V0TVJJaVFYNzBuN2g2aTg5dFBjV2hyeWlTcmRiU2JtUEJwMTRhSFE5akVhYmtPV0QxTVhFaE1pcE4xeUJ0aFdrckdyMjE1ZFhNY3ZGajJxendkMkItczA1a3ZZZmFFZlJ5Z2R5eWM3ZktjcnhOVmJpeWdZVkxRVkg0cVBZaURlb2JDWGt2YURHZkVlUHd4N3A1b21kWTIweS00eWxDM0tIUWgtMllxLXFpSzMwOVhPZ1U?oc=5"
+      }
+     ]
+    },
+    {
+     "title": "Anthropic révèle que 90 % de son code interne est écrit par Claude",
+     "summary": "Dans ses documents d'introduction en bourse S-1, Anthropic indique s'appuyer massivement sur sa propre intelligence artificielle pour générer neuf dixièmes de ses développements logiciels et accélérer sa rentabilité.",
+     "sources": [
+      {
+       "name": "LeMagIT",
+       "url": "https://www.lemagit.fr/dessin/90-du-code-de-Claude-est-desormais-ecrit-par-Claude"
+      },
+      {
+       "name": "Solutions-Numeriques",
+       "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPNWc2UlFzSkY3NE85YXdqV1JXUG9KcVlTaEc2UFpocnVkbXJPTDRmRkpKbDRlTjdqT1BMMl9ya1B4YWpXaGtERUN2RG9scnFVb0NpLTBmdGFIU3ZITDNhV0Z4RUxQdWd3SDRmZjlNX0UwNUo0NjJjZmtkbDJZR3BBYUFtcktFc0tjV1FKUVlxZi1XejZ2a1d5U3BRT2tsdV9nSmdVbXlrZ0FNeXVoRnRKTEtoU0hpZw?oc=5"
+      }
+     ]
+    },
+    {
+     "title": "Le voleur de données VOLTA exploite des LLM pour hiérarchiser ses victimes",
+     "summary": "Un nouveau malware voleur d'identifiants sous Windows recourt aux modèles Claude, Gemini et Kimi afin d'analyser le potentiel financier des données dérobées et prioriser les cibles à extorquer.",
+     "sources": [
+      {
+       "name": "The Hacker News",
+       "url": "https://thehackernews.com/2026/11/new-volta-infostealer-uses-claude.html"
+      }
+     ]
+    },
+    {
+     "title": "OpenAI dévoile son initiative Grid Protectors pour préserver le réseau électrique",
+     "summary": "OpenAI s'associe aux compagnies d'électricité afin de synchroniser la demande énergétique de ses futurs campus d'entraînement avec la résilience des infrastructures et limiter l'impact sur les factures publiques.",
+     "sources": [
+      {
+       "name": "OpenAI News",
+       "url": "https://openai.com/index/grid-protectors-program"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "key": "cyber",
+   "label": "Cybersécurité",
+   "items": [
+    {
+     "title": "Ivanti corrige deux zero-days chaînées dans des attaques sur Connect Secure",
+     "summary": "L'éditeur publie des correctifs pour deux failles critiques exploitées en conditions réelles depuis le début du mois d'octobre sur ses passerelles d'accès distant.",
+     "sources": [
+      {
+       "name": "BleepingComputer",
+       "url": "https://www.bleepingcomputer.com/news/security/ivanti-patches-two-more-connect-secure-zero-days-chained-in-attacks/"
+      },
+      {
+       "name": "CERT-FR",
+       "url": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1442/"
+      }
+     ],
+     "severity": "critical"
+    },
+    {
+     "title": "Plus de 1 000 serveurs GitLab vulnérables restent exposés à une RCE active",
+     "summary": "Un millier d'instances GitLab accessibles publiquement n'ont toujours pas été mises à jour contre une faille d'exécution de code à distance sévèrement ciblée par des attaquants.",
+     "sources": [
+      {
+       "name": "BleepingComputer",
+       "url": "https://www.bleepingcomputer.com/news/security/over-1-000-gitlab-servers-vulnerable-to-code-execution-attacks/"
+      }
+     ],
+     "severity": "critical"
+    },
+    {
+     "title": "Le FBI attribue le vol de 6,3 milliards de dollars sur Binance à la Corée du Nord",
+     "summary": "Le groupe étatique TraderTraitor a été formellement identifié comme l'auteur du piratage massif de Binance, le plus important braquage d'actifs numériques répertorié à ce jour.",
+     "sources": [
+      {
+       "name": "The Record",
+       "url": "https://therecord.media/fbi-blames-tradertraitor-for-binance-hack"
+      },
+      {
+       "name": "BleepingComputer",
+       "url": "https://www.bleepingcomputer.com/news/security/fbi-links-63-billion-binance-crypto-heist-to-north-korean-hackers/"
+      },
+      {
+       "name": "Risky Bulletin",
+       "url": "https://news.risky.biz/risky-bulletin-game-devs-are-being-extorted-with-ai-game-cloning-threats/"
+      }
+     ]
+    },
+    {
+     "title": "Des cyberattaques dérèglent les systèmes frigorifiques de supermarchés en Europe",
+     "summary": "Plusieurs chaînes de grande distribution ont vu leurs terminaux de réfrigération piratés et leurs consignes de température modifiées à distance, causant d'importantes pertes de marchandises.",
+     "sources": [
+      {
+       "name": "BleepingComputer",
+       "url": "https://www.bleepingcomputer.com/news/security/hackers-disrupt-refrigeration-systems-at-european-supermarkets/"
+      },
+      {
+       "name": "The Record",
+       "url": "https://therecord.media/cyberattack-grocery-freezers-europe"
+      }
+     ],
+     "severity": "watch"
+    }
+   ]
+  },
+  {
+   "key": "aero",
+   "label": "Airbus & aéronautique",
+   "items": [
+    {
+     "title": "Discover Airlines renforce ses projets de flotte long-courrier avec l'Airbus A350",
+     "summary": "La compagnie de loisirs du groupe Lufthansa augmente ses ambitions sur le segment long-courrier en s'appuyant sur l'arrivée d'A350-900 supplémentaires pour moderniser ses capacités.",
+     "sources": [
+      {
+       "name": "Le Journal de l'Aviation",
+       "url": "https://www.journal-aviation.com/actualites-transport-aerien/compagnies-aeriennes/airbus-a350-discover-airlines-voit-plus-grand-pour-sa-future-flotte-davions-longs-courriers-de-nouvelle-generation-20261102.html"
+      }
+     ]
+    },
+    {
+     "title": "Airbus Defence and Space confie le soutien des APU de l'A330 MRTT à EPCOR",
+     "summary": "Un contrat a été conclu avec EPCOR, entité d'Air France-KLM, afin de garantir la maintenance et le maintien opérationnel des groupes auxiliaires de puissance de l'ensemble de la flotte mondiale d'A330 MRTT.",
+     "sources": [
+      {
+       "name": "Le Journal de l'Aviation",
+       "url": "https://www.journal-aviation.com/actualites-mro-support/maintenance-equipements/airbus-defence-and-space-signe-avec-epcor-pour-le-soutien-des-apu-de-la-flotte-mondiale-da330-mrtt-20261102.html"
+      }
+     ]
+    },
+    {
+     "title": "Moteurs Pratt & Whitney : nette amélioration sur l'A220 mais blocages continus sur l'A320neo",
+     "summary": "Si la chaîne logistique et les remplacements de moteurs GTF trouvent une issue favorable pour la flotte d'A220, les tensions opérationnelles et les immobilisations d'appareils restent critiques pour la famille A320neo.",
+     "sources": [
+      {
+       "name": "ladepeche.fr",
+       "url": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxOcThXTm93eXRIcTg4enZQSXN2YmFEdDhJVUlsYi03SGF2eExuSEplUDVUT2VVWmpVNVI2cFdTU3EtMnZPNFRzdndyOGtIQlo0cWlfRENRS055ZEdLYWNFT2NSS29lS3FoZndsZVFMd1I0VVRxTjVFSVVEbG9wUmR6YU9zUVBMVk5aalRIX1BoZGphNnZCME8ya19wSkd4RTBXbzVpRy0xUi00dFhrSE5HOWtHX21NRmc4bjlicVNIdC1WOGVFQjBiMHVNYzdQU2RlWGh1ZGZ5bWEzeV80ZmJ5NTFIYTBwYkhkaGluRVhMQjNDb0VPNFE?oc=5"
+      }
+     ]
+    },
+    {
+     "title": "L'Italie réaffirme son intérêt pour l'A400M face aux succès européens de l'Embraer KC-390",
+     "summary": "Tandis que la force aérienne italienne confirme étudier l'A400M pour ses capacités lourdes, la Grèce finalise l'acquisition de trois à six avions de transport tactique KC-390 auprès du brésilien Embraer.",
+     "sources": [
+      {
+       "name": "Zone Militaire",
+       "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxQMlJRWjNDX0c4OTN6RWFpT1hFTGM2bnlTYXZXc0pGWTZIc2t5SjR6WElzQmpPNER2dGVYdzMzeldwc3JhWGQzNGFteU9FdTE4T0N4S0VTaVRTbkc1NlppSGJ1OUpNYVpMY05mS3NzU3FzQlQ3RmlIZy00SnJ0QWVOd2ZWTXVaa2wyRU5WYjBrUm5ZeklPVGpWN0JjbXphbmh2REJOSnVTSVhQdnVBSTZsbXZZVmtuNzVybHM1bnM2M1ZicGVMd0dOcTFRQnFVYXRNQ1M5MEdqcEc?oc=5"
+      },
+      {
+       "name": "Le Journal de l'Aviation",
+       "url": "https://www.journal-aviation.com/actualites-industrie-aeronautique/avions-militaires/la-grece-finalise-son-contrat-dacquisition-dembraer-kc-390-20261102.html"
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "alerts": [],
+ "feedErrors": [
+  "CISA - Cybersecurity Advisories",
+  "FlightGlobal"
+ ]
+}
