@@ -1,12 +1,12 @@
 {
- "date": "2026-11-01",
+ "date": "2026-11-08",
  "kind": "weekly",
- "generatedAt": "01/11 à 13:09 UTC",
- "lede": "La compromission directe d'outils d'assistance au développement par IA et le casse record de plus de 6 milliards de dollars chez Binance ont dominé la semaine, tandis qu'Airbus réaffirme ses objectifs industriels annuels en dépit de tensions persistantes sur ses cadences de livraison.",
+ "generatedAt": "08/11 à 13:13 UTC",
+ "lede": "L'industrialisation de la découverte offensive de vulnérabilités par l'IA franchit un seuil avec GPT-6 Cyber, tandis que les équipes de sécurité affrontent l'exploitation active de failles critiques touchant OpenSSH et les passerelles SonicWall.",
  "stats": {
   "feeds": 37,
-  "items": 227,
-  "errors": 2
+  "items": 223,
+  "errors": 3
  },
  "sections": [
   {
@@ -14,66 +14,67 @@
    "label": "Intelligence artificielle",
    "items": [
     {
-     "title": "Mistral AI ouvre les poids de son grand modèle Mistral Large 4",
-     "summary": "Le laboratoire français a publié les poids de Mistral Large 4, un modèle multimodal de 1 000 milliards de paramètres entraîné en Europe et optimisé pour le développement logiciel ainsi que les applications en cybersécurité.",
+     "title": "OpenAI dévoile GPT-6 Cyber après la découverte automatisée de près de 1 000 failles Linux et Firefox",
+     "summary": "OpenAI a officialisé son modèle spécialisé GPT-6 Cyber, conçu pour identifier les vulnérabilités et développer des correctifs. Lors de sa phase de validation, le pipeline a généré des exploits fonctionnels pour 948 failles du noyau Linux pour 1,2 million de dollars de calcul et repéré 81 vulnérabilités critiques dans Firefox.",
      "sources": [
       {
-       "name": "Mistral AI Blog",
-       "url": "https://mistral.ai/news/mistral-large-4-oss/"
+       "name": "OpenAI News",
+       "url": "https://openai.com/index/introducing-gpt-6-cyber"
       },
       {
-       "name": "Hugging Face Blog",
-       "url": "https://huggingface.co/blog/mistral-large4"
+       "name": "The Hacker News",
+       "url": "https://thehackernews.com/2026/11/openai-launches-gpt-6-cyber-after-ai.html"
       },
       {
-       "name": "LeMagIT",
-       "url": "https://www.lemagit.fr/actualites/366653113/Mistral-ouvre-les-poids-de-Mistral-Large-4-et-se-rapproche-dOrange-Cyberdefense"
+       "name": "BleepingComputer",
+       "url": "https://www.bleepingcomputer.com/news/security/openais-new-gpt-6-cyber-ai-finds-81-firefox-flaws-948-linux-bugs/"
+      },
+      {
+       "name": "tl;dr sec",
+       "url": "https://tldrsec.com/p/tldr-sec-353"
       }
      ]
     },
     {
-     "title": "Google DeepMind présente Gemini 4 Carbon et son simulateur d'environnements Genie 4",
-     "summary": "DeepMind a officialisé sa nouvelle génération de modèles frontières avec Gemini 4 Carbon, accompagnée de Genie 4, un modèle de simulation temps réel conçu pour générer des environnements virtuels interactifs haute fidélité.",
+     "title": "Claude Code expose des identifiants et clés API dans plus de 1 100 dépôts publics GitHub",
+     "summary": "L'option « Don't Ask Again » de l'assistant en ligne de commande d'Anthropic enregistrait en clair des commandes validées incluant des mots de passe et des jetons d'accès. Ce fichier de configuration s'est retrouvé synchronisé par inadvertance dans au moins 1 122 dépôts publics sur GitHub.",
      "sources": [
       {
-       "name": "Google DeepMind Blog",
-       "url": "https://deepmind.google/blog/gemini-4-carbon-our-next-frontier-model/"
+       "name": "The Hacker News",
+       "url": "https://thehackernews.com/2026/11/claude-codes-dont-ask-again-file.html"
       },
       {
-       "name": "Google DeepMind Blog",
-       "url": "https://deepmind.google/blog/genie-4-a-new-generation-of-world-simulation/"
+       "name": "Hacker News",
+       "url": "https://apiiro.com/blog/coding-agents-leaking-secrets-github-dont-ask-again"
+      }
+     ],
+     "severity": "watch"
+    },
+    {
+     "title": "Anthropic lance Claude dans la gestion des finances personnelles et l'analyse bancaire",
+     "summary": "Anthropic déploie la fonctionnalité Personal Finance afin de permettre à son modèle d'analyser les postes de dépenses et les flux de trésorerie en se connectant aux comptes bancaires. Cette ouverture vers la consultation directe de données financières critiques marque une nouvelle étape dans l'autonomie déléguée aux agents d'IA.",
+     "sources": [
+      {
+       "name": "ZDNET",
+       "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPQVNVR2JzWDdQaVc0aFA0YU9sV25TeEpxVVZiLWdmWkJxY05TSHdDWlVUdU1GZHF6bGo4TFJBOGh4M2JweDNKaFIxZHdza3p1d0ZXYmJJQkZCTUNPQVFfb0JYZV9ad0dWVjBBS29maE5MMGJ4bmM4NVEyeGVsRGRBTVFuajlVd1VoM2hyNDZWekxuN3dFeEJuMjhJeWlKZ1hFQmRPSUNlbmpqZU9qMU1N?oc=5"
+      },
+      {
+       "name": "Le Monde Informatique",
+       "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPUVhhOTQ3b1JuVVg0aUFwMWNKaWVNQXM2MWNGcFA1WEoxV281TWNkX1N0ZXd6c25IbWJ4OXV6ZmktVEJBZXU0TjJUNmVPS3VQd3UyWi1wNV9yak90N01IX3A2Nzk5bXVENE9jMEc5WjhNdXFqNjJVREljSU1mdVRrMHNZQ21DclB3bVR4SXBUa19vblBNa0FTTXE2S2Q1ZGY4WG02WE5jOHJOaW53UGdOXy1PVVdjSFkyYmxXRHlqN1lyZ9IBxgFBVV95cUxPLTBmZzZEcXlvTF93eW9sMGFqX2pHbmVMY0MzTjhSUndhemxhZjgzT0V0ZHdkTFVZRkRUSGpHc1E1WF9nNGRzMUNGSmpqUDlpOGxwMnpZQUJTandlWE1KZHQ5RzVSN0RLZUt5UWo4R0E4ZTI5bkl2ZEZnT2VMSG5XaUVXZXcwZGhkUjlobVNhbnVSanRTVk40Q2FockxEU1BNOTdMdVJ4Q3ppUXFSVHJmczdNUWFqRlZXYnFBYk9FY2hGU0I1ckE?oc=5"
+      },
+      {
+       "name": "01net.com",
+       "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxOZHI3R056SFFkX29sTnlEZVIxd3lDUXNvRHpTZ2h2YnNUbHpxVlNvU1p0MGwwcE50ODZsdmxWbWRQZmlLRi1SenkxZVlIMUl6SlpKV3BiMjU2ek5ZU3dpOXNoZG9uR3J3bFlaYkp4Yk5kcWtmeDlWVF9PQ25RTlJRZzVPaU10bXJDcEdEZ1FGUTJNSVJ4WEhPRG5qblliUTFFbjlXbmJDWjJtbnBCazRiSUo2QTRsOGtwR01DVkJCQnRJQXd6SHc?oc=5"
       }
      ]
     },
     {
-     "title": "OpenAI dévoile GPT-6.1 Terra et intensifie la guerre tarifaire de l'inférence",
-     "summary": "OpenAI a annoncé son modèle GPT-6.1 Terra, misant sur le raisonnement visuel et l'utilisation directe de postes informatiques, tout en appliquant une baisse agressive de sa tarification API pour contrer la concurrence open-weight.",
+     "title": "Mistral AI acquiert SkipLabs pour fiabiliser le code généré par les agents autonomes",
+     "summary": "Mistral AI poursuit sa stratégie de croissance externe en intégrant l'équipe de SkipLabs, spécialiste de la programmation réactive. L'opération vise à concevoir des briques de test et de validation automatique pour garantir l'intégrité et la robustesse du code rédigé par des agents d'IA.",
      "sources": [
       {
-       "name": "LeMagIT",
-       "url": "https://www.lemagit.fr/actualites/366652819/OpenAI-casse-les-prix-de-GPT-61-Terra"
-      },
-      {
-       "name": "Simon Willison",
-       "url": "https://simonwillison.net/2026/Oct/26/gpt-61-terra/"
-      }
-     ]
-    },
-    {
-     "title": "Anthropic réorganise son ingénierie et supprime les entretiens de code face aux prouesses de Claude",
-     "summary": "Les équipes de recrutement technique d'Anthropic abandonnent les tests classiques de programmation, estimant que leurs modèles d'agents surpassent les candidats humains, tandis que l'entreprise documente en interne le déclin de la proportion de profils juniors.",
-     "sources": [
-      {
-       "name": "Tom's Hardware",
-       "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPdWJna3k4V2FiRlAzR2VPVkMtMGdIUG9QeF9RUU9ITzdrSDhTZVBLTVoybnFVZk9VZnpvUmM1NWloU3YxeW9HWkFfczYzSTFLMmRvaGMxWnNWUGVxQlR5TjZRdkdZb3l0YWRZdFlQX3k2RXdORFowTjRCOW9kTFJqZXZaQ2kxZmVzMXA2QWpXNV9GaEFVeElVZFRDeDd4X01NVlF6TzFCdHktYi1sNnZOOXlONlJMbkVmTTVoeQ?oc=5"
-      },
-      {
-       "name": "Les Echos",
-       "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPNEl2T3hIVUdqdGZHczdlQklpSS1BNUF4ZzR0ZnVsRk5IZzZCeGMzVGQ1ZHhWYy1ad3Axa1cyYjVUU0lVeGNNT2ZUejNYTlZVWWN3SGRLaEFSR2I2a0RLdVFFNGhBY3I2ZGdLVGdfUXliTGxkVDhUZEVwRVpXUUx0bkNxanpjX3VPb0hyOGhUYmJvNElaM3U2MUE4ZkFDaDZ2ZUtnTFZNeGsxeWVoTlZUd3R6U0NhZ2Jva1pocmFqZlNwMVE?oc=5"
-      },
-      {
-       "name": "Mezha.net",
-       "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNRU1SeERQbkpEeWJ1NFd4WGxJcTdBUEtFeEhZdXlGWFA4TGJLQktoN0Q0V3hFc3Z4RDdkSy1fVFV3X2t1bXByZzFKZktKNDdWQ1hFZXphQ2NHX3VEa3R2b1drRlBZZllSejZSeVRITjZtTi1IeDRQT0h1dndrTm9VY3czSmlTX1ZJTFBUQUFBVFZyeW41?oc=5"
+       "name": "LeMagIT (FR)",
+       "url": "https://www.lemagit.fr/actualites/366653932/IA-agentique-et-programmation-reactive-pourquoi-Mistral-AI-acquiert-SkipLabs"
       }
      ]
     }
@@ -84,86 +85,98 @@
    "label": "Cybersécurité",
    "items": [
     {
-     "title": "L'extension Claude Code sur Cursor compromise pour injecter des portes dérobées SSH",
-     "summary": "Pendant près de 12 heures, une version altérée de l'extension officielle Claude Code a été diffusée sur la place de marché de l'IDE Cursor. L'attaque ciblait directement les postes de milliers de développeurs afin de déployer un accès SSH persistant.",
-     "sources": [
-      {
-       "name": "BleepingComputer",
-       "url": "https://www.bleepingcomputer.com/news/security/malicious-claude-code-extension-on-cursor-planted-ssh-backdoors/"
-      },
-      {
-       "name": "The Hacker News",
-       "url": "https://thehackernews.com/2026/10/official-claude-code-vs-code-extension.html"
-      },
-      {
-       "name": "Dark Reading",
-       "url": "https://www.darkreading.com/cyberattacks-data-breaches/devs-trojanized-claude-code-extension-cursor"
-      },
-      {
-       "name": "Ars Technica",
-       "url": "https://arstechnica.com/security/2026/10/anthropic-vs-code-extension-on-cursor-backdoored-for-nearly-12-hours/"
-      }
-     ],
-     "severity": "critical"
-    },
-    {
-     "title": "Le FBI impute le vol record de 6,4 milliards de dollars chez Binance aux cybercriminels nord-coréens",
-     "summary": "L'intrusion ayant permis de dérober plus de 6 milliards de dollars d'actifs sur la plateforme d'échange Binance découle de la compromission du poste d'un ingénieur DevOps. L'attaque a été formellement attribuée au groupe parrainé par Pyongyang TraderTraitor (Jade Sleet).",
-     "sources": [
-      {
-       "name": "BleepingComputer",
-       "url": "https://www.bleepingcomputer.com/news/security/binance-links-63-billion-crypto-theft-to-compromised-devops-laptop/"
-      },
-      {
-       "name": "The Hacker News",
-       "url": "https://thehackernews.com/2026/11/fbi-links-north-koreas-tradertraitor-to.html"
-      },
-      {
-       "name": "Risky Bulletin",
-       "url": "https://news.risky.biz/risky-bulletin-belarusian-state-hackers-get-on-the-data-wiping-train/"
-      }
-     ]
-    },
-    {
-     "title": "Une vulnérabilité critique CVSS 10.0 découverte dans Canonical LXD et MicroCloud",
-     "summary": "Une faille d'authentification majeure permet à un attaquant distant d'usurper l'identité d'un client de confiance via l'API HTTPS sans détenir sa clé privée, à la seule condition de connaître sa clé publique.",
-     "sources": [
-      {
-       "name": "The Hacker News",
-       "url": "https://thehackernews.com/2026/11/critical-lxd-and-microcloud-flaw-cvss.html"
-      }
-     ],
-     "severity": "critical"
-    },
-    {
-     "title": "Palo Alto Networks et Ivanti sous pression face à des exploitations actives",
-     "summary": "Plusieurs failles critiques dans PAN-OS (dont CVE-2026-109618) et un chaînage de vulnérabilités dans Ivanti Connect Secure font l'objet d'attaques actives en production, incitant le CERT-FR et la CISA à exiger l'application immédiate des correctifs.",
+     "title": "OpenSSH : la faille SSHole exploitée quelques heures après sa divulgation",
+     "summary": "Référencée CVE-2026-123158, cette anomalie affecte des paquets openssh-server sur Alpine Linux et permet de contourner l'authentification en envoyant un mot de passe supérieur à 256 caractères sur des comptes dépourvus de mot de passe (clés SSH seules). Des attaquants ont obtenu des accès root sur des honeypots peu de temps après l'alerte publique.",
      "sources": [
       {
        "name": "CERT-FR",
-       "url": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1402/"
+       "url": "https://www.cert.cyber.gouv.fr/alerte/CERTFR-2026-ALE-015/"
       },
       {
        "name": "The Hacker News",
-       "url": "https://thehackernews.com/2026/10/attackers-chain-three-ivanti-connect.html"
+       "url": "https://thehackernews.com/2026/11/hackers-exploited-openssh-sshole-flaw.html"
+      },
+      {
+       "name": "Ars Technica",
+       "url": "https://arstechnica.com/security/2026/11/vulnerability-allows-attackers-to-log-into-some-linux-devices-sans-password/"
+      },
+      {
+       "name": "Risky Bulletin",
+       "url": "https://news.risky.biz/risky-bulletin-some-openssh-instances-take-any-password-longer-than-256-characters/"
       }
      ],
      "severity": "critical"
     },
     {
-     "title": "Une faille sur les aperçus partagés de ChatGPT permettait le détournement de comptes",
-     "summary": "Des chercheurs de Parameter Labs ont documenté la possibilité d'injecter du code arbitraire via le mécanisme d'aperçu HTML des liens partagés de ChatGPT pour siphonner l'historique des conversations privées de la victime connectée.",
+     "title": "SonicWall corrige sept vulnérabilités dont un contournement MFA activement ciblé",
+     "summary": "Le constructeur avertit qu'une faille de contournement d'authentification multifacteur sur les accès SSL-VPN de SonicOS fait l'objet d'attaques en conditions réelles. L'application immédiate des correctifs est requise pour empêcher la prise de contrôle non autorisée des réseaux d'entreprise.",
+     "sources": [
+      {
+       "name": "BleepingComputer",
+       "url": "https://www.bleepingcomputer.com/news/security/sonicwall-warns-of-new-ssl-vpn-mfa-bypass-flaw-exploited-in-attacks/"
+      },
+      {
+       "name": "CERT-FR",
+       "url": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1456/"
+      }
+     ],
+     "severity": "critical"
+    },
+    {
+     "title": "Chainalysis compromis lors d'une attaque multifront impliquant des agents d'IA",
+     "summary": "La société spécialisée dans l'investigation sur la blockchain a confirmé qu'une attaque externe a exposé les identifiants, condensats de mots de passe et jetons de session actifs de la totalité de ses clients. L'assaut a impliqué des agents d'IA autonomes ainsi que des interceptions directes de flux réseau.",
      "sources": [
       {
        "name": "The Hacker News",
-       "url": "https://thehackernews.com/2026/10/a-shared-chatgpt-link-could-run.html"
+       "url": "https://thehackernews.com/2026/11/chainalysis-breach-exposes-all-users.html"
       },
       {
-       "name": "Simon Willison",
-       "url": "https://simonwillison.net/2026/Oct/31/how-we-took-over-chatgpt-accounts/"
+       "name": "BleepingComputer",
+       "url": "https://www.bleepingcomputer.com/news/security/chainalysis-says-breach-exposed-credentials-for-all-customers/"
+      },
+      {
+       "name": "Ars Technica",
+       "url": "https://arstechnica.com/security/2026/11/chainalysis-says-hackers-stole-credentials-and-tokens-for-all-of-its-customers/"
       }
      ],
      "severity": "watch"
+    },
+    {
+     "title": "Les piratages de régulateurs de froid industriel menacent la chaîne transfusionnelle française",
+     "summary": "Une série d'attaques visant les contrôleurs de température industriels et les chaînes du froid a touché l'Établissement Français du Sang (EFS) sur trois sites, faisant peser un risque opérationnel sur des réserves de plasma. Le FBI et la CISA ont émis une mise en garde conjointe face à la prolifération de ces incidents à travers le monde.",
+     "sources": [
+      {
+       "name": "ZATAZ (FR)",
+       "url": "https://www.zataz.com/cyberattaque-contre-les-frigos-de-lefs-le-plasma-vise/"
+      },
+      {
+       "name": "BleepingComputer",
+       "url": "https://www.bleepingcomputer.com/news/security/fbi-cisa-warn-of-cyberattacks-targeting-refrigeration-systems/"
+      },
+      {
+       "name": "Dark Reading",
+       "url": "https://www.darkreading.com/ics-ot-security/fresh-european-fridge-attacks-cold-chain-security"
+      }
+     ],
+     "severity": "watch"
+    },
+    {
+     "title": "Crédit Mutuel Arkéa subit un vol de 133 millions de dollars suite à la compromission d'un sous-traitant",
+     "summary": "L'institution bancaire française a été la cible d'opérations frauduleuses atteignant 133 millions de dollars transitant en partie par sa filiale en ligne Fortuneo avant blanchiment crypto. L'attaque s'est appuyée sur l'accès d'un prestataire tiers de services, contraignant la banque à suspendre d'urgence certains traitements.",
+     "sources": [
+      {
+       "name": "BleepingComputer",
+       "url": "https://www.bleepingcomputer.com/news/security/hackers-pull-off-133-million-french-bank-heist-via-service-provider/"
+      },
+      {
+       "name": "ZATAZ (FR)",
+       "url": "https://www.zataz.com/credit-mutuel-arkea-133-millions-de-dollars-detournes/"
+      },
+      {
+       "name": "Risky Bulletin",
+       "url": "https://news.risky.biz/risky-bulletin-some-openssh-instances-take-any-password-longer-than-256-characters/"
+      }
+     ]
     }
    ]
   },
@@ -172,66 +185,58 @@
    "label": "Airbus & aéronautique",
    "items": [
     {
-     "title": "Airbus réitère ses objectifs financiers 2026 malgré le ralentissement de ses livraisons",
-     "summary": "À l'issue de ses résultats des neuf premiers mois de 2026, l'avionneur européen affiche une progression de 7 % de ses revenus, mais doit composer avec une consommation de trésorerie accrue et des contraintes d'approvisionnement pesant sur les cadences de production de monocouloirs.",
+     "title": "Airbus engagé dans un sprint de livraisons sans précédent de près de 250 avions en deux mois",
+     "summary": "Avec 74 avions civils remis aux clients en octobre, Airbus atteint un cumul de 621 livraisons depuis le début de l'année. Pour sécuriser sa cible annuelle révisée, le constructeur doit livrer entre 249 et 259 appareils sur les seuls mois de novembre et décembre.",
+     "sources": [
+      {
+       "name": "Le Journal de l Aviation (FR)",
+       "url": "https://www.journal-aviation.com/actualites-industrie-aeronautique/airbus-a-livre-621-appareils-depuis-le-debut-de-lannee-20261106.html"
+      },
+      {
+       "name": "AeroTime",
+       "url": "https://www.aerotime.aero/articles/airbus-aircraft-deliveries-orders-october-2026"
+      },
+      {
+       "name": "Actu.fr",
+       "url": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxNbWJfdG1GV1p6SXVDaWlyMEZkcFMwT1N4a2lIckRxMVlJdFlDelM5RDdVZXMwS0xoNW92b0FVbG1EODhnZ3VGSy1QZk1JMkQ1UXY5TmRxaTdHQ3JBMGlPU25TN1NxZ25kZVVfRFZJckhmazlaanZTV3Q0Z09yU1h3elJHdGtCeWMxQmRhTklMQkItTkFieGZVaFg3VExKd2pEM2RfWVhhSTlTTmtVYVhYR2dsTXk3cFhCNmNYS0luR2tLazJad1czSjJOb3Q3RThRUDItVHRndWFieG9GSDZ2M2M3blVOcS0zUW1MWA?oc=5"
+      }
+     ]
+    },
+    {
+     "title": "L'A320 banc d'essai radar équipé d'un nez d'Eurofighter débute ses vols opérationnels",
+     "summary": "Airbus a débuté les opérations aériennes de son démonstrateur A320 modifié, doté d'une proue pointue de chasseur Eurofighter. Cet appareil sert de laboratoire volant pour valider en conditions réelles les radars de combat de nouvelle génération.",
      "sources": [
       {
        "name": "Airbus",
-       "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQeVRQa21GbG9NeHhsY0Y0RE8wT0ZfS1JaX1VjQnNsZGlNaFNFUmdYRXlzdUtSLWZxV29jcE5Md2ktU1NwdHZYYnZIaXRrZXJYTm9YQ0Y0NU13cElRUnNwMWFqVTJmNnJrdjg0UE4td2xUaEtqclZhcjJSWDBmR1JndDRoVmE0S2s4M0Y1MjE4SEt4N2I2QmtsaXRkbFVwQUM3?oc=5"
+       "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPaUFINHVlOFpJTnJyX21OOXRjZnlPeWZtbGxoZHdqTmJjUlBsN0I4S1NYOWdSeWJKbHdSMWRxc2oxSXNBX21pZE9hZ1ZzdWMwOUQxeEFwRDR0QXhZV09TYXFFalpBaDFVSlcyN2Fud1VjMjFaU2R4NTRvR0VuaWx1RzFNazl2ZUhOZlVUeUlCbHFTNXVORXUxUlF0VGVVZkMybjA5TlRQQzZyZHl0YmQ5TG95Vzhtcjc5WW1RM0RZNGprNWxCUTRF?oc=5"
       },
       {
-       "name": "Le Journal de l'Aviation",
-       "url": "https://www.journal-aviation.com/actualites-industrie-aeronautique/avions-commerciaux/airbus-maintient-ses-objectifs-malgre-un-ralentissement-au-troisieme-trimestre-20261030.html"
-      },
-      {
-       "name": "Air Journal",
-       "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxOSWYtdEV2N2xZc0R5TjZMTWFZVUVPbUhkOUt5WmFfRjNfeUlIV2RYRlcyb0g3UUVDMXd6WnF2Nkw5TldiZmZfZUh6UHlvZmd3YWhHSXd1OHdaUWxmNk1PeGc5OE5yZmxjYTFNY0tkeGVDOVEtbTREUGV4SnVnaS1xUVN3M3p1bDRpRE9FRXNpWUpoMWxqWVo1aXdTS1BucE5RNENGcWg4WGRHZWtEUFdhU2dqSF9vdU9MdjRhdDZ3ekpvSzl6OFNvS3FYUEFEcUk?oc=5"
-      },
-      {
-       "name": "BFM Bourse",
-       "url": "https://news.google.com/rss/articles/CBMiwwJBVV95cUxPbWl0c3RnVE5zZVdqYkkwNTVhc3BnSjIyamhxSzY1YzEzVjJRNWhLOWFWZ0lVTTFMVllNeVZlQXJBU1kzRXl0QjlQN3c2c1hjQm1CREZ0enhLNHhOc3owdlh5SGlEVG1hcFRRMHBMN2dDX3ZZaGV6RlN0QVZyemI2dWx4RHRKVFczb2Rfb2tlTmZQOFJ5VzhUdFhtRnFrY0lPdFNhMzRwU3VRdHpOU19DUU1RbE5TZWVKM0tnSTlWbEtwNGhXcXBTQlVuOTdzRTVRMFlZMFNfOXk0VHR6OEZodUZQUmstYW1hakZydzVwWXduc1A2SGd0cm1IelpJTzFPcW04U0pkT25MX1hob3BVc2Rvb1NBRDZkaE41TkhROTRCM015Mi1HY2R5ODRseHZfNUpwSVZyNUM0UEN5VlpQX21Sdw?oc=5"
+       "name": "AeroTime",
+       "url": "https://www.aerotime.aero/articles/airbus-a320-eurofighter-nose-radar-test-flights"
       }
      ]
     },
     {
-     "title": "Airbus et Air France-KLM finalisent leur coentreprise de maintenance pour l'A350",
-     "summary": "Baptisée Alpha Component Solutions et détenue à parts égales par les deux groupes, cette nouvelle entité assurera le support mondial et la gestion des stocks de composants pour les flottes d'Airbus A350.",
+     "title": "Airbus, Skywise et Vietnam Airlines étendent l'IA aux opérations aériennes et à la maintenance",
+     "summary": "Un protocole d'accord tripartite a été conclu entre la plateforme Skywise d'Airbus, la compagnie nationale Vietnam Airlines et l'entreprise technologique FPT pour concevoir des outils d'IA prédictive dédiés au maintien en condition opérationnelle des appareils.",
      "sources": [
       {
-       "name": "Airbus",
-       "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxOalNTVEo1YV9yQmpTTnRzUTN3M3lPcEtsc0YxQS1RUms3cUNaOU5ucTliMFEtendveFFOV29IX29Gb2s4OFR1X3QzOWhpdVFWRGVJQzBLeXBKTk0zemozV0FpQm5SZ2JlOXlESTNHSEtmZ3RPNGJva0NiMGx5dXB2N05tcHFyZHBPOEtBV29scmVCZWJ0QXh2cHBnUTBUTEQwX25YYmdybjBGWUlDMG1EUWJzc3lqY0FoWHRIaUhFeVFlVFNJYlIyUlFFYllrRDgyYXo2Q05ka1JSaVE?oc=5"
-      },
-      {
-       "name": "Le Journal de l'Aviation",
-       "url": "https://www.journal-aviation.com/actualites-mro-support/air-france-klm-et-airbus-creent-une-coentreprise-pour-le-soutien-des-composants-de-la350-20261028.html"
+       "name": "Le Journal de l Aviation (FR)",
+       "url": "https://www.journal-aviation.com/actualites-mro-support/fpt-skywise-et-vietnam-airlines-sassocient-pour-apporter-des-solutions-ia-aux-operations-aeriennes-20261106.html"
       }
      ]
     },
     {
-     "title": "Airbus et Thales Alenia Space se partagent quatre satellites Galileo de seconde génération",
-     "summary": "L'Agence spatiale européenne a officialisé l'attribution de quatre nouveaux satellites de navigation Galileo G2, répartis à égalité entre Airbus Defence and Space et Thales Alenia Space pour accélérer le déploiement de la constellation.",
+     "title": "HOP! investit 4 millions d'euros pour une troisième ligne de maintenance A220 à Clermont-Ferrand",
+     "summary": "La filiale d'Air France-KLM augmente les capacités de son atelier auvergnat afin de soutenir la montée en puissance de la flotte d'Airbus A220 d'Air France. L'investissement vise à pérenniser l'entretien structurel face aux besoins soutenus de la flotte régionale.",
      "sources": [
       {
-       "name": "Revue économique de France",
-       "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQZEFIYWlSYVlRM2ZrbzI2MWVlU0lpR282NnNDUVBVU2h6S0M4Q0ZVb2lyQm8wQ1lJVVpfeHZRanhJaFlzeUZSOUVYZHd6ZzM2cVdfZW1XeDBIUDU1Zlp3M1BpanF1cDN0ZmdtX3ZwSmJmWGl4UVhxTFVuVlVtZC1KOTE4YlBUNWk3Q1FuUmJQV1RGRmlraHMzeXY1em1KdU50WWQyelRKUVozazgyVFNVb3FQTHVEb3VuX2x0VQ?oc=5"
+       "name": "L'Usine Nouvelle",
+       "url": "https://news.google.com/rss/articles/CBMizwJBVV95cUxPbWM2am1KeWxqSUtGVXE2WTM2VGtuM05LT2ZENkhFcnZOY2dzRWVpLU5lc3UweUFsaXg4bkFOcU5pU0tkdGJ4UnMxTk9vM0tqT1RKUmhZR0FCY1ZqVW41ZFRVWkdYTkJ1R1IzaUYyWnYxamZDYjROQjB6QmhfaUQ3Rkp3MS1ialJFbko3M09mcExoeG1Ya0ZMVzU5Y3ZMVUtNSW9rM3hLTXlLU29kZkJLZmlBMlV1Q2lWTnBQbVR3eWJ4UDMxX0hZUFV6ZXlhV0J4MnRORzNoVFFrWmhNeE8xcks4ZGMxMWRUTExjdTVOZ2NmUy1jUzgwTklhY1UwckVsUXJaZ0hGSW9ybFd0WjFVdEZYZUJmaVBaZHlwVzQtbnNqanZTb0YyZDVNOUNBUnZxbDRIakNrM1VBNS1iaXVhdHNrbXNMNlhHajU0VEFqRQ?oc=5"
       },
       {
-       "name": "AeroMorning.com",
-       "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQYW11VDdrT3o0QXRFRW5QeExXMHhLdXFxWDBORV9FNnNfUVVLVTV2eFFONHM2SlE0Nk5rSVp5M0thTHBkYWxyeC1QRWV5aFpBSHRJWXg2SW5zRG01M2hzckdvem5DeDhLRTlLV1drU0NkRnZkZ3dtdjBMM1lrRVNydkFmbVRvUQ?oc=5"
-      }
-     ]
-    },
-    {
-     "title": "Tensions stratégiques sur la patrouille maritime et positionnement sur le combat futur",
-     "summary": "Alors que des débats émergent autour du surcoût de l'A321XLR face au Falcon 10X pour le renouvellement des avions de patrouille maritime, Airbus Defence and Space multiplie les rapprochements avec les acteurs britanniques pour consolider sa position sur l'aviation de combat de sixième génération.",
-     "sources": [
-      {
-       "name": "Meta-Defense",
-       "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE9jeGNqSTRHdGVIX2hoT0lXOUZZTnI2YkdqanVRWnpyeWctUmhqZ3FtdmNQVkNPMF9FRUM3ZERYQUZZOEpXR2l2NGZNM1JWNld4UVZWVEg5ajczeWtkMC1iMmJEdjdVaDgxdE5BOG96MEk0M3M?oc=5"
-      },
-      {
-       "name": "L'Essentiel de l'Éco",
-       "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQdjFVUjF4NFV6OTBrbTdSZnc2MGtUd0U1bC1waU9UdEFnN2NvWEY5dklfb2o3eVlxc1NZa0hJUmhpUHpzYnFiZUpXZEtyS2E5ODJkTVBrdGtlN0FZRnBnVV9WYnY2ckF0akJFRUV6cWYtYjZDRENEWlV4VFRtZWc3anZyOEVJamxnaGd2UjhZclU0QjQ?oc=5"
+       "name": "Le Journal de l Aviation (FR)",
+       "url": "https://www.journal-aviation.com/actualites-mro-support/maintenance-cellule/hop-investit-4-millions-deuros-pour-la-maintenance-des-airbus-a220-dair-france-a-clermont-ferrand-20261105.html"
       }
      ]
     }
@@ -240,33 +245,26 @@
  ],
  "alerts": [
   {
-   "level": "critique",
-   "title": "Exécution de code à distance sur Palo Alto PAN-OS en cours d'exploitation",
-   "body": "Le CERT-FR signale l'exploitation active de vulnérabilités critiques dans Palo Alto Networks PAN-OS permettant l'exécution de code arbitraire sans authentification préalable. Les correctifs doivent être déployés sans délai sur les passerelles exposées.",
+   "level": "CRITICAL",
+   "title": "CVE-2026-123158 : Contournement d'authentification SSHole dans OpenSSH",
+   "body": "Une faille permet à un attaquant distant de se connecter sans clé ni mot de passe sur des comptes sans mot de passe défini (clés seules), sur les déploiements OpenSSH sous Alpine Linux, en fournissant un mot de passe supérieur à 256 caractères. Des exploitations avec obtention d'accès root ont été constatées en honeypot dès la divulgation. Les correctifs d'urgence fournis par Alpine et les éditeurs doivent être déployés immédiatement.",
    "refs": [
-    "CVE-2026-109618",
-    "CERTFR-2026-AVI-1402"
+    "CVE-2026-123158",
+    "CERTFR-2026-ALE-015"
    ]
   },
   {
-   "level": "critique",
-   "title": "Contournement total d'authentification sur Canonical LXD et MicroCloud (CVSS 10.0)",
-   "body": "Une faille d'une sévérité maximale permet à des tiers d'interagir avec les API de gestion LXD et MicroCloud comme des clients de confiance authentifiés sans posséder leur clé privée, rendant possible la prise de contrôle totale de clusters de conteneurs.",
+   "level": "CRITICAL",
+   "title": "Contournement MFA activement exploité dans SonicWall SonicOS",
+   "body": "SonicWall alerte sur l'exploitation en cours d'une faille critique permettant de court-circuiter l'authentification multifacteur sur les passerelles SSL-VPN SonicOS. La mise à jour des firewalls vers les dernières versions logicielles publiées par le constructeur est indispensable sans délai.",
    "refs": [
-    "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H"
-   ]
-  },
-  {
-   "level": "critique",
-   "title": "Chaînage d'accès root non authentifié sur Ivanti Connect Secure",
-   "body": "La CISA a intégré à son catalogue KEV de nouvelles failles Ivanti ICS activement exploitées en chaîne afin d'obtenir des privilèges administrateur (root) à distance sur les appliances VPN.",
-   "refs": [
-    "CISA-KEV-2026"
+    "CERTFR-2026-AVI-1456"
    ]
   }
  ],
  "feedErrors": [
   "CISA - Cybersecurity Advisories",
+  "Google DeepMind Blog",
   "FlightGlobal"
  ]
 }

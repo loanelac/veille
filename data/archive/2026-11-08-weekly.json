@@ -1,0 +1,270 @@
+{
+ "date": "2026-11-08",
+ "kind": "weekly",
+ "generatedAt": "08/11 à 13:13 UTC",
+ "lede": "L'industrialisation de la découverte offensive de vulnérabilités par l'IA franchit un seuil avec GPT-6 Cyber, tandis que les équipes de sécurité affrontent l'exploitation active de failles critiques touchant OpenSSH et les passerelles SonicWall.",
+ "stats": {
+  "feeds": 37,
+  "items": 223,
+  "errors": 3
+ },
+ "sections": [
+  {
+   "key": "ia",
+   "label": "Intelligence artificielle",
+   "items": [
+    {
+     "title": "OpenAI dévoile GPT-6 Cyber après la découverte automatisée de près de 1 000 failles Linux et Firefox",
+     "summary": "OpenAI a officialisé son modèle spécialisé GPT-6 Cyber, conçu pour identifier les vulnérabilités et développer des correctifs. Lors de sa phase de validation, le pipeline a généré des exploits fonctionnels pour 948 failles du noyau Linux pour 1,2 million de dollars de calcul et repéré 81 vulnérabilités critiques dans Firefox.",
+     "sources": [
+      {
+       "name": "OpenAI News",
+       "url": "https://openai.com/index/introducing-gpt-6-cyber"
+      },
+      {
+       "name": "The Hacker News",
+       "url": "https://thehackernews.com/2026/11/openai-launches-gpt-6-cyber-after-ai.html"
+      },
+      {
+       "name": "BleepingComputer",
+       "url": "https://www.bleepingcomputer.com/news/security/openais-new-gpt-6-cyber-ai-finds-81-firefox-flaws-948-linux-bugs/"
+      },
+      {
+       "name": "tl;dr sec",
+       "url": "https://tldrsec.com/p/tldr-sec-353"
+      }
+     ]
+    },
+    {
+     "title": "Claude Code expose des identifiants et clés API dans plus de 1 100 dépôts publics GitHub",
+     "summary": "L'option « Don't Ask Again » de l'assistant en ligne de commande d'Anthropic enregistrait en clair des commandes validées incluant des mots de passe et des jetons d'accès. Ce fichier de configuration s'est retrouvé synchronisé par inadvertance dans au moins 1 122 dépôts publics sur GitHub.",
+     "sources": [
+      {
+       "name": "The Hacker News",
+       "url": "https://thehackernews.com/2026/11/claude-codes-dont-ask-again-file.html"
+      },
+      {
+       "name": "Hacker News",
+       "url": "https://apiiro.com/blog/coding-agents-leaking-secrets-github-dont-ask-again"
+      }
+     ],
+     "severity": "watch"
+    },
+    {
+     "title": "Anthropic lance Claude dans la gestion des finances personnelles et l'analyse bancaire",
+     "summary": "Anthropic déploie la fonctionnalité Personal Finance afin de permettre à son modèle d'analyser les postes de dépenses et les flux de trésorerie en se connectant aux comptes bancaires. Cette ouverture vers la consultation directe de données financières critiques marque une nouvelle étape dans l'autonomie déléguée aux agents d'IA.",
+     "sources": [
+      {
+       "name": "ZDNET",
+       "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPQVNVR2JzWDdQaVc0aFA0YU9sV25TeEpxVVZiLWdmWkJxY05TSHdDWlVUdU1GZHF6bGo4TFJBOGh4M2JweDNKaFIxZHdza3p1d0ZXYmJJQkZCTUNPQVFfb0JYZV9ad0dWVjBBS29maE5MMGJ4bmM4NVEyeGVsRGRBTVFuajlVd1VoM2hyNDZWekxuN3dFeEJuMjhJeWlKZ1hFQmRPSUNlbmpqZU9qMU1N?oc=5"
+      },
+      {
+       "name": "Le Monde Informatique",
+       "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPUVhhOTQ3b1JuVVg0aUFwMWNKaWVNQXM2MWNGcFA1WEoxV281TWNkX1N0ZXd6c25IbWJ4OXV6ZmktVEJBZXU0TjJUNmVPS3VQd3UyWi1wNV9yak90N01IX3A2Nzk5bXVENE9jMEc5WjhNdXFqNjJVREljSU1mdVRrMHNZQ21DclB3bVR4SXBUa19vblBNa0FTTXE2S2Q1ZGY4WG02WE5jOHJOaW53UGdOXy1PVVdjSFkyYmxXRHlqN1lyZ9IBxgFBVV95cUxPLTBmZzZEcXlvTF93eW9sMGFqX2pHbmVMY0MzTjhSUndhemxhZjgzT0V0ZHdkTFVZRkRUSGpHc1E1WF9nNGRzMUNGSmpqUDlpOGxwMnpZQUJTandlWE1KZHQ5RzVSN0RLZUt5UWo4R0E4ZTI5bkl2ZEZnT2VMSG5XaUVXZXcwZGhkUjlobVNhbnVSanRTVk40Q2FockxEU1BNOTdMdVJ4Q3ppUXFSVHJmczdNUWFqRlZXYnFBYk9FY2hGU0I1ckE?oc=5"
+      },
+      {
+       "name": "01net.com",
+       "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxOZHI3R056SFFkX29sTnlEZVIxd3lDUXNvRHpTZ2h2YnNUbHpxVlNvU1p0MGwwcE50ODZsdmxWbWRQZmlLRi1SenkxZVlIMUl6SlpKV3BiMjU2ek5ZU3dpOXNoZG9uR3J3bFlaYkp4Yk5kcWtmeDlWVF9PQ25RTlJRZzVPaU10bXJDcEdEZ1FGUTJNSVJ4WEhPRG5qblliUTFFbjlXbmJDWjJtbnBCazRiSUo2QTRsOGtwR01DVkJCQnRJQXd6SHc?oc=5"
+      }
+     ]
+    },
+    {
+     "title": "Mistral AI acquiert SkipLabs pour fiabiliser le code généré par les agents autonomes",
+     "summary": "Mistral AI poursuit sa stratégie de croissance externe en intégrant l'équipe de SkipLabs, spécialiste de la programmation réactive. L'opération vise à concevoir des briques de test et de validation automatique pour garantir l'intégrité et la robustesse du code rédigé par des agents d'IA.",
+     "sources": [
+      {
+       "name": "LeMagIT (FR)",
+       "url": "https://www.lemagit.fr/actualites/366653932/IA-agentique-et-programmation-reactive-pourquoi-Mistral-AI-acquiert-SkipLabs"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "key": "cyber",
+   "label": "Cybersécurité",
+   "items": [
+    {
+     "title": "OpenSSH : la faille SSHole exploitée quelques heures après sa divulgation",
+     "summary": "Référencée CVE-2026-123158, cette anomalie affecte des paquets openssh-server sur Alpine Linux et permet de contourner l'authentification en envoyant un mot de passe supérieur à 256 caractères sur des comptes dépourvus de mot de passe (clés SSH seules). Des attaquants ont obtenu des accès root sur des honeypots peu de temps après l'alerte publique.",
+     "sources": [
+      {
+       "name": "CERT-FR",
+       "url": "https://www.cert.cyber.gouv.fr/alerte/CERTFR-2026-ALE-015/"
+      },
+      {
+       "name": "The Hacker News",
+       "url": "https://thehackernews.com/2026/11/hackers-exploited-openssh-sshole-flaw.html"
+      },
+      {
+       "name": "Ars Technica",
+       "url": "https://arstechnica.com/security/2026/11/vulnerability-allows-attackers-to-log-into-some-linux-devices-sans-password/"
+      },
+      {
+       "name": "Risky Bulletin",
+       "url": "https://news.risky.biz/risky-bulletin-some-openssh-instances-take-any-password-longer-than-256-characters/"
+      }
+     ],
+     "severity": "critical"
+    },
+    {
+     "title": "SonicWall corrige sept vulnérabilités dont un contournement MFA activement ciblé",
+     "summary": "Le constructeur avertit qu'une faille de contournement d'authentification multifacteur sur les accès SSL-VPN de SonicOS fait l'objet d'attaques en conditions réelles. L'application immédiate des correctifs est requise pour empêcher la prise de contrôle non autorisée des réseaux d'entreprise.",
+     "sources": [
+      {
+       "name": "BleepingComputer",
+       "url": "https://www.bleepingcomputer.com/news/security/sonicwall-warns-of-new-ssl-vpn-mfa-bypass-flaw-exploited-in-attacks/"
+      },
+      {
+       "name": "CERT-FR",
+       "url": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1456/"
+      }
+     ],
+     "severity": "critical"
+    },
+    {
+     "title": "Chainalysis compromis lors d'une attaque multifront impliquant des agents d'IA",
+     "summary": "La société spécialisée dans l'investigation sur la blockchain a confirmé qu'une attaque externe a exposé les identifiants, condensats de mots de passe et jetons de session actifs de la totalité de ses clients. L'assaut a impliqué des agents d'IA autonomes ainsi que des interceptions directes de flux réseau.",
+     "sources": [
+      {
+       "name": "The Hacker News",
+       "url": "https://thehackernews.com/2026/11/chainalysis-breach-exposes-all-users.html"
+      },
+      {
+       "name": "BleepingComputer",
+       "url": "https://www.bleepingcomputer.com/news/security/chainalysis-says-breach-exposed-credentials-for-all-customers/"
+      },
+      {
+       "name": "Ars Technica",
+       "url": "https://arstechnica.com/security/2026/11/chainalysis-says-hackers-stole-credentials-and-tokens-for-all-of-its-customers/"
+      }
+     ],
+     "severity": "watch"
+    },
+    {
+     "title": "Les piratages de régulateurs de froid industriel menacent la chaîne transfusionnelle française",
+     "summary": "Une série d'attaques visant les contrôleurs de température industriels et les chaînes du froid a touché l'Établissement Français du Sang (EFS) sur trois sites, faisant peser un risque opérationnel sur des réserves de plasma. Le FBI et la CISA ont émis une mise en garde conjointe face à la prolifération de ces incidents à travers le monde.",
+     "sources": [
+      {
+       "name": "ZATAZ (FR)",
+       "url": "https://www.zataz.com/cyberattaque-contre-les-frigos-de-lefs-le-plasma-vise/"
+      },
+      {
+       "name": "BleepingComputer",
+       "url": "https://www.bleepingcomputer.com/news/security/fbi-cisa-warn-of-cyberattacks-targeting-refrigeration-systems/"
+      },
+      {
+       "name": "Dark Reading",
+       "url": "https://www.darkreading.com/ics-ot-security/fresh-european-fridge-attacks-cold-chain-security"
+      }
+     ],
+     "severity": "watch"
+    },
+    {
+     "title": "Crédit Mutuel Arkéa subit un vol de 133 millions de dollars suite à la compromission d'un sous-traitant",
+     "summary": "L'institution bancaire française a été la cible d'opérations frauduleuses atteignant 133 millions de dollars transitant en partie par sa filiale en ligne Fortuneo avant blanchiment crypto. L'attaque s'est appuyée sur l'accès d'un prestataire tiers de services, contraignant la banque à suspendre d'urgence certains traitements.",
+     "sources": [
+      {
+       "name": "BleepingComputer",
+       "url": "https://www.bleepingcomputer.com/news/security/hackers-pull-off-133-million-french-bank-heist-via-service-provider/"
+      },
+      {
+       "name": "ZATAZ (FR)",
+       "url": "https://www.zataz.com/credit-mutuel-arkea-133-millions-de-dollars-detournes/"
+      },
+      {
+       "name": "Risky Bulletin",
+       "url": "https://news.risky.biz/risky-bulletin-some-openssh-instances-take-any-password-longer-than-256-characters/"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "key": "aero",
+   "label": "Airbus & aéronautique",
+   "items": [
+    {
+     "title": "Airbus engagé dans un sprint de livraisons sans précédent de près de 250 avions en deux mois",
+     "summary": "Avec 74 avions civils remis aux clients en octobre, Airbus atteint un cumul de 621 livraisons depuis le début de l'année. Pour sécuriser sa cible annuelle révisée, le constructeur doit livrer entre 249 et 259 appareils sur les seuls mois de novembre et décembre.",
+     "sources": [
+      {
+       "name": "Le Journal de l Aviation (FR)",
+       "url": "https://www.journal-aviation.com/actualites-industrie-aeronautique/airbus-a-livre-621-appareils-depuis-le-debut-de-lannee-20261106.html"
+      },
+      {
+       "name": "AeroTime",
+       "url": "https://www.aerotime.aero/articles/airbus-aircraft-deliveries-orders-october-2026"
+      },
+      {
+       "name": "Actu.fr",
+       "url": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxNbWJfdG1GV1p6SXVDaWlyMEZkcFMwT1N4a2lIckRxMVlJdFlDelM5RDdVZXMwS0xoNW92b0FVbG1EODhnZ3VGSy1QZk1JMkQ1UXY5TmRxaTdHQ3JBMGlPU25TN1NxZ25kZVVfRFZJckhmazlaanZTV3Q0Z09yU1h3elJHdGtCeWMxQmRhTklMQkItTkFieGZVaFg3VExKd2pEM2RfWVhhSTlTTmtVYVhYR2dsTXk3cFhCNmNYS0luR2tLazJad1czSjJOb3Q3RThRUDItVHRndWFieG9GSDZ2M2M3blVOcS0zUW1MWA?oc=5"
+      }
+     ]
+    },
+    {
+     "title": "L'A320 banc d'essai radar équipé d'un nez d'Eurofighter débute ses vols opérationnels",
+     "summary": "Airbus a débuté les opérations aériennes de son démonstrateur A320 modifié, doté d'une proue pointue de chasseur Eurofighter. Cet appareil sert de laboratoire volant pour valider en conditions réelles les radars de combat de nouvelle génération.",
+     "sources": [
+      {
+       "name": "Airbus",
+       "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPaUFINHVlOFpJTnJyX21OOXRjZnlPeWZtbGxoZHdqTmJjUlBsN0I4S1NYOWdSeWJKbHdSMWRxc2oxSXNBX21pZE9hZ1ZzdWMwOUQxeEFwRDR0QXhZV09TYXFFalpBaDFVSlcyN2Fud1VjMjFaU2R4NTRvR0VuaWx1RzFNazl2ZUhOZlVUeUlCbHFTNXVORXUxUlF0VGVVZkMybjA5TlRQQzZyZHl0YmQ5TG95Vzhtcjc5WW1RM0RZNGprNWxCUTRF?oc=5"
+      },
+      {
+       "name": "AeroTime",
+       "url": "https://www.aerotime.aero/articles/airbus-a320-eurofighter-nose-radar-test-flights"
+      }
+     ]
+    },
+    {
+     "title": "Airbus, Skywise et Vietnam Airlines étendent l'IA aux opérations aériennes et à la maintenance",
+     "summary": "Un protocole d'accord tripartite a été conclu entre la plateforme Skywise d'Airbus, la compagnie nationale Vietnam Airlines et l'entreprise technologique FPT pour concevoir des outils d'IA prédictive dédiés au maintien en condition opérationnelle des appareils.",
+     "sources": [
+      {
+       "name": "Le Journal de l Aviation (FR)",
+       "url": "https://www.journal-aviation.com/actualites-mro-support/fpt-skywise-et-vietnam-airlines-sassocient-pour-apporter-des-solutions-ia-aux-operations-aeriennes-20261106.html"
+      }
+     ]
+    },
+    {
+     "title": "HOP! investit 4 millions d'euros pour une troisième ligne de maintenance A220 à Clermont-Ferrand",
+     "summary": "La filiale d'Air France-KLM augmente les capacités de son atelier auvergnat afin de soutenir la montée en puissance de la flotte d'Airbus A220 d'Air France. L'investissement vise à pérenniser l'entretien structurel face aux besoins soutenus de la flotte régionale.",
+     "sources": [
+      {
+       "name": "L'Usine Nouvelle",
+       "url": "https://news.google.com/rss/articles/CBMizwJBVV95cUxPbWM2am1KeWxqSUtGVXE2WTM2VGtuM05LT2ZENkhFcnZOY2dzRWVpLU5lc3UweUFsaXg4bkFOcU5pU0tkdGJ4UnMxTk9vM0tqT1RKUmhZR0FCY1ZqVW41ZFRVWkdYTkJ1R1IzaUYyWnYxamZDYjROQjB6QmhfaUQ3Rkp3MS1ialJFbko3M09mcExoeG1Ya0ZMVzU5Y3ZMVUtNSW9rM3hLTXlLU29kZkJLZmlBMlV1Q2lWTnBQbVR3eWJ4UDMxX0hZUFV6ZXlhV0J4MnRORzNoVFFrWmhNeE8xcks4ZGMxMWRUTExjdTVOZ2NmUy1jUzgwTklhY1UwckVsUXJaZ0hGSW9ybFd0WjFVdEZYZUJmaVBaZHlwVzQtbnNqanZTb0YyZDVNOUNBUnZxbDRIakNrM1VBNS1iaXVhdHNrbXNMNlhHajU0VEFqRQ?oc=5"
+      },
+      {
+       "name": "Le Journal de l Aviation (FR)",
+       "url": "https://www.journal-aviation.com/actualites-mro-support/maintenance-cellule/hop-investit-4-millions-deuros-pour-la-maintenance-des-airbus-a220-dair-france-a-clermont-ferrand-20261105.html"
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "alerts": [
+  {
+   "level": "CRITICAL",
+   "title": "CVE-2026-123158 : Contournement d'authentification SSHole dans OpenSSH",
+   "body": "Une faille permet à un attaquant distant de se connecter sans clé ni mot de passe sur des comptes sans mot de passe défini (clés seules), sur les déploiements OpenSSH sous Alpine Linux, en fournissant un mot de passe supérieur à 256 caractères. Des exploitations avec obtention d'accès root ont été constatées en honeypot dès la divulgation. Les correctifs d'urgence fournis par Alpine et les éditeurs doivent être déployés immédiatement.",
+   "refs": [
+    "CVE-2026-123158",
+    "CERTFR-2026-ALE-015"
+   ]
+  },
+  {
+   "level": "CRITICAL",
+   "title": "Contournement MFA activement exploité dans SonicWall SonicOS",
+   "body": "SonicWall alerte sur l'exploitation en cours d'une faille critique permettant de court-circuiter l'authentification multifacteur sur les passerelles SSL-VPN SonicOS. La mise à jour des firewalls vers les dernières versions logicielles publiées par le constructeur est indispensable sans délai.",
+   "refs": [
+    "CERTFR-2026-AVI-1456"
+   ]
+  }
+ ],
+ "feedErrors": [
+  "CISA - Cybersecurity Advisories",
+  "Google DeepMind Blog",
+  "FlightGlobal"
+ ]
+}

@@ -1,0 +1,190 @@
+{
+ "date": "2026-11-08",
+ "kind": "daily",
+ "generatedAt": "08/11 à 13:10 UTC",
+ "lede": "Une attaque financière de 133 millions de dollars contre un prestataire du Crédit Mutuel Arkéa et l'exposition de secrets par Claude Code marquent l'actualité de sécurité, tandis que Swiss remet en question l'exploitation de ses Airbus A220.",
+ "stats": {
+  "feeds": 37,
+  "items": 31,
+  "errors": 3
+ },
+ "sections": [
+  {
+   "key": "ia",
+   "label": "Intelligence artificielle",
+   "items": [
+    {
+     "title": "Anthropic teste l'accès aux comptes bancaires sur Claude, bloqué en France",
+     "summary": "Anthropic déploie une fonctionnalité permettant à Claude d'analyser les comptes bancaires et d'assister la gestion de budget personnel. Le service reste inaccessible aux utilisateurs français en raison de contraintes réglementaires locales.",
+     "sources": [
+      {
+       "name": "Servicesmobiles.fr",
+       "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPR2lhOUh3SF9CNWJSVmtYLUt3bnFUUEJodmpqWWlSZ3Jzblh5RmpjS1BRT2UzRlRJd1poUkhsM00xSGlWbnRSdzdyRmhDWEpsRmlUUkt0UXNWNzJCZ3RfWk91SnR2eFFiaF9yX0J6cERJbjlsdlpLLU5rY1VXTmY5cFlFeGpYamp6Y3FnUW1LNERHMTVmSUpwMVY0ejBzSWxFei16OXRhNA?oc=5"
+      },
+      {
+       "name": "Bourse Inside",
+       "url": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxOOEk3dW1nY3hJc2dmdTBnUFVYeEpBa0lRaVZiLWZuX3BCZFQ1cFJBdGZwbTdfWjVIb0VLbjN6aWt6c3k1Vm1pQkxOenphd3ZnTExZWGhtc0ZOdzQtd05jLVhDUXFqY0xrc29MaFVyamtEdmI0NEtkQ1FUd2NneTJXUzBNRl95T1Zib0k0Y3lBck1HNzJPUm1ld3Bnbm1jVmFpUjZ3eVY3Qloza012dHBuN0VaQ2dnWXhTRENueUw1SDFJcmNPSjMzdFJrQXJQWlo5bEV2cnhlR2JmZUoxaUY2NHBuSDZxLWU0TF9wVFctZw?oc=5"
+      },
+      {
+       "name": "Brief IA",
+       "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQMUtfUmZFM3duM1VTTWthU1RvbWRqcHdWd0hvVkNVeFNzc25PXzFWSFV0cjRCa0diVWI3aW80aHZKcUZyNFA1MUhkRkVsNDl6U2t3QzhBSlkwSzJSdnNfMVB6RVNMeUg4RzlEanFCalJuS0p3cW01d0F2QlFDY0NMeExxZDQxcHZiRFhNU2E0SFI?oc=5"
+      },
+      {
+       "name": "Laodong.vn",
+       "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOZjRydFhWZlEwc1VyY3llS3dNODlNWGlfOEJCdGw5N0ZqaXV3ZXo0Uk95Q0k0V0dySW5GWEUzZFVYZWZ3LU5sVmNUazJDcnYzd2N6bm1haTNvTUppZE1NZ25jNEFRa0JYbWVMampRTU02d1pJZWpLQ0E1a1o4c3J4REw2TmpSeGJkeHhWVVp0OU41bHR2djQ5UHBiNjc3UF9nOE1UNjNzT2ozUGkxWHZadVJR?oc=5"
+      }
+     ]
+    },
+    {
+     "title": "Mise en garde contre la déqualification des développeurs liée aux agents de code",
+     "summary": "Des ingénieurs de Claude Code et Addy Osmani mettent en garde contre l'atrophie des compétences techniques fondamentales due à la sur-délégation des tâches de programmation aux agents d'IA.",
+     "sources": [
+      {
+       "name": "Clubic",
+       "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxQSm1oZTAwc2JwN3hUUFhMdFFqTk90MGw5bDdMT09RX3FPTXJzREhYQzlZOEp1RzVlSTJYUjdKS1pxdVU3ZXZCMjk4dk5PSmhkY0FrTkRXXzNMdEs1c3dqal9UUE9hZ3RvY1hWVXpRVlJ6ZDVrdjJuc2l6cVhROWJZc25hSjhQR21uYlJxWEFHUjlTbXphcHhKYnlfTXVRdmpmSzVrbjMwRGE5cVNfMUxmUVBidHVNNVFwbHB3ODd0dnNpaW1sNTVqVkIzMGhCNmRyOVEzRkVsczFYUQ?oc=5"
+      },
+      {
+       "name": "tech-insider.org",
+       "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNWVZOdXlkRUR5SjlXQUFvNWNGb1R4YzBVMzVYZmt2X1FDSXVyMnZFcXhWOUx5emFnanhDTDBOUVR3Rk4tN255eXo4b21LQlBybjA4cGVXQ0NlNzY1ZU9ybHg5dUlhNkw2alExcXBMeGJfUVV6ZmROZjY3ZndqTzJ3M29vOE9uWFRxZzJFa24zNWtzaFoxMlN2S2FwM2hxdDdSN1Rn?oc=5"
+      },
+      {
+       "name": "EmarketerZ",
+       "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQdVhXRUFTWUk0dzUyS1luNU9YN1haalhXek9xb0wyRTBlYkgxZGhhdlBuM1NCVE9HdkJkLVNVTXhDSWFDS0RlQXluUE1QWDhxbVZ3MzZnX1lOUnZtWEhlekdOM2N4ZEhaMDRvNXVWY3RRblZNVzBoMHUwVDZXYzI2dWUtZ1lPTlZyWHJodC1vZ0dUaUt0MnBXalpZQmsyZjhyVmtwQVM1ZTlNbnl2MFgtaXVCdUFtN2s5ZDVidERZNA?oc=5"
+      }
+     ]
+    },
+    {
+     "title": "Microsoft met fin à son entité de recherche AI Frontiers",
+     "summary": "Microsoft Research dissout son groupe AI Frontiers, marquant une réorganisation interne de ses équipes avancées de recherche en intelligence artificielle.",
+     "sources": [
+      {
+       "name": "Hacker News",
+       "url": "https://hunch.net/?p=13764006"
+      }
+     ]
+    },
+    {
+     "title": "MaxxBench remet en cause la pertinence des benchmarks de code comme DeepSWE",
+     "summary": "Une nouvelle analyse technique via le projet MaxxBench questionne la validité réelle des scores de performance publiés sur le benchmark d'ingénierie logicielle DeepSWE.",
+     "sources": [
+      {
+       "name": "Hacker News",
+       "url": "https://maxxbench.unlap.ai/research/why-maxxbench/"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "key": "cyber",
+   "label": "Cybersécurité",
+   "items": [
+    {
+     "title": "Fraude de 133 millions de dollars contre Crédit Mutuel Arkéa via un prestataire",
+     "summary": "Le groupe bancaire mutualiste français Crédit Mutuel Arkéa a subi une attaque informatique ciblant un de ses prestataires, permettant l'émission de transactions frauduleuses atteignant 133 millions de dollars et contraignant l'établissement à suspendre des systèmes.",
+     "sources": [
+      {
+       "name": "BleepingComputer",
+       "url": "https://www.bleepingcomputer.com/news/security/hackers-pull-off-133-million-french-bank-heist-via-service-provider/"
+      }
+     ],
+     "severity": "watch"
+    },
+    {
+     "title": "Une configuration de Claude Code expose des mots de passe sur plus de 1 100 dépôts GitHub",
+     "summary": "Une analyse d'Apiiro révèle que le paramètre Don't Ask Again de l'outil Claude Code a conduit à l'exposition publique d'identifiants et de secrets au sein de 1 122 fichiers hébergés sur GitHub.",
+     "sources": [
+      {
+       "name": "Hacker News / Apiiro",
+       "url": "https://apiiro.com/blog/coding-agents-leaking-secrets-github-dont-ask-again"
+      }
+     ],
+     "severity": "watch"
+    },
+    {
+     "title": "Publication de Coldframe, un pot de miel ciblant les infrastructures de réfrigération",
+     "summary": "Un outil open source nommé Coldframe a été conçu pour émuler un contrôleur frigorifique de supermarché, afin d'observer et d'analyser les comportements d'attaquants sur les systèmes industriels.",
+     "sources": [
+      {
+       "name": "Hacker News",
+       "url": "https://github.com/hedgerow-dev/coldframe"
+      }
+     ]
+    },
+    {
+     "title": "CTM360 détaille des campagnes d'usurpation de marques par fausses cartes-cadeaux",
+     "summary": "L'entreprise de sécurité CTM360 documente des arnaques exploitant l'image de grandes marques pour inciter les victimes à divulguer des données personnelles et souscrire des abonnements abusifs.",
+     "sources": [
+      {
+       "name": "BleepingComputer",
+       "url": "https://www.bleepingcomputer.com/news/security/ctm360-exposes-fake-gift-card-scams-exploiting-trusted-brands/"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "key": "aero",
+   "label": "Airbus & aéronautique",
+   "items": [
+    {
+     "title": "Swiss étudie le retrait de ses Airbus A220 en raison de soucis récurrents",
+     "summary": "La compagnie helvétique Swiss prévoit de se séparer de sa flotte d'Airbus A220, pénalisée par des difficultés opérationnelles persistantes sur l'appareil.",
+     "sources": [
+      {
+       "name": "Blick",
+       "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPcF9COXFJRDlWcFZVV3ZOSWpsc1c4VHZkV2F3UlRuWGIyeTFHelcxc3pVWGZKRzI0WGtPZlVjOVAyazVxR3VpNHk0TlROZHZBZTVBdHQtZy1lbTdnZ0YwWEFuOFNGa2dFaHZDSS0yZUk2R1c3dmdxdVd0QTFIU01PLTAzaWs2Mk4tN1ZNOV8yV1I5WllR?oc=5"
+      }
+     ]
+    },
+    {
+     "title": "Un Airbus A320 d'Air Arabia Maroc frôle l'eau à 12,5 mètres d'altitude à Catane",
+     "summary": "Un Airbus A320 de la compagnie Air Arabia Maroc s'est retrouvé à seulement 12,5 mètres de la surface maritime lors d'une approche à l'aéroport de Catane, évitant de justesse l'accident.",
+     "sources": [
+      {
+       "name": "Air Journal",
+       "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxQcl94TjIwa1ZUd1h6TUFqQV84ZW1XZlVTaHM0dHdFQ1hpdjhkRnlfVFAwR3NMbUg5VFpkUHRlYks5MVlUNkxPdHBlOTV6QlZuLUtBNy1zbFdnZGllVENaMnBkdFJQVjhrUm5JLWMzdUNZOVQzeUp1U3c3cVAxcjRjcnQ4bzVjYVk2QlRhVGxTS3ZOVE9OQXpSM1FUSzJhZEpjemtjWVRiMzBxdHJaR1FlQ2NHbUJJVi1pZFVRYWZNVjJGNTRNV29vdjRwN2ZjZk1qMER0U1lOb25RSERjUk1vSg?oc=5"
+      }
+     ],
+     "severity": "watch"
+    },
+    {
+     "title": "Airbus transforme un A380 en banc d'essai pour de futures motorisations",
+     "summary": "Airbus réutilise un prototype d'A380 en tant que laboratoire en vol pour tester des moteurs de nouvelle génération destinés aux futurs avions de ligne.",
+     "sources": [
+      {
+       "name": "AquitaineOnLine",
+       "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPX3FOWDJIcUVsdllGcW1fMGVDUk1OcFhRblMwWjhVSlkwNUx4eXBVUkM3YkFIa1ctci0zVjVJYV9zblVDYXRFR242OHJCWXpVbXlGNkYycldUWDJzLUstUXRfSThRN2FzVzBSSUhIYXBZSHYzZnEzdktQTkUza1hwcmd5ZEtPd1M2ZnI5d3FRYk10NmhBVVlvN0QydmZNUkY1?oc=5"
+      }
+     ]
+    },
+    {
+     "title": "Le Kazakhstan réceptionne son deuxième appareil de transport tactique A400M",
+     "summary": "Airbus a livré le deuxième exemplaire de l'avion de transport militaire lourd A400M aux forces armées kazakhes.",
+     "sources": [
+      {
+       "name": "Defensehere",
+       "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPZ1NhVFdwc2pXbV9kTDhpRjBlMGRfd3IzWXBJNm9nc2pfbGNHa3dxal9QcnhlM1J4NEo1Y2pRZUhEZzl0RkQ2aHVFTVFDcUJoRXBtT3ZpWlRjeS1QUFJhSnpmUTNWY2VyalMwa1ZwRHkyMEozMjhpck5TUTZ4bGNjU3NiY0trQkhBa3Mwd1RNYkRhN21mdVE0?oc=5"
+      }
+     ]
+    },
+    {
+     "title": "L'ouverture britannique du GCAP à l'Allemagne questionne le rôle d'Airbus",
+     "summary": "L'invitation du Royaume-Uni faite à l'Allemagne pour rejoindre le projet de chasseur GCAP suscite des incertitudes sur les équilibres industriels européens et l'avenir d'Airbus au sein du SCAF.",
+     "sources": [
+      {
+       "name": "Meta-Defense",
+       "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTFBmVTlHZ2h6bXhidGR6eTdTaWJyVnprNks3bnRQYXBWYVZQVEU1Nlo0NWNvbVNjZjNQS2NjY2RfbXFGNkhzeUI0dktzWVFXX3AxSm5MNVV4Z1JNRG0wejI4Nm83UzFpdmNHbHRNYVpScFhWcXRPdDJ3RjdjT0c?oc=5"
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "alerts": [],
+ "feedErrors": [
+  "CISA - Cybersecurity Advisories",
+  "Google DeepMind Blog",
+  "FlightGlobal"
+ ]
+}

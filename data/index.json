@@ -1,6 +1,18 @@
 {
- "updated": "2026-11-02T15:31:04.223074+00:00",
+ "updated": "2026-11-08T13:13:25.772668+00:00",
  "editions": [
+  {
+   "id": "2026-11-08-weekly",
+   "date": "2026-11-08",
+   "kind": "weekly",
+   "lede": "L'industrialisation de la découverte offensive de vulnérabilités par l'IA franchit un seuil avec GPT-6 Cyber, tandis que les équipes de sécurité affrontent l'ex"
+  },
+  {
+   "id": "2026-11-08-daily",
+   "date": "2026-11-08",
+   "kind": "daily",
+   "lede": "Une attaque financière de 133 millions de dollars contre un prestataire du Crédit Mutuel Arkéa et l'exposition de secrets par Claude Code marquent l'actualité d"
+  },
   {
    "id": "2026-11-02-daily",
    "date": "2026-11-02",
